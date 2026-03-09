@@ -1,0 +1,10 @@
+﻿<windows>
+
+	<set xpath="/windows/window[@name='windowTargetBar']/rect[@visible='{isnotboss}']/label[@name='TextContent']/@text">{name} {currentwithmax}</set>
+
+	<setattribute xpath="/windows/window[@name='windowTargetBar']/rect[@visible='{isnotboss}']/label[@name='TextContent']" name="effect">Shadow</setattribute>
+	<setattribute xpath="/windows/window[@name='windowTargetBar']/rect[@visible='{isnotboss}']/label[@name='TextContent']" name="effect_color">[darkestGrey]</setattribute>
+	<setattribute xpath="/windows/window[@name='windowTargetBar']/rect[@visible='{isnotboss}']/label[@name='TextContent']" name="effect_distance">2,2</setattribute>
+	
+	<set xpath="/windows/window[@name='windowTargetBar']/rect[@visible='{isnotboss}']/@pos">-200,-145</set>
+</windows>

@@ -1,0 +1,49 @@
+<LittleRedSonja>
+	<remove xpath="/windows/window[@name='windowCharacterCosmeticsList']"/>
+	<append xpath="/windows">
+		<window name="windowCharacterCosmeticsList" width="606" height="704" panel="Center" controller="SonjasCharacterCosmeticsListWindow, SonjaCustomArmorCosmeticsMod" cursor_area="true">
+			<!--#$-IGS END.-$#-->
+			<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
+				<sprite depth="3" name="windowIcon" style="icon32px" pivot="center" pos="21,-21" sprite="ui_game_symbol_backpack" />
+				<label depth="3" name="windowName" pos="42,-6" width="180" height="32" text="INVENTORY" text_key="{cosmeticname}" font_size="32" />
+			</panel>
+			
+			<rect name="categoryHeader" pos="3,-46" width="604" height="43">
+				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,0" width="606" height="46" color="[black]" type="sliced" fillcenter="false" />
+				<sprite depth="1" name="background"  color="[darkGrey]" type="sliced"/>
+
+				<panel depth="1" pos="3,-3" width="410" height="37" disableautobackground="true">
+					<grid name="categories" pos="18,-20" rows="1" cols="8" width="663" height="34" cell_width="43" cell_height="43" repeat_content="true" controller="CategoryList">
+						<category_icon />
+					</grid>
+				</panel>
+
+				<panel depth="1" pos="354,0" width="200" disableautobackground="true" console_enabled="false">
+					<sprite depth="1" name="searchIcon" style="icon30px" pos="0,-22" sprite="ui_game_symbol_search" pivot="center"/>
+					<textfield depth="2" pos="22,-7" width="120" height="30" name="searchInput" search_field="true" close_group_on_tab="true" clear_button="true" />
+				</panel>
+
+				<!-- PAGINATION CONTROLS -->
+				<panel pos="500,0" width="104" height="43" disableautobackground="true" visible="{hasPaging}">
+					<button depth="4" name="pageDown" style="icon30px, press" pos="20,-22" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]" enabled="{enablePageDown}"/>
+					<rect depth="4" pos="37,-7">
+						<sprite name="background" style="icon30px" color="[black]" type="sliced"/>
+						<label depth="5" name="pageNumber" pos="0, -3" width="30" height="28" text="{currentPage}" font_size="26" justify="center"/>
+					</rect>
+					<button depth="4" name="pageUp" style="icon30px, press" pos="84,-22" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]" enabled="{enablePageUp}"/>
+				</panel>
+				<!-- END PAGINATION CONTROLS -->
+			</rect>
+
+			<panel name="content" width="100%" height="303" depth="0" pos="0,-89" disableautobackground="true">
+				<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="606" height="336" color="[black]" type="sliced" fillcenter="false" on_press="true"  gamepad_selectable="false"/>
+				<grid depth="10" name="inventory" rows="9" cols="9" pos="3,-3" cell_width="67" cell_height="67" controller="PaginatedCharacterCosmeticList, SonjaCustomArmorCosmeticsMod" repeat_content="true" >
+					<cosmetic_item_stack name="0"/>
+				</grid>
+			</panel>
+			
+			<simplebutton name="btnApply" depth="3" pos="0,-694" width="303" height="36" font_size="24" caption_key="{applyTextKey}" parse_actions="true" enabled="{enableApply}" />
+			<simplebutton name="btnApplySet" depth="3" pos="303,-694" width="303" height="36" font_size="24" caption_key="xuiCosmeticsApplySet" parse_actions="true" enabled="{enableApplySet}"/>
+		</window>
+	</append>
+</LittleRedSonja>

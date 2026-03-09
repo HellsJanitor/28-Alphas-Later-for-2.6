@@ -1,0 +1,3 @@
+<Hells_Janitor>
+	<set xpath="//recipe[@name='armorBikerOutfit']/@name">armorBikerOutfit_M_hells</set>
+</Hells_Janitor>

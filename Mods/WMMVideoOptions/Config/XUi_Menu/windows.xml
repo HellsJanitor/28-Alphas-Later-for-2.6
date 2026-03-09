@@ -1,0 +1,56 @@
+﻿<windows>
+	<!-- Video Options-->
+	<set xpath="/windows/window[@name='optionsVideo']/@controller">XUiC_WMMOptionsVideo, WMMVideoOptions</set>
+	<set xpath="/windows/window[@name='optionsVideo']/rect[@name='tabs']/rect[@name='tabsHeader']/grid[@name='tabButtons']/@cols">7</set>
+
+	<insertAfter xpath="/windows/window[@name='optionsVideo']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='xuiOptionsVideoUI']" >
+		<rect tab_key="xuiOptionsVideoZombieBuffs" controller="TabSelectorTab">
+			<grid pos="8,-40" rows="4" cell_width="525" cell_height="45" repeat_content="false" arrangement="vertical" >
+				<videooption name="ShowZombieBuffsLegend" type="ComboBoxBool" />
+				<videooption name="ShowZombieBuffsIcons" type="ComboBoxBool" />
+				<videooption name="ZombieBuffsIconSize" type="ComboBoxList`1[System.Int32]" values="0,1,2,3,4" localization_prefix="xuiOptionsVideoPresetsBuffIconSize" value_wrap="false" value_type="int"  />
+			</grid>
+		</rect>
+	</insertAfter>
+	
+	<insertAfter xpath="/windows/window[@name='optionsVideo']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='xuiOptionsVideoUI']" >
+		<rect tab_key="xuiOptionsVideoZombieHealthBar" controller="TabSelectorTab">
+			<grid pos="8,-40" rows="4" cell_width="525" cell_height="45" repeat_content="false" arrangement="vertical" >
+				<videooption name="ShowZombieHealthBar" type="ComboBoxBool" />
+				<videooption name="ShowZombieHealthBarName" type="ComboBoxBool" />
+				<videooption name="ShowZombieHealthBarNumbers" type="ComboBoxBool" />
+				<videooption name="ShowZombieHealthBarBackground" type="ComboBoxBool" />
+			</grid>
+			
+			<label depth="4" width="220" height="30" text_key="xuiZombieHealthBarColor" font_size="28" color="[white]" pos="140,-220"/>
+			<rect name="ZombieHealthBarColor" pos="392,-220">
+				<color_picker/>
+			</rect>
+			<simplebutton name="btnResetBarColour" depth="3" pos="650, -220" width="150" height="36" font_size="22" caption_key="xuiResetColour" upper_case="true" />
+			
+			<label depth="4" width="220" height="30" text_key="xuiZombieHealthBarTextColor" font_size="28" color="[white]" pos="140,-430"/>
+			<rect name="ZombieHealthBarTextColor" pos="392,-430">
+				<color_picker/>
+			</rect>
+			<simplebutton name="btnResetTextColour" depth="3" pos="650, -430" width="150" height="36" font_size="22" caption_key="xuiResetColour" upper_case="true" />
+		</rect>
+	</insertAfter>
+
+	<insertAfter xpath="/windows/window[@name='optionsVideo']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='xuiOptionsVideoUI']" >
+		<rect tab_key="xuiOptionsVideoWinchester" controller="TabSelectorTab">
+			<grid pos="8,-40" rows="6" cell_width="525" cell_height="45" repeat_content="false" arrangement="vertical" >
+				<videooption name="ShowCrosshair" type="ComboBoxBool" />
+				<videooption name="ShowActivationText" type="ComboBoxBool" />
+				<videooption name="ShowOnScreenSprites" type="ComboBoxBool" />
+				<videooption name="ShowXPPopUp" type="ComboBoxBool" />
+				<videooption name="ShowZombieDamagePopUp" type="ComboBoxBool" />
+				<videooption name="CustomFont" type="ComboBoxList`1[System.String]" values="" localization_prefix="" value_wrap="false"/>
+			</grid>
+			<label depth="4" width="220" height="30" text_key="xuiCrosshairColorFor" font_size="28" color="[white]" pos="220,-320"/>
+			<rect name="CrosshairColor" pos="392,-320">
+				<color_picker/>
+			</rect>
+		</rect>
+	</insertAfter>
+
+</windows>

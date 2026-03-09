@@ -1,0 +1,15 @@
+<LittleRedSonja>
+
+	<conditional>
+    <if cond="mod_loaded('TFP_Harmony') == false">
+		<setattribute xpath="//window[@name='mainMenu']//mainmenubutton[not(contains(@name, 'btnQuit'))]" name="force_hide">true</setattribute>
+		<append xpath="//window[@name='menuBackground']">
+			<!--<label_sh name="Warning" depth="200" pos="0,-100" height="250" width="1200" pivot="center" justify="center" color="[colorA]" color_shadow="[colorB]" font_size="250" text="0_TFP_Harmony is missing!!"/>
+			<label_sh name="Warning" depth="200" pos="0,-300" height="100" width="1000" pivot="center" justify="center" color="[colorB]" color_shadow="[colorA]" font_size="100" text="You are missing 0_TFP_Harmony folder in your Mods folder. It is part of the base game and required for this mod to work. You can get it back by verifying game files integrity in Steam."/>
+			-->
+			<texture depth="180" color="[white]" texture="@modfolder:Textures/TheHorror_Background.jpg" name="failure" anchor_left="#cam,0,-5" anchor_bottom="#cam,0,-5" anchor_right="#cam,1,5" anchor_top="#cam,1,5"/>
+		</append>
+    </if>
+	</conditional>
+
+</LittleRedSonja>

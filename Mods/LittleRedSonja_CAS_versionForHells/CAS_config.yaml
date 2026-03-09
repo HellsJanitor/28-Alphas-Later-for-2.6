@@ -1,0 +1,8 @@
+﻿# Cosmetic Armor System Options
+
+            # Cosmetic Mode: How to Unlock the Cosmetics. Valid options: Standard, UnlockAll, Disabled. Default:Standard
+                # Standard: Unlock Cosmetics the same as in Vanilla, you scrap the armor to unlock the Cosmetic
+                # UnlockAll: All the cosmetics are unlocked from the beginning. No need to find and scrap. 
+                # Disabled: The Cosmetic System is no longer functional and cannot be used in game. 
+
+            cosmetic_mode: Standard

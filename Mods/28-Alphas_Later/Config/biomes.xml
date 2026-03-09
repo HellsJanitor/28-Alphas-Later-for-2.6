@@ -1,0 +1,39 @@
+<HellsJanitor>
+	<!-- *** add new lavender block to main biome -->	
+	<insertafter xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome/decorations/decoration[starts-with (@blockname,'planted') and not (contains(@blockname,'Snowberry'))]">
+	<decoration type="block" blockname="forestFlower" prob=".002" rotatemax="7"/>
+	</insertafter>	
+	
+	<!-- *** biome variants of harvestable plants -->
+	<set xpath="/worldgeneration/biomes/biome/subbiome/decorations/decoration[@blockname='plantedChrysanthemum3Harvest']/@blockname">plantedChrysanthemumHarvestBiome</set>
+	<set xpath="/worldgeneration/biomes/biome/subbiome/decorations/decoration[@blockname='plantedGoldenrod3Harvest']/@blockname">plantedGoldenrodHarvestBiome</set>
+	<set xpath="/worldgeneration/biomes/biome/subbiome/decorations/decoration[@blockname='plantedCotton3Harvest']/@blockname">plantedCottonHarvestBiome</set>
+	<set xpath="/worldgeneration/biomes/biome/decorations/decoration[@blockname='plantedChrysanthemum3Harvest']/@blockname">plantedChrysanthemumHarvestBiome</set>
+	<set xpath="/worldgeneration/biomes/biome/decorations/decoration[@blockname='plantedCotton3Harvest']/@blockname">plantedCottonHarvestBiome</set>
+	<set xpath="/worldgeneration/biomes/biome/subbiome/decorations/decoration[@blockname='plantedYucca3Harvest']/@blockname">plantedYucca3HarvestBiome</set>
+	<set xpath="/worldgeneration/biomes/biome/subbiome/decorations/decoration[@blockname='plantedAloe3Harvest']/@blockname">plantedAloe3HarvestBiome</set>
+	<set xpath="/worldgeneration/biomes/biome/subbiome/decorations/decoration[@blockname='plantedBlueberry3Harvest']/@blockname">plantedBlueberry3HarvestBiome</set>
+	
+	<!-- *** new ore veins -->
+	<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/subbiome/layers/layer/resource[@blockname='terrOreLead']/@blockname">terrOreLimestone</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/subbiome/decorations/decoration[@name='deco_lead_vein']/@name">deco_limestone_vein</set>
+	
+	<set xpath="/worldgeneration/biomes/biome[@name='desert']/subbiome/layers/layer/resource[@blockname='terrOreLead']/@blockname">terrOreZinc</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='desert']/subbiome/decorations/decoration[@name='deco_lead_vein']/@name">deco_zinc_vein</set>
+	
+	<set xpath="/worldgeneration/biomes/biome[@name='snow']/subbiome/layers/layer/resource[@blockname='terrOrePotassiumNitrate']/@blockname">terrOreCopper</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='snow']/subbiome/decorations/decoration[@name='deco_nitrate_vein']/@name">deco_copper_vein</set>
+	
+	<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/subbiome/layers/layer/resource[@blockname='terrOreIron']/@blockname">terrOreChromium</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/subbiome/decorations/decoration[@name='deco_iron_vein']/@name">deco_chromium_vein</set>
+	
+	<!-- *** lower the lootstage bonus & modifier -->
+	<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/@lootstage_modifier">0.3</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/@lootstage_bonus">3</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='desert']/@lootstage_modifier">0.4</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='desert']/@lootstage_bonus">4</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='snow']/@lootstage_modifier">0.5</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='snow']/@lootstage_bonus">5</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/@lootstage_modifier">1</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/@lootstage_bonus">10</set>
+</HellsJanitor>

@@ -1,0 +1,9 @@
+{
+    "musicFolder": "Music",
+    "volumeMultiplier": 1.0,
+    "shuffle": true,
+    "loopPlaylist": true,
+    "fadeInSeconds": 3.0,
+    "fadeOutSeconds": 3.0,
+    "verboseLogging": true
+}

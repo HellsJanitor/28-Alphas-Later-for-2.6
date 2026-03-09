@@ -1,0 +1,3 @@
+<HellsJanitor>
+	<set xpath="//lootgroup[@name='groupAllArmor']//item[@name='armorBikerOutfit']/@name">armorBikerOutfit_M_hells</set>
+</HellsJanitor>

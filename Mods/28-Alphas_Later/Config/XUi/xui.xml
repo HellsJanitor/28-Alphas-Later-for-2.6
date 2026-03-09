@@ -1,0 +1,81 @@
+<HellsJanitor>
+
+	<!-- *** enables the combine function in the workbench -->
+	<append xpath="/xui/ruleset/window_group[@name='workstation_workbench']">
+		<window name="windowCombine" />
+	</append>
+	
+	<!-- *** adds fuel requirement for cement mixer -->
+	<insertafter xpath="//window_group[@name='workstation_cementMixer']//window[@name='windowCraftingQueue']">
+	<window name="windowMixerFuel" />
+	</insertafter>
+	
+	<!-- *** custom fuel and output for campfire -->
+	<!-- <set xpath="/xui/ruleset/window_group[@name='workstation_campfire']/window[@name='windowFuel']/@name">windowCampfireFuel</set> -->
+	<!-- <set xpath="/xui/ruleset/window_group[@name='workstation_campfire']/window[@name='windowOutput']/@name">windowCampfireOutput</set> -->
+	
+	<!-- *** new forge output -->
+	<set xpath="/xui/ruleset/window_group[@name='workstation_forge']/window[@name='windowOutput']/@name">windowForgeOutput</set>
+	
+	<!-- *** adds tools to workbench -->
+	<insertafter xpath="//window_group[@name='workstation_workbench']//window[@name='windowCraftingQueue']">
+	<window name="windowToolsWorkbench" />
+	</insertafter>
+	<set xpath="//window_group[@name='workstation_workbench']//window[@name='windowOutput']/@name">windowWorkbenchOutput</set>
+	
+	<!-- *** sawmill -->
+	<insertafter xpath="//window_group[@name='workstation_workbench']">
+	<window_group name="workstation_playerSawmill" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+		<window name="windowTSCraftingList"/>
+		<window name="craftingInfoPanel"/>
+		<window name="windowCraftingQueue"/>
+		<window name="windowSawMillOutput" />
+		<window name="windowNonPagingHeader" />		
+	</window_group>
+	</insertafter>
+	
+	<!-- *** wood burning stove -->
+	<insertafter xpath="//window_group[@name='workstation_campfire']">
+	<window_group name="workstation_playerWoodBurningStove" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+		<window name="windowCraftingList"/>
+		<window name="craftingInfoPanel"/>
+		<window name="windowOvenCraftingQueue"/>
+		<window name="windowToolsCampfire" />
+		<window name="windowOvenFuel" />
+		<window name="windowOutput" />
+		<window name="windowNonPagingHeader" />
+	</window_group>	
+	
+	<!-- *** chicken coop -->
+	<window_group name="workstation_chickenCoop" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true" defaultSelected="bp.content">
+		<window name="windowCraftingList"/>
+		<window name="craftingInfoPanel"/>
+		<window name="windowCraftingQueue"/>
+		<!-- <window name="windowToolsChickenCoop" /> -->
+		<window name="windowChickenCoopFuel" />
+		<window name="windowOutput" />
+		<window name="windowNonPagingHeader" />
+	</window_group>
+	</insertafter>
+	
+	<!-- *** butchers table -->
+	<insertafter xpath="/xui/ruleset/window_group[@name='workstation_workbench']">
+		<window_group name="workstation_butchersTable" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true" defaultSelected="bp.content">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>	
+	</insertafter>
+	
+	<!-- *** stat bar positions -->
+	<insertAfter xpath="//window_group/window[@name='HUDLeftStatBars']">
+		<window name="HUDCenterStatBars" anchor="CenterBottom"/>
+		<window name="HUDTopLeftStatBars"/>
+		<window name="HUDBottomLeftStatBars" anchor="LeftBottom"/>
+		<window name="HUDCentreRightStatBars"/>
+		<window name="HUDCentreLeftStatBars" anchor="LeftTop"/>
+		<window name="HUDCenterStatDurabilityBars" anchor="CenterBottom"/>
+	</insertAfter>
+</HellsJanitor>

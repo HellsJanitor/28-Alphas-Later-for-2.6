@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configs>
+	<append xpath="/items">
+		<item name="armorBikerOutfit_M_hells">
+			<property name="Extends" value="armorMediumMaster" param1="CustomIcon"/>
+			<property name="DescriptionKey" value="armorBikerOutfitDesc"/>
+			<property name="DisplayType" value="armorBikerOutfit"/>
+			<property name="ArmorGroup" value="groupBiker"/>
+			<property name="Tags" value="upperbody,chest,armor,armorChest,mediumArmor,mediumArmorPenalty,mediumArmorDeg,armorMediumSkill,biomeChallenge,armorBikerBonus"/>
+			<property name="EquipSlot" value="Chest"/>
+			<property name="SoundPickup" value="outfit_leather_grab"/>
+			<property name="SoundPlace" value="outfit_leather_place"/>
+			<property name="CustomIcon" value="M_biker_male_outfit_hells"/>
+			<effect_group name="BikerOutfit">
+				<passive_effect name="ModSlots" operation="base_set" value="1,1,2,3,4,5" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="13,17.3" tier="1,6"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="-.2,.2"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="13,17.3" tier="1,6" tags="heat,electrical"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="-.2,.2"/>
+				<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffAbrasionCatch,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="250,500" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="mediumArmorDeg"/>
+				<passive_effect name="HypothermalResist" operation="base_add" value="2"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="2"/>
+				<passive_effect name="Mobility" operation="perc_add" value="-.05"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0281" tags="walking"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0562" tags="running"/>
+				<display_value name="dStaminaChangeOT" value="-.56"/>
+				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".1"/>
+				<display_value name="dNoiseMultiplier" value=".1"/>
+			</effect_group>
+			<effect_group>
+				<passive_effect name="HealthMax" operation="base_add" value="2,4,6,8,10,20" tier="1,2,3,4,5,6"/>
+				<display_value name="dHealthMax" value="2,4,6,8,10,20" tier="1,2,3,4,5,6"/>
+			</effect_group>
+			<effect_group>
+				<triggered_effect trigger="onSelfEquipChanged" action="SetTransformActive" active="true" transform_path="bodyTP">
+					<requirement name="!IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfEquipChanged" action="SetTransformActive" active="false" transform_path="bodyTP">
+					<requirement name="IsFPV"/>
+				</triggered_effect>
+			</effect_group>
+			<property class="SDCS">
+				<property name="Prefab" value="#@modfolder:Resources/hellsbiker.unity3d?M_biker_hells"/>
+				<property name="TransformName" value="body"/>
+				<property name="Excludes" value="body"/>
+			</property>
+		</item>
+	</append>
+</configs>
+

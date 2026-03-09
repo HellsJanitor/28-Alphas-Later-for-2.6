@@ -1,0 +1,214 @@
+<HellsJanitor>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='20']/spawn/@group">FwanderingHordeStageGS19</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='34']/spawn/@group">FwanderingHordeStageGS40</set>
+	
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='01']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='02']/spawn/@num">20</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='03']/spawn/@num">8</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='04']/spawn/@num">18</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='05']/spawn/@num">8</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='06']/spawn/@num">14</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='07']/spawn/@num">16</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='08']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='09']/spawn/@num">12</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='10']/spawn/@num">18</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='11']/spawn/@num">12</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='12']/spawn/@num">6</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='13']/spawn/@num">14</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='14']/spawn/@num">12</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='15']/spawn/@num">16</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='16']/spawn/@num">18</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='17']/spawn/@num">18</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='18']/spawn/@num">14</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='19']/spawn/@num">16</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='20']/spawn/@num">12</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='21']/spawn/@num">20</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='22']/spawn/@num">16</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='23']/spawn/@num">14</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='24']/spawn/@num">18</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='25']/spawn/@num">20</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='26']/spawn/@num">14</set>
+	
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='28']/spawn/@num">18</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='29']/spawn/@num">14</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='30']/spawn/@num">20</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='31']/spawn/@num">18</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='32']/spawn/@num">18</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='33']/spawn/@num">12</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='34']/spawn/@num">14</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='35']/spawn/@num">18</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='36']/spawn/@num">16</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='37']/spawn/@num">20</set>
+	
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='39']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='40']/spawn/@num">18</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='41']/spawn/@num">10</set>
+	
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='43']/spawn/@num">18</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='44']/spawn/@num">18</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='45']/spawn/@num">20</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='46']/spawn/@num">22</set>
+	
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='48']/spawn/@num">20</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='49']/spawn/@num">16</set>
+	
+	
+	<append xpath="/gamestages">
+		<spawner name="pine_forest">
+			<gamestage stage="1">
+				<spawn group="pine_forest_GS1" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="10">
+				<spawn group="pine_forest_GS10" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="25">
+				<spawn group="pine_forest_GS25" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="50">
+				<spawn group="pine_forest_GS50" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="100">
+				<spawn group="pine_forest_GS100" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="150">
+				<spawn group="pine_forest_GS150" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="200">
+				<spawn group="pine_forest_GS200" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="250">
+				<spawn group="pine_forest_GS250" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="300">
+				<spawn group="pine_forest_GS300" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+		</spawner>
+		<spawner name="desert">
+			<gamestage stage="1">
+				<spawn group="desert_GS1" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="10">
+				<spawn group="desert_GS10" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="25">
+				<spawn group="desert_GS25" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="50">
+				<spawn group="desert_GS50" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="100">
+				<spawn group="desert_GS100" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="150">
+				<spawn group="desert_GS150" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="200">
+				<spawn group="desert_GS200" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="250">
+				<spawn group="desert_GS250" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="300">
+				<spawn group="desert_GS300" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+		</spawner>
+		<spawner name="snow">
+			<gamestage stage="1">
+				<spawn group="snow_GS1" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="10">
+				<spawn group="snow_GS10" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="25">
+				<spawn group="snow_GS25" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="50">
+				<spawn group="snow_GS50" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="100">
+				<spawn group="snow_GS100" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="150">
+				<spawn group="snow_GS150" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="200">
+				<spawn group="snow_GS200" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="250">
+				<spawn group="snow_GS250" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="300">
+				<spawn group="snow_GS300" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+		</spawner>
+		<spawner name="wasteland">
+			<gamestage stage="1">
+				<spawn group="wasteland_GS1" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="10">
+				<spawn group="wasteland_GS10" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="25">
+				<spawn group="wasteland_GS25" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="50">
+				<spawn group="wasteland_GS50" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="100">
+				<spawn group="wasteland_GS100" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="150">
+				<spawn group="wasteland_GS150" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="200">
+				<spawn group="wasteland_GS200" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="250">
+				<spawn group="wasteland_GS250" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="300">
+				<spawn group="wasteland_GS300" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+		</spawner>
+		<spawner name="burnt_forest">
+			<gamestage stage="1">
+				<spawn group="burnt_forest_GS1" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="10">
+				<spawn group="burnt_forest_GS10" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="25">
+				<spawn group="burnt_forest_GS25" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="50">
+				<spawn group="burnt_forest_GS50" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="100">
+				<spawn group="burnt_forest_GS100" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="150">
+				<spawn group="burnt_forest_GS150" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="200">
+				<spawn group="burnt_forest_GS200" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="250">
+				<spawn group="burnt_forest_GS250" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+			<gamestage stage="300">
+				<spawn group="burnt_forest_GS300" num="1" maxAlive="30" duration="1"/>
+			</gamestage>
+		</spawner>
+	</append>
+	
+	<!-- REMOVING CHARGED, INFERNAL, FROSTCLAWS, AND PLAGUE SPITTERS -->
+	<remove xpath="/gamestages/group[contains(@name,'Charged')]"/>
+	<remove xpath="/gamestages/group[contains(@name,'Infernal')]"/>
+	<!-- <remove xpath="/gamestages/group[contains(@name,'zombieFrostclaw')]"/> -->
+	<!-- <remove xpath="/gamestages/group[contains(@name,'zombiePlagueSpitter')]"/> -->
+	<remove xpath="/gamestages/spawner[contains(@name,'Charged')]"/>
+	<remove xpath="/gamestages/spawner[contains(@name,'Infernal')]"/>
+	<!-- <remove xpath="/gamestages/spawner[contains(@name,'zombieFrostclaw')]"/> -->
+	<!-- <remove xpath="/gamestages/spawner[contains(@name,'zombiePlagueSpitter')]"/> -->
+
+</HellsJanitor>
