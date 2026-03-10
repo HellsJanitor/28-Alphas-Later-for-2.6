@@ -3,7 +3,13 @@
 **Will you survive?**
 
 The idea behind this mod is to slow progression, make traders less powerful, and generally extend the time for a playthrough, while keeping the vanilla look and feel.
+> [!IMPORTANT]
+>10/03/26 mod version 2.6.0.1 changelog:
 
+ - Fixed a bug where stone axes and armour would start at Q100 instead of Q1
+ 
+  - Removed invisible walls from trader compunds - **NOTE: This will require a new save to take effect**
+  
 > [!IMPORTANT]
 >09/03/26 mod version 2.6.0.0 changelog:
 
