@@ -872,7 +872,7 @@
 			<property name="SortOrder2" value="9009"/>
 			<property name="Group" value="Decor/Miscellaneous"/>
 			<property name="FilterTags" value="MC_building,SC_decor"/>
-			<property name="Tags" value="bedroll,challenge_sinks"/>
+			<property name="Tags" value="bedroll,challenge_sinks,playerbed"/>
 			<property name="IndexName" value="challenge_sinks"/>
 			<property name="CanPickup" value="true" param1="bedPlayer"/>
 		</block>

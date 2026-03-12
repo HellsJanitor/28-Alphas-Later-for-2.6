@@ -12,49 +12,6 @@
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffDeathDetector"/>
 		</effect_group>
 		
-		<!-- food smell -->
-		<!-- <triggered_effect trigger="onSelfEnteredGame" action="AddBuff" target="self" buff="buffAddHeatTrigger"/> -->
-		<!-- <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="buffAddHeatTrigger"/> -->
-		<!-- <triggered_effect trigger="onSelfRespawn" action="AddBuff" target="self" buff="buffAddHeatTrigger"/> -->
-		
-		<!-- Weather Survival HOT -->
-		<!-- <effect_group> -->
-			<!-- <triggered_effect trigger="onSelfBuffUpdate" action="AddOrRemoveBuff" buff="buffElementHot"> -->
-				<!-- <requirement name="!HasBuff" buff="god"/> -->
-				<!-- <requirement name="CVarCompare" cvar="_biomeprog" operation="EQ" value="0"/> -->
-				<!-- <requirement name="CVarCompare" cvar="_coretemp" operation="GT" value="10"/> -->
-				<!-- <requirement name="CVarCompare" cvar="_coretemp" operation="LT" value="40"/> -->
-			<!-- </triggered_effect> -->
-
-			<!-- <triggered_effect trigger="onSelfBuffUpdate" action="AddOrRemoveBuff" buff="buffElementSweltering"> -->
-				<!-- <requirement name="CVarCompare" cvar="_biomeprog" operation="EQ" value="0"/> -->
-				<!-- <requirement name="!HasBuff" buff="god"/> -->
-				<!-- <requirement name="ProgressionLevel" progression_name="perkWellInsulated" operation="LT" value="3"/> -->
-				<!-- <requirement name="CVarCompare" cvar="_coretemp" operation="GTE" value="40"/> -->
-			<!-- </triggered_effect> -->
-
-			<!-- Weather Survival COLD -->
-			<!-- <triggered_effect trigger="onSelfBuffUpdate" action="AddOrRemoveBuff" buff="buffElementCold"> -->
-				<!-- <requirement name="CVarCompare" cvar="_biomeprog" operation="EQ" value="0"/> -->
-				<!-- <requirement name="!HasBuff" buff="god"/> -->
-				<!-- <requirement name="CVarCompare" cvar="_coretemp" operation="LT" value="-10"/> -->
-				<!-- <requirement name="CVarCompare" cvar="_coretemp" operation="GT" value="-30"/> -->
-			<!-- </triggered_effect> -->
-
-			<!-- <triggered_effect trigger="onSelfBuffUpdate" action="AddOrRemoveBuff" buff="buffElementFreezing"> -->
-				<!-- <requirement name="CVarCompare" cvar="_biomeprog" operation="EQ" value="0"/> -->
-				<!-- <requirement name="!HasBuff" buff="god"/> -->
-				<!-- <requirement name="CVarCompare" cvar="_coretemp" operation="LTE" value="-30"/> -->
-				<!-- <requirement name="ProgressionLevel" progression_name="perkWellInsulated" operation="LT" value="3"/> -->
-			<!-- </triggered_effect> -->
-
-			<!-- Weather Survival WETNESS -->
-			<!-- <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffElementWet"> -->
-				<!-- <requirement name="CVarCompare" cvar="_biomeprog" operation="EQ" value="0"/> -->
-				<!-- <requirement name="CVarCompare" cvar="_wetnessrate" operation="GT" value=".15"/> -->
-			<!-- </triggered_effect> -->
-		<!-- </effect_group> -->
-		
 		<!-- remove all "light" buffs on entering game -->
 		<effect_group>
 			<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffHeldLight"/>
@@ -113,33 +70,46 @@
 		</effect_group>
 		
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffOnBed" />
-			<requirement name="BlockStandingOn" tags="bedroll" />
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffOnBed"/>
+			<requirement name="BlockStandingOn" tags="bedroll"/>
 		</effect_group>
+		
+		<!-- passive healing when standing on a bedroll -->
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffBedrollHealHealth"/>
+				<requirement name="BlockStandingOn" tags="bedroll"/>
+				<requirement name="HasBuff" buff="buffCampfireAOEEffect"/>
+				<requirement name="IsIndoors"/>
+				<requirement name="!IsBloodMoon"/>
+				<requirement name="!HasBuff" target="self" buff="buffInCombat"/>
+			</effect_group>
+			<effect_group compare_type="or">
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffBedrollHealHealth"/>
+				<requirement name="!BlockStandingOn" tags="bedroll"/>
+				<requirement name="!HasBuff" buff="buffCampfireAOEEffect"/>
+				<requirement name="!IsIndoors"/>
+				<requirement name="IsBloodMoon"/>
+				<requirement name="HasBuff" target="self" buff="buffInCombat"/>
+			</effect_group>
+		
+		<!-- passive healing when standing on a bed -->
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffBedHealHealth"/>
+				<requirement name="BlockStandingOn" tags="playerbed"/>
+				<requirement name="HasBuff" buff="buffCampfireAOEEffect"/>
+				<requirement name="IsIndoors"/>
+				<requirement name="!IsBloodMoon"/>
+				<requirement name="!HasBuff" target="self" buff="buffInCombat"/>
+			</effect_group>
+			<effect_group compare_type="or">
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffBedHealHealth"/>
+				<requirement name="!BlockStandingOn" tags="playerbed"/>
+				<requirement name="!HasBuff" buff="buffCampfireAOEEffect"/>
+				<requirement name="!IsIndoors"/>
+				<requirement name="IsBloodMoon"/>
+				<requirement name="HasBuff" target="self" buff="buffInCombat"/>
+			</effect_group>
 	</append>
-	
-	<!-- <set xpath="/buffs/buff[@name='buffIsOnFire']/effect_group[1]/requirements/requirement[@name='RandomRoll']/@value">@_wetnessrate</set> -->
-	
-	<!-- <append xpath="/buffs/buff[@name='buffCoffee']"> -->
-		<!-- <effect_group> -->
-			<!-- <requirement name="CVarCompare" cvar="_biomeprog" operation="EQ" value="0"/> -->
-			<!-- <passive_effect name="HypothermalResist" operation="base_add" value="5"/> -->
-		<!-- </effect_group> -->
-	<!-- </append> -->
-	
-	<!-- <append xpath="/buffs/buff[@name='buffBlackStrapCoffee']"> -->
-		<!-- <effect_group> -->
-			<!-- <requirement name="CVarCompare" cvar="_biomeprog" operation="EQ" value="0"/> -->
-			<!-- <passive_effect name="HypothermalResist" operation="base_add" value="10"/> -->
-		<!-- </effect_group> -->
-	<!-- </append> -->
-	
-	<!-- <append xpath="/buffs/buff[@name='buffYuccaJuiceSmoothie']"> -->
-		<!-- <effect_group> -->
-			<!-- <requirement name="CVarCompare" cvar="_biomeprog" operation="EQ" value="0"/> -->
-			<!-- <passive_effect name="HyperthermalResist" operation="base_add" value="40"/> -->
-		<!-- </effect_group> -->
-	<!-- </append> -->
 	
 	<!-- *** modify despair tick based on buffs/debuffs -->
 	<append xpath="//buff[@name='buffInfection01Untreated']">
@@ -389,7 +359,7 @@
 				<requirement name="HasBuff" buff="buffGoodCompanyFromTrader"/>
 			</triggered_effect>
 		</effect_group>
-	</append>		
+	</append>
 	
 	<!-- *** modify buffs for splinted, sprained, broken and cast to look for lbu progression -->
 	<set xpath="/buffs/buff[@name='buffLegSplinted']">
@@ -554,39 +524,39 @@
 		<effect_group name="activity makes damaged legs worse">
 			<!-- If not consuming steroids... -->
 			<requirement name="!HasBuff" buff="buffDrugSteroids"/>
-				<!-- Jumping makes it worse -->
-				<triggered_effect trigger="onSelfJump" action="ModifyStats" stat="Health" operation="subtract" value="1"/>
-				<triggered_effect trigger="onSelfJump" action="ModifyCVar" cvar="$legHurtCounter" operation="add" value="20"/>
-				<triggered_effect trigger="onSelfJump" action="AddBuff" buff="buffLegGetsWorse"/>
-				<!-- Falling makes it worse -->
-				<triggered_effect trigger="onSelfFallImpact" action="ModifyCVar" cvar="$legHurtCounter" operation="add" value="20">
-					<requirement name="CVarCompare" cvar="_fallSpeed" operation="GTE" value=".07"/></triggered_effect>
-				<triggered_effect trigger="onSelfFallImpact" action="AddBuff" buff="buffLegGetsWorse">
-					<requirement name="CVarCompare" cvar="_fallSpeed" operation="GTE" value=".07"/></triggered_effect>
-				<!-- If running, make it worse -->
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$legHurtCounter" operation="add" value="2">
-					<requirement name="EntityHasMovementTag" tags="running"/></triggered_effect>
-				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffLegGetsWorse">
-					<requirement name="EntityHasMovementTag" tags="running"/></triggered_effect>
-				<!-- Clamp counter -->
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$legHurtCounter" operation="set" value="605">
-					<requirement name="CVarCompare" cvar="$legHurtCounter" operation="GT" value="605"/>
-				</triggered_effect>
+			<!-- Jumping makes it worse -->
+			<triggered_effect trigger="onSelfJump" action="ModifyStats" stat="Health" operation="subtract" value="1"/>
+			<triggered_effect trigger="onSelfJump" action="ModifyCVar" cvar="$legHurtCounter" operation="add" value="20"/>
+			<triggered_effect trigger="onSelfJump" action="AddBuff" buff="buffLegGetsWorse"/>
+			<!-- Falling makes it worse -->
+			<triggered_effect trigger="onSelfFallImpact" action="ModifyCVar" cvar="$legHurtCounter" operation="add" value="20">
+				<requirement name="CVarCompare" cvar="_fallSpeed" operation="GTE" value=".07"/></triggered_effect>
+			<triggered_effect trigger="onSelfFallImpact" action="AddBuff" buff="buffLegGetsWorse">
+				<requirement name="CVarCompare" cvar="_fallSpeed" operation="GTE" value=".07"/></triggered_effect>
+			<!-- If running, make it worse -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$legHurtCounter" operation="add" value="2">
+				<requirement name="EntityHasMovementTag" tags="running"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffLegGetsWorse">
+				<requirement name="EntityHasMovementTag" tags="running"/></triggered_effect>
+			<!-- Clamp counter -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$legHurtCounter" operation="set" value="605">
+				<requirement name="CVarCompare" cvar="$legHurtCounter" operation="GT" value="605"/>
+			</triggered_effect>
 		</effect_group>
 
 		<effect_group>
 			<!-- If counter LTE 0, reset counter, health blockage, and remove buff -->
 			<requirement name="CVarCompare" cvar="$legHurtCounter" operation="LTE" value="0"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveCVar" cvar="$legHurtCounter,.LegHurtHealthBlockage"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffLegSprained"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveCVar" cvar="$legHurtCounter,.LegHurtHealthBlockage"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffLegSprained"/>
 		</effect_group>
 
 		<effect_group>
 			<!-- Setup the max health blockage based on the remaining counter -->
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".LegHurtHealthBlockage" operation="set" value="@$legHurtCounter"/>
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".LegHurtHealthBlockage" operation="divide" value="40"/> <!-- 15 @ 10m -->
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".LegHurtHealthBlockage" operation="divide" value="40"/><!-- 15 @ 10m -->
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".LegHurtHealthBlockage" operation="set" value="@$legHurtCounter"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".LegHurtHealthBlockage" operation="divide" value="40"/> <!-- 15 @ 10m -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".LegHurtHealthBlockage" operation="divide" value="40"/><!-- 15 @ 10m -->
 			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.LegHurtHealthBlockage"/>
 			<!-- Slow movement and reduce jump strength -->
 			<passive_effect name="Mobility" operation="base_add" value="-.15"/>
@@ -634,39 +604,39 @@
 		<effect_group name="activity makes damaged legs worse">
 			<!-- If not consuming steroids... -->
 			<requirement name="!HasBuff" buff="buffDrugSteroids"/>
-				<!-- Jumping makes it worse -->
-				<triggered_effect trigger="onSelfJump" action="ModifyStats" stat="Health" operation="subtract" value="1"/>
-				<triggered_effect trigger="onSelfJump" action="ModifyCVar" cvar="$legHurtCounter" operation="add" value="20"/>
-				<triggered_effect trigger="onSelfJump" action="AddBuff" buff="buffLegGetsWorse"/>
-				<!-- Falling makes it worse -->
-				<triggered_effect trigger="onSelfFallImpact" action="ModifyCVar" cvar="$legHurtCounter" operation="add" value="20">
-					<requirement name="CVarCompare" cvar="_fallSpeed" operation="GTE" value=".07"/></triggered_effect>
-				<triggered_effect trigger="onSelfFallImpact" action="AddBuff" buff="buffLegGetsWorse">
-					<requirement name="CVarCompare" cvar="_fallSpeed" operation="GTE" value=".07"/></triggered_effect>
-				<!-- If running, make it worse -->
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$legHurtCounter" operation="add" value="2">
-					<requirement name="EntityHasMovementTag" tags="running"/></triggered_effect>
-				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffLegGetsWorse">
-					<requirement name="EntityHasMovementTag" tags="running"/></triggered_effect>
-				<!-- Clamp counter -->
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$legHurtCounter" operation="set" value="7208">
-					<requirement name="CVarCompare" cvar="$legHurtCounter" operation="GT" value="7208"/>
-				</triggered_effect>
+			<!-- Jumping makes it worse -->
+			<triggered_effect trigger="onSelfJump" action="ModifyStats" stat="Health" operation="subtract" value="1"/>
+			<triggered_effect trigger="onSelfJump" action="ModifyCVar" cvar="$legHurtCounter" operation="add" value="20"/>
+			<triggered_effect trigger="onSelfJump" action="AddBuff" buff="buffLegGetsWorse"/>
+			<!-- Falling makes it worse -->
+			<triggered_effect trigger="onSelfFallImpact" action="ModifyCVar" cvar="$legHurtCounter" operation="add" value="20">
+				<requirement name="CVarCompare" cvar="_fallSpeed" operation="GTE" value=".07"/></triggered_effect>
+			<triggered_effect trigger="onSelfFallImpact" action="AddBuff" buff="buffLegGetsWorse">
+				<requirement name="CVarCompare" cvar="_fallSpeed" operation="GTE" value=".07"/></triggered_effect>
+			<!-- If running, make it worse -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$legHurtCounter" operation="add" value="2">
+				<requirement name="EntityHasMovementTag" tags="running"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffLegGetsWorse">
+				<requirement name="EntityHasMovementTag" tags="running"/></triggered_effect>
+			<!-- Clamp counter -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$legHurtCounter" operation="set" value="7208">
+				<requirement name="CVarCompare" cvar="$legHurtCounter" operation="GT" value="7208"/>
+			</triggered_effect>
 		</effect_group>
 
 		<effect_group>
 			<!-- If counter LTE 0, reset counter, health blockage, and remove buff -->
 			<requirement name="CVarCompare" cvar="$legHurtCounter" operation="LTE" value="0"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveCVar" cvar="$legHurtCounter,.LegHurtHealthBlockage"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffLegBroken"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveCVar" cvar="$legHurtCounter,.LegHurtHealthBlockage"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffLegBroken"/>
 		</effect_group>
 
 		<effect_group>
 			<!-- Setup the max health blockage based on the remaining counter -->
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".LegHurtHealthBlockage" operation="set" value="@$legHurtCounter"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".LegHurtHealthBlockage" operation="divide" value="240"/> <!-- 30 @ 120m -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".LegHurtHealthBlockage" operation="divide" value="240"/><!-- 30 @ 120m -->
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".LegHurtHealthBlockage" operation="set" value="@$legHurtCounter"/>
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".LegHurtHealthBlockage" operation="divide" value="240"/> <!-- 30 @ 120m -->
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".LegHurtHealthBlockage" operation="divide" value="240"/><!-- 30 @ 120m -->
 			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.LegHurtHealthBlockage"/>
 			<!-- Slow movement and reduce jump strength -->
 			<passive_effect name="Mobility" operation="base_add" value="-.5"/>
@@ -811,11 +781,11 @@
 		</effect_group>
 
 		<!-- <effect_group> -->
-			<!-- <triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="$armTreatedCritHealingBase,$armTreatedCritHealing,.armTotalHealingRate"/> -->
-			<!-- <triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="$armHurtCounter,.ArmHurtHealthBlockage"> -->
-				<!-- <requirement name="!HasBuff" buff="buffArmBroken"/> -->
-				<!-- <requirement name="ProgressionLevel" progression_name="lbu_Physician" operation="GTE" value="30" target="instigator"/> -->
-			<!-- </triggered_effect> -->
+		<!-- <triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="$armTreatedCritHealingBase,$armTreatedCritHealing,.armTotalHealingRate"/> -->
+		<!-- <triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="$armHurtCounter,.ArmHurtHealthBlockage"> -->
+		<!-- <requirement name="!HasBuff" buff="buffArmBroken"/> -->
+		<!-- <requirement name="ProgressionLevel" progression_name="lbu_Physician" operation="GTE" value="30" target="instigator"/> -->
+		<!-- </triggered_effect> -->
 		<!-- </effect_group> -->
 
 		<effect_group>
@@ -849,45 +819,45 @@
 		<effect_group name="activity makes damaged arms worse">
 			<!-- If not consuming steroids... -->
 			<requirement name="!HasBuff" buff="buffDrugSteroids"/>
-				<!-- Using ranged makes it worse -->
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$armHurtCounter" operation="add" value="4">
-					<requirement name="HoldingItemHasTags" tags="ranged"/></triggered_effect>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffArmGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="ranged"/></triggered_effect>
-				<!-- Using melee makes it worse -->
-				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool,heldTorch"/></triggered_effect>
-				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="$armHurtCounter" operation="add" value="4">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool,heldTorch"/></triggered_effect>
-				<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" buff="buffArmGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool,heldTorch"/></triggered_effect>
-				<!-- Clamp counter -->
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$armHurtCounter" operation="set" value="7208">
-					<requirement name="CVarCompare" cvar="$armHurtCounter" operation="GT" value="7208"/>
-				</triggered_effect>
+			<!-- Using ranged makes it worse -->
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$armHurtCounter" operation="add" value="4">
+				<requirement name="HoldingItemHasTags" tags="ranged"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffArmGetsWorse">
+				<requirement name="HoldingItemHasTags" tags="ranged"/></triggered_effect>
+			<!-- Using melee makes it worse -->
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
+				<requirement name="HoldingItemHasTags" tags="melee"/>
+				<requirement name="!HoldingItemHasTags" tags="repairTool,heldTorch"/></triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="$armHurtCounter" operation="add" value="4">
+				<requirement name="HoldingItemHasTags" tags="melee"/>
+				<requirement name="!HoldingItemHasTags" tags="repairTool,heldTorch"/></triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" buff="buffArmGetsWorse">
+				<requirement name="HoldingItemHasTags" tags="melee"/>
+				<requirement name="!HoldingItemHasTags" tags="repairTool,heldTorch"/></triggered_effect>
+			<!-- Clamp counter -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$armHurtCounter" operation="set" value="7208">
+				<requirement name="CVarCompare" cvar="$armHurtCounter" operation="GT" value="7208"/>
+			</triggered_effect>
 		</effect_group>
 
 		<effect_group>
 			<requirement name="CVarCompare" cvar=".armHurtDurationDisplay" operation="LTE" value="0"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveCVar" cvar="$armHurtCounter"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveCVar" cvar="$armHurtCounter"/>
 		</effect_group>
 
 		<effect_group>
 			<!-- If counter LTE 0, reset counter, health blockage, and remove buff -->
 			<requirement name="CVarCompare" cvar="$armHurtCounter" operation="LTE" value="0"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveCVar" cvar="$armHurtCounter,.armTotalHealingRate,.ArmHurtHealthBlockage"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffArmSplinted"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveCVar" cvar="$armHurtCounter,.armTotalHealingRate,.ArmHurtHealthBlockage"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffArmSplinted"/>
 		</effect_group>
 
 		<effect_group>
 			<!-- Setup the max health blockage based on the remaining counter -->
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".ArmHurtHealthBlockage" operation="set" value="@$armHurtCounter"/>
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".ArmHurtHealthBlockage" operation="divide" value="360"/> <!-- 20 @ 120m -->
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".ArmHurtHealthBlockage" operation="divide" value="360"/><!-- 20 @ 120m -->
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmHurtHealthBlockage" operation="set" value="@$armHurtCounter"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmHurtHealthBlockage" operation="divide" value="360"/> <!-- 20 @ 120m -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmHurtHealthBlockage" operation="divide" value="360"/><!-- 20 @ 120m -->
 			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.ArmHurtHealthBlockage"/>
 			<!-- Reduce weapon actions -->
 			<passive_effect name="WeaponHandling" operation="perc_add" value="-.15" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
@@ -1125,43 +1095,43 @@
 
 		<effect_group name="activity makes damaged arms worse">
 			<requirement name="!HasBuff" buff="buffDrugSteroids"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$armHurtCounter" operation="add" value="4">
-					<requirement name="HoldingItemHasTags" tags="ranged"/></triggered_effect>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffArmGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="ranged"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$armHurtCounter" operation="add" value="4">
+				<requirement name="HoldingItemHasTags" tags="ranged"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffArmGetsWorse">
+				<requirement name="HoldingItemHasTags" tags="ranged"/></triggered_effect>
 
-				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool,heldTorch"/></triggered_effect>
-				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="$armHurtCounter" operation="add" value="4">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool,heldTorch"/></triggered_effect>
-				<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" buff="buffArmGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool,heldTorch"/></triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
+				<requirement name="HoldingItemHasTags" tags="melee"/>
+				<requirement name="!HoldingItemHasTags" tags="repairTool,heldTorch"/></triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="$armHurtCounter" operation="add" value="4">
+				<requirement name="HoldingItemHasTags" tags="melee"/>
+				<requirement name="!HoldingItemHasTags" tags="repairTool,heldTorch"/></triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" buff="buffArmGetsWorse">
+				<requirement name="HoldingItemHasTags" tags="melee"/>
+				<requirement name="!HoldingItemHasTags" tags="repairTool,heldTorch"/></triggered_effect>
 
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$armHurtCounter" operation="set" value="7208">
-					<requirement name="CVarCompare" cvar="$armHurtCounter" operation="GT" value="7208"/>
-				</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$armHurtCounter" operation="set" value="7208">
+				<requirement name="CVarCompare" cvar="$armHurtCounter" operation="GT" value="7208"/>
+			</triggered_effect>
 		</effect_group>
 
 		<effect_group>
 			<requirement name="CVarCompare" cvar=".armHurtDurationDisplay" operation="LTE" value="0"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveCVar" cvar="$armHurtCounter"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveCVar" cvar="$armHurtCounter"/>
 		</effect_group>
 
 		<effect_group>
 			<requirement name="CVarCompare" cvar="$armHurtCounter" operation="LTE" value="0"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveCVar" cvar="$armHurtCounter,.armTotalHealingRate,.ArmHurtHealthBlockage"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffArmCast"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveCVar" cvar="$armHurtCounter,.armTotalHealingRate,.ArmHurtHealthBlockage"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffArmCast"/>
 		</effect_group>
 
 		<effect_group>
 			<!-- Setup the max health blockage based on the remaining counter -->
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".ArmHurtHealthBlockage" operation="set" value="@$armHurtCounter"/>
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".ArmHurtHealthBlockage" operation="divide" value="480"/> <!-- 15 @ 120m -->
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".ArmHurtHealthBlockage" operation="divide" value="480"/><!-- 15 @ 120m -->
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmHurtHealthBlockage" operation="set" value="@$armHurtCounter"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmHurtHealthBlockage" operation="divide" value="480"/> <!-- 15 @ 120m -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmHurtHealthBlockage" operation="divide" value="480"/><!-- 15 @ 120m -->
 			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.ArmHurtHealthBlockage"/>
 
 			<passive_effect name="WeaponHandling" operation="perc_add" value="-.15" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
@@ -1187,7 +1157,7 @@
 	</append>
 	
 	<!-- *** reduce healing from painkillers by 50% -->
-	<set xpath="/buffs/buff[@name='buffDrugPainkillers']/effect_group/triggered_effect[@stat='Health' and @value='40']/@value">20</set>
+	<set xpath="/buffs/buff[@name='buffDrugPainkillers']/effect_group/triggered_effect[@stat='Health' and @value='40']/@value">40</set>
 	
 	<append xpath="/buffs">
 		<!-- *** signalling buff when standing on a bed/bedroll -->
@@ -1199,13 +1169,36 @@
 				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffOnBed">
 					<requirement name="BlockStandingOn" tags="bedroll"/>
 				</passive_effect>
+				
 			</effect_group>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffOnBed">
 					<requirement name="!BlockStandingOn" tags="bedroll"/>
 				</triggered_effect>
 			</effect_group>
-		</buff>		
+		</buff>
+
+		<!-- *** buff for healing when standing on a bedroll *** -->
+		<buff name="buffBedrollHealHealth" name_key="buffBedrollHealHealthName" description_key="buffBedrollHealHealthDesc" icon="ui_game_symbol_add" icon_color="0,128,0" icon_blink="true" showonhud="false">
+			<stack_type value="ignore"/>
+			<update_rate value="10"/>
+			<display_value value=".healHealthAmountDisplay"/>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="add" value=".5"/>
+			</effect_group>
+		</buff>
+		
+		<!-- *** buff for healing when standing on a bed *** -->
+		<buff name="buffBedHealHealth" name_key="buffBedHealHealthName" description_key="buffBedHealHealthDesc" icon="ui_game_symbol_add" icon_color="0,128,0" icon_blink="true" showonhud="false">
+			<stack_type value="ignore"/>
+			<update_rate value="2.5"/>
+			<display_value value=".healHealthAmountDisplay"/>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="add" value=".5"/>
+			</effect_group>
+		</buff>
 		
 		<buff name="buffElementSwelteringOnHit" name_key="buffElementSwelteringName" description_key="buffElementSwelteringDesc" tooltip_key="buffElementSwelteringTooltip" icon="ui_game_symbol_hot" icon_color="204,85,0" icon_blink="true">
 			<damage_type value="heat"/>
@@ -2639,7 +2632,7 @@
 				<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar="lithiumblocker" operation="set" value="0"/>
 			</effect_group>
 			<effect_group>
-				<passive_effect name="WaterChangeOT" operation="base_subtract" value=".05"/>
+				<passive_effect name="WaterChangeOT" operation="base_subtract" value=".025"/>
 			</effect_group>
 		</buff>
 		
@@ -2671,7 +2664,7 @@
 				<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar="stjohnswortblocker" operation="set" value="0"/>
 			</effect_group>
 			<effect_group>
-				<passive_effect name="WaterChangeOT" operation="base_subtract" value=".05"/>
+				<passive_effect name="WaterChangeOT" operation="base_subtract" value=".015"/>
 			</effect_group>
 		</buff>
 		
@@ -3375,7 +3368,7 @@
 		
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="armourWornWellness" operation="set" value="@wellness"/>
-			</effect_group>	
+			</effect_group>
 
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="armourWornWellness" operation="add" value="@.armourWellness"/>
@@ -4262,70 +4255,70 @@
 	
 		<!-- *** food smell -->
 		<!-- <buff name="buffAddHeatTrigger" hidden="true"> -->
-			<!-- <duration value="0"/> -->
-			<!-- <effect_group compare_type="or"> -->
-				<!-- <requirement name="PlayerItemCount" item_name="foodRottingFlesh" operation="GTE" value="1"/> -->
-				<!-- <requirement name="PlayerItemCount" item_name="foodCornBread" operation="GTE" value="5"/> -->
-				<!-- <requirement name="PlayerItemCount" item_name="foodShamSandwich" operation="GTE" value="5"/> -->
-				<!-- <requirement name="PlayerItemCount" item_name="foodCharredMeat" operation="GTE" value="5"/> -->
-				<!-- <requirement name="PlayerItemCount" item_name="foodGrilledMeat" operation="GTE" value="5"/> -->
-				<!-- <requirement name="PlayerItemCount" item_name="foodBoiledMeat" operation="GTE" value="5"/> -->
-				<!-- <requirement name="PlayerItemCount" item_name="foodMeatStew" operation="GTE" value="4"/> -->
-				<!-- <requirement name="PlayerItemCount" item_name="foodSteakAndPotato" operation="GTE" value="4"/> -->
-				<!-- <requirement name="PlayerItemCount" item_name="foodShamChowder" operation="GTE" value="3"/> -->
-				<!-- <requirement name="PlayerItemCount" item_name="foodHoboStew" operation="GTE" value="3"/> -->
-				<!-- <requirement name="PlayerItemCount" item_name="foodFishTacos" operation="GTE" value="3"/> -->
-				<!-- <requirement name="PlayerItemCount" item_name="foodChiliDog" operation="GTE" value="3"/> -->
-				<!-- <requirement name="PlayerItemCount" item_name="foodBakedPotato" operation="GTE" value="5"/> -->
-				<!-- <requirement name="PlayerItemCount" item_name="foodBlueberryPie" operation="GTE" value="4"/> -->
-				<!-- <requirement name="PlayerItemCount" item_name="foodPumpkinPie" operation="GTE" value="4"/> -->
-				<!-- <requirement name="PlayerItemCount" item_name="foodPumpkinCheesecake" operation="GTE" value="4"/> -->
-				<!-- <requirement name="PlayerItemCount" item_name="foodPumpkinBread" operation="GTE" value="4"/> -->
-				<!-- <requirement name="PlayerItemCount" item_name="foodGumboStew" operation="GTE" value="2"/> -->
-				<!-- <requirement name="PlayerItemCount" item_name="foodShepardsPie" operation="GTE" value="2"/> -->
-				<!-- <requirement name="PlayerItemCount" item_name="foodSpaghetti" operation="GTE" value="2"/> -->
-				<!-- <requirement name="PlayerItemCount" item_name="foodTunaFishGravyToast" operation="GTE" value="2"/> -->
-				<!-- <requirement name="PlayerItemCount" item_name="foodEggBoiled" operation="GTE" value="5"/> -->
-				<!-- <requirement name="PlayerItemCount" item_name="foodBaconAndEggs" operation="GTE" value="4"/> -->
-				<!-- <requirement name="PlayerItemCount" item_name="foodVegetableStew" operation="GTE" value="4"/> -->
-				<!-- <requirement name="PlayerItemCount" item_name="foodRawMeat" operation="GTE" value="10"/> -->
-				<!-- <requirement name="PlayerItemCount" item_name="foodChickenStew" operation="GTE" value="3"/> -->
-				<!-- <requirement name="PlayerItemCount" item_name="foodChickenMiso" operation="GTE" value="3"/> -->
-				<!-- <requirement name="PlayerItemCount" item_name="foodScrambledEggs" operation="GTE" value="5"/> -->
-				<!-- <requirement name="PlayerItemCount" item_name="foodTrampStew" operation="GTE" value="5"/> -->
-				<!-- <requirement name="PlayerItemCount" item_name="foodVagabondStew" operation="GTE" value="5"/> -->
-				<!-- <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffSmell"/> -->
-				<!-- <triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="fresh_meat" allow_client_call="true"/> -->
-			<!-- </effect_group> -->
+		<!-- <duration value="0"/> -->
+		<!-- <effect_group compare_type="or"> -->
+		<!-- <requirement name="PlayerItemCount" item_name="foodRottingFlesh" operation="GTE" value="1"/> -->
+		<!-- <requirement name="PlayerItemCount" item_name="foodCornBread" operation="GTE" value="5"/> -->
+		<!-- <requirement name="PlayerItemCount" item_name="foodShamSandwich" operation="GTE" value="5"/> -->
+		<!-- <requirement name="PlayerItemCount" item_name="foodCharredMeat" operation="GTE" value="5"/> -->
+		<!-- <requirement name="PlayerItemCount" item_name="foodGrilledMeat" operation="GTE" value="5"/> -->
+		<!-- <requirement name="PlayerItemCount" item_name="foodBoiledMeat" operation="GTE" value="5"/> -->
+		<!-- <requirement name="PlayerItemCount" item_name="foodMeatStew" operation="GTE" value="4"/> -->
+		<!-- <requirement name="PlayerItemCount" item_name="foodSteakAndPotato" operation="GTE" value="4"/> -->
+		<!-- <requirement name="PlayerItemCount" item_name="foodShamChowder" operation="GTE" value="3"/> -->
+		<!-- <requirement name="PlayerItemCount" item_name="foodHoboStew" operation="GTE" value="3"/> -->
+		<!-- <requirement name="PlayerItemCount" item_name="foodFishTacos" operation="GTE" value="3"/> -->
+		<!-- <requirement name="PlayerItemCount" item_name="foodChiliDog" operation="GTE" value="3"/> -->
+		<!-- <requirement name="PlayerItemCount" item_name="foodBakedPotato" operation="GTE" value="5"/> -->
+		<!-- <requirement name="PlayerItemCount" item_name="foodBlueberryPie" operation="GTE" value="4"/> -->
+		<!-- <requirement name="PlayerItemCount" item_name="foodPumpkinPie" operation="GTE" value="4"/> -->
+		<!-- <requirement name="PlayerItemCount" item_name="foodPumpkinCheesecake" operation="GTE" value="4"/> -->
+		<!-- <requirement name="PlayerItemCount" item_name="foodPumpkinBread" operation="GTE" value="4"/> -->
+		<!-- <requirement name="PlayerItemCount" item_name="foodGumboStew" operation="GTE" value="2"/> -->
+		<!-- <requirement name="PlayerItemCount" item_name="foodShepardsPie" operation="GTE" value="2"/> -->
+		<!-- <requirement name="PlayerItemCount" item_name="foodSpaghetti" operation="GTE" value="2"/> -->
+		<!-- <requirement name="PlayerItemCount" item_name="foodTunaFishGravyToast" operation="GTE" value="2"/> -->
+		<!-- <requirement name="PlayerItemCount" item_name="foodEggBoiled" operation="GTE" value="5"/> -->
+		<!-- <requirement name="PlayerItemCount" item_name="foodBaconAndEggs" operation="GTE" value="4"/> -->
+		<!-- <requirement name="PlayerItemCount" item_name="foodVegetableStew" operation="GTE" value="4"/> -->
+		<!-- <requirement name="PlayerItemCount" item_name="foodRawMeat" operation="GTE" value="10"/> -->
+		<!-- <requirement name="PlayerItemCount" item_name="foodChickenStew" operation="GTE" value="3"/> -->
+		<!-- <requirement name="PlayerItemCount" item_name="foodChickenMiso" operation="GTE" value="3"/> -->
+		<!-- <requirement name="PlayerItemCount" item_name="foodScrambledEggs" operation="GTE" value="5"/> -->
+		<!-- <requirement name="PlayerItemCount" item_name="foodTrampStew" operation="GTE" value="5"/> -->
+		<!-- <requirement name="PlayerItemCount" item_name="foodVagabondStew" operation="GTE" value="5"/> -->
+		<!-- <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffSmell"/> -->
+		<!-- <triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="fresh_meat" allow_client_call="true"/> -->
+		<!-- </effect_group> -->
 		<!-- </buff> -->
 		
 		<!-- <buff name="buffSmell" name_key="buffSmellName" description_key="buffSmellDesc" tooltip_key="buffSmellTooltip" remove_on_death="true" icon="ui_game_symbol_smell" icon_color="192,192,192"> -->
-			<!-- <duration value="15"/> -->
-			<!-- <stack_type value="effect"/> -->
-			<!-- <display_value value="smell"/> -->
-			<!-- <display_value_format value="time"/> -->
-			<!-- <display_value_key value="{0:0}"/> -->
-			<!-- <update_rate value="1"/> -->
+		<!-- <duration value="15"/> -->
+		<!-- <stack_type value="effect"/> -->
+		<!-- <display_value value="smell"/> -->
+		<!-- <display_value_format value="time"/> -->
+		<!-- <display_value_key value="{0:0}"/> -->
+		<!-- <update_rate value="1"/> -->
 			
-			<!-- <effect_group> -->
-			<!-- <triggered_effect trigger="onSelfBuffStart" action="AddJournalEntry" journal="buffSmellJournalTip"/> -->
-			<!-- </effect_group> -->
-			<!-- <effect_group> -->
-				<!-- <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="smell" operation="set" value="15"/> -->
-				<!-- <triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="crawler_roam" play_in_head="true"/> -->
-			<!-- </effect_group> -->
-			<!-- <effect_group> -->
-				<!-- <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="smell" operation="add" value="-1"/> -->
-				<!-- <triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="fresh_meat" allow_client_call="true"/> -->
-			<!-- </effect_group> -->
-			<!-- <effect_group> -->
-				<!-- <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="smell" operation="set" value="15"/> -->
-				<!-- <requirement name="CVarCompare" cvar="smell" operation="LTE" value="0"/> -->
-			<!-- </effect_group> -->
-			<!-- <effect_group> -->
-				<!-- <triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar="smell" operation="set" value="15"/> -->
-				<!-- <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="smell" operation="set" value="15"/> -->
-			<!-- </effect_group> -->
+		<!-- <effect_group> -->
+		<!-- <triggered_effect trigger="onSelfBuffStart" action="AddJournalEntry" journal="buffSmellJournalTip"/> -->
+		<!-- </effect_group> -->
+		<!-- <effect_group> -->
+		<!-- <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="smell" operation="set" value="15"/> -->
+		<!-- <triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="crawler_roam" play_in_head="true"/> -->
+		<!-- </effect_group> -->
+		<!-- <effect_group> -->
+		<!-- <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="smell" operation="add" value="-1"/> -->
+		<!-- <triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="fresh_meat" allow_client_call="true"/> -->
+		<!-- </effect_group> -->
+		<!-- <effect_group> -->
+		<!-- <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="smell" operation="set" value="15"/> -->
+		<!-- <requirement name="CVarCompare" cvar="smell" operation="LTE" value="0"/> -->
+		<!-- </effect_group> -->
+		<!-- <effect_group> -->
+		<!-- <triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar="smell" operation="set" value="15"/> -->
+		<!-- <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="smell" operation="set" value="15"/> -->
+		<!-- </effect_group> -->
 		<!-- </buff> -->
 		
 		

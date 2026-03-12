@@ -10,7 +10,7 @@
 		
 		<action class="SetItemSlots">
 			<property name="items_location" value="Toolbelt"/>
-			<property name="items" value="drinkJarPureMineralWater,foodSteakAndPotato,medicalFirstAidBandage,meleeToolFlashlight02,resourceNiCdBattery"/>
+			<property name="items" value="drinkJarPureMineralWater,foodSteakAndPotato,medicalFirstAidKit,meleeToolFlashlight02,resourceNiCdBattery"/>
 			<property name="item_counts" value="2,2,2,1,1"/>
 			<property name="slot_numbers" value="1,2,3,4,5"/>
 		</action>

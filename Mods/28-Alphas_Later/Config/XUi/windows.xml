@@ -1165,6 +1165,12 @@
 	<remove xpath="/windows/window[@name='windowEntering']/rect/label[@name='TextContent']"/>
 	<remove xpath="/windows/window[@name='windowEntering']/rect/grid"/>
 	<remove xpath="/windows/window[@name='windowLocation']/grid"/>
-	<remove xpath="/windows/window[@name='windowLocation']/sprite"/>
-	<remove xpath="/windows/window[@name='windowLocation']/label"/>
+	
+	<set xpath="/windows/window[@name='windowLocation']/@height">40</set>
+	<set xpath="/windows/window[@name='windowLocation']/sprite/@height">34</set>
+	<set xpath="/windows/window[@name='windowLocation']/label/@pos">6,0</set>
+	
+	
+	<!-- <remove xpath="/windows/window[@name='windowLocation']/sprite"/> -->
+	<!-- <remove xpath="/windows/window[@name='windowLocation']/label"/> -->
 </HellsJanitor>

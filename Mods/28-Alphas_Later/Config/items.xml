@@ -490,10 +490,7 @@
 	<!-- *** changed material for scrappable books & schematics -->
 	<set xpath="/items/item[@name='schematicMaster']/property[@name='Material']/@value">MscrapBooks</set>
 	<!-- default weight is 5, books and schema scrap to 3 research. Adjust the property below to suit -->
-	<!-- <set xpath="/items/item[@name='schematicMaster']/property[@name='Weight']/@value">10</set> -->
-	
-	<!-- *** remove healing from food -->
-	<set xpath="/items/item[not (@name='foodShamChowder')]/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">0</set>
+	<!-- <set xpath="/items/item[@name='schematicMaster']/property[@name='Weight']/@value">10</set> -->	
 	
 	<!-- *** lower healing from meds -->
 	<set xpath="/items/item/effect_group/triggered_effect[@cvar='medicalRegHealthAmount' and @value='5']/@value">2</set>
@@ -4786,14 +4783,18 @@
 	<set xpath="/items/item[@name='drinkYuccaJuiceSmoothie']/effect_group/triggered_effect/requirement[@value='2703']/@value">5406</set>
 	
 	<!-- *** food smell display values -->
-	<set xpath="/items/item[@name='foodRawMeat']/property[@name='DisplayType']/@value">foodRawMeat</set>
+	<!-- <set xpath="/items/item[@name='foodRawMeat']/property[@name='DisplayType']/@value">foodRawMeat</set> -->
 	<!-- <set xpath="/items/item[@name='foodShamChowder']/property[@name='DisplayType']/@value">food</set> -->
-	<set xpath="/items/item[@name='foodCornBread' or @name='foodEggBoiled']/property[@name='DisplayType']/@value">foodT0</set>
-	<set xpath="/items/item[@name='foodCornOnTheCob' or @name='foodBakedPotato']/property[@name='DisplayType']/@value">foodWaterNegativeT0</set>
+	<!-- <set xpath="/items/item[@name='foodCornBread' or @name='foodEggBoiled']/property[@name='DisplayType']/@value">foodT0</set> -->
+	<!-- <set xpath="/items/item[@name='foodCornOnTheCob' or @name='foodBakedPotato']/property[@name='DisplayType']/@value">foodWaterNegativeT0</set> -->
+	
+	<!-- *** remove healing from food -->
+	<set xpath="/items/item[not (@name='foodShamChowder')]/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">0</set>
 	
 	<!-- *** Q600 rework -->
 	<set xpath="/items/item/effect_group/passive_effect[@tier='1,6']/@tier">1,600</set>
 	<set xpath="/items/item/effect_group/passive_effect[@tier='2,6']/@tier">101,600</set>
+	<set xpath="/items/item/effect_group/passive_effect[@name='ModSlots']/@value">0,1,2,3,4,5</set>
 	
 	<!-- <append xpath="//item[not (@name='foodRawMeat')]/effect_group[@name='Food Tier 0']"> -->
 		<!-- <display_value name="dSmell" value="0"/> -->

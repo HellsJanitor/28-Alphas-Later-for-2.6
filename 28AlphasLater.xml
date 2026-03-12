@@ -10,6 +10,30 @@ Will you survive?
 
 The idea behind this mod is to slow progression, make traders less powerful, and generally extend the time for a playthrough, while keeping the vanilla look and feel.
 
+12/03/26 mod version 2.6.0.2
+
+Increased droprate for research papers from zombie loot.
+
+Changed starting item from medical bandage to medical first aid kit.
+
+Removed parts of OCB MicroSplat to restore vanilla textures to biomes.
+
+Added bedroll and player bed healing buff(s).
+
+Fixed a bug with cooked canned food healing the player.
+
+Fixed a bug with inconsistent mod slots for gear.
+
+Fixed some localization errors.
+
+Moved/removed some audio files from the custom music folders.
+
+Fixed some action skill bugs.
+
+Changed initial bag carry capacity to 30 slots, up from 20.
+
+Added back the POI name window (no difficulty indicator still).
+
 10/03/26 mod version 2.6.0.1 changelog:
 
 Fixed a bug where stone axes and armour would start at Q100 instead of Q1

@@ -120,6 +120,10 @@ SteelToolRepairKit,Steel Tool Repair Kit
 SteelToolRepairKitDesc,"This Repair Kit is used to repair steel axes, picks, and shovels."
 StunBatonRepairKit,Stun Baton Repair Kit
 StunBatonRepairKitDesc,This Repair Kit is used to repair stun batons.
+buffBedHealHealthName,Healing
+buffBedHealHealthDesc,"You are healing at 1 health every 5 seconds while this buff is active.\n\nEntering combat or moving from the bed will remove this effect."
+buffBedrollHealHealthName,Healing
+buffBedrollHealHealthDesc,"You are healing at 1 health every 20 seconds while this buff is active.\n\nEntering combat or moving from the bed will remove this effect."
 buffBurningShaftActive,Fuel Status
 buffBurningShaftActiveDesc,"Your burning shaft mod is currently fuelled.\n\nThe fuel is being depleted, and when used up, the flame will extinguish.\n\nRefuel the mod by having 10 gasoline in your inventory."
 buffCampfireAOEEffectDesc,"You are warmed by the fire.\n\nCold Resist +15\n\nThis warming effect, combined with shelter and light, can slowly reduce your despair."
@@ -157,7 +161,7 @@ buffDespairFeralAOETooltip,",,,,,,,,,Tougher zombies nearby are making your ment
 buffDespairMedBlockerDesc,"You are currently warm, sheltered, and well lit. Are you sure you need despair medication?"
 buffDespairMedBlockerName,"Stop!"
 buffDespairMedBlockerTooltip,"You are warm, sheltered and well lit. Are you sure you need despair meds?"
-buffDespairMutatedAOEDesc,"What the actual F%&*?!! These [f5c71a]zombies[-] are even worse than the greenies!\n\nIf you don't have blessed metal, you'd better run ..."
+buffDespairMutatedAOEDesc,"What the actual F%&*?!! These [f5c71a]zombies[-] are even worse than the greenies!\n\nYou'd better run ..."
 buffDespairMutatedAOEName,Get the hell away from me!
 buffDespairMutatedAOETooltip,",,,,,,,,Nearby Mutated zombies are making you question your survival chances ..."
 buffDespairRadiatedAOEDesc,"What the hell!? These [00ff00]zombies[-] can regenerate?! \n\nMight need some specialized gear for these ..."
@@ -243,29 +247,29 @@ challengeReadMagazinesShort,Gather research to increase your crafting skill on [
 chickenCoop,Chicken coop
 chickenCoopDesc,Produces eggs. Needs a chicken.\n\nChickens need replacing periodically.\nChickens can be used in other recipes.
 cntMedicineCabinetPlayer,Player Medical Cabinet
-craftingArmorDesc,Increase [DECEA3]Armour Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills.
-craftingBladesDesc,Increase [DECEA3]Blades Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills.
-craftingBowsDesc,Increase [DECEA3]Bows Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills.
-craftingClubsDesc,Increase [DECEA3]Club Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills.
-craftingElectricianDesc,Increase [DECEA3]Electrical Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills.
-craftingExplosivesDesc,Increase [DECEA3]Explosive Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills.
-craftingFoodDesc,Increase [DECEA3]Food Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills.
-craftingHandgunsDesc,Increase [DECEA3]Handgun Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills.
-craftingHarvestingToolsDesc,Increase [DECEA3]Harvesting Tool Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills.
-craftingKnucklesDesc,Increase [DECEA3]Knuckle Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills.
-craftingMachineGunsDesc,Increase [DECEA3]Machine Gun Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills.
-craftingMedicalDesc,Increase [DECEA3]Medical Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills.
-craftingRepairToolsDesc,Increase [DECEA3]Repair Tool Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills.
-craftingRiflesDesc,Increase [DECEA3]Rifle Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills.
-craftingRoboticsDesc,Increase [DECEA3]Robotics Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills.
-craftingSalvageToolsDesc,Increase [DECEA3]Salvage Tool Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills.
-craftingSeedsDesc,Increase [DECEA3]Seed Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills.
-craftingShotgunsDesc,Increase [DECEA3]Shotgun Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills.
-craftingSledgehammersDesc,Increase [DECEA3]Sledgehammer Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills.
-craftingSpearsDesc,Increase [DECEA3]Spear Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills.
-craftingTrapsDesc,Increase [DECEA3]Trap Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills.
-craftingVehiclesDesc,Increase [DECEA3]Vehicle Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills.
-craftingWorkstationsDesc,Increase [DECEA3]Workstation Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills.
+craftingArmorDesc,"Increase [DECEA3]Armour Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills."
+craftingBladesDesc,"Increase [DECEA3]Blades Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills."
+craftingBowsDesc,"Increase [DECEA3]Bows Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills."
+craftingClubsDesc,"Increase [DECEA3]Club Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills."
+craftingElectricianDesc,"Increase [DECEA3]Electrical Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills."
+craftingExplosivesDesc,"Increase [DECEA3]Explosive Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills."
+craftingFoodDesc,"Increase [DECEA3]Food Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills."
+craftingHandgunsDesc,"Increase [DECEA3]Handgun Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills."
+craftingHarvestingToolsDesc,"Increase [DECEA3]Harvesting Tool Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills."
+craftingKnucklesDesc,"Increase [DECEA3]Knuckle Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills."
+craftingMachineGunsDesc,"Increase [DECEA3]Machine Gun Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills."
+craftingMedicalDesc,"Increase [DECEA3]Medical Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills."
+craftingRepairToolsDesc,"Increase [DECEA3]Repair Tool Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills."
+craftingRiflesDesc,"Increase [DECEA3]Rifle Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills."
+craftingRoboticsDesc,"Increase [DECEA3]Robotics Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills."
+craftingSalvageToolsDesc,"Increase [DECEA3]Salvage Tool Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills."
+craftingSeedsDesc,"Increase [DECEA3]Seed Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills."
+craftingShotgunsDesc,"Increase [DECEA3]Shotgun Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills."
+craftingSledgehammersDesc,"Increase [DECEA3]Sledgehammer Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills."
+craftingSpearsDesc,"Increase [DECEA3]Spear Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills."
+craftingTrapsDesc,"Increase [DECEA3]Trap Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills."
+craftingVehiclesDesc,"Increase [DECEA3]Vehicle Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills."
+craftingWorkstationsDesc,"Increase [DECEA3]Workstation Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills."
 dewCollectorEmpty,{0} Open {1} ([DECEA3]Empty[-])
 dewCollectorHasDirtyWater,{0} Open {1} ([228B22]Collect[-])
 dewCollectorHasWater,{0} Open {1} ([228B22]Collect[-])
