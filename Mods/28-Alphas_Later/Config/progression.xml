@@ -91,7 +91,7 @@
 	
 	<!-- *** new workstation/tool recipe unlocks -->
 	<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']">
-		<display_entry icon="chickenCoopNew,butchersBlock,forge,toolBellows,workbench,playerSawmill,resourceLockPick,toolHeatLamp" name_key="workstationsT1-1,workstationsT1-2,workstationsT1-3,workstationsT1-4,workstationsT1-5,workstationsT1-6,workstationsT1-7,workstationsT1-8" has_quality="false" unlock_level="2,3,4,8,10,11,12,14">
+		<display_entry icon="chickenCoopNew,butchersBlock,forge,toolBellows,workbench,playerSawmill,resourceLockPick,lightIndustrialRed" name_key="workstationsT1-1,workstationsT1-2,workstationsT1-3,workstationsT1-4,workstationsT1-5,workstationsT1-6,workstationsT1-7,workstationsT1-8" has_quality="false" unlock_level="2,3,4,8,10,11,12,14">
 			<unlock_entry item="chickenCoop" unlock_tier="1"/>
 			<unlock_entry item="butchersTable" unlock_tier="2"/>
 			<unlock_entry item="forge" unlock_tier="3"/>

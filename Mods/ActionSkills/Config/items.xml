@@ -1,4 +1,124 @@
 <configs>
+
+	<append xpath="/items/item/property[@name='Tags' and contains (@value,'perkDeadEye')]/..">
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffDeadEye"/>
+			<triggered_effect trigger="onSelfEquipStop" action="AddBuff" buff="buffDeadEyeStop"/>
+		</effect_group>
+	</append>
+	
+	<append xpath="/items/item/property[@name='Tags' and contains (@value,'perkDemolitionsExpert') and not (contains (@value,'molotov'))]/..">
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffDemolitionsExplosives"/>
+			<triggered_effect trigger="onSelfEquipStop" action="AddBuff" buff="buffDemolitionsExplosivesStop"/>
+		</effect_group>
+	</append>
+	
+	<append xpath="/items/item[@name='thrownGrenade']">
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffDemolitionsExplosives"/>
+			<triggered_effect trigger="onSelfEquipStop" action="AddBuff" buff="buffDemolitionsExplosivesStop"/>
+		</effect_group>
+	</append>
+	
+	<append xpath="/items/item/property[@name='Tags' and contains (@value,'molotov')]/..">
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffDemolitionsMolotovs"/>
+			<triggered_effect trigger="onSelfEquipStop" action="AddBuff" buff="buffDemolitionsMolotovsStop"/>
+		</effect_group>
+	</append>
+	
+	<append xpath="/items/item/property[@name='Tags' and contains (@value,'perkJavelinMaster')]/..">
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffSpearmaster"/>
+			<triggered_effect trigger="onSelfEquipStop" action="AddBuff" buff="buffSpearmasterStop"/>
+		</effect_group>
+	</append>
+	
+	<append xpath="/items/item/property[@name='Tags' and contains (@value,'perkSalvageOperations')]/..">
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffSalvageOps"/>
+			<triggered_effect trigger="onSelfEquipStop" action="AddBuff" buff="buffSalvageOpsStop"/>
+		</effect_group>
+	</append>
+	
+	<append xpath="/items/item/property[@name='Tags' and contains (@value,'perkBoomstick')]/..">
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffBoomstick"/>
+			<triggered_effect trigger="onSelfEquipStop" action="AddBuff" buff="buffBoomstickStop"/>
+		</effect_group>
+	</append>
+	
+	<append xpath="/items/item/property[@name='Tags' and contains (@value,'perkPummelPete')]/..">
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffPummelPete"/>
+			<triggered_effect trigger="onSelfEquipStop" action="AddBuff" buff="buffPummelPeteStop"/>
+		</effect_group>
+	</append>
+	
+	<append xpath="/items/item/property[@name='Tags' and contains (@value,'perkSkullCrusher')]/..">
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffSkullCrusher"/>
+			<triggered_effect trigger="onSelfEquipStop" action="AddBuff" buff="buffSkullCrusherStop"/>
+		</effect_group>
+	</append>
+	
+	<append xpath="/items/item/property[@name='Tags' and contains (@value,'perkMiner69r')]/..">
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffMiner69er"/>
+			<triggered_effect trigger="onSelfEquipStop" action="AddBuff" buff="buffMiner69erStop"/>
+		</effect_group>
+	</append>
+	
+	<append xpath="/items/item/property[@name='Tags' and contains (@value,'perkBrawler')]/..">
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffBrawler"/>
+			<triggered_effect trigger="onSelfEquipStop" action="AddBuff" buff="buffBrawlerStop"/>
+		</effect_group>
+	</append>
+	
+	<append xpath="/items/item/property[@name='Tags' and contains (@value,'perkMachineGunner')]/..">
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffMachineGunner"/>
+			<triggered_effect trigger="onSelfEquipStop" action="AddBuff" buff="buffMachineGunnerStop"/>
+		</effect_group>
+	</append>
+	
+	<append xpath="/items/item/property[@name='Tags' and contains (@value,'perkArchery')]/..">
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffArchery"/>
+			<triggered_effect trigger="onSelfEquipStop" action="AddBuff" buff="buffArcheryStop"/>
+		</effect_group>
+	</append>
+	
+	<append xpath="/items/item/property[@name='Tags' and contains (@value,'perkGunslinger')]/..">
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffGunslinger"/>
+			<triggered_effect trigger="onSelfEquipStop" action="AddBuff" buff="buffGunslingerStop"/>
+		</effect_group>
+	</append>
+	
+	<append xpath="/items/item/property[@name='Tags' and contains (@value,'perkDeepCuts')]/..">
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffDeepCuts"/>
+			<triggered_effect trigger="onSelfEquipStop" action="AddBuff" buff="buffDeepCutsStop"/>
+		</effect_group>
+	</append>
+	
+	<append xpath="/items/item/property[@name='Tags' and contains (@value,'perkElectrocutioner')]/..">
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffElectrocutioner"/>
+			<triggered_effect trigger="onSelfEquipStop" action="AddBuff" buff="buffElectrocutionerStop"/>
+		</effect_group>
+	</append>
+	
+	<append xpath="/items/item/property[@name='Tags' and contains (@value,'perkTurrets')]/..">
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffRobotics"/>
+			<triggered_effect trigger="onSelfEquipStop" action="AddBuff" buff="buffRoboticsStop"/>
+		</effect_group>
+	</append>
+	
 	<!--Learn by use code-->
 	<!--lbu_Demolition code for Molotovs-->
 	<append xpath="/items/item[@name='thrownAmmoMolotovCocktail']">

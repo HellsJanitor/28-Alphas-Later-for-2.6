@@ -1641,7 +1641,8 @@
 				<property name="Class" value="Eat"/>
 				<property name="Delay" value="1.0"/>
 				<property name="Use_time" value="..."/>
-				<property name="Sound_start" value="player_eating"/>
+				<property name="Sound_start" value="player_cannedfood"/>
+				<property name="SmellUse" value="25"/>
 			</property>
 			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 
@@ -1649,6 +1650,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+				<display_value name="dSmellUse" value="25"/>
 			</effect_group>
 		</item>
 
@@ -1663,6 +1665,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+				<display_value name="dSmellUse" value="25"/>
 			</effect_group>
 		</item>
 
@@ -1677,6 +1680,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+				<display_value name="dSmellUse" value="25"/>
 			</effect_group>
 		</item>
 
@@ -1691,6 +1695,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+				<display_value name="dSmellUse" value="25"/>
 			</effect_group>
 		</item>
 
@@ -1706,6 +1711,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+				<display_value name="dSmellUse" value="25"/>
 			</effect_group>
 		</item>
 
@@ -1721,6 +1727,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+				<display_value name="dSmellUse" value="25"/>
 			</effect_group>
 		</item>
 
@@ -1735,6 +1742,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+				<display_value name="dSmellUse" value="25"/>
 			</effect_group>
 		</item>
 
@@ -1749,6 +1757,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+				<display_value name="dSmellUse" value="25"/>
 			</effect_group>
 		</item>
 
@@ -1765,6 +1774,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="10"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+				<display_value name="dSmellUse" value="25"/>
 			</effect_group>
 		</item>
 
@@ -1781,6 +1791,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="5"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+				<display_value name="dSmellUse" value="25"/>
 			</effect_group>
 		</item>
 
@@ -1796,6 +1807,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="5"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+				<display_value name="dSmellUse" value="25"/>
 			</effect_group>
 		</item>
 
@@ -1812,6 +1824,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="10"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+				<display_value name="dSmellUse" value="25"/>
 			</effect_group>
 		</item>
 
@@ -1828,6 +1841,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="10"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+				<display_value name="dSmellUse" value="25"/>
 			</effect_group>
 		</item>
 	
@@ -1842,6 +1856,7 @@
 		<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/> -->
 		<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="5"/> -->
 		<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/> -->
+		<!-- <display_value name="dSmellUse" value="25"/> -->
 		<!-- </effect_group> -->
 		<!-- </item> -->
 		
@@ -2524,6 +2539,7 @@
 				<property name="Class" value="Eat"/>
 				<property name="Delay" value="2.1"/>
 				<property name="Sound_start" value="player_eating"/>
+				<property name="SmellUse" value="25"/>
 			</property>
 			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 
@@ -2534,6 +2550,7 @@
 					<requirement name="HasBuff" buff="buffFarmerSetBonus"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="10"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+				<display_value name="dSmellUse" value="25"/>
 			</effect_group>
 			
 			<effect_group tiered="false">
@@ -2566,6 +2583,7 @@
 				<property name="Class" value="Eat"/>
 				<property name="Delay" value="1.0"/>
 				<property name="Sound_start" value="player_eating"/>
+				<property name="SmellUse" value="50"/>
 			</property>
 			<property name="Smell" value="ExLargeSmell"/>
 			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
@@ -2582,6 +2600,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryCatchFood">
 					<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
 				</triggered_effect>
+				<display_value name="dSmellUse" value="50"/>
 			</effect_group>
 		</item>
 		
@@ -2604,6 +2623,7 @@
 				<property name="Class" value="Eat"/>
 				<property name="Delay" value="2.1"/>
 				<property name="Sound_start" value="player_eating"/>
+				<property name="SmellUse" value="25"/>
 			</property>
 			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 
@@ -2614,6 +2634,7 @@
 					<requirement name="HasBuff" buff="buffFarmerSetBonus"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="10"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+				<display_value name="dSmellUse" value="25"/>
 			</effect_group>
 			
 			<effect_group tiered="false">
@@ -2646,6 +2667,7 @@
 				<property name="Class" value="Eat"/>
 				<property name="Delay" value="1.0"/>
 				<property name="Sound_start" value="player_eating"/>
+				<property name="SmellUse" value="50"/>
 			</property>
 			<property name="Smell" value="ExLargeSmell"/>
 			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
@@ -2662,6 +2684,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryCatchFood">
 					<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
 				</triggered_effect>
+				<display_value name="dSmellUse" value="50"/>
 			</effect_group>
 		</item>
 		

@@ -666,21 +666,21 @@
 	<set xpath="//*/item[contains (@name,'SkillMagazine')]/@name">researchPaperBlank</set>
 	
 	<!-- *** lower ammo in loot -->
-	<set xpath="/lootcontainers/lootgroup[@name='group9mmSmall']/item[@count='6,8']/@count">1,2</set>
-	<set xpath="/lootcontainers/lootgroup[@name='group9mmMedium']/item[@count='10,20']/@count">2,4</set>
-	<set xpath="/lootcontainers/lootgroup[@name='group9mmLarge']/item[@count='25,35']/@count">3,6</set>
+	<!-- <set xpath="/lootcontainers/lootgroup[@name='group9mmSmall']/item[@count='6,8']/@count">3,4</set> -->
+	<!-- <set xpath="/lootcontainers/lootgroup[@name='group9mmMedium']/item[@count='10,20']/@count">5,10</set> -->
+	<!-- <set xpath="/lootcontainers/lootgroup[@name='group9mmLarge']/item[@count='25,35']/@count">12,17</set> -->
 	
-	<set xpath="/lootcontainers/lootgroup[@name='group762mmSmall']/item[@count='5,7']/@count">1,2</set>
-	<set xpath="/lootcontainers/lootgroup[@name='group762mmMedium']/item[@count='8,15']/@count">2,4</set>
-	<set xpath="/lootcontainers/lootgroup[@name='group762mmLarge']/item[@count='20,30']/@count">3,6</set>
+	<!-- <set xpath="/lootcontainers/lootgroup[@name='group762mmSmall']/item[@count='5,7']/@count">2,4</set> -->
+	<!-- <set xpath="/lootcontainers/lootgroup[@name='group762mmMedium']/item[@count='8,15']/@count">4,8</set> -->
+	<!-- <set xpath="/lootcontainers/lootgroup[@name='group762mmLarge']/item[@count='20,30']/@count">10,15</set> -->
 	
-	<set xpath="/lootcontainers/lootgroup[@name='group44MagnumSmall']/item[@count='4,6']/@count">1,2</set>
-	<set xpath="/lootcontainers/lootgroup[@name='group44MagnumMedium']/item[@count='8,12']/@count">2,4</set>
-	<set xpath="/lootcontainers/lootgroup[@name='group44MagnumLarge']/item[@count='16,26']/@count">3,6</set>
+	<!-- <set xpath="/lootcontainers/lootgroup[@name='group44MagnumSmall']/item[@count='4,6']/@count">2,3</set> -->
+	<!-- <set xpath="/lootcontainers/lootgroup[@name='group44MagnumMedium']/item[@count='8,12']/@count">4,6</set> -->
+	<!-- <set xpath="/lootcontainers/lootgroup[@name='group44MagnumLarge']/item[@count='16,26']/@count">8,13</set> -->
 	
-	<set xpath="/lootcontainers/lootgroup[@name='groupShotgunShellSmall']/item[@count='2,4']/@count">1,2</set>
-	<set xpath="/lootcontainers/lootgroup[@name='groupShotgunShellMedium']/item[@count='4,6']/@count">1,2</set>
-	<set xpath="/lootcontainers/lootgroup[@name='groupShotgunShellLarge']/item[@count='6,10']/@count">1,3</set>
+	<!-- <set xpath="/lootcontainers/lootgroup[@name='groupShotgunShellSmall']/item[@count='2,4']/@count">1,2</set> -->
+	<!-- <set xpath="/lootcontainers/lootgroup[@name='groupShotgunShellMedium']/item[@count='4,6']/@count">2,3</set> -->
+	<!-- <set xpath="/lootcontainers/lootgroup[@name='groupShotgunShellLarge']/item[@count='6,10']/@count">3,5</set> -->
 	
 	<!-- *** loot from zombie corpses -->
 	<insertafter xpath="/lootcontainers/lootcontainer[@name='zPackReg']">

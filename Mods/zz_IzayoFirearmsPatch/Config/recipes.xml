@@ -1,0 +1,41 @@
+<HellsJanitor>
+	<conditional>
+		<if cond="mod_loaded('IZY_RMP_45ACP')">
+			<append xpath="/recipes">
+				<recipe name="ammoBundle45ACPBulletBall" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting">
+					<ingredient name="ammo45ACPBulletBall" count="100"/>
+				</recipe>
+	
+				<recipe name="ammoBundle45ACPHighpower" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+					<ingredient name="ammo45ACPHighpower" count="100"/>
+				</recipe>
+	
+				<recipe name="ammoBundle45ACPArmorpiecing" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+					<ingredient name="ammo45ACPArmorpiecing" count="100"/>
+				</recipe>
+				
+				<recipe name="ammoBundle45ACPEnhanced" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+					<ingredient name="ammo45ACPEnhanced" count="100"/>
+				</recipe>
+			</append>
+		</if>
+	</conditional>
+	
+	<conditional>
+		<if cond="mod_loaded('IZY_RMP_556pack')">
+			<append xpath="/recipes">
+				<recipe name="ammo556mmBulletBallBundle" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting">
+					<ingredient name="ammo556mmBulletBall" count="100"/>
+				</recipe>
+	
+				<recipe name="ammo556mmHIpowerBundle" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+					<ingredient name="ammo556mmHIpower" count="100"/>
+				</recipe>
+	
+				<recipe name="ammo556mmArmorPiercingBundle" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+					<ingredient name="ammo556mmArmorPiercing" count="100"/>
+				</recipe>
+			</append>
+		</if>
+	</conditional>
+</HellsJanitor>

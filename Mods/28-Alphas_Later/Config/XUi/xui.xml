@@ -77,5 +77,6 @@
 		<window name="HUDCentreRightStatBars"/>
 		<window name="HUDCentreLeftStatBars" anchor="LeftTop"/>
 		<window name="HUDCenterStatDurabilityBars" anchor="CenterBottom"/>
+		<window name="HUDLeftActionSkills" anchor="CenterBottom"/>
 	</insertAfter>
 </HellsJanitor>

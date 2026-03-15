@@ -1066,10 +1066,9 @@
 					<sprite depth="3" name="Icon" sprite="resourceWaterFilter" atlas="ItemIconAtlas" color="[iconColor]" size="32,32" pos="24,-24" pivot="center" foregroundlayer="true"/>
 					<label depth="4" name="TextContent" pos="26,-24" font_size="32" color="255,255,255,255" justify="center" pivot="left" text="{cvar(helmetPurifierDurability)} uses" width="125" height="35" effect="Outline8" effect_color="0,0,0,255" effect_distance="1,1"/>
 					<sprite depth="5" name="border" sprite="menu_empty3px" fillcenter="false" color="0,0,0,255" type="sliced"/>
-				</rect>
+				</rect>				
 			</grid>
-		</window>
-	
+		</window>		
 	</append>
 	
 	<set xpath="/windows/window[@name='toolTipPopups']/@pos">0,160</set>

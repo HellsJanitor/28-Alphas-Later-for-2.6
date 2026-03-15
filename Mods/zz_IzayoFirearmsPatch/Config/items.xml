@@ -1,0 +1,74 @@
+<HellsJanitor>
+	<set xpath="/items/item[@name='IZYgunTminus1MusketshotgunBlunderbuss']/property[@name='RepairTools']/@value">ShotgunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunTminus1MusketM1777Rifle']/property[@name='RepairTools']/@value">RifleRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT4BowVanhelsingAutomaticCrossbowVH']/property[@name='RepairTools']/@value">BowRepairKit</set>
+
+	<set xpath="/items/item[@name='IZYgunT1Pistol9Makarov']/property[@name='RepairTools']/@value">HandgunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT1DualPistolCOLTnavyRevolver']/property[@name='RepairTools']/@value">HandgunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT2DualPistolM9bs']/property[@name='RepairTools']/@value">HandgunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT3DualPistolGlock18C']/property[@name='RepairTools']/@value">HandgunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT4DualPistolC96M']/property[@name='RepairTools']/@value">HandgunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT1SMGTec9submachinegun']/property[@name='RepairTools']/@value">HandgunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT2SMGUZIsubmachinegun']/property[@name='RepairTools']/@value">HandgunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT3SMGMP9submachinegun']/property[@name='RepairTools']/@value">HandgunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT3SMGMP5Ksubmachinegun']/property[@name='RepairTools']/@value">HandgunRepairKit</set>
+	
+	<set xpath="/items/item[@name='IZYgunT3PistolMagnumAutomag44']/property[@name='RepairTools']/@value">HandgunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT3RifleMagnumLeveractionCarbine44']/property[@name='RepairTools']/@value">HandgunRepairKit</set>
+	
+	<set xpath="/items/item[@name='IZYgunT2DualPistols45M1911A1']/property[@name='RepairTools']/@value">HandgunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT3DualPistols45USP45']/property[@name='RepairTools']/@value">HandgunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT1Pistol45M1917']/property[@name='RepairTools']/@value">HandgunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT2Pistol45M1911A1']/property[@name='RepairTools']/@value">HandgunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT3Pistol45USP45']/property[@name='RepairTools']/@value">HandgunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT1Pistol45Type17C96']/property[@name='RepairTools']/@value">HandgunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT245SMGM3Greasegun']/property[@name='RepairTools']/@value">HandgunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT345SMGM1thompson']/property[@name='RepairTools']/@value">HandgunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT145TACSMGMAC10']/property[@name='RepairTools']/@value">HandgunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT5DualSMGsSuperVectors']/property[@name='RepairTools']/@value">HandgunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT3MarksmanRifleMMRM1Carbine45']/property[@name='RepairTools']/@value">RifleRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT4MarksmanRifle45MMRKrissVectorCarbine']/property[@name='RepairTools']/@value">RifleRepairKit</set>
+	
+	<set xpath="/items/item[@name='IZYgunT1ARCabineMASFARifle']/property[@name='RepairTools']/@value">MachinegunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT1ARCabineM608SurvivalRifle']/property[@name='RepairTools']/@value">MachinegunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT2ARCabineCAR15']/property[@name='RepairTools']/@value">MachinegunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT3ARCabineM4Carbine']/property[@name='RepairTools']/@value">MachinegunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT1LRLongRifleM16a1']/property[@name='RepairTools']/@value">MachinegunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT3AREUCabineSG552']/property[@name='RepairTools']/@value">MachinegunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT3BULLPUPHellionVHS2']/property[@name='RepairTools']/@value">MachinegunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT3MarksManRifle556M16A2DMR']/property[@name='RepairTools']/@value">RifleRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT4MarksManRifle556SSMAR15']/property[@name='RepairTools']/@value">RifleRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT2LMGLMG36']/property[@name='RepairTools']/@value">MachinegunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT3LMGM249FNminimi']/property[@name='RepairTools']/@value">MachinegunRepairKit</set>
+	
+	<set xpath="/items/item[@name='IZYgunT1SNIPERRIFLE762Mosinnagant']/property[@name='RepairTools']/@value">RifleRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT3SNIPERRIFLE762LeeEnfieldRifle']/property[@name='RepairTools']/@value">RifleRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT2MarksManRifle762M1garandNavyconverted']/property[@name='RepairTools']/@value">RifleRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT3MarksManRifle762HKPSG1']/property[@name='RepairTools']/@value">RifleRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT2ARSTG44N']/property[@name='RepairTools']/@value">MachinegunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT3ARAKM']/property[@name='RepairTools']/@value">MachinegunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT1BattleRifleBARbrowningautomaticrifle']/property[@name='RepairTools']/@value">MachinegunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT2BattleRifleFNFALRifle']/property[@name='RepairTools']/@value">MachinegunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT3BattleRifleHKG3']/property[@name='RepairTools']/@value">MachinegunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT2LMGlightmachinegunRPD']/property[@name='RepairTools']/@value">MachinegunRepairKit</set>
+	
+	<set xpath="/items/item[@name='IZYgunT2LGLChinalakeGrenadeLauncher']/property[@name='RepairTools']/@value">RocketLauncherRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT3LGLXM25']/property[@name='RepairTools']/@value">RocketLauncherRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT3RocketLauncherRPG7']/property[@name='RepairTools']/@value">RocketLauncherRepairKit</set>
+	
+	<set xpath="/items/item[@name='IZYgunT5HeavyWeaponAA12AutoShotgun']/property[@name='RepairTools']/@value">ShotgunRepairKit</set>
+	
+	<set xpath="/items/item[@name='IZYgunT1TradshotgunDoubleBarrelOverUnder']/property[@name='RepairTools']/@value">ShotgunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT2TradshotgunLeveractionShotgunModel1887']/property[@name='RepairTools']/@value">ShotgunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT3TradshotgunTrenchGunM1897']/property[@name='RepairTools']/@value">ShotgunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT1TACCompactshotgunSuperShortty']/property[@name='RepairTools']/@value">ShotgunRepairKit</set>
+	<set xpath="/items/item[@name='IZYgunT3TACshotgunSPAS12G']/property[@name='RepairTools']/@value">ShotgunRepairKit</set>
+	
+	<set xpath="/items/item[@name='IZYgunT3TechnicalNailmachinegun']/property[@name='RepairTools']/@value">MotorToolRepairKit</set>
+	
+	<set xpath="/items/item[@name='IZYMeleeT4BatonPunisher9000']/property[@name='RepairTools']/@value">StunBatonRepairKit</set>
+	
+	<set xpath="/items/item/effect_group/passive_effect[@tier='1,6']/@tier">1,600</set>
+	<set xpath="/items/item/effect_group/passive_effect[@tier='2,6']/@tier">101,600</set>
+	<set xpath="/items/item/effect_group/passive_effect[@name='ModSlots']/@value">0,1,2,3,4,5</set>
+</HellsJanitor>

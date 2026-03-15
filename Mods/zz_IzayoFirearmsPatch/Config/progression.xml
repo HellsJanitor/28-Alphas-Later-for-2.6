@@ -1,0 +1,118 @@
+﻿<config>
+	<conditional>
+		<if cond="mod_loaded('IZY_RMP_9mmVAL')">
+			<append xpath="//crafting_skill[@name='craftingHandguns']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunHandgunT0PipePistol']/@tags">,IZYgunT0SMGPIPEsubmachinegun</append>
+			<append xpath="//crafting_skill[@name='craftingHandguns']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunHandgunT1Pistol']/@tags">,IZYgunT1Pistol9Makarov,IZYgunT1DualPistolCOLTnavyRevolver,IZYgunT1SMGTec9submachinegun</append>
+			<append xpath="//crafting_skill[@name='craftingHandguns']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunHandgunT2Magnum44']/@tags">,IZYgunT2DualPistolM9bs,IZYgunT2SMGUZIsubmachinegun</append>
+			<append xpath="//crafting_skill[@name='craftingHandguns']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunHandgunT3SMG5']/@tags">,IZYgunT3DualPistolGlock18C,IZYgunT3SMGMP9submachinegun,IZYgunT3SMGMP5Ksubmachinegun</append>
+			<append xpath="//crafting_skill[@name='craftingHandguns']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunHandgunT3DesertVulture']/@tags">,IZYgunT4DualPistolMP9s,IZYgunT4DualPistolC96M,IZYgunT4SMGCZScorpionEVO3,IZYgunT4SMGColt9mmsubmachinegun</append>
+			
+			<append xpath="//crafting_skill[@name='craftingHandguns']/effect_group/passive_effect[@name='CraftingTier' and @tags='gunHandgunT0PipePistol']/@tags">,IZYgunT0SMGPIPEsubmachinegun</append>
+			<append xpath="//crafting_skill[@name='craftingHandguns']/effect_group/passive_effect[@name='CraftingTier' and @tags='gunHandgunT1Pistol']/@tags">,IZYgunT1Pistol9Makarov,IZYgunT1DualPistolCOLTnavyRevolver,IZYgunT1SMGTec9submachinegun</append>
+			<append xpath="//crafting_skill[@name='craftingHandguns']/effect_group/passive_effect[@name='CraftingTier' and @tags='gunHandgunT2Magnum44']/@tags">,IZYgunT2DualPistolM9bs,IZYgunT2SMGUZIsubmachinegun</append>
+			<append xpath="//crafting_skill[@name='craftingHandguns']/effect_group/passive_effect[@name='CraftingTier' and @tags='gunHandgunT3SMG5']/@tags">,IZYgunT3DualPistolGlock18C,IZYgunT3SMGMP9submachinegun,IZYgunT3SMGMP5Ksubmachinegun</append>
+			<append xpath="//crafting_skill[@name='craftingHandguns']/effect_group/passive_effect[@name='CraftingTier' and @tags='gunHandgunT3DesertVulture']/@tags">,IZYgunT4DualPistolMP9s,IZYgunT4DualPistolC96M,IZYgunT4SMGCZScorpionEVO3,IZYgunT4SMGColt9mmsubmachinegun</append>
+		</if>
+	</conditional>
+	
+	<conditional>
+		<if cond="mod_loaded('IZY_RMP_44magnum')">
+			<append xpath="//crafting_skill[@name='craftingHandguns']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunHandgunT3SMG5']/@tags">,IZYgunT3PistolMagnumAutomag44,IZYgunT3RifleMagnumLeveractionCarbine44</append>
+			<append xpath="//crafting_skill[@name='craftingHandguns']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunHandgunT3DesertVulture']/@tags">,IZYgunT4DualMagnumDesertEagles</append>
+			
+			<append xpath="//crafting_skill[@name='craftingHandguns']/effect_group/passive_effect[@name='CraftingTier' and @tags='gunHandgunT3SMG5']/@tags">,IZYgunT3PistolMagnumAutomag44,IZYgunT3RifleMagnumLeveractionCarbine44</append>
+			<append xpath="//crafting_skill[@name='craftingHandguns']/effect_group/passive_effect[@name='CraftingTier' and @tags='gunHandgunT3DesertVulture']/@tags">,IZYgunT4DualMagnumDesertEagles</append>
+		</if>
+	</conditional>
+	
+	<conditional>
+		<if cond="mod_loaded('IZY_RMP_45ACP')">
+			<append xpath="//crafting_skill[@name='craftingHandguns']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunHandgunT0PipePistol']/@tags">,IZYgunT0PistolLiberatorImprovisedPistol</append>
+			<append xpath="//crafting_skill[@name='craftingHandguns']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunHandgunT1Pistol']/@tags">,IZYgunT1Pistol45M1917,IZYgunT1Pistol45Type17C96,IZYgunT145TACSMGMAC10</append>
+			<append xpath="//crafting_skill[@name='craftingHandguns']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunHandgunT2Magnum44']/@tags">,IZYgunT2DualPistols45M1911A1,IZYgunT2Pistol45M1911A1,IZYgunT245SMGM3Greasegun</append>
+			<append xpath="//crafting_skill[@name='craftingHandguns']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunHandgunT3SMG5']/@tags">,IZYgunT3DualPistols45USP45,IZYgunT3Pistol45USP45,IZYgunT345SMGM1thompson</append>
+			<append xpath="//crafting_skill[@name='craftingHandguns']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunHandgunT3DesertVulture']/@tags">,IZYgunT4Pistol45STIEAGLE6,IZYgunT445SMGM1928thompson,IZYgunT445TACSMGKrissSuperV</append>
+			
+			<append xpath="//crafting_skill[@name='craftingHandguns']/effect_group/passive_effect[@name='CraftingTier' and @tags='gunHandgunT0PipePistol']/@tags">,IZYgunT0PistolLiberatorImprovisedPistol</append>
+			<append xpath="//crafting_skill[@name='craftingHandguns']/effect_group/passive_effect[@name='CraftingTier' and @tags='gunHandgunT1Pistol']/@tags">,IZYgunT1Pistol45M1917,IZYgunT1Pistol45Type17C96,IZYgunT145TACSMGMAC10</append>
+			<append xpath="//crafting_skill[@name='craftingHandguns']/effect_group/passive_effect[@name='CraftingTier' and @tags='gunHandgunT2Magnum44']/@tags">,IZYgunT2DualPistols45M1911A1,IZYgunT2Pistol45M1911A1,IZYgunT245SMGM3Greasegun</append>
+			<append xpath="//crafting_skill[@name='craftingHandguns']/effect_group/passive_effect[@name='CraftingTier' and @tags='gunHandgunT3SMG5']/@tags">,IZYgunT3DualPistols45USP45,IZYgunT3Pistol45USP45,IZYgunT345SMGM1thompson</append>
+			<append xpath="//crafting_skill[@name='craftingHandguns']/effect_group/passive_effect[@name='CraftingTier' and @tags='gunHandgunT3DesertVulture']/@tags">,IZYgunT4Pistol45STIEAGLE6,IZYgunT445SMGM1928thompson,IZYgunT445TACSMGKrissSuperV</append>
+			
+			<append xpath="//crafting_skill[@name='craftingHandguns']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunRifleT3SniperRifle']/@tags">,IZYgunT3MarksmanRifleMMRM1Carbine45,IZYgunT4MarksmanRifle45MMRKrissVectorCarbine</append>
+			
+			<append xpath="//crafting_skill[@name='craftingHandguns']/effect_group/passive_effect[@name='CraftingTier' and @tags='gunRifleT3SniperRifle']/@tags">,IZYgunT3MarksmanRifleMMRM1Carbine45,IZYgunT4MarksmanRifle45MMRKrissVectorCarbine</append>
+			
+			<insertafter xpath="/progression/perks/book[@name='perkEnforcerComplete']/effect_group/passive_effect[@name='RecipeTagUnlocked']">
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoBundle45ACPBulletBall,ammoBundle45ACPHighpower,ammoBundle45ACPArmorpiecing,ammoBundle45ACPEnhanced"/>
+			</insertafter>
+		</if>
+	</conditional>
+	
+	<conditional>
+		<if cond="mod_loaded('IZY_RMP_556pack')">
+			<append xpath="//crafting_skill[@name='craftingRifles']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunRifleT0PipeRifle']/@tags">,IZYgunT0SNIPERpipeAR15Broken15Junk</append>
+			<append xpath="//crafting_skill[@name='craftingRifles']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunRifleT1HuntingRifle']/@tags">,IZYgunT1LRLongRifleM16a1</append>
+			<append xpath="//crafting_skill[@name='craftingRifles']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunRifleT3SniperRifle']/@tags">,IZYgunT3MarksManRifle556M16A2DMR</append>
+			
+			<append xpath="//crafting_skill[@name='craftingRifles']/effect_group/passive_effect[@name='CraftingTier' and @tags='gunRifleT0PipeRifle']/@tags">,IZYgunT0SNIPERpipeAR15Broken15Junk</append>
+			<append xpath="//crafting_skill[@name='craftingRifles']/effect_group/passive_effect[@name='CraftingTier' and @tags='gunRifleT1HuntingRifle']/@tags">,IZYgunT1LRLongRifleM16a1</append>
+			<append xpath="//crafting_skill[@name='craftingRifles']/effect_group/passive_effect[@name='CraftingTier' and @tags='gunRifleT3SniperRifle']/@tags">,IZYgunT3MarksManRifle556M16A2DMR</append>
+			
+			<append xpath="//crafting_skill[@name='craftingMachineGuns']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunMGT1AK47']/@tags">,IZYgunT1ARCabineMASFARifle,IZYgunT1ARCabineM608SurvivalRifle</append>
+			<append xpath="//crafting_skill[@name='craftingMachineGuns']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunMGT2TacticalAR']/@tags">,IZYgunT2ARCabineCAR15,IZYgunT2LMGLMG36</append>
+			<append xpath="//crafting_skill[@name='craftingMachineGuns']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunMGT3M60']/@tags">,IZYgunT3ARCabineM4Carbine,IZYgunT4ARCabineHK416,IZYgunT3AREUCabineSG552,IZYgunT3BULLPUPHellionVHS2,IZYgunT4BULLPUPFNF2000,IZYgunT3LMGM249FNminimi</append>
+			
+			<append xpath="//crafting_skill[@name='craftingMachineGuns']/effect_group/passive_effect[@name='CraftingTier' and @tags='gunMGT1AK47']/@tags">,IZYgunT1ARCabineMASFARifle,IZYgunT1ARCabineM608SurvivalRifle</append>
+			<append xpath="//crafting_skill[@name='craftingMachineGuns']/effect_group/passive_effect[@name='CraftingTier' and @tags='gunMGT2TacticalAR']/@tags">,IZYgunT2ARCabineCAR15,IZYgunT2LMGLMG36</append>
+			<append xpath="//crafting_skill[@name='craftingMachineGuns']/effect_group/passive_effect[@name='CraftingTier' and @tags='gunMGT3M60']/@tags">,IZYgunT3ARCabineM4Carbine,IZYgunT4ARCabineHK416,IZYgunT3AREUCabineSG552,IZYgunT3BULLPUPHellionVHS2,IZYgunT4BULLPUPFNF2000,IZYgunT3LMGM249FNminimi</append>
+		
+			<insertafter xpath="/progression/perks/book[@name='perkSniperComplete']/effect_group/passive_effect[@name='RecipeTagUnlocked']">
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammo556mmBulletBallBundle,ammo556mmHIpowerBundle,ammo556mmArmorPiercingBundle"/>
+			</insertafter>
+		</if>
+	</conditional>
+	
+	<conditional>
+		<if cond="mod_loaded('IZY_RMP_762pack')">
+			<append xpath="//crafting_skill[@name='craftingRifles']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunRifleT1HuntingRifle']/@tags">,IZYgunT1SNIPERRIFLE762Mosinnagant</append>
+			<append xpath="//crafting_skill[@name='craftingRifles']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunRifleT2LeverActionRifle']/@tags">,IZYgunT2MarksManRifle762M1garandNavyconverted</append>
+			<append xpath="//crafting_skill[@name='craftingRifles']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunRifleT3SniperRifle']/@tags">,IZYgunT3SNIPERRIFLE762LeeEnfieldRifle,IZYgunT4SNIPERRIFLE762L96AWMRifle,IZYgunT3MarksManRifle762HKPSG1,IZYgunT4MarksManRifleM110SASS,IZYgunT4MarksManRifle762SVUprototypeRifle</append>
+			
+			<append xpath="//crafting_skill[@name='craftingRifles']/effect_group/passive_effect[@name='CraftingTier' and @tags='gunRifleT1HuntingRifle']/@tags">,IZYgunT1SNIPERRIFLE762Mosinnagant</append>
+			<append xpath="//crafting_skill[@name='craftingRifles']/effect_group/passive_effect[@name='CraftingTier' and @tags='gunRifleT2LeverActionRifle']/@tags">,IZYgunT2MarksManRifle762M1garandNavyconverted</append>
+			<append xpath="//crafting_skill[@name='craftingRifles']/effect_group/passive_effect[@name='CraftingTier' and @tags='gunRifleT3SniperRifle']/@tags">,IZYgunT3SNIPERRIFLE762LeeEnfieldRifle,IZYgunT4SNIPERRIFLE762L96AWMRifle,IZYgunT3MarksManRifle762HKPSG1,IZYgunT4MarksManRifleM110SASS,IZYgunT4MarksManRifle762SVUprototypeRifle</append>
+			
+			<append xpath="//crafting_skill[@name='craftingMachineGuns']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunMGT1AK47']/@tags">,IZYgunT1BattleRifleBARbrowningautomaticrifle</append>
+			<append xpath="//crafting_skill[@name='craftingMachineGuns']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunMGT2TacticalAR']/@tags">,IZYgunT2ARSTG44N,IZYgunT2BattleRifleFNFALRifle,IZYgunT2LMGlightmachinegunRPD</append>
+			<append xpath="//crafting_skill[@name='craftingMachineGuns']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunMGT3M60']/@tags">,IZYgunT3ARAKM,IZYgunT3BattleRifleHKG3,IZYgunT4BattleRifleSCARH,IZYgunT4LMGlightmachinegunMG34R</append>
+			
+			<append xpath="//crafting_skill[@name='craftingMachineGuns']/effect_group/passive_effect[@name='CraftingTier' and @tags='gunMGT1AK47']/@tags">,IZYgunT1BattleRifleBARbrowningautomaticrifle</append>
+			<append xpath="//crafting_skill[@name='craftingMachineGuns']/effect_group/passive_effect[@name='CraftingTier' and @tags='gunMGT2TacticalAR']/@tags">,IZYgunT2ARSTG44N,IZYgunT2BattleRifleFNFALRifle,IZYgunT2LMGlightmachinegunRPD</append>
+			<append xpath="//crafting_skill[@name='craftingMachineGuns']/effect_group/passive_effect[@name='CraftingTier' and @tags='gunMGT3M60']/@tags">,IZYgunT3ARAKM,IZYgunT3BattleRifleHKG3,IZYgunT4BattleRifleSCARH,IZYgunT4LMGlightmachinegunMG34R</append>
+		</if>
+	</conditional>
+	
+	<conditional>
+		<if cond="mod_loaded('IZY_RMP_SG')">
+			<append xpath="//crafting_skill[@name='craftingShotguns']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunShotgunT1DoubleBarrel']/@tags">,IZYgunT1TradshotgunDoubleBarrelOverUnder,IZYgunT1TACCompactshotgunSuperShortty</append>
+			<append xpath="//crafting_skill[@name='craftingShotguns']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunShotgunT2PumpShotgun']/@tags">,IZYgunT2TradshotgunLeveractionShotgunModel1887,IZYgunT3TradshotgunTrenchGunM1897</append>
+			<append xpath="//crafting_skill[@name='craftingShotguns']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunShotgunT3AutoShotgun']/@tags">,IZYgunT4TradshotgunBrowningAuto5,IZYgunT3TACshotgunSPAS12G,IZYgunT4TACshotgunM1014</append>
+			
+			<append xpath="//crafting_skill[@name='craftingShotguns']/effect_group/passive_effect[@name='CraftingTier' and @tags='gunShotgunT1DoubleBarrel']/@tags">,IZYgunT1TradshotgunDoubleBarrelOverUnder,IZYgunT1TACCompactshotgunSuperShortty</append>
+			<append xpath="//crafting_skill[@name='craftingShotguns']/effect_group/passive_effect[@name='CraftingTier' and @tags='gunShotgunT2PumpShotgun']/@tags">,IZYgunT2TradshotgunLeveractionShotgunModel1887,IZYgunT3TradshotgunTrenchGunM1897</append>
+			<append xpath="//crafting_skill[@name='craftingShotguns']/effect_group/passive_effect[@name='CraftingTier' and @tags='gunShotgunT3AutoShotgun']/@tags">,IZYgunT4TradshotgunBrowningAuto5,IZYgunT3TACshotgunSPAS12G,IZYgunT4TACshotgunM1014</append>
+		</if>
+	</conditional>
+	
+	<conditional>
+		<if cond="mod_loaded('IZY_RMP_Tech')">
+			<append xpath="//crafting_skill[@name='craftingRobotics']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunBotT3JunkDrone']/@tags">,IZYgunT3TechnicalNailmachinegun</append>
+			
+			<append xpath="//crafting_skill[@name='craftingRobotics']/effect_group/passive_effect[@name='CraftingTier' and @tags='gunBotT3JunkDrone']/@tags">,IZYgunT3TechnicalNailmachinegun</append>
+		</if>
+	</conditional>
+
+	<!-- *** Bows -->
+	<!-- <set xpath="//crafting_skill[@name='craftingBows']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunBowT3CompoundCrossbow']/@tags">gunBowT3CompoundCrossbow,IZYgunT4BowVanhelsingAutomaticCrossbowVH</set> -->
+</config>

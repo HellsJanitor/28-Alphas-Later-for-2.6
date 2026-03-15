@@ -69,15 +69,17 @@
 			<requirement name="CVarCompare" cvar="researchPoints" operation="LTE" value="0"/>
 		</effect_group>
 		
-		<effect_group>
+		<effect_group compare_type="or">
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffOnBed"/>
 			<requirement name="BlockStandingOn" tags="bedroll"/>
+			<requirement name="BlockStandingOn" tags="playerbed"/>
 		</effect_group>
 		
 		<!-- passive healing when standing on a bedroll -->
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffBedrollHealHealth"/>
 				<requirement name="BlockStandingOn" tags="bedroll"/>
+				<requirement name="!BlockStandingOn" tags="playerbed"/>
 				<requirement name="HasBuff" buff="buffCampfireAOEEffect"/>
 				<requirement name="IsIndoors"/>
 				<requirement name="!IsBloodMoon"/>
@@ -3580,7 +3582,7 @@
 			<effect_group>
 				<requirement name="!HasBuff" buff="buffDrugVitamins"/>
 				<requirement name="CVarCompare" cvar="wellness" operation="GTE" value="40"/>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="wellness" operation="add" value="-1"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="wellness" operation="subtract" value="1"/>
 				<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="buffWellnessNegativeOne"/>
 			</effect_group>
 		</buff>
@@ -3591,7 +3593,7 @@
 			<effect_group>
 				<requirement name="!HasBuff" buff="buffDrugVitamins"/>
 				<requirement name="CVarCompare" cvar="wellness" operation="GTE" value="40"/>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="wellness" operation="add" value="-5"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="wellness" operation="subtract" value="5"/>
 				<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="buffWellnessNegativeTwo"/>
 			</effect_group>
 		</buff>

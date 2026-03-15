@@ -820,10 +820,7 @@
 		<ingredient name="resourceDuctTape" count="1"/>
 		<ingredient name="resourceMechanicalParts" count="2"/>
 		<ingredient name="resourceOil" count="2"/>
-	</set>
-	
-	<!-- *** remove dew collector -->
-	<remove xpath="/recipes/recipe[@name='cntDewCollector']"/>
+	</set>	
 	
 	<!-- *** change paper to require wood scraps -->
 	<set xpath="/recipes/recipe[@name='resourcePaper' and @craft_area='campfire']/ingredient[@name='resourceWood']/@name">resourceWoodScraps</set>
@@ -945,20 +942,20 @@
 	<set xpath="//recipe[starts-with(@name,'armorPrimitive')]/effect_group/passive_effect[@tags='resourceYuccaFibers,resourceWood']/@tags">resourceYuccaFibers,resourceBranch</set>
 	
 	<!-- *** Q600 rework -->
-	<set xpath="/recipes/recipe[starts-with(@name,'armor')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='2,6']/@level">100,600</set>
+	<set xpath="/recipes/recipe[starts-with(@name,'armor')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='2,6']/@level">101,600</set>
 	<set xpath="/recipes/recipe[starts-with(@name,'armor')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='2,3,4,5,6']/@value">5,20</set>
-	<set xpath="/recipes/recipe[starts-with(@name,'armor')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='2,3,4,5,6']/@level">100,600</set>	
+	<set xpath="/recipes/recipe[starts-with(@name,'armor')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='2,3,4,5,6']/@level">101,600</set>	
 	<set xpath="/recipes/recipe[starts-with(@name,'armor')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='3,4,5,6']/@value">5,25</set>
-	<set xpath="/recipes/recipe[starts-with(@name,'armor')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='3,4,5,6']/@level">200,600</set>
+	<set xpath="/recipes/recipe[starts-with(@name,'armor')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='3,4,5,6']/@level">201,600</set>
 	<set xpath="/recipes/recipe[starts-with(@name,'armor')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='4,5,6']/@value">5,15</set>
-	<set xpath="/recipes/recipe[starts-with(@name,'armor')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='4,5,6']/@level">300,600</set>
-	<set xpath="/recipes/recipe[starts-with(@name,'armor')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='5,6']/@level">400,600</set>
+	<set xpath="/recipes/recipe[starts-with(@name,'armor')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='4,5,6']/@level">301,600</set>
+	<set xpath="/recipes/recipe[starts-with(@name,'armor')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='5,6']/@level">401,600</set>
 	<set xpath="/recipes/recipe[starts-with(@name,'armor')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='6']/@value">1,1</set>
-	<set xpath="/recipes/recipe[starts-with(@name,'armor')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='6']/@level">500,600</set>
-	<set xpath="/recipes/recipe[starts-with(@name,'gun')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='2,6']/@level">100,600</set>
+	<set xpath="/recipes/recipe[starts-with(@name,'armor')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='6']/@level">501,600</set>
+	<set xpath="/recipes/recipe[starts-with(@name,'gun')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='2,6']/@level">101,600</set>
 	<set xpath="/recipes/recipe[starts-with(@name,'gun')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='6' and @value='1']/@value">1,1</set>
-	<set xpath="/recipes/recipe[starts-with(@name,'gun')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='6']/@level">500,600</set>
-	<set xpath="/recipes/recipe[starts-with(@name,'melee')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='2,6']/@level">100,600</set>
+	<set xpath="/recipes/recipe[starts-with(@name,'gun')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='6']/@level">501,600</set>
+	<set xpath="/recipes/recipe[starts-with(@name,'melee')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='2,6']/@level">101,600</set>
 	<set xpath="/recipes/recipe[starts-with(@name,'melee')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='6' and @value='1']/@value">1,1</set>
-	<set xpath="/recipes/recipe[starts-with(@name,'melee')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='6']/@level">500,600</set>
+	<set xpath="/recipes/recipe[starts-with(@name,'melee')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='6']/@level">501,600</set>
 </HellsJanitor>

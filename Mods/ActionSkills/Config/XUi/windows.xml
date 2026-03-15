@@ -1,4 +1,138 @@
 <configs>
+	<append xpath="/windows">
+		<window name="HUDLeftActionSkills" anchor="LeftBottom" pos="-900,66">
+			<grid name="HUDActionSkills" cell_width="140" arrangement="horizontal">
+				<rect pos="0,0" rows="1" cols="1" width="248" height="48" controller="HUDStatBar" visible="{# cvar('rifleEquipped') &gt; 0}">
+					<sprite depth="1" name="background" color="0,0,0,190" type="sliced"/>
+					<filledsprite depth="2" name="BarContent" pos="2,-2" width="243" height="43" color="255,255,0,128" type="filled" fill="{# cvar('lbu_DeadEye_XPDisplay') &gt;= 0 ? cvar('lbu_DeadEye_XPDisplay') : 0}" flip="Horizontally"/>
+					<sprite depth="3" name="Icon" sprite="ui_game_symbol_rifle" color="250,250,249,250" size="32,32" pos="24,-24" pivot="center" foregroundlayer="true"/>
+					<label depth="4" name="TextContent" pos="40,-24" font_size="32" color="255,255,255,255" justify="center" pivot="left" text="Rifles: {cvar(lbu_DeadEye_Lvl)}/100" width="125" height="35" effect="Outline8" effect_color="0,0,0,255" effect_distance="1,1"/>
+					<sprite depth="5" name="border" sprite="menu_empty3px" fillcenter="false" color="0,0,0,255" type="sliced"/>
+				</rect>
+				
+				<rect pos="0,0" rows="1" cols="1" width="248" height="48" controller="HUDStatBar" visible="{# cvar('explosiveEquipped') &gt; 0}">
+					<sprite depth="1" name="background" color="0,0,0,190" type="sliced"/>
+					<filledsprite depth="2" name="BarContent" pos="2,-2" width="243" height="43" color="255,255,0,128" type="filled" fill="{# cvar('lbu_DemolitionEXP_XPDisplay') &gt;= 0 ? cvar('lbu_DemolitionEXP_XPDisplay') : 0}" flip="Horizontally"/>
+					<sprite depth="3" name="Icon" sprite="ui_game_symbol_explosion" color="250,250,249,250" size="32,32" pos="24,-24" pivot="center" foregroundlayer="true"/>
+					<label depth="4" name="TextContent" pos="42,-24" font_size="32" color="255,255,255,255" justify="center" pivot="left" text="Explosives: {cvar(lbu_Demolition_Lvl)}/100" width="125" height="35" effect="Outline8" effect_color="0,0,0,255" effect_distance="1,1"/>
+					<sprite depth="5" name="border" sprite="menu_empty3px" fillcenter="false" color="0,0,0,255" type="sliced"/>
+				</rect>
+				
+				<rect pos="0,0" rows="1" cols="1" width="248" height="48" controller="HUDStatBar" visible="{# cvar('molotovEquipped') &gt; 0}">
+					<sprite depth="1" name="background" color="0,0,0,190" type="sliced"/>
+					<filledsprite depth="2" name="BarContent" pos="2,-2" width="243" height="43" color="255,255,0,128" type="filled" fill="{# cvar('lbu_Demolition_XPDisplay') &gt;= 0 ? cvar('lbu_Demolition_XPDisplay') : 0}" flip="Horizontally"/>
+					<sprite depth="3" name="Icon" sprite="ui_game_symbol_fire" color="250,250,249,250" size="32,32" pos="24,-24" pivot="center" foregroundlayer="true"/>
+					<label depth="4" name="TextContent" pos="42,-24" font_size="32" color="255,255,255,255" justify="center" pivot="left" text="Molotovs: {cvar(lbu_Demolition_Lvl)}/100" width="125" height="35" effect="Outline8" effect_color="0,0,0,255" effect_distance="1,1"/>
+					<sprite depth="5" name="border" sprite="menu_empty3px" fillcenter="false" color="0,0,0,255" type="sliced"/>
+				</rect>
+				
+				<rect pos="0,0" rows="1" cols="1" width="248" height="48" controller="HUDStatBar" visible="{# cvar('spearEquipped') &gt; 0}">
+					<sprite depth="1" name="background" color="0,0,0,190" type="sliced"/>
+					<filledsprite depth="2" name="BarContent" pos="2,-2" width="243" height="43" color="255,255,0,128" type="filled" fill="{# cvar('lbu_SpearMaster_XPDisplay') &gt;= 0 ? cvar('lbu_SpearMaster_XPDisplay') : 0}" flip="Horizontally"/>
+					<sprite depth="3" name="Icon" sprite="ui_game_symbol_spear" color="250,250,249,250" size="32,32" pos="24,-24" pivot="center" foregroundlayer="true"/>
+					<label depth="4" name="TextContent" pos="42,-24" font_size="32" color="255,255,255,255" justify="center" pivot="left" text="Spears: {cvar(lbu_SpearMaster_Lvl)}/100" width="125" height="35" effect="Outline8" effect_color="0,0,0,255" effect_distance="1,1"/>
+					<sprite depth="5" name="border" sprite="menu_empty3px" fillcenter="false" color="0,0,0,255" type="sliced"/>
+				</rect>
+				
+				<rect pos="0,0" rows="1" cols="1" width="248" height="48" controller="HUDStatBar" visible="{# cvar('salvageEquipped') &gt; 0}">
+					<sprite depth="1" name="background" color="0,0,0,190" type="sliced"/>
+					<filledsprite depth="2" name="BarContent" pos="2,-2" width="243" height="43" color="255,255,0,128" type="filled" fill="{# cvar('lbu_Salvage_XPDisplay') &gt;= 0 ? cvar('lbu_Salvage_XPDisplay') : 0}" flip="Horizontally"/>
+					<sprite depth="3" name="Icon" sprite="ui_game_symbol_wrench" color="250,250,249,250" size="32,32" pos="24,-24" pivot="center" foregroundlayer="true"/>
+					<label depth="4" name="TextContent" pos="44,-24" font_size="32" color="255,255,255,255" justify="center" pivot="left" text="Salvage: {cvar(lbu_Salvage_Lvl)}/100" width="125" height="35" effect="Outline8" effect_color="0,0,0,255" effect_distance="1,1"/>
+					<sprite depth="5" name="border" sprite="menu_empty3px" fillcenter="false" color="0,0,0,255" type="sliced"/>
+				</rect>
+				
+				<rect pos="0,0" rows="1" cols="1" width="248" height="48" controller="HUDStatBar" visible="{# cvar('shotgunEquipped') &gt; 0}">
+					<sprite depth="1" name="background" color="0,0,0,190" type="sliced"/>
+					<filledsprite depth="2" name="BarContent" pos="2,-2" width="243" height="43" color="255,255,0,128" type="filled" fill="{# cvar('lbu_Boomstick_XPDisplay') &gt;= 0 ? cvar('lbu_Boomstick_XPDisplay') : 0}" flip="Horizontally"/>
+					<sprite depth="3" name="Icon" sprite="ui_game_symbol_shotgun" color="250,250,249,250" size="32,32" pos="24,-24" pivot="center" foregroundlayer="true"/>
+					<label depth="4" name="TextContent" pos="44,-24" font_size="32" color="255,255,255,255" justify="center" pivot="left" text="Shotguns: {cvar(lbu_Boomstick_Lvl)}/100" width="125" height="35" effect="Outline8" effect_color="0,0,0,255" effect_distance="1,1"/>
+					<sprite depth="5" name="border" sprite="menu_empty3px" fillcenter="false" color="0,0,0,255" type="sliced"/>
+				</rect>
+				
+				<rect pos="0,0" rows="1" cols="1" width="248" height="48" controller="HUDStatBar" visible="{# cvar('clubEquipped') &gt; 0}">
+					<sprite depth="1" name="background" color="0,0,0,190" type="sliced"/>
+					<filledsprite depth="2" name="BarContent" pos="2,-2" width="243" height="43" color="255,255,0,128" type="filled" fill="{# cvar('lbu_PummelPete_XPDisplay') &gt;= 0 ? cvar('lbu_PummelPete_XPDisplay') : 0}" flip="Horizontally"/>
+					<sprite depth="3" name="Icon" sprite="ui_game_symbol_club" color="250,250,249,250" size="32,32" pos="24,-24" pivot="center" foregroundlayer="true"/>
+					<label depth="4" name="TextContent" pos="34,-24" font_size="32" color="255,255,255,255" justify="center" pivot="left" text="Clubs: {cvar(lbu_PummelPete_Lvl)}/100" width="125" height="35" effect="Outline8" effect_color="0,0,0,255" effect_distance="1,1"/>
+					<sprite depth="5" name="border" sprite="menu_empty3px" fillcenter="false" color="0,0,0,255" type="sliced"/>
+				</rect>
+				
+				<rect pos="0,0" rows="1" cols="1" width="248" height="48" controller="HUDStatBar" visible="{# cvar('sledgehammerEquipped') &gt; 0}">
+					<sprite depth="1" name="background" color="0,0,0,190" type="sliced"/>
+					<filledsprite depth="2" name="BarContent" pos="2,-2" width="243" height="43" color="255,255,0,128" type="filled" fill="{# cvar('lbu_SkullCrusher_XPDisplay') &gt;= 0 ? cvar('lbu_SkullCrusher_XPDisplay') : 0}" flip="Horizontally"/>
+					<sprite depth="3" name="Icon" sprite="ui_game_symbol_sledge" color="250,250,249,250" size="32,32" pos="24,-24" pivot="center" foregroundlayer="true"/>
+					<label depth="4" name="TextContent" pos="48,-24" font_size="32" color="255,255,255,255" justify="center" pivot="left" text="Sledges: {cvar(lbu_SkullCrusher_Lvl)}/100" width="125" height="35" effect="Outline8" effect_color="0,0,0,255" effect_distance="1,1"/>
+					<sprite depth="5" name="border" sprite="menu_empty3px" fillcenter="false" color="0,0,0,255" type="sliced"/>
+				</rect>
+				
+				<rect pos="0,0" rows="1" cols="1" width="248" height="48" controller="HUDStatBar" visible="{# cvar('miningEquipped') &gt; 0}">
+					<sprite depth="1" name="background" color="0,0,0,190" type="sliced"/>
+					<filledsprite depth="2" name="BarContent" pos="2,-2" width="243" height="43" color="255,255,0,128" type="filled" fill="{# cvar('lbu_Miner69er_XPDisplay') &gt;= 0 ? cvar('lbu_Miner69er_XPDisplay') : 0}" flip="Horizontally"/>
+					<sprite depth="3" name="Icon" sprite="ui_game_symbol_mining" color="250,250,249,250" size="32,32" pos="24,-24" pivot="center" foregroundlayer="true"/>
+					<label depth="4" name="TextContent" pos="42,-24" font_size="32" color="255,255,255,255" justify="center" pivot="left" text="Mining: {cvar(lbu_Miner69er_Lvl)}/100" width="125" height="35" effect="Outline8" effect_color="0,0,0,255" effect_distance="1,1"/>
+					<sprite depth="5" name="border" sprite="menu_empty3px" fillcenter="false" color="0,0,0,255" type="sliced"/>
+				</rect>
+				
+				<rect pos="0,0" rows="1" cols="1" width="248" height="48" controller="HUDStatBar" visible="{# cvar('knucklesEquipped') &gt; 0}">
+					<sprite depth="1" name="background" color="0,0,0,190" type="sliced"/>
+					<filledsprite depth="2" name="BarContent" pos="2,-2" width="243" height="43" color="255,255,0,128" type="filled" fill="{# cvar('lbu_Brawler_XPDisplay') &gt;= 0 ? cvar('lbu_Brawler_XPDisplay') : 0}" flip="Horizontally"/>
+					<sprite depth="3" name="Icon" sprite="ui_game_symbol_boxer" color="250,250,249,250" size="32,32" pos="24,-24" pivot="center" foregroundlayer="true"/>
+					<label depth="4" name="TextContent" pos="42,-24" font_size="32" color="255,255,255,255" justify="center" pivot="left" text="Knuckles: {cvar(lbu_Brawler_Lvl)}/100" width="125" height="35" effect="Outline8" effect_color="0,0,0,255" effect_distance="1,1"/>
+					<sprite depth="5" name="border" sprite="menu_empty3px" fillcenter="false" color="0,0,0,255" type="sliced"/>
+				</rect>
+				
+				<rect pos="0,0" rows="1" cols="1" width="248" height="48" controller="HUDStatBar" visible="{# cvar('machinegunEquipped') &gt; 0}">
+					<sprite depth="1" name="background" color="0,0,0,190" type="sliced"/>
+					<filledsprite depth="2" name="BarContent" pos="2,-2" width="243" height="43" color="255,255,0,128" type="filled" fill="{# cvar('lbu_MachineGunner_XPDisplay') &gt;= 0 ? cvar('lbu_MachineGunner_XPDisplay') : 0}" flip="Horizontally"/>
+					<sprite depth="3" name="Icon" sprite="ui_game_symbol_rifle" color="250,250,249,250" size="32,32" pos="24,-24" pivot="center" foregroundlayer="true"/>
+					<label depth="4" name="TextContent" pos="46,-24" font_size="32" color="255,255,255,255" justify="center" pivot="left" text="Autos: {cvar(lbu_MachineGunner_Lvl)}/100" width="125" height="35" effect="Outline8" effect_color="0,0,0,255" effect_distance="1,1"/>
+					<sprite depth="5" name="border" sprite="menu_empty3px" fillcenter="false" color="0,0,0,255" type="sliced"/>
+				</rect>
+				
+				<rect pos="0,0" rows="1" cols="1" width="248" height="48" controller="HUDStatBar" visible="{# cvar('bowEquipped') &gt; 0}">
+					<sprite depth="1" name="background" color="0,0,0,190" type="sliced"/>
+					<filledsprite depth="2" name="BarContent" pos="2,-2" width="243" height="43" color="255,255,0,128" type="filled" fill="{# cvar('lbu_Archery_XPDisplay') &gt;= 0 ? cvar('lbu_Archery_XPDisplay') : 0}" flip="Horizontally"/>
+					<sprite depth="3" name="Icon" sprite="ui_game_symbol_archery" color="250,250,249,250" size="32,32" pos="24,-24" pivot="center" foregroundlayer="true"/>
+					<label depth="4" name="TextContent" pos="42,-24" font_size="32" color="255,255,255,255" justify="center" pivot="left" text="Archery: {cvar(lbu_Archery_Lvl)}/100" width="125" height="35" effect="Outline8" effect_color="0,0,0,255" effect_distance="1,1"/>
+					<sprite depth="5" name="border" sprite="menu_empty3px" fillcenter="false" color="0,0,0,255" type="sliced"/>
+				</rect>
+				
+				<rect pos="0,0" rows="1" cols="1" width="248" height="48" controller="HUDStatBar" visible="{# cvar('pistolEquipped') &gt; 0}">
+					<sprite depth="1" name="background" color="0,0,0,190" type="sliced"/>
+					<filledsprite depth="2" name="BarContent" pos="2,-2" width="243" height="43" color="255,255,0,128" type="filled" fill="{# cvar('lbu_Gunslinger_XPDisplay') &gt;= 0 ? cvar('lbu_Gunslinger_XPDisplay') : 0}" flip="Horizontally"/>
+					<sprite depth="3" name="Icon" sprite="ui_game_symbol_pistol" color="250,250,249,250" size="32,32" pos="24,-24" pivot="center" foregroundlayer="true"/>
+					<label depth="4" name="TextContent" pos="34,-24" font_size="32" color="255,255,255,255" justify="center" pivot="left" text="Handguns: {cvar(lbu_Gunslinger_Lvl)}/100" width="125" height="35" effect="Outline8" effect_color="0,0,0,255" effect_distance="1,1"/>
+					<sprite depth="5" name="border" sprite="menu_empty3px" fillcenter="false" color="0,0,0,255" type="sliced"/>
+				</rect>
+				
+				<rect pos="0,0" rows="1" cols="1" width="248" height="48" controller="HUDStatBar" visible="{# cvar('bladeEquipped') &gt; 0}">
+					<sprite depth="1" name="background" color="0,0,0,190" type="sliced"/>
+					<filledsprite depth="2" name="BarContent" pos="2,-2" width="243" height="43" color="255,255,0,128" type="filled" fill="{# cvar('lbu_DeepCuts_XPDisplay') &gt;= 0 ? cvar('lbu_DeepCuts_XPDisplay') : 0}" flip="Horizontally"/>
+					<sprite depth="3" name="Icon" sprite="ui_game_symbol_knife" color="250,250,249,250" size="32,32" pos="24,-24" pivot="center" foregroundlayer="true"/>
+					<label depth="4" name="TextContent" pos="40,-24" font_size="32" color="255,255,255,255" justify="center" pivot="left" text="Blades: {cvar(lbu_DeepCuts_Lvl)}/100" width="125" height="35" effect="Outline8" effect_color="0,0,0,255" effect_distance="1,1"/>
+					<sprite depth="5" name="border" sprite="menu_empty3px" fillcenter="false" color="0,0,0,255" type="sliced"/>
+				</rect>
+				
+				<rect pos="0,0" rows="1" cols="1" width="248" height="48" controller="HUDStatBar" visible="{# cvar('batonEquipped') &gt; 0}">
+					<sprite depth="1" name="background" color="0,0,0,190" type="sliced"/>
+					<filledsprite depth="2" name="BarContent" pos="2,-2" width="243" height="43" color="255,255,0,128" type="filled" fill="{# cvar('lbu_Electrocutioner_XPDisplay') &gt;= 0 ? cvar('lbu_Electrocutioner_XPDisplay') : 0}" flip="Horizontally"/>
+					<sprite depth="3" name="Icon" sprite="ui_game_symbol_stunned" color="250,250,249,250" size="32,32" pos="24,-24" pivot="center" foregroundlayer="true"/>
+					<label depth="4" name="TextContent" pos="40,-24" font_size="32" color="255,255,255,255" justify="center" pivot="left" text="Batons: {cvar(lbu_Electrocutioner_Lvl)}/100" width="125" height="35" effect="Outline8" effect_color="0,0,0,255" effect_distance="1,1"/>
+					<sprite depth="5" name="border" sprite="menu_empty3px" fillcenter="false" color="0,0,0,255" type="sliced"/>
+				</rect>
+				
+				<rect pos="0,0" rows="1" cols="1" width="248" height="48" controller="HUDStatBar" visible="{# cvar('turretEquipped') &gt; 0}">
+					<sprite depth="1" name="background" color="0,0,0,190" type="sliced"/>
+					<filledsprite depth="2" name="BarContent" pos="2,-2" width="243" height="43" color="255,255,0,128" type="filled" fill="{# cvar('lbu_Robotics_XPDisplay') &gt;= 0 ? cvar('lbu_Robotics_XPDisplay') : 0}" flip="Horizontally"/>
+					<sprite depth="3" name="Icon" sprite="ui_game_symbol_junk_turret" color="250,250,249,250" size="32,32" pos="24,-24" pivot="center" foregroundlayer="true"/>
+					<label depth="4" name="TextContent" pos="40,-24" font_size="32" color="255,255,255,255" justify="center" pivot="left" text="Turrets: {cvar(lbu_Robotics_Lvl)}/100" width="125" height="35" effect="Outline8" effect_color="0,0,0,255" effect_distance="1,1"/>
+					<sprite depth="5" name="border" sprite="menu_empty3px" fillcenter="false" color="0,0,0,255" type="sliced"/>
+				</rect>				
+			</grid>	
+		</window>
+	</append>
+	
 	
 	<!--Learn-by-use code -->
 	<!--modify the window that displays the per level increment information - this changes the size for Perk Info a little as well-->

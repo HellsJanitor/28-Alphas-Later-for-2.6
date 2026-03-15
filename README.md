@@ -4,6 +4,23 @@
 
 The idea behind this mod is to slow progression, make traders less powerful, and generally extend the time for a playthrough, while keeping the vanilla look and feel.
 > [!IMPORTANT]
+>15/03/26 mod version 2.6.0.3
+
+ - Fixed a bug where negative wellness from bad food didn't reduce wellness correctly.
+
+ - Fixed a bug where mods could be used in the cosmetic slot.
+
+ - Added compatibility patch for Izayo's weapon pack.
+
+ - Added UI display element for showing current action skill and its level.
+
+ - Re-added Dew Collector recipe.
+
+ - Fixed a bug where cooked cans, rabbits and chickens didn't add smell when consumed.
+
+ - Fixed a bug with ingredient counts for recipes not updating correctly.
+
+> [!IMPORTANT]
 >12/03/26 mod version 2.6.0.2
 
  - Increased droprate for research papers from zombie loot.
