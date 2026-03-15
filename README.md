@@ -50,7 +50,7 @@ The idea behind this mod is to slow progression, make traders less powerful, and
 
  - Fixed a bug where stone axes and armour would start at Q100 instead of Q1
  
-  - Removed invisible walls from trader compunds - **NOTE: This will require a new save to take effect**
+  - Removed invisible walls from trader compounds - **NOTE: This will require a new save to take effect**
   
 > [!IMPORTANT]
 >09/03/26 mod version 2.6.0.0 changelog:
@@ -77,7 +77,7 @@ in addition to 'fuel' (jars for the dew collector, flowers for the apiary, and c
 
  - Food no longer replenishes health when consumed, only passively over time.
 
- - There is now a custom music compenent. In the main mod folder, there is a folder called 'Music', with sub-folders for each event (Menu, Bloodmoon, Exploration etc.)
+ - There is now a custom music component. In the main mod folder, there is a folder called 'Music', with sub-folders for each event (Menu, Bloodmoon, Exploration etc.)
 Any audio files you place in these folders will replace the vanilla equivalent, or you can leave the folders empty to keep the vanilla audio.
 Multiple audio files can be placed in these folders, and the mod will play them at random.
 
@@ -91,7 +91,7 @@ Multiple audio files can be placed in these folders, and the mod will play them 
 
  - Player starts with a new debuff - Despair.
 
- - As your despair increases, so your abilities will be negatively affected. If despair reaches 100%, you'll be seconds from death.
+ - As your despair increases, so will your abilities be negatively affected. If despair reaches 100%, you'll be seconds from death.
 
  - Conversely, if you can manage your despair well, you'll receive buffs for remaining positive.
 
@@ -102,11 +102,11 @@ Multiple audio files can be placed in these folders, and the mod will play them 
  - Despair can also be checked from the player information screen.
 
 
-Despair is dynamically affected by various different factors, including:
+Despair is dynamically affected by various factors, including:
 
 1. Darkness. Too dark, and your Despair will increase dramatically. Torches, helmet lights and flashlights will mitigate this. Use these in conjunction with a campfire for the best effect.
 2. Temperature. If you’re freezing or sweltering, your Despair will also increase dramatically. Find shelter!
-3. Environment: Varying degrees of “wetness” will change how Despair affects you, as will your shelter. If you’re warm, dry, sheltered, well lit or resting on a bed or bedroll, AND near an operating campfire,forge or chem station you can effectively “treat” Despair.
+3. Environment: Varying degrees of “wetness” will change how Despair affects you, as will your shelter. If you’re warm, dry, sheltered, well lit or resting on a bed or bedroll, AND near an operating campfire,forge or chem station, you can effectively “treat” Despair.
 4. Hunger and thirst affect how quickly your despair increases. Starvation/dehydration will drastically increase the rate at which you become affected by despair.
 5. Injuries will affect how quickly your despair increases.
 6. There is medication in trader stock and rare medical loot to treat your despair.
@@ -119,7 +119,7 @@ Despair is dynamically affected by various different factors, including:
 13. The trader has an effect. Being close to a trader will slow down and/or reduce your Despair.
 14. The perk "From the Shadows" also has an effect on the way Despair affects you at NIGHT. The more points in the perk, the less Despair affects you at night.
 
- - Headshots! Zombies take **maximum** damage from headshots, however, they do take *small* damage if you miss the head.
+ - Headshots! Zombies take **maximum** damage from headshots; however, they do take *small* damage if you miss the head.
 
  - Zombies **DON'T** bleed. Nothing undead takes bleed damage.
 
@@ -142,7 +142,7 @@ Despair is dynamically affected by various different factors, including:
 
  - If you have the required book, existing ammo can be crafted into stacks.
 
- - Glue and mineral water require a beaker to craft in the campfire.
+ - Glue and mineral water require a beaker to craft at the campfire.
  
  - Chicken coop. Catch a wild chicken and place it in a chicken coop to produce eggs. A Heatlamp for speeding up collection and Nesting for increasing quantity can be purchased or unlocked with workstation progression.
  
@@ -158,7 +158,7 @@ Despair is dynamically affected by various different factors, including:
  - Despair medication (Lavender, St. John’s Wort and Lithium) can be found in medical loot, and in trader stock. Lavender oil can be crafted from lavender flowers and used to treat despair.
 
  - Hot, cold and wetness are back, as are insulated liner and cooling mesh mods for armour. Armour has very little weather protection now, so for permanent resistance to hot and cold, these armour mods will be essential.
-You can also use the Well Insualted perk, or temporarily use coffee and Blackstrap coffee to keep you warm, and yucca juice and yucca smoothies to keep you cool.
+You can also use the Well Insulated perk, or temporarily use coffee and Blackstrap coffee to keep you warm, and yucca juice and yucca smoothies to keep you cool.
 
 
 ## ZOMBIES/ENEMIES
@@ -219,7 +219,7 @@ You can also use the Well Insualted perk, or temporarily use coffee and Blackstr
 
  - All attribute masteries have been removed, and some skills from books, like Bar Brawling, have been re-worked.
  
- - **Magazines have been COMPLETELY removed, and replaced with Research Papers. These papers allow you to unlock crafting items and levels in any order you please, as long as you have enough.**
+ - **Magazines have been COMPLETELY removed and replaced with Research Papers. These papers allow you to unlock crafting items and levels in any order you please, as long as you have enough.**
 **Research papers are mostly found in zombie corpse loot, and everywhere magazines and books would usually be found, plus a few other places too.**
 **You must have research papers in your inventory to unlock crafting skills, and the cost of skills scales as your crafting skill increases.**
 
@@ -233,7 +233,7 @@ You can also use the Well Insualted perk, or temporarily use coffee and Blackstr
 
 ## GEAR
 
- - All portable light sources have a *fuel* requirement. Electrical devices like helmet lights and flashlights require **batteries**, while torches and burning shafts require **gasoline**. You need a battery or fuel in your inventory to activate these items, and when the battery or fuel expires, it will need replacing.
+ - All portable light sources have a *fuel* requirement. Electrical devices like helmet lights and flashlights require **batteries**, while torches and burning shafts require **gasoline**. You need a battery or fuel in your inventory to activate these items, and when the battery or fuel expires, it will need to be replaced.
 
  - The helmet purifier mod has changed. It is now a housing unit for a **craftable water filter**, which has ***limited*** uses. As with the portable light sources, you'll need a water filter in your inventory to activate it, and once it expires, it will need replacing.
 
@@ -243,7 +243,7 @@ You can also use the Well Insualted perk, or temporarily use coffee and Blackstr
  - All vehicles **CANNOT** be picked up once placed - so choose your placement carefully.
 
  - Two new vehicles, the Ruin Runner and The Hornet.
-The Ruin Runner is a dirt bike, with similar speed to the motorcycle, but the inventory capacity of the minibike. The Hornet is an off-road dune buggy. As fast as a 4x4, but with the inventory capacity of a motorcycle.
+The Ruin Runner is a dirt bike with similar speed to the motorcycle, but with the inventory capacity of the minibike. The Hornet is an off-road dune buggy. As fast as a 4x4, but with the inventory capacity of a motorcycle.
 
 
 ## TRADERS
