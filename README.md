@@ -12,11 +12,11 @@ The idea behind this mod is to slow progression, make traders less powerful, and
 
  - Added compatibility patch for Izayo's weapon pack.
 
- - Added UI display element for showing current action skill and its level.
+ - Added UI display element for showing the current action skill and its level.
 
  - Re-added Dew Collector recipe.
 
- - Fixed a bug where cooked cans, rabbits and chickens didn't add smell when consumed.
+ - Fixed a bug where cooked cans, rabbits, and chickens didn't add smell when consumed.
 
  - Fixed a bug with ingredient counts for recipes not updating correctly.
 
@@ -77,7 +77,7 @@ in addition to 'fuel' (jars for the dew collector, flowers for the apiary, and c
 
  - Food no longer replenishes health when consumed, only passively over time.
 
- - There is now a custom music component. In the main mod folder, there is a folder called 'Music', with sub-folders for each event (Menu, Bloodmoon, Exploration etc.)
+ - There is now a custom music component. In the main mod folder, there is a folder called 'Music' with subfolders for each event (Menu, Bloodmoon, Exploration, etc.).
 Any audio files you place in these folders will replace the vanilla equivalent, or you can leave the folders empty to keep the vanilla audio.
 Multiple audio files can be placed in these folders, and the mod will play them at random.
 
@@ -117,7 +117,7 @@ Despair is dynamically affected by various factors, including:
 11. Player “wellness”. Your maximum health will also slow down the effects of despair. Every 10 additional health slows down the rate at which Despair affects you.
 12. The morale booster from the drone will decrease the rate at which despair affects you.
 13. The trader has an effect. Being close to a trader will slow down and/or reduce your Despair.
-14. The perk "From the Shadows" also has an effect on the way Despair affects you at NIGHT. The more points in the perk, the less Despair affects you at night.
+14. The perk "From the Shadows" also affects the way Despair affects you at NIGHT. The more points in the perk, the less Despair affects you at night.
 
  - Headshots! Zombies take **maximum** damage from headshots; however, they do take *small* damage if you miss the head.
 
@@ -179,7 +179,7 @@ You can also use the Well Insulated perk, or temporarily use coffee and Blackstr
 
  - New **Mutant** zombie variant. Very tough zombies, with regenerative properties, populating the wasteland. 
 
- - All "fatties" (Big Mama, tourist etc.) explode, and are filled with a substance that’s irresistible to all zombies. If you are within range when they explode, they’ll cover you in this stuff - and attract other zombies. Cop and vulture vomit also has this effect.
+ - All "fatties" (Big Mama, tourist etc.) explode and are filled with a substance that’s irresistible to all zombies. If you are within range when they explode, they’ll cover you in this stuff - and attract other zombies. Cop and vulture vomit also has this effect.
 
  - All zombies now have lootable corpses, with certain zombies having loot specific to that zombie. Cops, for example, have a chance to be looted for basic quality firearms.
 
