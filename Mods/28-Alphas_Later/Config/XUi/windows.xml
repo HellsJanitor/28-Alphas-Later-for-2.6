@@ -725,7 +725,7 @@
 					<sprite depth="1" name="background" color="0,0,0,220" type="sliced"/>
 					<filledsprite depth="2" name="BarContent" pos="2,-2" width="167" height="40" color="0,128,0,128" type="filled" fill="{statfill}"/>
 					<sprite depth="3" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="35,35" pos="26,-22" pivot="center" foregroundlayer="true"/>
-					<label depth="4" name="TextContent" pos="44,-23" font_size="32" color="[white]" justify="center" pivot="left" text="{statcurrent}%" width="125" height="35" effect="Outline8" effect_color="0,0,0,255" effect_distance="1,1"/>
+					<label depth="4" name="TextContent" pos="44,-23" font_size="32" color="[white]" justify="center" pivot="left" text="{statcurrentwithmax}" width="125" height="35" effect="Outline8" effect_color="0,0,0,255" effect_distance="1,1"/>
 					<sprite depth="5" name="border" sprite="menu_empty3px" fillcenter="false" color="0,0,0,240" type="sliced"/>
 				</rect>
 	
@@ -733,7 +733,7 @@
 					<sprite depth="1" name="background" color="0,0,0,220" type="sliced"/>
 					<filledsprite depth="2" name="BarContent" pos="2,-2" width="167" height="40" color="64,164,223,150" type="filled" fill="{statfill}"/>
 					<sprite depth="3" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_water" size="35,35" pos="26,-22" pivot="center" foregroundlayer="true"/>
-					<label depth="4" name="TextContent" pos="44,-23" font_size="32" color="[white]" justify="center" pivot="left" text="{statcurrent}%" width="125" height="35" effect="Outline8" effect_color="0,0,0,255" effect_distance="1,1"/>
+					<label depth="4" name="TextContent" pos="44,-23" font_size="32" color="[white]" justify="center" pivot="left" text="{statcurrentwithmax}" width="125" height="35" effect="Outline8" effect_color="0,0,0,255" effect_distance="1,1"/>
 					<sprite depth="5" name="border" sprite="menu_empty3px" fillcenter="false" color="0,0,0,240" type="sliced"/>
 				</rect>
 			</grid>
