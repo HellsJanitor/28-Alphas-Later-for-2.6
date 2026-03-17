@@ -4,6 +4,13 @@
 
 The idea behind this mod is to slow progression, make traders less powerful, and generally extend the time for a playthrough, while keeping the vanilla look and feel.
 > [!IMPORTANT]
+>16/03/26 mod version 2.6.0.4
+
+ - Fixed a game-breaking bug with some armour outfits.
+
+ - Fixed HUD/UI scaling for 100% sizes.
+
+> [!IMPORTANT]
 >15/03/26 mod version 2.6.0.3
 
  - Fixed a bug where negative wellness from bad food didn't reduce wellness correctly.
