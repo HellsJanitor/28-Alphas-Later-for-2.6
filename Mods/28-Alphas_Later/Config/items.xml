@@ -4817,50 +4817,46 @@
 	<!-- *** Q600 rework -->
 	<set xpath="/items/item/effect_group/passive_effect[@tier='1,6']/@tier">1,600</set>
 	<set xpath="/items/item/effect_group/passive_effect[@tier='2,6']/@tier">101,600</set>
-	<set xpath="/items/item[not (contains(@name,'Primitive'))]/effect_group/passive_effect[@name='ModSlots']/@value">0,1,2,3,4,5</set>
+	<set xpath="/items/item[not (contains(@name,'Primitive')) or not (contains(@name,'Placeable'))]/effect_group/passive_effect[@name='ModSlots']/@value">0,1,2,3,4,5</set>
 	<set xpath="/items/item[contains(@name,'Primitive') or (contains(@name,'T0'))]/effect_group/passive_effect[@name='ModSlots']/@value">0,1,1,1,1,1</set>
 	
 	<prepend xpath="/items/item[contains(@name,'Primitive') or (contains(@name,'T0'))]">
 		<property name="HJModSlotsByTier" value="0,1,1,1,1,1"/>
 	</prepend>
 	
-	<!-- <set xpath="/items/item[@name='armorCommandoOutfit']/effect_group/triggered_effect[@trigger='onSelfEquipUpdate' and @cvar='$commandoCritNaturalHealing']/@value">.02,.04,.06,.08,.1,.2,.2</set> -->
-	<!-- <setattribute xpath="/items/item[@name='armorCommandoOutfit']/effect_group/triggered_effect[@trigger='onSelfEquipUpdate' and @cvar='$commandoCritNaturalHealing']" name="tier">1,101,201,301,401,501,600</setattribute>	 -->
+	<set xpath="/items/item[@name='vehicleBicyclePlaceable']/effect_group/passive_effect[@name='ModSlots']/@value">2</set>
+	<set xpath="/items/item[@name='vehicleMinibikePlaceable']/effect_group/passive_effect[@name='ModSlots']/@value">3</set>
+	<set xpath="/items/item[@name='vehicleDirtBikePlaceable']/effect_group/passive_effect[@name='ModSlots']/@value">4</set>
+	<set xpath="/items/item[@name='vehicleMotorcyclePlaceable']/effect_group/passive_effect[@name='ModSlots']/@value">4</set>
+	<set xpath="/items/item[@name='vehicleDuneBuggyPlaceable']/effect_group/passive_effect[@name='ModSlots']/@value">5</set>
+	<set xpath="/items/item[@name='vehicleTruck4x4Placeable']/effect_group/passive_effect[@name='ModSlots']/@value">5</set>
+	<set xpath="/items/item[@name='vehicleGyrocopterPlaceable']/effect_group/passive_effect[@name='ModSlots']/@value">5</set>
 	
+	<prepend xpath="/items/item[@name='vehicleBicyclePlaceable']">
+		<property name="HJModSlotsByTier" value="2"/>
+	</prepend>
 	
-	<!-- <append xpath="//item[not (@name='foodRawMeat')]/effect_group[@name='Food Tier 0']"> -->
-		<!-- <display_value name="dSmell" value="0"/> -->
-	<!-- </append> -->
+	<prepend xpath="/items/item[@name='vehicleMinibikePlaceable']">
+		<property name="HJModSlotsByTier" value="3"/>
+	</prepend>
 	
-	<!-- <append xpath="//item[@name='foodRawMeat']/effect_group[@name='Food Tier 0']"> -->
-		<!-- <display_value name="dSmell" value="9"/> -->
-	<!-- </append> -->
+	<prepend xpath="/items/item[@name='vehicleDirtBikePlaceable']">
+		<property name="HJModSlotsByTier" value="4"/>
+	</prepend>
 	
-	<!-- <append xpath="//item[not (@name='foodEggBoiled')]/effect_group[@name='Food Tier 0/1']"> -->
-		<!-- <display_value name="dSmell" value="4"/> -->
-	<!-- </append> -->
+	<prepend xpath="/items/item[@name='vehicleMotorcyclePlaceable']">
+		<property name="HJModSlotsByTier" value="4"/>
+	</prepend>
 	
-	<!-- <append xpath="//item[@name='foodGrilledMeat']/effect_group[@name='Food Tier 1']"> -->
-		<!-- <display_value name="dSmell" value="4"/> -->
-	<!-- </append> -->
+	<prepend xpath="/items/item[@name='vehicleDuneBuggyPlaceable']">
+		<property name="HJModSlotsByTier" value="5"/>
+	</prepend>
 	
-	<!-- <append xpath="//item[@name='foodBoiledMeat']/effect_group[@name='Food Tier 1']"> -->
-		<!-- <display_value name="dSmell" value="4"/> -->
-	<!-- </append> -->
+	<prepend xpath="/items/item[@name='vehicleTruck4x4Placeable']">
+		<property name="HJModSlotsByTier" value="5"/>
+	</prepend>
 	
-	<!-- <append xpath="//item[@name='foodBaconAndEggs']/effect_group[@name='Food Tier 1']"> -->
-		<!-- <display_value name="dSmell" value="3"/> -->
-	<!-- </append> -->
-	
-	<!-- <append xpath="//item/effect_group[@name='Food Tier 2']"> -->
-		<!-- <display_value name="dSmell" value="3"/> -->
-	<!-- </append> -->
-	
-	<!-- <append xpath="//item/effect_group[@name='Food Tier 3']"> -->
-		<!-- <display_value name="dSmell" value="2"/> -->
-	<!-- </append> -->
-	
-	<!-- <append xpath="//item/effect_group[@name='Food Tier 4']"> -->
-		<!-- <display_value name="dSmell" value="1"/> -->
-	<!-- </append> -->
+	<prepend xpath="/items/item[@name='vehicleGyrocopterPlaceable']">
+		<property name="HJModSlotsByTier" value="5"/>
+	</prepend>	
 </HellsJanitor>
