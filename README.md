@@ -8,7 +8,7 @@ The idea behind this mod is to slow progression, make traders less powerful, and
 
 > [!CAUTION]
 >With the new backpack system, it's ***EXTREMELY*** important that **before** you update to this mod version, you load your old save and empty your inventory.
->if you don't, and you are carrying more than 30 items in your backpack, you risk losing some of your inventory. After emptying your inventory on your current save,
+>If you don't, and you are carrying more than 30 items in your backpack, you risk losing some of your inventory. After emptying your inventory on your current save,
 >you should *then* update to the latest version of the mod, and re-add items to your backpack as you see fit.
 
  - More compatibility with Izayo's weapon pack.
@@ -36,8 +36,8 @@ The idea behind this mod is to slow progression, make traders less powerful, and
  - Added in the dynamic backpack. You now spawn with only 30 useable slots, and must find backpack upgrades in the world to unlock the full 60 slot inventory.
 Pack Mule, steroids, and pocket mods will continue to work as they did before.
 
- - Temporarily removed OCBMicroSplat as the current version is incompatible with v2.6 of the base game (once it's updated, I'll re-add it)
- **make sure to remove OCB's MicroSplat mod if it remains in your mod folder after you update**
+ - Temporarily removed OCBMicroSplat as the current version is incompatible with v2.6 of the base game (once it's updated, I'll re-add it).
+ **Make sure to remove OCB's MicroSplat mod if it remains in your mod folder after you update**
 
 > [!IMPORTANT]
 >16/03/26 mod version 2.6.0.4
