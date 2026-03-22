@@ -19,7 +19,7 @@ The idea behind this mod is to slow progression, make traders less powerful, and
  
  - Single beds are now craftable, different coloured beds are now available from the shapes menu (for both single and double beds).
  
- - Fixed a bug with vehicle storage mods not being installable on custom VEHICLES.
+ - Fixed a bug with vehicle storage mods not being installable on custom vehicles.
  
  - Reduced biome spawning quantities for balance testing.
  
