@@ -118,6 +118,15 @@
 			<ingredient name="resourceMetalPipe" count="10"/>
 		</recipe>
 		
+		<!-- *** player single bed -->
+		<recipe name="bunkBedMadePlayer" count="1" tags="packMuleCrafting">
+			<ingredient name="resourceCloth" count="100"/>
+			<ingredient name="resourceCropCottonPlant" count="40"/>
+			<ingredient name="resourceSpring" count="20"/>
+			<ingredient name="resourceWood" count="20"/>
+			<ingredient name="resourceMetalPipe" count="10"/>
+		</recipe>
+		
 		<!-- *** bundles for new resources -->
 		<recipe name="resourceChromiumBundle" count="1" craft_time="10" craft_exp_gain="0" tags="learnable,packMuleCrafting">
 			<ingredient name="resourceChromium" count="6000"/>

@@ -2560,7 +2560,7 @@
 		<entity_class name="vehicleDirtBike">
 			<property name="Class" value="EntityMotorcycle"/>
 			<property name="Tags" value="vehicle,usesGas,bikerSetBonus"/>
-			<property name="Parent" value="Cars"/>
+			<!-- <property name="Parent" value="Cars"/> -->
 			<property name="Prefab" value="#@modfolder:Resources/DirtBike.unity3d?Ruin_Runner"/>
 			<property name="ModelType" value="Standard"/>
 			<property name="SurfaceCategory" value="metal"/>

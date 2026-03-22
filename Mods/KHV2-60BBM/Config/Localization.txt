@@ -4,3 +4,24 @@ perkPackMuleRank2LongDesc,"You know it's in there somewhere.\nCarry eight more i
 perkPackMuleRank3LongDesc,"You know exactly where everything is.\nCarry twelve more items without being encumbered.\nIncreases the crafting speed of items from your inventory by 30%.\nYour pack has a 15% chance to ignore physical damage when hit."
 perkPackMuleRank4LongDesc,"You just passed inspection, private.\nCarry sixteen more items without being encumbered.\nIncreases the crafting speed of items from your inventory by 40%.\nYour pack has a 20% chance to ignore physical damage when hit."
 perkPackMuleRank5LongDesc,"Now you're showing off! You're either part mule or strongman.\nCarry twenty more items without being encumbered.\nIncreases the crafting speed of items from your inventory by 50%.\nYour pack has a 25% chance to ignore physical damage when hit."
+schematicBackpackTier1,"40-slot backpack Schematic"
+schematicBackpackTier2,"50-slot backpack Schematic"
+schematicBackpackTier3,"60-slot backpack Schematic"
+backpackUpgradeTier1,"Big Backpack"
+backpackUpgradeTier1Desc,"Use this to upgrade your backpack to 40 slots."
+backpackUpgradeTier2,"Bigger Backpack"
+backpackUpgradeTier2Desc,"Use this to upgrade your backpack to 50 slots.\n\nCannot be used without first having the 40 slot backpack"
+backpackUpgradeTier3,"Biggest Backpack"
+backpackUpgradeTier3Desc,"Use this to upgrade your backpack to 60 slots.\n\nCannot be used without first having the 50 slot backpack"
+perkBackpackKnowledge,Bigger Bags
+perkBackpackKnowledgeName,Bigger Bags
+perkBackpackKnowledgeDesc,Increase your bag size with looted or crafted backpack upgrades.
+perkBackpackTier,Bigger Bags
+perkBackpackTierName,Bigger Bags
+perkBackpackTierDesc,Increase your bag size with looted or crafted backpack upgrades.
+perkBackpackRank1LongTierDesc,Increase your available bag size by 10 to 40 slots.
+perkBackpackRank2LongTierDesc,Increase your available bag size by a further 10 slots to 50 slots.
+perkBackpackRank3LongTierDesc,Increase your available bag size to the maximum of 60 slots.
+perkLuckyLooterRank1Desc,Big Bag
+perkLuckyLooterRank2Desc,Bigger Bag
+perkLuckyLooterRank3Desc,Biggest Bag

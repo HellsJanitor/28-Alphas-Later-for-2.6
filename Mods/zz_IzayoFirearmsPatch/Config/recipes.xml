@@ -2,6 +2,7 @@
 	<conditional>
 		<if cond="mod_loaded('IZY_RMP_45ACP')">
 			<append xpath="/recipes">
+				<!-- bundles -->
 				<recipe name="ammoBundle45ACPBulletBall" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting">
 					<ingredient name="ammo45ACPBulletBall" count="100"/>
 				</recipe>
@@ -17,6 +18,19 @@
 				<recipe name="ammoBundle45ACPEnhanced" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
 					<ingredient name="ammo45ACPEnhanced" count="100"/>
 				</recipe>
+				
+				<!-- dismantling -->
+				<recipe name="ammoDismantle45ACPBulletBall" count="1" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
+					<ingredient name="ammo45ACPBulletBall" count="10"/>
+				</recipe>
+			
+				<recipe name="ammoDismantle45ACPHighpower" count="1" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
+					<ingredient name="ammo45ACPHighpower" count="10"/>
+				</recipe>
+			
+				<recipe name="ammoDismantle45ACPArmorpiecing" count="1" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
+					<ingredient name="ammo45ACPArmorpiecing" count="10"/>
+				</recipe>
 			</append>
 		</if>
 	</conditional>
@@ -24,6 +38,7 @@
 	<conditional>
 		<if cond="mod_loaded('IZY_RMP_556pack')">
 			<append xpath="/recipes">
+			<!-- Bundes -->
 				<recipe name="ammo556mmBulletBallBundle" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting">
 					<ingredient name="ammo556mmBulletBall" count="100"/>
 				</recipe>
@@ -34,6 +49,18 @@
 	
 				<recipe name="ammo556mmArmorPiercingBundle" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
 					<ingredient name="ammo556mmArmorPiercing" count="100"/>
+				</recipe>
+				<!-- Dismantling -->
+				<recipe name="ammoDismantle556mmBulletBall" count="1" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
+					<ingredient name="ammo556mmBulletBall" count="10"/>
+				</recipe>
+			
+				<recipe name="ammoDismantle556mmHIpower" count="1" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
+					<ingredient name="ammo556mmHIpower" count="10"/>
+				</recipe>
+			
+				<recipe name="ammoDismantle556mmArmorPiercing" count="1" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
+					<ingredient name="ammo556mmArmorPiercing" count="10"/>
 				</recipe>
 			</append>
 		</if>

@@ -4,6 +4,42 @@
 
 The idea behind this mod is to slow progression, make traders less powerful, and generally extend the time for a playthrough, while keeping the vanilla look and feel.
 > [!IMPORTANT]
+>22/03/26 mod version 2.6.0.5
+
+> [!CAUTION]
+>With the new backpack system, it's ***EXTREMELY*** important that **before** you update to this mod version, you load your old save and empty your inventory.
+>if you don't, and you are carrying more than 30 items in your backpack, you risk losing some of your inventory. After emptying your inventory on your current save,
+>you should *then* update to the latest version of the mod, and re-add items to your backpack as you see fit.
+
+ - More compatibility with Izayo's weapon pack.
+ 
+ - Fixed a bug with incorrect repair kits being consumed when repairing vanilla firearms.
+ 
+ - Added dismantling recipes for Izayo's ammo
+ 
+ - Single beds are now craftable, different coloured beds are now available from the shapes menu (for both single and double beds).
+ 
+ - Fixed a bug with vehicle storage mods not being installable on custom VEHICLES.
+ 
+ - Reduced biome spawning quantities for balance testing.
+ 
+ - Added support for loot bonuses from Lucky Looter, wandering hordes, Bloodmoons, and biome storms.
+ 
+ - Fixed a bug with POI animal spawns - rabbits and chickens that spawn in POIs can now be caught.
+ 
+ - Fixed a bug with workstation progression.
+ 
+ - Reverted screamers to original vanilla methods. 100% heat now required, with a 70% spawn chance, and screamers only summon 3 times.
+ 
+ - Various localization tweaks and fixes.
+ 
+ - Added in the dynamic backpack. You now spawn with only 30 useable slots, and must find backpack upgrades in the world to unlock the full 60 slot inventory.
+Pack Mule, steroids, and pocket mods will continue to work as they did before.
+
+ - Temporarily removed OCBMicroSplat as the current version is incompatible with v2.6 of the base game (once it's updated, I'll re-add it)
+ **make sure to remove OCB's MicroSplat mod if it remains in your mod folder after you update**
+
+> [!IMPORTANT]
 >16/03/26 mod version 2.6.0.4
 
  - Fixed a game-breaking bug with some armour outfits.

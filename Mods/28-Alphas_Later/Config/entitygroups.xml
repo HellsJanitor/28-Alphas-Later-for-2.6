@@ -436,55 +436,7 @@
 		zombieHellsMutantBoomer, .05
 		zombieHellsWendigo1, .01
 		zombieHellsWendigo2, .01
-	</csv>
-	
-	<!-- <csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNightNoBears']/text()" delim="\n" op="add"> -->
-		<!-- zombieHellsHumanExperiment -->
-		<!-- zombieHellsParasite -->
-		<!-- zombieHellsGiantMutant -->
-		<!-- zombieHellsMutant4 -->
-		<!-- zombieHellsMutant1 -->
-		<!-- zombieHellsMutantBoomer -->
-		<!-- zombieHellsWendigo1 -->
-		<!-- zombieHellsWendigo2 -->
-	<!-- </csv> -->
-	
-	<!-- <csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight2']/text()" delim="\n" op="add"> -->
-		<!-- zombieHellsHumanExperiment, .05 -->
-		<!-- zombieHellsParasite, .05 -->
-		<!-- zombieHellsGiantMutant, .05 -->
-		<!-- zombieHellsMutant4, .05 -->
-		<!-- zombieHellsMutant1, .05 -->
-		<!-- zombieHellsMutantBoomer, .05 -->
-		<!-- zombieHellsWendigo1, .05 -->
-		<!-- zombieHellsWendigo2, .05 -->
-	<!-- </csv> -->
-	
-	<!-- <csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight2NoBears']/text()" delim="\n" op="add"> -->
-		<!-- zombieHellsHumanExperiment, .05 -->
-		<!-- zombieHellsParasite, .05 -->
-		<!-- zombieHellsGiantMutant, .05 -->
-		<!-- zombieHellsMutant4, .05 -->
-		<!-- zombieHellsMutant1, .05 -->
-		<!-- zombieHellsMutantBoomer, .05 -->
-		<!-- zombieHellsWendigo1, .05 -->
-		<!-- zombieHellsWendigo2, .05 -->
-	<!-- </csv> -->
-	
-	<!-- <csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']/text()" delim="\n" op="remove"> -->
-		<!-- animalSnake, 20 -->
-		<!-- animalZombieVulture, 30 -->
-		<!-- animalZombieDog, 30 -->
-		<!-- animalZombieBear, 20 -->
-	<!-- </csv> -->
-	
-	<!-- <csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']/text()" delim="\n" op="add"> -->
-		<!-- animalSnake, 10 -->
-		<!-- animalZombieVulture, 30 -->
-		<!-- animalZombieDog, 20 -->
-		<!-- animalZombieBear, 10	 -->
-		<!-- animalMutantBug, 30		 -->
-	<!-- </csv> -->
+	</csv>	
 	
 	<csv xpath="/entitygroups/entitygroup[@name='ZombieBadassGroup']/text()" delim="\n" op="add">
 		zombieHellsHumanExperiment

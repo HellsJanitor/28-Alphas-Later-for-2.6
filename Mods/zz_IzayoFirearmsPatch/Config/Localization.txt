@@ -1,0 +1,23 @@
+Key,English
+ammoDismantle45ACPBulletBall,.45 ACP Bullet Parts
+ammoDismantle45ACPBulletBallDesc,Component parts from dismantling .45 ACP rounds.
+ammoDismantle45ACPHighpower,.45 ACP HP Bullet Parts
+ammoDismantle45ACPHighpowerDesc,Component parts from dismantling high-power .45 ACP rounds.
+ammoDismantle45ACPArmorpiecing,.45 ACP AP Bullet Parts
+ammoDismantle45ACPArmorpiecingDesc,Component parts from dismantling armour piercing .45 ACP rounds.
+ammoDismantle556mmBulletBall,5.56x45mm Bullet Parts
+ammoDismantle556mmBulletBallDesc,Component parts from dismantling 5.56x45mm rounds.
+ammoDismantle556mmHIpower,5.56x45mm HP Bullet Parts
+ammoDismantle556mmHIpowerDesc,Component parts from dismantling high-power 5.56x45mm rounds.
+ammoDismantle556mmArmorPiercing,5.56x45mm AP Bullet Parts
+ammoDismantle556mmArmorPiercingDesc,Component parts from dismantling armour piercing 5.56x45mm rounds.
+ammoBundle45ACPBulletBall,Box of .45 ACP Ammo (100)
+ammoBundle45ACPHighpower,Box of .45 ACP HP Ammo (100)
+ammoBundle45ACPArmorpiecing,Box of .45 ACP AP Ammo (100)
+ammoBundle45ACPEnhanced,Box of .45 ACP Enhanced Ammo (100)
+ammo556mmBulletBallBundle,Box of 5.56x45mm Ammo (100)
+ammo556mmHIpowerBundle,Box of AP 5.56x45mm HP Ammo (100)
+ammo556mmArmorPiercingBundle,Box of 5.56x45mm AP Ammo (100)
+
+IZYgunT1Pistol9Makarov,Makarov Pistol(T1)
+IZYgunT1Pistol9MakarovDesc,[00FF00]Weapon Type[-] : Makarov Pistol \n[00FF00]Attribute[-] : Agility/[00FF00]Perk[-] : Gunslinger\n[00FF00]Ammo/Cartridge[-] : 9mm\n[00FF00]Repair tool[-] : Repair Kit\n[00FF00]Material[-] : Pistol parts \n[00FF00]Unique Ability[-] : [ff8000]None[-]\n

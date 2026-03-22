@@ -1,0 +1,101 @@
+<HellsJanitor>
+	<append xpath="/items">
+		<!-- *** Backpack Schematics -->
+		<item name="schematicBackpackTier1">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CustomIcon" value="cntBackpack01"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="perkBackpackKnowledge" level="1"/>
+			</effect_group>
+		</item>
+		<item name="schematicBackpackTier2">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CustomIcon" value="cntBackpack03"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="perkBackpackKnowledge" level="1"/>
+			</effect_group>
+		</item>
+		<item name="schematicBackpackTier3">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CustomIcon" value="cntDuffle01"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="perkBackpackKnowledge" level="1"/>
+			</effect_group>
+		</item>
+		
+		<!-- *** Backpacks -->
+		<item name="backpackUpgradeTier1">
+			<property name="Extends" value="medicalBandage"/>
+			<property name="CustomIcon" value="cntBackpack01"/>
+			<property name="DescriptionKey" value="backpackUpgradeTier1Desc"/>
+			<property name="DisplayType" value="crafted"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="SoundPickup" value="outfit_cloth_grab"/>
+			<property name="SoundPlace" value="outfit_cloth_place"/>
+			
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="UseAnimation" value="false"/>
+				<property name="Sound_start" value="outfit_cloth_place"/>
+				<property name="Sound_in_head" value="true"/>
+			</property>
+			
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="perkBackpackTier" level="1">
+					<requirement name="ProgressionLevel" progression_name="perkBackpackTier" operation="EQ" value="0"/>
+				</triggered_effect>
+			</effect_group>
+		</item>
+		<item name="backpackUpgradeTier2">
+			<property name="Extends" value="medicalBandage"/>
+			<property name="CustomIcon" value="cntBackpack03"/>
+			<property name="DescriptionKey" value="backpackUpgradeTier2Desc"/>
+			<property name="DisplayType" value="crafted"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="SoundPickup" value="outfit_cloth_grab"/>
+			<property name="SoundPlace" value="outfit_cloth_place"/>
+			
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="UseAnimation" value="false"/>
+				<property name="Sound_start" value="outfit_cloth_place"/>
+				<property name="Sound_in_head" value="true"/>
+			</property>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="perkBackpackTier" level="1">
+					<requirement name="ProgressionLevel" progression_name="perkBackpackTier" operation="EQ" value="1"/>
+				</triggered_effect>
+			</effect_group>
+		</item>
+		<item name="backpackUpgradeTier3">
+			<property name="Extends" value="medicalBandage"/>
+			<property name="CustomIcon" value="cntDuffle01"/>
+			<property name="DescriptionKey" value="backpackUpgradeTier3Desc"/>
+			<property name="DisplayType" value="crafted"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="SoundPickup" value="outfit_cloth_grab"/>
+			<property name="SoundPlace" value="outfit_cloth_place"/>
+			
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="UseAnimation" value="false"/>
+				<property name="Sound_start" value="outfit_cloth_place"/>
+				<property name="Sound_in_head" value="true"/>
+			</property>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="perkBackpackTier" level="1">
+					<requirement name="ProgressionLevel" progression_name="perkBackpackTier" operation="EQ" value="2"/>
+				</triggered_effect>
+			</effect_group>
+		</item>
+	</append>
+</HellsJanitor>

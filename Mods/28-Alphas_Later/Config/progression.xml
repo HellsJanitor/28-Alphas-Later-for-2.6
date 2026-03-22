@@ -90,6 +90,7 @@
 	</set>
 	
 	<!-- *** new workstation/tool recipe unlocks -->
+	<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/@max_level">100</set>
 	<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']">
 		<display_entry icon="chickenCoopNew,butchersBlock,forge,toolBellows,workbench,playerSawmill,resourceLockPick,lightIndustrialRed" name_key="workstationsT1-1,workstationsT1-2,workstationsT1-3,workstationsT1-4,workstationsT1-5,workstationsT1-6,workstationsT1-7,workstationsT1-8" has_quality="false" unlock_level="2,3,4,8,10,11,12,14">
 			<unlock_entry item="chickenCoop" unlock_tier="1"/>
@@ -113,18 +114,18 @@
 		<display_entry icon="toolDewTarp,cementMixer" name_key="workstationsT3-2,workstationsT3-3" has_quality="false" unlock_level="32,34">
 			<!-- <unlock_entry item="toolVise" unlock_tier="1"/> --><!-- Planning for level 28 and workstationsT3-1 -->
 			<!-- <unlock_entry item="cntApiary" unlock_tier="1"/> -->
-			<unlock_entry item="toolDewTarp" unlock_tier="2"/>
-			<unlock_entry item="cementMixer" unlock_tier="3"/>
+			<unlock_entry item="toolDewTarp" unlock_tier="1"/>
+			<unlock_entry item="cementMixer" unlock_tier="2"/>
 			<!-- <unlock_entry item="toolReloadPress" unlock_tier="5"/> --><!-- Planning for level 36 and workstationsT3-5 -->
 			<!-- <unlock_entry item="toolEngineUpgrade" unlock_tier="6"/> --><!-- Planning for level 38 and workstationsT3-6 -->
 		</display_entry>
 		<display_entry icon="toolBeeFrame,resourceWaterFilter,chemistryStation" name_key="workstationsT4-3,workstationsT4-5,workstationsT4-6" has_quality="false" unlock_level="44,48,50">
 			<!-- <unlock_entry item="toolApiaryExtractor" unlock_tier="1"/> -->
 			<!-- <unlock_entry item="toolRockCrusher" unlock_tier="2"/> --><!-- Planning for level 42 and workstationsT4-2 -->
-			<unlock_entry item="toolBeeFrame" unlock_tier="2"/>
+			<unlock_entry item="toolBeeFrame" unlock_tier="1"/>
 			<!-- <unlock_entry item="toolMixerBlade" unlock_tier="4"/> --><!-- Planning for level 46 and workstationsT4-4 -->
-			<unlock_entry item="toolDewFilter" unlock_tier="3"/>
-			<unlock_entry item="chemistryStation" unlock_tier="4"/>
+			<unlock_entry item="toolDewFilter" unlock_tier="2"/>
+			<unlock_entry item="chemistryStation" unlock_tier="3"/>
 		</display_entry>
 		<display_entry icon="toolbeeSmoker,toolForgeCrucible" name_key="workstationsT5-2,workstationsT5-5" has_quality="false" unlock_level="56,75">
 			<!-- <unlock_entry item="toolGlassware" unlock_tier="1"/> --><!-- Planning for level 54 and workstationsT5-1 -->

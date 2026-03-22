@@ -50,9 +50,9 @@
 		</effect_group>
 		
 		<!-- lower damage for most melee weapons -->
-		<effect_group>
-			<passive_effect name="EntityDamage" operation="perc_add" value="-.1" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,admin"/>
-		</effect_group>
+		<!-- <effect_group> -->
+			<!-- <passive_effect name="EntityDamage" operation="perc_add" value="-.1" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,admin"/> -->
+		<!-- </effect_group> -->
 			
 		<!-- initialise meds resistance cvars -->
 		<effect_group>
@@ -1158,9 +1158,6 @@
 		</effect_group>
 	</append>
 	
-	<!-- *** reduce healing from painkillers by 50% -->
-	<set xpath="/buffs/buff[@name='buffDrugPainkillers']/effect_group/triggered_effect[@stat='Health' and @value='40']/@value">40</set>
-	
 	<append xpath="/buffs">
 		<!-- *** signalling buff when standing on a bed/bedroll -->
 		<buff name="buffOnBed" name_key="buffOnBedName" description_key="buffOnBedDesc" icon="ui_game_symbol_map_bed" icon_color="0,255,0">
@@ -1310,7 +1307,7 @@
 		</buff>
 		
 		<!-- *** hyperthermal resist for Yucca juice -->
-		<buff name="buffYuccaJuice" name_key="drinkYuccaJuice" description_key="drinkYuccaJuice" icon="ui_game_symbol_coffee">
+		<buff name="buffYuccaJuice" name_key="drinkYuccaJuice" description_key="drinkYuccaJuiceDesc" icon="ui_game_symbol_cooling" icon_color="0,200,255">
 			<stack_type value="replace"/>
 			<duration value="0"/>
 			<display_value value=".buffYuccaJuiceDisplay"/>
@@ -3314,7 +3311,7 @@
 			<stack_type value="ignore"/>
 			<duration value="0"/>
 			<effect_group>
-				<!-- Multiply current wellness by 0.9 (reduce 10%) -->
+				<!-- Multiply current wellness by 0.95 (reduce 5%) -->
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="wellness" operation="multiply" value="0.95"/>
 				<requirement name="CVarCompare" cvar="wellness" operation="GTE" value="40"/>
 			</effect_group>
@@ -3325,7 +3322,7 @@
 			<stack_type value="ignore"/>
 			<duration value="0"/>
 			<effect_group>
-				<!-- Multiply current wellness by 0.8 (reduce 20%) -->
+				<!-- Multiply current wellness by 0.9 (reduce 10%) -->
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="wellness" operation="multiply" value="0.9"/>
 				<requirement name="CVarCompare" cvar="wellness" operation="GTE" value="40"/>
 			</effect_group>

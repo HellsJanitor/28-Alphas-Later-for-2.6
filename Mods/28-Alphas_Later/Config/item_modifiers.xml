@@ -47,6 +47,23 @@
 				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="-.15"/>
 			</effect_group>
 		</item_modifier>
+		
+		<!-- *** bicycle stamina saver -->
+		<item_modifier name="modBicycleStaminaSaver" installable_tags="vbicycle" modifier_tags="speed" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="UnlockedBy" value="modBicycleStaminaSaverSchematic"/>
+			<property name="TraderStageTemplate" value="modsTier2"/>
+			<property name="CustomIcon" value="modBicycleStaminaSaver"/>
+			<property name="DescriptionKey" value="modBicycleStaminaSaverDesc"/>
+			<property name="EconomicValue" value="750"/>
+			<property name="Group" value="Mods,Tool/Weapon Mods,clothing"/>
+			<effect_group tiered="false">
+				<passive_effect name="VehicleMotorTorquePer" operation="perc_add" value=".5"/>
+				<passive_effect name="VehicleVelocityMaxPer" operation="perc_add" value=".5"/>
+				<passive_effect name="VehiclePlayerStaminaDrainRate" operation="perc_subtract" value=".25"/>
+				<display_value name="dStaminaChangeOT" value=".25"/>
+			</effect_group>
+		</item_modifier>
 	</append>
 	
 	<!-- *** weighted head -->

@@ -33,7 +33,7 @@
 	</append>
 	
 	<!-- <append xpath="//lootgroup[@name='groupMoPower01']"> -->
-		<!-- <item name="resourceNiCdBattery" count="1,2" loot_prob_template="med"/> -->
+	<!-- <item name="resourceNiCdBattery" count="1,2" loot_prob_template="med"/> -->
 	<!-- </append> -->
 	
 	<!-- *** adds cotton seeds to loot -->
@@ -47,11 +47,11 @@
 	
 	<!-- *** adds empty jars to loot -->
 	<!-- <append xpath="/lootcontainers/lootgroup[@name='groupDrinksCommon']"> -->
-		<!-- <item name="drinkJarEmpty" loot_prob_template="veryLow"/> -->
+	<!-- <item name="drinkJarEmpty" loot_prob_template="veryLow"/> -->
 	<!-- </append> -->
 	
 	<!-- <append xpath="/lootcontainers/lootgroup[@name='groupCupboard01']"> -->
-		<!-- <item name="drinkJarEmpty" loot_prob_template="veryLow"/> -->
+	<!-- <item name="drinkJarEmpty" loot_prob_template="veryLow"/> -->
 	<!-- </append> -->
 	
 	<!-- *** cooling mesh and insulated liners -->
@@ -68,10 +68,10 @@
 	<!-- *** adds beehive and chicken coop tools -->
 	<!-- <insertafter xpath="/lootcontainers/lootgroup[@name='metalpipe']"> -->
 	<!-- <lootgroup name="passiveCollectorTools" count="1"> -->
-		<!-- <item name="toolHeatLamp" loot_prob_template="ProbT0"/> -->
-		<!-- <item name="toolNest" loot_prob_template="ProbT0"/> -->
-		<!-- <item name="toolbeeSmoker" loot_prob_template="ProbT0"/> -->
-		<!-- <item name="toolBeeFrame" loot_prob_template="ProbT0"/> -->
+	<!-- <item name="toolHeatLamp" loot_prob_template="ProbT0"/> -->
+	<!-- <item name="toolNest" loot_prob_template="ProbT0"/> -->
+	<!-- <item name="toolbeeSmoker" loot_prob_template="ProbT0"/> -->
+	<!-- <item name="toolBeeFrame" loot_prob_template="ProbT0"/> -->
 	<!-- </lootgroup> -->
 	<!-- </insertafter> -->
 	
@@ -121,11 +121,11 @@
 		</lootgroup>
 	
 		<!-- <lootgroup name="groupLegendaryRanged" count="1" loot_quality_template="qualLegendaryTemplate"> -->
-			<!-- <item name="gunMGT4FNSCAR" count="1"/> -->
-			<!-- <item name="gunHandgunT4MachinePistol" count="1"/> -->
-			<!-- <item name="gunShotgunT4FabarmMartial" count="1"/> -->
-			<!-- <item name="gunHandgunT4MagnumRagingHorn" count="1"/> -->
-			<!-- <item name="gunRifleT4LegendarySniper" count="1"/> -->
+		<!-- <item name="gunMGT4FNSCAR" count="1"/> -->
+		<!-- <item name="gunHandgunT4MachinePistol" count="1"/> -->
+		<!-- <item name="gunShotgunT4FabarmMartial" count="1"/> -->
+		<!-- <item name="gunHandgunT4MagnumRagingHorn" count="1"/> -->
+		<!-- <item name="gunRifleT4LegendarySniper" count="1"/> -->
 		<!-- </lootgroup> -->
 	
 		<lootgroup name="groupLegendary">
@@ -252,38 +252,38 @@
 	<!-- <remove xpath="//lootgroup//item[@group='groupFoodRare']"/> -->
 	
 	<!-- <insertafter xpath="//lootgroup[@name='groupDrinksCommon']"> -->
-		<!-- <lootgroup name="groupDrinksUncommon"> -->
-			<!-- <item name="drinkJarBoiledWater"/> -->
-			<!-- <item name="drinkJarRiverWater"/> -->
-		<!-- </lootgroup> -->
+	<!-- <lootgroup name="groupDrinksUncommon"> -->
+	<!-- <item name="drinkJarBoiledWater"/> -->
+	<!-- <item name="drinkJarRiverWater"/> -->
+	<!-- </lootgroup> -->
 	
-		<!-- <lootgroup name="groupDrinksRare"> -->
-			<!-- <item name="drinkYuccaJuiceSmoothie"/> -->
-			<!-- <item name="drinkJarBlackStrapCoffee"/> -->
-			<!-- <item name="drinkJarPureMineralWater"/> -->
-			<!-- <item name="drinkCanMegaCrush"/> -->
-			<!-- <item name="drinkJarYuccaJuice"/> -->
-			<!-- <item name="drinkJarGoldenRodTea"/> -->
-			<!-- <item name="drinkJarRedTea"/> -->
-			<!-- <item name="drinkJarCoffee"/> -->
-		<!-- </lootgroup> -->
+	<!-- <lootgroup name="groupDrinksRare"> -->
+	<!-- <item name="drinkYuccaJuiceSmoothie"/> -->
+	<!-- <item name="drinkJarBlackStrapCoffee"/> -->
+	<!-- <item name="drinkJarPureMineralWater"/> -->
+	<!-- <item name="drinkCanMegaCrush"/> -->
+	<!-- <item name="drinkJarYuccaJuice"/> -->
+	<!-- <item name="drinkJarGoldenRodTea"/> -->
+	<!-- <item name="drinkJarRedTea"/> -->
+	<!-- <item name="drinkJarCoffee"/> -->
+	<!-- </lootgroup> -->
 	
-		<!-- <lootgroup name="rareFoodDrink"> -->
-			<!-- <item name="drinkJarYuccaJuice"/> -->
-			<!-- <item name="drinkJarGoldenRodTea"/> -->
-			<!-- <item name="drinkJarRedTea"/> -->
-			<!-- <item name="foodShamChowder"/> -->
-			<!-- <item name="foodHoboStew"/> -->
-			<!-- <item name="drinkJarCoffee"/> -->
-			<!-- <item name="drinkCanMegaCrush"/> -->
-		<!-- </lootgroup> -->
+	<!-- <lootgroup name="rareFoodDrink"> -->
+	<!-- <item name="drinkJarYuccaJuice"/> -->
+	<!-- <item name="drinkJarGoldenRodTea"/> -->
+	<!-- <item name="drinkJarRedTea"/> -->
+	<!-- <item name="foodShamChowder"/> -->
+	<!-- <item name="foodHoboStew"/> -->
+	<!-- <item name="drinkJarCoffee"/> -->
+	<!-- <item name="drinkCanMegaCrush"/> -->
+	<!-- </lootgroup> -->
 	
-		<!-- <lootgroup name="groupFoodTrashUncommon"> -->
-			<!-- <item name="foodRottingFlesh" count="1,3" loot_prob_template="medLow"/> -->
-			<!-- <item name="resourceBone" count="1,3" loot_prob_template="med"/> -->
-			<!-- <item name="foodShamSandwich" loot_prob_template="low"/> -->
-			<!-- <item name="resourceAnimalFat" count="1,2" loot_prob_template="veryLow"/> -->
-		<!-- </lootgroup> -->
+	<!-- <lootgroup name="groupFoodTrashUncommon"> -->
+	<!-- <item name="foodRottingFlesh" count="1,3" loot_prob_template="medLow"/> -->
+	<!-- <item name="resourceBone" count="1,3" loot_prob_template="med"/> -->
+	<!-- <item name="foodShamSandwich" loot_prob_template="low"/> -->
+	<!-- <item name="resourceAnimalFat" count="1,2" loot_prob_template="veryLow"/> -->
+	<!-- </lootgroup> -->
 	<!-- </insertafter> -->
 	
 	<!-- *** remove resourceWood from trash piles -->
@@ -301,7 +301,7 @@
 		
 		<lootcontainer name="collapsedSolarBank" count="0,1" size="3,2" sound_open="open_vending" sound_close="close_vending" loot_quality_template="qualBaseTemplate">
 			<item group="groupSolarBank"/>
-		</lootcontainer>	
+		</lootcontainer>
 	</insertbefore>
 	
 	<!-- *** "logical" loot. Credit to izPrebuilt for the XML -->
@@ -513,12 +513,19 @@
 		
 		<lootgroup name="groupZombieCorpses">
 			<item group="groupJunkzombies" loot_prob_template="med"/>
-			<item name="researchPaperBlank" count="5,15"/>			
+			<item name="researchPaperBlank" count="5,15"/>
 		</lootgroup>
 		
-		<lootgroup name="groupZpackRegCorpses" count="all">
+		<lootgroup name="groupZpackRegCorpsesBase" count="all">
 			<item group="groupZombieCorpses" loot_prob_template="high" force_prob="true"/>
-			<item group="groupZpackReg" loot_prob_template="veryLow" force_prob="true" />
+			<item name="researchPaperBlank" count="7,15">
+				<requirement class="Biome" biomes="wasteland"/>
+			</item>
+		</lootgroup>
+
+		<lootgroup name="groupZpackRegCorpsesBaseBonus" count="all">
+			<item group="groupZombieCorpses" loot_prob_template="high" force_prob="true"/>
+			<item group="groupZpackReg"/>
 			<item name="researchPaperBlank" count="7,15">
 				<requirement class="Biome" biomes="wasteland"/>
 			</item>
@@ -526,136 +533,212 @@
 	
 		<lootgroup name="groupZpackNurseCorpses" count="all">
 			<item group="survivalMedical" loot_prob_template="high" force_prob="true"/>
-			<item group="groupZpackNurse" loot_prob_template="veryLow" force_prob="true" />
+			<item group="groupZpackNurse" loot_prob_template="veryLow" force_prob="true"/>
 			<item name="researchPaperBlank" count="5,15"/>
 			<item name="researchPaperBlank" count="7,15">
 				<requirement class="Biome" biomes="wasteland"/>
 			</item>
 		</lootgroup>
+		
+		<lootgroup name="groupZpackNurseCorpsesBonus" count="all">
+			<item group="groupZpackNurseCorpses"/>
+			<item group="groupZpackNurse"/>
+		</lootgroup>
 	
 		<lootgroup name="groupZpackLabCorpses" count="all">
 			<item group="groupLabHazmatLoot" loot_prob_template="high" force_prob="true"/>
-			<item group="groupZpackLab" loot_prob_template="veryLow" force_prob="true" />
+			<item group="groupZpackLab" loot_prob_template="veryLow" force_prob="true"/>
 			<item name="researchPaperBlank" count="5,15"/>
 			<item name="researchPaperBlank" count="7,15">
 				<requirement class="Biome" biomes="wasteland"/>
 			</item>
+		</lootgroup>
+		
+		<lootgroup name="groupZpackLabCorpsesBonus" count="all">
+			<item group="groupZpackLabCorpses"/>
+			<item group="groupZpackLab"/>
 		</lootgroup>
 		
 		<lootgroup name="groupZpackUtilityCorpses" count="all">
 			<item group="groupBuildingCommon" loot_prob_template="high" force_prob="true"/>
 			<item group="groupToolsUtilityWorker" loot_prob_template="low" force_prob="true"/>
-			<item group="groupZpackUtility" loot_prob_template="veryLow" force_prob="true" />
+			<item group="groupZpackUtility" loot_prob_template="veryLow" force_prob="true"/>
 			<item name="researchPaperBlank" count="5,15"/>
 			<item name="researchPaperBlank" count="7,15">
 				<requirement class="Biome" biomes="wasteland"/>
 			</item>
+		</lootgroup>
+		
+		<lootgroup name="groupZpackUtilityCorpsesBonus" count="all">
+			<item group="groupZpackUtilityCorpses"/>
+			<item group="groupZpackUtility"/>
 		</lootgroup>
 		
 		<lootgroup name="groupZpackJanitorCorpses" count="all">
 			<item group="groupBuildingCommon" loot_prob_template="high" force_prob="true"/>
 			<item group="groupUtilityItems" loot_prob_template="low" force_prob="true"/>
-			<item group="groupZpackUtility" loot_prob_template="veryLow" force_prob="true" />
+			<item group="groupZpackUtility" loot_prob_template="veryLow" force_prob="true"/>
 			<item name="researchPaperBlank" count="5,15"/>
 			<item name="researchPaperBlank" count="7,15">
 				<requirement class="Biome" biomes="wasteland"/>
 			</item>
+		</lootgroup>
+		
+		<lootgroup name="groupZpackJanitorCorpsesBonus" count="all">
+			<item group="groupZpackJanitorCorpses"/>
+			<item group="groupZpackUtility"/>
 		</lootgroup>
 		
 		<lootgroup name="groupZpackSoldierCorpses" count="all">
 			<item group="FirearmPostApocRareGroup" loot_prob_template="veryLow" force_prob="true"/>
-			<item group="groupZpackSoldier" loot_prob_template="veryLow" force_prob="true" />
+			<item group="groupZpackSoldier" loot_prob_template="veryLow" force_prob="true"/>
 			<item name="researchPaperBlank" count="7,15">
 				<requirement class="Biome" biomes="wasteland"/>
 			</item>
+		</lootgroup>
+		
+		<lootgroup name="groupZpackSoldierCorpsesBonus" count="all">
+			<item group="groupZpackSoldierCorpses"/>
+			<item group="groupZpackSoldier"/>
 		</lootgroup>
 		
 		<lootgroup name="groupZpackThugCorpses" count="all">
 			<item group="metalpipe" loot_prob_template="med" force_prob="true"/>
-			<item group="groupZpackThug" loot_prob_template="veryLow" force_prob="true" />
+			<item group="groupZpackThug" loot_prob_template="veryLow" force_prob="true"/>
 			<item name="researchPaperBlank" count="5,15"/>
 			<item name="researchPaperBlank" count="7,15">
 				<requirement class="Biome" biomes="wasteland"/>
 			</item>
+		</lootgroup>
+		
+		<lootgroup name="groupZpackThugCorpsesBonus" count="all">
+			<item group="groupZpackThugCorpses"/>
+			<item group="groupZpackThug"/>
 		</lootgroup>
 		
 		<lootgroup name="groupZpackFatCopCorpses" count="all">
 			<item group="CivilianFirearmsGroup" loot_prob_template="veryLow" force_prob="true"/>
-			<item group="groupZpackStrong" loot_prob_template="veryLow" force_prob="true" />
+			<item group="groupZpackStrong" loot_prob_template="veryLow" force_prob="true"/>
 			<item name="researchPaperBlank" count="5,15"/>
 			<item name="researchPaperBlank" count="7,15">
 				<requirement class="Biome" biomes="wasteland"/>
 			</item>
+		</lootgroup>
+		
+		<lootgroup name="groupZpackFatCopCorpsesBonus" count="all">
+			<item group="groupZpackFatCopCorpses"/>
+			<item group="groupZpackStrong"/>
 		</lootgroup>
 		
 		<lootgroup name="groupZpackTouristCorpses" count="all">
 			<item group="groupZombieCorpses" loot_prob_template="high" force_prob="true"/>
-			<item group="groupZpackStrong" loot_prob_template="veryLow" force_prob="true" />
+			<item group="groupZpackStrong" loot_prob_template="veryLow" force_prob="true"/>
 			<item name="researchPaperBlank" count="7,15">
 				<requirement class="Biome" biomes="wasteland"/>
 			</item>
+		</lootgroup>
+		
+		<lootgroup name="groupZpackTouristCorpsesBonus" count="all">
+			<item group="groupZpackTouristCorpses"/>
+			<item group="groupZpackStrong"/>
 		</lootgroup>
 		
 		<lootgroup name="groupZpackHazmatCorpses" count="all">
 			<item group="groupLabHazmatLoot" loot_prob_template="high" force_prob="true"/>
-			<item group="groupZpackLab" loot_prob_template="veryLow" force_prob="true" />
+			<item group="groupZpackLab" loot_prob_template="veryLow" force_prob="true"/>
 			<item name="researchPaperBlank" count="5,15"/>
 			<item name="researchPaperBlank" count="7,15">
 				<requirement class="Biome" biomes="wasteland"/>
 			</item>
+		</lootgroup>
+		
+		<lootgroup name="groupZpackHazmatCorpsesBonus" count="all">
+			<item group="groupZpackHazmatCorpses"/>
+			<item group="groupZpackLab"/>
 		</lootgroup>
 		
 		<lootgroup name="groupZpackLumberjackCorpses" count="all">
 			<item group="groupHuntingRanged" loot_prob_template="veryLow" force_prob="true"/>
-			<item group="groupZpackStrong" loot_prob_template="veryLow" force_prob="true" />
+			<item group="groupZpackStrong" loot_prob_template="veryLow" force_prob="true"/>
 			<item name="researchPaperBlank" count="5,15"/>
 			<item name="researchPaperBlank" count="7,15">
 				<requirement class="Biome" biomes="wasteland"/>
 			</item>
+		</lootgroup>
+		
+		<lootgroup name="groupZpackLumberjackCorpsesBonus" count="all">
+			<item group="groupZpackLumberjackCorpses"/>
+			<item group="groupZpackStrong"/>
 		</lootgroup>
 		
 		<lootgroup name="groupZpackBikerCorpses" count="all">
 			<item group="groupPassNGas" loot_prob_template="low" force_prob="true"/>
-			<item group="groupZpackStrong" loot_prob_template="veryLow" force_prob="true" />
+			<item group="groupZpackStrong" loot_prob_template="veryLow" force_prob="true"/>
 			<item name="researchPaperBlank" count="5,15"/>
 			<item name="researchPaperBlank" count="7,15">
 				<requirement class="Biome" biomes="wasteland"/>
 			</item>
+		</lootgroup>
+		
+		<lootgroup name="groupZpackBikerCorpsesBonus" count="all">
+			<item group="groupZpackBikerCorpses"/>
+			<item group="groupZpackStrong"/>
 		</lootgroup>
 		
 		<lootgroup name="groupZpackPartyGirlCorpses" count="all">
 			<item group="groupPartyGirls" loot_prob_template="high" force_prob="true"/>
-			<item group="groupZpackReg" loot_prob_template="veryLow" force_prob="true" />
+			<item group="groupZpackReg" loot_prob_template="veryLow" force_prob="true"/>
 			<item name="researchPaperBlank" count="5,15"/>
 			<item name="researchPaperBlank" count="7,15">
 				<requirement class="Biome" biomes="wasteland"/>
 			</item>
+		</lootgroup>
+		
+		<lootgroup name="groupZpackPartyGirlCorpsesBonus" count="all">
+			<item group="groupZpackPartyGirlCorpses"/>
+			<item group="groupZpackReg"/>
 		</lootgroup>
 		
 		<lootgroup name="groupZpackBusinessmanCorpses" count="all">
 			<item group="groupValuablesSmall" loot_prob_template="medLow" force_prob="true"/>
-			<item group="groupZpackReg" loot_prob_template="veryLow" force_prob="true" />
+			<item group="groupZpackReg" loot_prob_template="veryLow" force_prob="true"/>
 			<item name="researchPaperBlank" count="5,15"/>
 			<item name="researchPaperBlank" count="7,15">
 				<requirement class="Biome" biomes="wasteland"/>
 			</item>
 		</lootgroup>
 		
+		<lootgroup name="groupZpackBusinessmanCorpsesBonus" count="all">
+			<item group="groupZpackBusinessmanCorpses"/>
+			<item group="groupZpackReg"/>
+		</lootgroup>
+		
 		<lootgroup name="groupZpackStrongCorpses" count="all">
 			<item group="groupZombieCorpses" loot_prob_template="high" force_prob="true"/>
-			<item group="groupZpackStrong" loot_prob_template="veryLow" force_prob="true" />
+			<item group="groupZpackStrong" loot_prob_template="veryLow" force_prob="true"/>
 			<item name="researchPaperBlank" count="7,15">
 				<requirement class="Biome" biomes="wasteland"/>
 			</item>
 		</lootgroup>
 		
+		<lootgroup name="groupZpackStrongCorpsesBonus" count="all">
+			<item group="groupZpackStrongCorpses"/>
+			<item group="groupZpackStrong"/>
+		</lootgroup>
+		
 		<lootgroup name="groupZpackBossCorpses" count="all">
 			<item group="groupZombieCorpses" loot_prob_template="high" force_prob="true"/>
-			<item group="groupZpackBoss" loot_prob_template="veryLow" force_prob="true" />
+			<item group="groupZpackBoss" loot_prob_template="veryLow" force_prob="true"/>
 			<item name="researchPaperBlank" count="7,15">
 				<requirement class="Biome" biomes="wasteland"/>
 			</item>
 		</lootgroup>
+		
+		<lootgroup name="groupZpackBossCorpsesBonus" count="all">
+			<item group="groupZpackBossCorpses"/>
+			<item group="groupZpackBoss"/>
+		</lootgroup>
+
 	</insertafter>
 	
 	<!-- *** replace all magazines in loot with research papers -->
@@ -685,67 +768,131 @@
 	<!-- *** loot from zombie corpses -->
 	<insertafter xpath="/lootcontainers/lootcontainer[@name='zPackReg']">
 		<lootcontainer name="zPackNormalCorpse" count="1" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
-			<item group="groupZpackRegCorpses"/>
+			<item group="groupZpackRegCorpsesBase"/>
+		</lootcontainer>
+
+		<lootcontainer name="zPackNormalCorpseBonus" count="1" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
+			<item group="groupZpackRegCorpsesBaseBonus"/>
 		</lootcontainer>
 		
 		<lootcontainer name="zPackNurseCorpse" count="1" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
 			<item group="groupZpackNurseCorpses"/>
 		</lootcontainer>
 		
+		<lootcontainer name="zPackNurseCorpseBonus" count="1" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
+			<item group="groupZpackNurseCorpsesBonus"/>
+		</lootcontainer>
+		
 		<lootcontainer name="zPackLabCorpse" count="1" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
 			<item group="groupZpackLabCorpses"/>
+		</lootcontainer>
+		
+		<lootcontainer name="zPackLabCorpseBonus" count="1" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
+			<item group="groupZpackLabCorpsesBonus"/>
 		</lootcontainer>
 		
 		<lootcontainer name="zPackUtilityCorpse" count="1" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
 			<item group="groupZpackUtilityCorpses"/>
 		</lootcontainer>
 		
+		<lootcontainer name="zPackUtilityCorpseBonus" count="1" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
+			<item group="groupZpackUtilityCorpsesBonus"/>
+		</lootcontainer>
+		
 		<lootcontainer name="zPackJanitorCorpse" count="1" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
 			<item group="groupZpackJanitorCorpses"/>
+		</lootcontainer>
+		
+		<lootcontainer name="zPackJanitorCorpseBonus" count="1" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
+			<item group="groupZpackJanitorCorpsesBonus"/>
 		</lootcontainer>
 		
 		<lootcontainer name="zPackSoldierCorpse" count="1" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
 			<item group="groupZpackSoldierCorpses"/>
 		</lootcontainer>
 		
+		<lootcontainer name="zPackSoldierCorpseBonus" count="1" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
+			<item group="groupZpackSoldierCorpsesBonus"/>
+		</lootcontainer>
+		
 		<lootcontainer name="zPackThugCorpse" count="1" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
 			<item group="groupZpackThugCorpses"/>
+		</lootcontainer>
+		
+		<lootcontainer name="zPackThugCorpseBonus" count="1" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
+			<item group="groupZpackThugCorpsesBonus"/>
 		</lootcontainer>
 		
 		<lootcontainer name="zPackFatCopCorpse" count="1" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
 			<item group="groupZpackFatCopCorpses"/>
 		</lootcontainer>
 		
+		<lootcontainer name="zPackFatCopCorpseBonus" count="1" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
+			<item group="groupZpackFatCopCorpsesBonus"/>
+		</lootcontainer>
+		
 		<lootcontainer name="zPackTouristCorpse" count="1" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
 			<item group="groupZpackTouristCorpses"/>
+		</lootcontainer>
+		
+		<lootcontainer name="zPackTouristCorpseBonus" count="1" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
+			<item group="groupZpackTouristCorpsesBonus"/>
 		</lootcontainer>
 		
 		<lootcontainer name="zPackHazmatCorpse" count="1" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
 			<item group="groupZpackHazmatCorpses"/>
 		</lootcontainer>
 		
+		<lootcontainer name="zPackHazmatCorpseBonus" count="1" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
+			<item group="groupZpackHazmatCorpsesBonus"/>
+		</lootcontainer>
+		
 		<lootcontainer name="zPackLumberjackCorpse" count="1" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
 			<item group="groupZpackLumberjackCorpses"/>
+		</lootcontainer>
+		
+		<lootcontainer name="zPackLumberjackCorpseBonus" count="1" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
+			<item group="groupZpackLumberjackCorpsesBonus"/>
 		</lootcontainer>
 		
 		<lootcontainer name="zPackBikerCorpse" count="1" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
 			<item group="groupZpackBikerCorpses"/>
 		</lootcontainer>
 		
+		<lootcontainer name="zPackBikerCorpseBonus" count="1" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
+			<item group="groupZpackBikerCorpsesBonus"/>
+		</lootcontainer>
+		
 		<lootcontainer name="zPackPartyGirlCorpse" count="1" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
 			<item group="groupZpackPartyGirlCorpses"/>
+		</lootcontainer>
+		
+		<lootcontainer name="zPackPartyGirlCorpseBonus" count="1" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
+			<item group="groupZpackPartyGirlCorpsesBonus"/>
 		</lootcontainer>
 		
 		<lootcontainer name="zPackBusinessmanCorpse" count="1" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
 			<item group="groupZpackBusinessmanCorpses"/>
 		</lootcontainer>
 		
+		<lootcontainer name="zPackBusinessmanCorpseBonus" count="1" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
+			<item group="groupZpackBusinessmanCorpsesBonus"/>
+		</lootcontainer>
+		
 		<lootcontainer name="zPackStrongCorpse" count="1" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
 			<item group="groupZpackStrongCorpses"/>
 		</lootcontainer>
 		
+		<lootcontainer name="zPackStrongCorpseBonus" count="1" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
+			<item group="groupZpackStrongCorpsesBonus"/>
+		</lootcontainer>
+		
 		<lootcontainer name="zPackBossCorpse" count="1" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
 			<item group="groupZpackBossCorpses"/>
+		</lootcontainer>
+		
+		<lootcontainer name="zPackBossCorpseBonus" count="1" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
+			<item group="groupZpackBossCorpsesBonus"/>
 		</lootcontainer>
 	</insertafter>
 	

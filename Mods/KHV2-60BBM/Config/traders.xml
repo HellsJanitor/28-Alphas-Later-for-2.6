@@ -1,0 +1,16 @@
+<HellsJanitor>
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupArmorMods']">
+		<item name="backpackUpgradeTier1" count="1,2" prob="0.8"/>
+		<item name="backpackUpgradeTier2" count="1,2" prob="0.7"/>
+		<item name="backpackUpgradeTier3" count="1,2" prob="0.7"/>
+	</append>
+
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='schematicsModsCommon']">
+		<item name="schematicBackpackTier1"/>
+		<item name="schematicBackpackTier2"/>
+	</append>
+	
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='rareBooks']">
+		<item name="schematicBackpackTier3"/>
+	</append>
+</HellsJanitor>

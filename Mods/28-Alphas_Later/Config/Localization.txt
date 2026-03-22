@@ -82,6 +82,8 @@ barbedWireSpindleVariantHelper
 barbedWireSpindleVariantHelperBlock
 bedPlayer,King Size Bed
 bedPlayerDesc,When you place this bed you will see a Bed Icon on your compass and map. This will lead you back to your home and will act as a respawn point if you die.\nYou can only have one bedroll or bed active and your last placed bedroll or bed is the active one. Placing a new bed or picking up the last placed bed will permanently clear all previous respawn points.\n\nA placed and active bedroll will prevent enemy respawn in the area. The size of this area is shown while you place it.
+bunkBedMadePlayer,Single Bed
+bunkBedMadePlayerDesc,When you place this bed you will see a Bed Icon on your compass and map. This will lead you back to your home and will act as a respawn point if you die.\nYou can only have one bedroll or bed active and your last placed bedroll or bed is the active one. Placing a new bed or picking up the last placed bed will permanently clear all previous respawn points.\n\nA placed and active bedroll will prevent enemy respawn in the area. The size of this area is shown while you place it.
 beehive,Beehive
 beehiveDesc,"Produces honey, requires a bee."
 BowRepairKit,Bow Repair Kit
@@ -279,6 +281,8 @@ drinkJarDistilledWater,"Distilled Water"
 drinkJarDistilledWaterDesc,"Safe to drink, and as fresh as you can get in the apocalypse."
 drinkJarYuccaJuice,Yucca Juice
 drinkJarYuccaJuiceDesc,"Yucca juice provides excellent hydration, and will help keep you cool."
+drinkYuccaJuice,Yucca Juice
+drinkYuccaJuiceDesc,"Yucca juice provides excellent hydration, and helps keep you cool in hot environments."
 drinkYuccaJuiceSmoothieDesc,"This smoothie helps you boost stamina regeneration, and helps keep you cool."
 drugLavenderOil,Lavender Oil
 drugLavenderOilDesc,"A few drops of lavender on a cloth fragment can provide a moment of relaxation when you’re on the go.\n\nApply it like a bandage - treats 3% Despair."
@@ -389,6 +393,8 @@ modGunBrassCatcher,Brass Catcher
 modGunBrassCatcherDesc,"Will return 50% of bullet casings when installed in 9mm, 7.62mm, & .44 calibre weapons, but makes them a little slower to reload."
 modGunSoundSuppressorSilencer,Suppressor Mod
 modGunSoundSuppressorSilencerSchematic,Suppressor Mod Schematic
+modBicycleStaminaSaver,Bike Gearing
+modBicycleStaminaSaverDesc,Improves the speed of bicycles by 50% and your stamina efficiency by 25%
 mushroom01,Small Mushroom
 mushroom02,Large Mushroom
 npcTraderBooks,Trader Nancy

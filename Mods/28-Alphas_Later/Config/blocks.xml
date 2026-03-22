@@ -57,7 +57,7 @@
 		<property name="SoundPlace" value="cementmixer_place"/>
 		
 		<property name="Fuels" value="ammoGasCan,10"/>
-	</set>	
+	</set>
 	
 	<!-- *** Dew Collector -->
 	<set xpath="/blocks/block[@name='cntDewCollector']">
@@ -83,8 +83,8 @@
 		<property name="OpenSound" value="collector_open"/>
 		<property name="CloseSound" value="collector_close"/>
 		<property name="ConvertSound" value="collector_complete_item"/>
-		<property name="MinConvertTime" value="21600"/> <!-- 21600 Game Seconds = 6 Game Hours -->
-		<property name="MaxConvertTime" value="36000"/> <!-- 36000 Game Seconds = 10 Game Hours -->
+		<property name="MinConvertTime" value="21600"/><!-- 21600 Game Seconds = 6 Game Hours -->
+		<property name="MaxConvertTime" value="36000"/><!-- 36000 Game Seconds = 10 Game Hours -->
 		<!-- <property name="ConvertToItem" value="drinkJarRiverWater"/> -->
 		<!-- <property name="ModdedConvertToItem" value="drinkJarBoiledWater"/> -->
 		<!-- <property name="ModdedConvertSpeed" value="2"/> -->
@@ -277,7 +277,7 @@
 			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
 			<!-- color that will be on the map if top block on terrain -->
 			<!-- this makes up the little indicator for ores on the map -->
-			<property name="Map.Color" value="0,0,255"/> <!-- blue -->
+			<property name="Map.Color" value="0,0,255"/><!-- blue -->
 			<property name="ImposterExclude" value="true"/>
 			<property name="DisplayType" value="blockTerrain"/>
 			<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
@@ -286,6 +286,7 @@
 			<!-- reference to the texture configured in `worldglobal.xml` -->
 			<!-- this is used for the preview block when placing it -->
 			<property name="TerrainIndex" value="ChromiumVoxel"/>
+			<property name="Texture" value="316"/>
 			<property name="MaxDamage" value="1000"/>
 			<!-- get some resources from it (much overpowered for the abundance)-->
 			<drop event="Harvest" name="resourceChromium" count="105" tag="oreWoodHarvest"/>
@@ -312,7 +313,7 @@
 			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
 			<!-- color that will be on the map if top block on terrain -->
 			<!-- this makes up the little indicator for ores on the map -->
-			<property name="Map.Color" value="255,0,0"/> <!-- red -->
+			<property name="Map.Color" value="255,0,0"/><!-- red -->
 			<property name="ImposterExclude" value="true"/>
 			<property name="DisplayType" value="blockTerrain"/>
 			<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
@@ -320,7 +321,8 @@
 			<property name="MicroSplatVoxel" value="oreCopperVoxel"/>
 			<!-- reference to the texture configured in `worldglobal.xml` -->
 			<!-- this is used for the preview block when placing it -->
-			<property name="TerrainIndex" value="ChromiumVoxel"/>
+			<property name="TerrainIndex" value="CopperVoxel"/>
+			<property name="Texture" value="33"/>
 			<property name="MaxDamage" value="750"/>
 			<!-- get some resources from it (much overpowered for the abundance)-->
 			<drop event="Harvest" name="resourceCopper" count="105" tag="oreWoodHarvest"/>
@@ -331,7 +333,7 @@
 			<drop event="Harvest" name="resourceGoldNugget" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<drop event="Fall" name="resourceCopper" count="150" prob="0.4" stick_chance="0"/>
-		</block>		
+		</block>
 		
 		<block name="terrOreLimestone" map-only="*">
 			<property name="CanMobsSpawnOn" value="true"/>
@@ -347,7 +349,7 @@
 			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
 			<!-- color that will be on the map if top block on terrain -->
 			<!-- this makes up the little indicator for ores on the map -->
-			<property name="Map.Color" value="255,255,0"/> <!-- yellow -->
+			<property name="Map.Color" value="255,255,0"/><!-- yellow -->
 			<property name="ImposterExclude" value="true"/>
 			<property name="DisplayType" value="blockTerrain"/>
 			<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
@@ -356,6 +358,7 @@
 			<!-- reference to the texture configured in `worldglobal.xml` -->
 			<!-- this is used for the preview block when placing it -->
 			<property name="TerrainIndex" value="LimestoneVoxel"/>
+			<property name="Texture" value="300"/>
 			<property name="MaxDamage" value="600"/>
 			<!-- get some resources from it (much overpowered for the abundance)-->
 			<drop event="Harvest" name="resourceLimestone" count="105" tag="oreWoodHarvest"/>
@@ -382,7 +385,7 @@
 			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
 			<!-- color that will be on the map if top block on terrain -->
 			<!-- this makes up the little indicator for ores on the map -->
-			<property name="Map.Color" value="128,0,128"/> <!-- purple -->
+			<property name="Map.Color" value="128,0,128"/><!-- purple -->
 			<property name="ImposterExclude" value="true"/>
 			<property name="DisplayType" value="blockTerrain"/>
 			<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
@@ -391,6 +394,7 @@
 			<!-- reference to the texture configured in `worldglobal.xml` -->
 			<!-- this is used for the preview block when placing it -->
 			<property name="TerrainIndex" value="ZincVoxel"/>
+			<property name="Texture" value="300"/>
 			<property name="MaxDamage" value="950"/>
 			<!-- get some resources from it (much overpowered for the abundance)-->
 			<drop event="Harvest" name="resourceZinc" count="105" tag="oreWoodHarvest"/>
@@ -402,7 +406,7 @@
 			<drop event="Destroy" count="0"/>
 			<drop event="Fall" name="resourceZinc" count="150" prob="0.4" stick_chance="0"/>
 		</block>
-		</insertafter>
+	</insertafter>
 	
 	<append xpath="/blocks">
 		<!-- *** used in deco_ore_vein POIs -->
@@ -843,9 +847,9 @@
 			<property name="DescriptionKey" value="bedGroupDesc"/>
 			<property name="CustomIcon" value="bed02White"/>
 			<property name="TintColor" value="333333"/>
-			<!-- <property name="ItemTypeIcon" value="all_blocks"/> -->
-			<!-- <property name="SelectAlternates" value="true"/> -->
-			<!-- <property name="PlaceAltBlockValue" value="bed02White,bed02Brown,bed02Red,bed02Orange,bed02Yellow,bed02Green,bed02Blue,bed02Purple,bed02Grey,bed02,bed02Pink,bed02ArmyGreen"/> -->
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="bedPlayerWhite,bedPlayerBrown,bedPlayerRed,bedPlayerOrange,bedPlayerYellow,bedPlayerGreen,bedPlayerBlue,bedPlayerPurple,bedPlayerGrey,bedPlayer,bedPlayerPink,bedPlayerArmyGreen"/>
 			<property name="DisplayType" value="blockMulti"/>
 			<property name="Material" value="Mfurniture"/>
 			<property name="Shape" value="ModelEntity"/>
@@ -875,6 +879,243 @@
 			<property name="Tags" value="bedroll,challenge_sinks,playerbed"/>
 			<property name="IndexName" value="challenge_sinks"/>
 			<property name="CanPickup" value="true" param1="bedPlayer"/>
+		</block>
+		
+		<!-- White -->
+		<block name="bedPlayerWhite">
+			<property name="Extends" value="bedPlayer"/>
+			<property name="CustomIcon" value="bed02White"/>
+			<property name="CustomIconTint" value="A2A29C"/>
+			<property name="TintColor" value="A2A29C"/>
+			<property name="SortOrder2" value="9000"/>
+		</block>
+
+		<!-- Brown -->
+		<block name="bedPlayerBrown">
+			<property name="Extends" value="bedPlayer"/>
+			<property name="CustomIcon" value="bed02White"/>
+			<property name="CustomIconTint" value="524938"/>
+			<property name="TintColor" value="524938"/>
+			<property name="SortOrder2" value="9001"/>
+		</block>
+
+		<!-- Red -->
+		<block name="bedPlayerRed">
+			<property name="Extends" value="bedPlayer"/>
+			<property name="CustomIcon" value="bed02White"/>
+			<property name="CustomIconTint" value="7E3737"/>
+			<property name="TintColor" value="7E3737"/>
+			<property name="SortOrder2" value="9002"/>
+		</block>
+
+		<!-- Orange -->
+		<block name="bedPlayerOrange">
+			<property name="Extends" value="bedPlayer"/>
+			<property name="CustomIcon" value="bed02White"/>
+			<property name="CustomIconTint" value="7E5738"/>
+			<property name="TintColor" value="7E5738"/>
+			<property name="SortOrder2" value="9003"/>
+		</block>
+
+		<!-- Yellow -->
+		<block name="bedPlayerYellow">
+			<property name="Extends" value="bedPlayer"/>
+			<property name="CustomIcon" value="bed02White"/>
+			<property name="CustomIconTint" value="7E7738"/>
+			<property name="TintColor" value="7E7738"/>
+			<property name="SortOrder2" value="9004"/>
+		</block>
+
+		<!-- Green -->
+		<block name="bedPlayerGreen">
+			<property name="Extends" value="bedPlayer"/>
+			<property name="CustomIcon" value="bed02White"/>
+			<property name="CustomIconTint" value="315D3B"/>
+			<property name="TintColor" value="315D3B"/>
+			<property name="SortOrder2" value="9005"/>
+		</block>
+
+		<!-- Blue -->
+		<block name="bedPlayerBlue">
+			<property name="Extends" value="bedPlayer"/>
+			<property name="CustomIcon" value="bed02White"/>
+			<property name="CustomIconTint" value="3B5671"/>
+			<property name="TintColor" value="3B5671"/>
+			<property name="SortOrder2" value="9006"/>
+		</block>
+
+		<!-- Purple -->
+		<block name="bedPlayerPurple">
+			<property name="Extends" value="bedPlayer"/>
+			<property name="CustomIcon" value="bed02White"/>
+			<property name="CustomIconTint" value="3B3D70"/>
+			<property name="TintColor" value="3B3D70"/>
+			<property name="SortOrder2" value="9007"/>
+		</block>
+
+		<!-- Grey -->
+		<block name="bedPlayerGrey">
+			<property name="Extends" value="bedPlayer"/>
+			<property name="CustomIcon" value="bed02White"/>
+			<property name="CustomIconTint" value="656565"/>
+			<property name="TintColor" value="656565"/>
+			<property name="SortOrder2" value="9008"/>
+		</block>
+
+		<!-- Pink -->
+		<block name="bedPlayerPink">
+			<property name="Extends" value="bedPlayer"/>
+			<property name="CustomIcon" value="bed02White"/>
+			<property name="CustomIconTint" value="775D76"/>
+			<property name="TintColor" value="775D76"/>
+			<property name="SortOrder2" value="9010"/>
+		</block>
+
+		<!-- Army Green -->
+		<block name="bedPlayerArmyGreen">
+			<property name="Extends" value="bedPlayer"/>
+			<property name="CustomIcon" value="bed02White"/>
+			<property name="CustomIconTint" value="475643"/>
+			<property name="TintColor" value="475643"/>
+			<property name="SortOrder2" value="9011"/>
+		</block>
+		
+		<block name="bunkBedMadePlayer">
+			<property name="Class" value="SleepingBag"/>
+			<property name="DescriptionKey" value="bunkBedMadePlayerDesc"/>
+			<property name="CustomIcon" value="bunkBedMadeWhite"/>
+			<property name="TintColor" value="333333"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="bunkBedMadePlayerWhite,bunkBedMadePlayerBrown,bunkBedMadePlayerRed,bunkBedMadePlayerOrange,bunkBedMadePlayerYellow,bunkBedMadePlayerGreen,bunkBedMadePlayerBlue,bunkBedMadePlayerPurple,bunkBedMadePlayerGrey,bunkBedMadePlayerPink,bunkBedMadePlayerArmyGreen"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Material" value="Mfurniture"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Furniture/bedMadePrefab.prefab"/>
+			<property name="MultiBlockDim" value="1,1,2"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="EconomicValue" value="2600"/>
+			<property name="FallDamage" value=".6"/>
+			<property class="RepairItems">
+				<property name="resourceCloth" value="40"/>
+				<property name="resourceSpring" value="20"/>
+				<property name="resourceWood" value="20"/>
+				<property name="resourceMetalPipe" value="10"/>
+			</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceCloth" count="100" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceCropCottonPlant" count="40" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceWood" count="20" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceSpring" count="20" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceMetalPipe" count="10" tag="salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="SortOrder1" value="B434"/>
+			<property name="SortOrder2" value="9009"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="FilterTags" value="MC_building,SC_decor"/>
+			<property name="Tags" value="bedroll,challenge_sinks,playerbed"/>
+			<property name="IndexName" value="challenge_sinks"/>
+			<property name="CanPickup" value="true" param1="bunkBedMadePlayer"/>
+		</block>
+		
+		<!-- White -->
+		<block name="bunkBedMadePlayerWhite">
+			<property name="Extends" value="bunkBedMadePlayer"/>
+			<property name="CustomIcon" value="bunkBedMadeWhite"/>
+			<property name="CustomIconTint" value="A2A29C"/>
+			<property name="TintColor" value="A2A29C"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<!-- Brown -->
+		<block name="bunkBedMadePlayerBrown">
+			<property name="Extends" value="bunkBedMadePlayer"/>
+			<property name="CustomIcon" value="bunkBedMadeWhite"/>
+			<property name="CustomIconTint" value="524938"/>
+			<property name="TintColor" value="524938"/>
+			<property name="SortOrder2" value="0001"/>
+		</block>
+
+		<!-- Red -->
+		<block name="bunkBedMadePlayerRed">
+			<property name="Extends" value="bunkBedMadePlayer"/>
+			<property name="CustomIcon" value="bunkBedMadeWhite"/>
+			<property name="CustomIconTint" value="7E3737"/>
+			<property name="TintColor" value="7E3737"/>
+			<property name="SortOrder2" value="0002"/>
+		</block>
+
+		<!-- Orange -->
+		<block name="bunkBedMadePlayerOrange">
+			<property name="Extends" value="bunkBedMadePlayer"/>
+			<property name="CustomIcon" value="bunkBedMadeWhite"/>
+			<property name="CustomIconTint" value="7E5738"/>
+			<property name="TintColor" value="7E5738"/>
+			<property name="SortOrder2" value="0003"/>
+		</block>
+
+		<!-- Yellow -->
+		<block name="bunkBedMadePlayerYellow">
+			<property name="Extends" value="bunkBedMadePlayer"/>
+			<property name="CustomIcon" value="bunkBedMadeWhite"/>
+			<property name="CustomIconTint" value="7E7738"/>
+			<property name="TintColor" value="7E7738"/>
+			<property name="SortOrder2" value="0004"/>
+		</block>
+
+		<!-- Green -->
+		<block name="bunkBedMadePlayerGreen">
+			<property name="Extends" value="bunkBedMadePlayer"/>
+			<property name="CustomIcon" value="bunkBedMadeWhite"/>
+			<property name="CustomIconTint" value="315D3B"/>
+			<property name="TintColor" value="315D3B"/>
+			<property name="SortOrder2" value="0005"/>
+		</block>
+
+		<!-- Blue -->
+		<block name="bunkBedMadePlayerBlue">
+			<property name="Extends" value="bunkBedMadePlayer"/>
+			<property name="CustomIcon" value="bunkBedMadeWhite"/>
+			<property name="CustomIconTint" value="3B5671"/>
+			<property name="TintColor" value="3B5671"/>
+			<property name="SortOrder2" value="0006"/>
+		</block>
+
+		<!-- Purple -->
+		<block name="bunkBedMadePlayerPurple">
+			<property name="Extends" value="bunkBedMadePlayer"/>
+			<property name="CustomIcon" value="bunkBedMadeWhite"/>
+			<property name="CustomIconTint" value="3B3D70"/>
+			<property name="TintColor" value="3B3D70"/>
+			<property name="SortOrder2" value="0007"/>
+		</block>
+
+		<!-- Grey -->
+		<block name="bunkBedMadePlayerGrey">
+			<property name="Extends" value="bunkBedMadePlayer"/>
+			<property name="CustomIcon" value="bunkBedMadeWhite"/>
+			<property name="CustomIconTint" value="656565"/>
+			<property name="TintColor" value="656565"/>
+			<property name="SortOrder2" value="0008"/>
+		</block>
+
+		<!-- Pink -->
+		<block name="bunkBedMadePlayerPink">
+			<property name="Extends" value="bunkBedMadePlayer"/>
+			<property name="CustomIcon" value="bunkBedMadeWhite"/>
+			<property name="CustomIconTint" value="775D76"/>
+			<property name="TintColor" value="775D76"/>
+			<property name="SortOrder2" value="0010"/>
+		</block>
+
+		<!-- Army Green -->
+		<block name="bunkBedMadePlayerArmyGreen">
+			<property name="Extends" value="bunkBedMadePlayer"/>
+			<property name="CustomIcon" value="bunkBedMadeWhite"/>
+			<property name="CustomIconTint" value="475643"/>
+			<property name="TintColor" value="475643"/>
+			<property name="SortOrder2" value="0011"/>
 		</block>
 		
 		<!-- *** Chicken Coop -->
@@ -1003,7 +1244,7 @@
 		</block>
 		
 		<!-- *** Butchers table -->
-		<block name="butchersTable">			
+		<block name="butchersTable">
 			<!-- Class -->
 			<property name="Class" value="Workstation"/>
 			<property class="Workstation">
@@ -1072,20 +1313,20 @@
 		<property name="Tags" value="bedroll"/>
 	</append>
 	
-	<!-- <append xpath="/blocks/block[starts-with (@name,'bed02') and not (@name='bed02') and not (@name='bed02RandomHelper')]"> -->
-		<!-- <property name="CanPickup" value="true" param1="bedPlayer"/> -->
-		<!-- <property name="Tags" value="bedroll"/> -->
+	<!-- <append xpath="/blocks/block[starts-with (@name,'bedPlayer') and not (@name='bedPlayer') and not (@name='bedPlayerRandomHelper')]"> -->
+	<!-- <property name="CanPickup" value="true" param1="bedPlayer"/> -->
+	<!-- <property name="Tags" value="bedroll"/> -->
 	<!-- </append>	 -->
 	
 	<!-- *** ground align for goreblocks (test) -->
 	<!-- <append xpath="/blocks/block[@name='goreBlockHumanBones']"> -->
-		<!-- <property name="GndAlign" value="1"/> -->
-		<!-- <property name="ModelOffset" value="0,0.5,0"/> -->
+	<!-- <property name="GndAlign" value="1"/> -->
+	<!-- <property name="ModelOffset" value="0,0.5,0"/> -->
 	<!-- </append> -->
 	
 	<!-- <append xpath="/blocks/block[@name='goreHumanSkull']"> -->
-		<!-- <property name="GndAlign" value="-1"/> -->
-		<!-- <property name="ModelOffset" value="0.2,0,0.2"/> -->
+	<!-- <property name="GndAlign" value="-1"/> -->
+	<!-- <property name="ModelOffset" value="0.2,0,0.2"/> -->
 	<!-- </append> -->
 	
 	<set xpath="//block[@name='wallTorchLight']">
