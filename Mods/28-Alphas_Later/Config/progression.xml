@@ -56,18 +56,19 @@
 	
 	<!-- *** crafting unlocks for new vehicles -->
 	<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingVehicles']">
-		<display_entry icon="vehicleBicyclePlaceable" name_key="vehiclesT1" has_quality="false" unlock_level="5">
-			<unlock_entry item="vehicleBicycleChassis,vehicleBicycleHandlebars,vehicleWheels" unlock_tier="1"/>
+		<display_entry icon="vehicleBicyclePlaceable,vehicleMinibikePlaceable" name_key="vehiclesT1" has_quality="false" unlock_level="5,10">
+			<unlock_entry item="vehicleBicycleChassis,vehicleBicycleHandlebars" unlock_tier="1"/>
+			<unlock_entry item="vehicleMinibikeChassis,vehicleMinibikeHandlebars,vehicleWheels" unlock_tier="2"/>
 		</display_entry>
 		
-		<display_entry icon="vehicleMinibikePlaceable,vehicleRuinRipperPlaceable" name_key="vehiclesT2" has_quality="false" unlock_level="20,30">
-			<unlock_entry item="vehicleMinibikeChassis,vehicleMinibikeHandlebars,resourceOil,ammoGasCan,vehicleWheels" unlock_tier="1"/>
-			<unlock_entry item="vehicleDirtBikeChassis,vehicleDirtBikeHandlebars" unlock_tier="2"/>
+		<display_entry icon="vehicleRuinRipperPlaceable,vehicleQuadBikePlaceable" name_key="vehiclesT2" has_quality="false" unlock_level="20,30">
+			<unlock_entry item="vehicleDirtBikeChassis,vehicleDirtBikeHandlebars" unlock_tier="1"/>
+			<unlock_entry item="vehicleQuadBikeChassis,vehicleQuadBikeHandlebars,resourceOil,ammoGasCan" unlock_tier="2"/>
 		</display_entry>
 		
 		<display_entry icon="vehicleMotorcyclePlaceable,vehicleTheHornetPlaceable" name_key="vehiclesT3" has_quality="false" unlock_level="45,55">
-			<unlock_entry item="vehicleMotorcycleChassis,vehicleMotorcycleHandlebars,ammoGasCanBundle" unlock_tier="1"/>
-			<unlock_entry item="vehicleDuneBuggyChassis,vehicleDuneBuggyAccessories" unlock_tier="2"/>
+			<unlock_entry item="vehicleMotorcycleChassis,vehicleMotorcycleHandlebars" unlock_tier="1"/>
+			<unlock_entry item="vehicleDuneBuggyChassis,vehicleDuneBuggyAccessories,ammoGasCanBundle" unlock_tier="2"/>
 		</display_entry>
 		
 		<display_entry icon="vehicleTruck4x4Placeable" name_key="vehiclesT4" has_quality="false" unlock_level="70">
@@ -79,13 +80,14 @@
 		</display_entry>
 
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="vehicleBicycleChassis,vehicleBicycleHandlebars,vehicleWheels"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="vehicleMinibikeChassis,vehicleMinibikeHandlebars,resourceOil,ammoGasCan,MinibikeBundle"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,100" value="1" tags="vehicleDirtBikeChassis,vehicleDirtBikeHandlebars,RuinRipperBundle"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="45,100" value="1" tags="vehicleMotorcycleChassis,vehicleMotorcycleHandlebars,ammoGasCanBundle,MotorcycleBundle"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="55,100" value="1" tags="vehicleDuneBuggyChassis,vehicleDuneBuggyAccessories,vehicleDuneBuggyBundle"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="70,100" value="1" tags="vehicleTruck4x4Chassis,vehicleTruck4x4Accessories,4x4Bundle"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="100,100" value="1" tags="vehicleGyroCopterChassis,vehicleGyroCopterAccessories,GyroBundle"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="vehicleBicycleChassis,vehicleBicycleHandlebars"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,100" value="1" tags="vehicleMinibikeChassis,vehicleMinibikeHandlebars,vehicleWheels"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="vehicleDirtBikeChassis,vehicleDirtBikeHandlebars"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,100" value="1" tags="vehicleQuadBikeChassis,vehicleQuadBikeHandlebars,resourceOil,ammoGasCan"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="45,100" value="1" tags="vehicleMotorcycleChassis,vehicleMotorcycleHandlebars"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="55,100" value="1" tags="vehicleDuneBuggyChassis,vehicleDuneBuggyAccessories,ammoGasCanBundle"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="70,100" value="1" tags="vehicleTruck4x4Chassis,vehicleTruck4x4Accessories"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="100,100" value="1" tags="vehicleGyroCopterChassis,vehicleGyroCopterAccessories"/>
 		</effect_group>
 	</set>
 	

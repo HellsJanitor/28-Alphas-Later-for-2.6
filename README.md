@@ -4,6 +4,20 @@
 
 The idea behind this mod is to slow progression, make traders less powerful, and generally extend the time for a playthrough, while keeping the vanilla look and feel.
 > [!IMPORTANT]
+>25/03/26 mod version 2.6.0.6
+
+ - Lowered the armour rating for primitive Armour.
+
+ - Fixed a bug with Izy's weapons not showing correct qualities when unlocked.
+
+ - Fixed a bug with pinned recipes (they can now be pinned again).
+
+ - Added a new vehicle - the quad bike. Same storage as a gyrocopter, similar speed to the 4x4.
+ 
+> [!CAUTION]
+> This *might* break your progression - so back-up any existing saves, just in case.
+ 
+> [!IMPORTANT]
 >22/03/26 mod version 2.6.0.5
 
 > [!CAUTION]

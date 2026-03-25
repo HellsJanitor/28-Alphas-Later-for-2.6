@@ -3580,7 +3580,7 @@
 				<requirement name="!HasBuff" buff="buffDrugVitamins"/>
 				<requirement name="CVarCompare" cvar="wellness" operation="GTE" value="40"/>
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="wellness" operation="subtract" value="1"/>
-				<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="buffWellnessNegativeOne"/>
+				<!-- <triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="buffWellnessNegativeOne"/> -->
 			</effect_group>
 		</buff>
 		
@@ -3591,7 +3591,7 @@
 				<requirement name="!HasBuff" buff="buffDrugVitamins"/>
 				<requirement name="CVarCompare" cvar="wellness" operation="GTE" value="40"/>
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="wellness" operation="subtract" value="5"/>
-				<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="buffWellnessNegativeTwo"/>
+				<!-- <triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="buffWellnessNegativeTwo"/> -->
 			</effect_group>
 		</buff>
 		

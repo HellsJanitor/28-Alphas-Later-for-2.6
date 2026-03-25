@@ -2266,7 +2266,7 @@
 		<item name="vehicleDirtBikePlaceable">
 			<property name="Extends" value="vehicleMinibikePlaceable"/>
 			<property name="CustomIcon" value="vehicleRuinRipperPlaceable"/>
-			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vstorage,canHaveCosmetic"/>
+			<property name="Tags" value="vehicle,varmor,vengine,vfuel,vlight,vstorage,canHaveCosmetic"/>
 			<property name="Meshfile" value="#@modfolder:Resources/DirtBike.unity3d?Ruin_Runner"/>
 			<property name="EconomicValue" value="10000"/>
 			<property name="TraderStageTemplate" value="vehicleTier2"/>
@@ -2275,6 +2275,49 @@
 			<property class="Action1">
 				<property name="Vehicle" value="vehicleDirtBike"/>
 				<property name="VehicleSize" value="1.3, 1.9, 3"/>
+			</property>
+			<effect_group name="main" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="4000"/>
+			</effect_group>
+		</item>
+		
+		<!-- *** Quad Bike -->
+		<item name="vehicleQuadBikeChassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="vehicleQuadBikeChassis"/>
+			<property name="Tags" value="vehiclesSkill"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="TraderStageTemplate" value="vehicleTier1"/>
+			<property name="UnlockedBy" value="craftingVehicles"/><!-- perkGreaseMonkey,vehicleMotorcycleChassisSchematic, -->
+			<property name="SoundPickup" value="chassis_grab"/>
+			<property name="SoundPlace" value="chassis_place"/>
+		</item>
+
+		<item name="vehicleQuadBikeHandlebars">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="vehicleQuadBikeHandleBars"/>
+			<property name="Tags" value="vehiclesSkill"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="TraderStageTemplate" value="vehicleTier1"/>
+			<property name="UnlockedBy" value="craftingVehicles"/><!-- perkGreaseMonkey,vehicleMotorcycleHandlebarsSchematic, -->
+			<property name="SoundPickup" value="handlebars_grab"/>
+			<property name="SoundPlace" value="handlebars_place"/>
+		</item>
+
+		<item name="vehicleQuadBikePlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="vehicleQuadBikePlaceable"/>
+			<property name="Tags" value="vehicle,varmor,vengine,vfuel,vlight,vseat,vstorage,canHaveCosmetic"/>
+			<property name="Meshfile" value="#@modfolder:Resources/QuadBike.unity3d?Quad_Bike"/>
+			<property name="EconomicValue" value="11000"/>
+			<property name="TraderStageTemplate" value="vehicleTier3"/>
+			<property name="SoundPickup" value="motorcycle_grab"/>
+			<property name="SoundPlace" value="motorcycle_place"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleQuadBike"/>
+				<property name="VehicleSize" value="1.9, 1.9, 3"/>
 			</property>
 			<effect_group name="main" tiered="false">
 				<passive_effect name="ModSlots" operation="base_set" value="4"/>
@@ -4821,17 +4864,17 @@
 	<set xpath="/items/item/effect_group/passive_effect[@tier='1,6']/@tier">1,600</set>
 	<set xpath="/items/item/effect_group/passive_effect[@tier='2,6']/@tier">101,600</set>
 	
-	<set xpath="/items/item[starts-with(@name,'armor') or (starts-with(@name,'meleeTool')) or (starts-with(@name,'gun')) and not (contains(@name,'Primitive')) and not (contains(@name,'T0'))]/effect_group/passive_effect[@name='ModSlots']/@value">0,1,2,3,4,5</set>
+	<set xpath="/items/item[starts-with(@name,'armor') or (starts-with(@name,'meleeTool')) or (starts-with(@name,'gun')) and not (starts-with(@name,'armorPrimitive')) and not (contains(@name,'T0'))]/effect_group/passive_effect[@name='ModSlots']/@value">0,1,2,3,4,5</set>
 	
-	<prepend xpath="/items/item[starts-with(@name,'armor') or (starts-with(@name,'meleeTool')) or (starts-with(@name,'gun')) and not (contains(@name,'Primitive')) and not (contains(@name,'T0'))]">
+	<prepend xpath="/items/item[starts-with(@name,'armor') or (starts-with(@name,'meleeTool')) or (starts-with(@name,'gun')) or (starts-with(@name,'meleeWpn'))]">
 		<property name="HJModSlotsByTier" value="0,1,2,3,4,5"/>
 	</prepend>
 	
 	<set xpath="/items/item[starts-with(@name,'armorPrimitive') or (contains(@name,'T0'))]/effect_group/passive_effect[@name='ModSlots']/@value">0,1,1,1,1,1</set>
+	<set xpath="/items/item[starts-with(@name,'armorPrimitive')]/effect_group/passive_effect[@name='PhysicalDamageResist' and @tier='1,600']/@value">1,1</set>
+	<set xpath="/items/item[starts-with(@name,'armorPrimitive')]/effect_group/passive_effect[@name='ElementalDamageResist' and @tier='1,600']/@value">1,1</set>
 	
-	<prepend xpath="/items/item[starts-with(@name,'armorPrimitive') or (contains(@name,'T0'))]">
-		<property name="HJModSlotsByTier" value="0,1,1,1,1,1"/>
-	</prepend>
+	<set xpath="/items/item[starts-with(@name,'armorPrimitive') or (contains(@name,'T0'))]/property[@name='HJModSlotsByTier']/@value">0,1,1,1,1,1</set>	
 	
 	<prepend xpath="/items/item[starts-with(@name,'clothing')]">
 		<property name="HJModSlotsByTier" value="0,0,0,0,0,0"/>

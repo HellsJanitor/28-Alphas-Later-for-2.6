@@ -1,0 +1,15 @@
+<HellsJanitor>
+	<conditional>
+		<if cond="mod_loaded('IZY_RMP_9mmVAL')">
+			<remove xpath="/lootcontainers/lootgroup/item[@name='IZYgunT4DualPistolC96M']"/>
+			<remove xpath="/lootcontainers/lootgroup/item[@name='IZYgunT3SMGMP5Ksubmachinegun']"/>
+			<remove xpath="/lootcontainers/lootgroup/item[@name='IZYgunT4SMGColt9mmsubmachinegun']"/>
+		</if>
+	</conditional>
+	
+	<conditional>
+		<if cond="mod_loaded('IZY_RMP_SG')">
+			<remove xpath="/lootcontainers/lootgroup/item[@name='IZYgunT4TACshotgunM1014']"/>
+		</if>
+	</conditional>
+</HellsJanitor>

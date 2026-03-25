@@ -1,4 +1,5 @@
 <HellsJanitor>
+	
 	<conditional>
 		<if cond="mod_loaded('IZY_RMP_45ACP')">
 			<append xpath="/recipes">
@@ -63,6 +64,13 @@
 					<ingredient name="ammo556mmArmorPiercing" count="10"/>
 				</recipe>
 			</append>
+			
+			<remove xpath="/recipes/recipe[@name='IZYgunT1LRLongRifleM16a1']"/>
 		</if>
 	</conditional>
+	
+	<!-- *** Q600 rework -->
+	<set xpath="/recipes/recipe[starts-with(@name,'IZY')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='2,6']/@level">101,600</set>
+	<set xpath="/recipes/recipe[starts-with(@name,'IZY')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='6']/@level">501,600</set>
+	
 </HellsJanitor>

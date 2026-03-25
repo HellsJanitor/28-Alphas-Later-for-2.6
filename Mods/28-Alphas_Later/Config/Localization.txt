@@ -589,7 +589,12 @@ vehicleDuneBuggy,The Hornet
 vehicleDuneBuggyAccessories,The Hornet Accessories
 vehicleDuneBuggyChassis,The Hornet Chassis
 vehicleDuneBuggyPlaceable,The Hornet
-vehiclesT2,"Tier 2: Minibike, Dirt Bike, Oil, & Gas"
+vehicleQuadBikeChassis,The Grasshopper Chassis
+vehicleQuadBikeHandlebars,The Grasshopper Handlebars
+vehicleQuadBikePlaceable,The Grasshopper
+vehicleQuadBike,The Grasshopper
+vehiclesT1,"Tier 1: Bicycle, Minibike, & Wheels"
+vehiclesT2,"Tier 2: Dirt Bike, Quad Bike, Oil, & Gas"
 vehiclesT3,"Tier 3: Motorcycle, Dune Buggy & Stacks of Gas Cans"
 venomDesc,"Key ingredient for antivenom."
 woodLogPillar100Desc,Wood logs are good for crude walls or palisades or as fuel for campfires.\n\nPlace them as a block and chop them with an axe for wood planks.

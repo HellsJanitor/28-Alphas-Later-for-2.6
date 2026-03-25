@@ -279,7 +279,7 @@
 				</grid>
 			</rect>
 		</rect>
-	</set>
+	</set>	
 	
 	<append xpath="/windows/window[@name='windowForgeInput']/@materials_accepted">,chromium,copper,limestone,zinc</append>
 	<set xpath="/windows/window[@name='windowForgeInput']">

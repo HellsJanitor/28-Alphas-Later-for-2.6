@@ -2578,6 +2578,28 @@
 			<property name="NavObject" value="dirtbike"/>
 		</entity_class>
 		
+		<!-- *** Quad Bike -->
+		<entity_class name="vehicleQuadBike">
+			<property name="Class" value="EntityMotorcycle"/>
+			<property name="Tags" value="vehicle,usesGas,bikerSetBonus"/>
+			<!-- <property name="Parent" value="Cars"/> -->
+			<property name="Prefab" value="#@modfolder:Resources/QuadBike.unity3d?Quad_Bike"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="SurfaceCategory" value="metal"/>
+			<property name="IgnoreTrigger" value="true"/>
+			<property name="LootListAlive" value="vehicleGyrocopter"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="Explosion.ParticleIndex" value="27"/>
+			<property name="Explosion.RadiusBlocks" value="4"/>
+			<property name="Explosion.RadiusEntities" value="4"/>
+			<property name="Explosion.BlockDamage" value="50"/>
+			<property name="Explosion.EntityDamage" value="50"/>
+			<property name="RotateToGround" value="true"/>
+			<property name="Faction" value="none"/>
+			<property name="MapIcon" value="ui_game_symbol_quadbike"/>
+			<property name="NavObject" value="quadbike"/>
+		</entity_class>
+		
 		<!-- *** wild chicken (non-POI variant) -->
 		<entity_class name="animalWildChicken" extends="animalTemplateTimid">
 			<property name="Class" value="EntityAnimalRabbit"/>
