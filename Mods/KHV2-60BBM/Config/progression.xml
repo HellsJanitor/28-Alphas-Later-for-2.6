@@ -1,6 +1,7 @@
 <configs>
 	<!-- Change Pack Mule Perk to unlock all slots -->
 	<set xpath="/progression/perks/perk[@name='perkPackMule']/effect_group/passive_effect[@name='CarryCapacity'][@value='3,6,10,14,18']/@value">4,8,12,16,20</set>
+	
 	<append xpath="/progression/perks">
 		<perk name="perkBackpackKnowledge" parent="skillGeneralPerks" max_level="3" base_skill_point_cost="0" name_key="perkBackpackKnowledgeName" desc_key="perkBackpackKnowledgeDesc" icon="ui_game_symbol_book" hidden="true">
 			<effect_group>
@@ -16,6 +17,15 @@
 	</append>
 	<append xpath="/progression/perks">
 		<perk name="perkBackpackTier" parent="skillGeneralPerks" max_level="3" base_skill_point_cost="0" name_key="perkBackpackTierName" desc_key="perkBackpackTierDesc" icon="ui_game_symbol_backpack" hidden="true">
+			
+			<passive_effect name="LootProb" operation="base_set" level="1,3" value="0,0" tags="backpackUpgradeTier1">
+				<requirement name="ProgressionLevel" progression_name="perkBackpackTier" operation="GTE" value="2"/>
+			</passive_effect>
+			
+			<passive_effect name="LootProb" operation="base_set" level="1,3" value="0,0" tags="backpackUpgradeTier2">
+				<requirement name="ProgressionLevel" progression_name="perkBackpackTier" operation="GTE" value="3"/>
+			</passive_effect>
+			
 			<effect_group>
 				<passive_effect name="BagSize" operation="base_add" level="1" value="10"/>
 				<passive_effect name="BagSize" operation="base_add" level="2" value="20"/>

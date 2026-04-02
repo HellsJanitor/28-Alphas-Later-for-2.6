@@ -70,6 +70,13 @@
 		</effect_group>
 	</append>
 	
+	<append xpath="/items/item[contains(@name,'T2Steel')]">
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffMiner69er"/>
+			<triggered_effect trigger="onSelfEquipStop" action="AddBuff" buff="buffMiner69erStop"/>
+		</effect_group>
+	</append>
+	
 	<append xpath="/items/item/property[@name='Tags' and contains (@value,'perkBrawler')]/..">
 		<effect_group tiered="false">
 			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffBrawler"/>

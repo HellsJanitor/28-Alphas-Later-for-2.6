@@ -253,7 +253,7 @@
 					<requirement name="ProgressionLevel" progression_name="lbu_SpearMaster" operation="LT" value="100"/>
 				</triggered_effect>
 				<triggered_effect trigger="onSelfKilledOther" action="ModifyStats" stat="Stamina" operation="add" value="30" delay="1.0">
-					<requirement name="ProgressionLevel" progression_name="lbu_SpearMaster" operation="GTE" value="50"/>
+					<requirement name="ProgressionLevel" progression_name="lbu_SpearMaster" operation="GTE" value="100"/>
 				</triggered_effect>
 			</effect_group>
 		
@@ -287,7 +287,7 @@
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
 				</triggered_effect>
 				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" target_tags="zombie,animal" buff="buffInjuryCrippled01">
-					<requirement name="ProgressionLevel" progression_name="lbu_SpearMaster" operation="GTE" value="50"/>
+					<requirement name="ProgressionLevel" progression_name="lbu_SpearMaster" operation="GTE" value="100"/>
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="100"/>
 				</triggered_effect>
 			</effect_group>
@@ -436,7 +436,7 @@
 				<triggered_effect trigger="onSelfDamagedBlock" action="ShowToolbeltMessage" message="Salvage Skill Increased!"/>
 				<!--if max level then give free Skill Point-->
 				<triggered_effect trigger="onSelfDamagedBlock" action="AddBuff" buff="buffLBU_GiveProgressSkillPoint">
-					<requirement name="ProgressionLevel" progression_name="lbu_Salvage" operation="GTE" value="50"/>
+					<requirement name="ProgressionLevel" progression_name="lbu_Salvage" operation="GTE" value="100"/>
 				</triggered_effect>
 			</effect_group>
 			<!--repeat the above for block destruction as well-->
@@ -456,7 +456,7 @@
 				<triggered_effect trigger="onSelfDestroyedBlock" action="ShowToolbeltMessage" message="Salvage Skill Increased!"/>
 				<!--if max level then give free Skill Point-->
 				<triggered_effect trigger="onSelfDestroyedBlock" action="AddBuff" buff="buffLBU_GiveProgressSkillPoint">
-					<requirement name="ProgressionLevel" progression_name="lbu_Salvage" operation="GTE" value="50"/>
+					<requirement name="ProgressionLevel" progression_name="lbu_Salvage" operation="GTE" value="100"/>
 				</triggered_effect>
 			</effect_group>
 			
@@ -517,7 +517,7 @@
 				</triggered_effect>
 
 				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" target_tags="walker" buff="buffInjuryCrippled01">
-					<requirement name="ProgressionLevel" progression_name="lbu_Boomstick" operation="GTE" value="50"/>
+					<requirement name="ProgressionLevel" progression_name="lbu_Boomstick" operation="GTE" value="100"/>
 					<requirement name="HitLocation" body_parts="LeftUpperLeg,RightUpperLeg,LeftLowerLeg,RightLowerLeg"/>
 				</triggered_effect>
 			</effect_group>
@@ -597,7 +597,7 @@
 					<requirement name="ProgressionLevel" progression_name="lbu_PummelPete" operation="Equals" value="40"/>
 				</triggered_effect>
 				<triggered_effect trigger="onSelfKilledOther" action="ModifyStats" stat="Stamina" operation="add" value="30" delay="1.0">
-					<requirement name="ProgressionLevel" progression_name="lbu_PummelPete" operation="GTE" value="50"/>
+					<requirement name="ProgressionLevel" progression_name="lbu_PummelPete" operation="GTE" value="100"/>
 				</triggered_effect>
 			</effect_group>
 		
@@ -672,7 +672,7 @@
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="90"/>
 				</triggered_effect>
 				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" target_tags="zombie,animal" buff="buffStayDownKO">
-					<requirement name="ProgressionLevel" progression_name="lbu_PummelPete" operation="GTE" value="50"/>
+					<requirement name="ProgressionLevel" progression_name="lbu_PummelPete" operation="GTE" value="100"/>
 					<requirement name="CVarCompare" cvar="_stunned" operation="Equals" value="1" target="other"/>
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="100"/>
 				</triggered_effect>
@@ -781,7 +781,7 @@
 					<requirement name="ProgressionLevel" progression_name="lbu_SkullCrusher" operation="LT" value="100"/>
 				</triggered_effect>
 				<triggered_effect trigger="onSelfKilledOther" action="ModifyStats" stat="Stamina" operation="add" value="30" delay="1.0">
-					<requirement name="ProgressionLevel" progression_name="lbu_SkullCrusher" operation="GTE" value="50"/>
+					<requirement name="ProgressionLevel" progression_name="lbu_SkullCrusher" operation="GTE" value="100"/>
 				</triggered_effect>
 			</effect_group>
 
@@ -809,7 +809,7 @@
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="60"/>
 				</triggered_effect>
 				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryKnockdown02">
-					<requirement name="ProgressionLevel" progression_name="lbu_SkullCrusher" operation="GTE" value="50"/>
+					<requirement name="ProgressionLevel" progression_name="lbu_SkullCrusher" operation="GTE" value="100"/>
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="75"/>
 				</triggered_effect>
 
@@ -824,7 +824,7 @@
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="35"/>
 				</triggered_effect>
 				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="otherAOE" range="1.4" target_tags="zombie,animal" buff="buffInjuryKnockdown01">
-					<requirement name="ProgressionLevel" progression_name="lbu_SkullCrusher" operation="GTE" value="50"/>
+					<requirement name="ProgressionLevel" progression_name="lbu_SkullCrusher" operation="GTE" value="100"/>
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
 				</triggered_effect>
 			</effect_group>
@@ -968,7 +968,7 @@
 				<triggered_effect trigger="onSelfHarvestBlock" action="ShowToolbeltMessage" message="Miner69r Skill Increased!"/>
 				<!--if max level then give free Skill Point-->
 				<triggered_effect trigger="onSelfHarvestBlock" action="AddBuff" buff="buffLBU_GiveProgressSkillPoint">
-					<requirement name="ProgressionLevel" progression_name="lbu_Miner69er" operation="GTE" value="50"/>
+					<requirement name="ProgressionLevel" progression_name="lbu_Miner69er" operation="GTE" value="100"/>
 				</triggered_effect>
 			</effect_group>
 			
@@ -1041,7 +1041,7 @@
 					<requirement name="ProgressionLevel" progression_name="lbu_Brawler" operation="LT" value="100"/>
 				</triggered_effect>
 				<triggered_effect trigger="onSelfKilledOther" action="ModifyStats" stat="Stamina" operation="add" value="30" delay="1.0">
-					<requirement name="ProgressionLevel" progression_name="lbu_Brawler" operation="GTE" value="50"/>
+					<requirement name="ProgressionLevel" progression_name="lbu_Brawler" operation="GTE" value="100"/>
 				</triggered_effect>
 			</effect_group>
 
@@ -1178,7 +1178,7 @@
 					<requirement name="IsAlive" target="other"/>
 				</triggered_effect>
 				<triggered_effect trigger="onSelfAttackedOther" action="ModifyStats" stat="Stamina" operation="add" value="6">
-					<requirement name="ProgressionLevel" progression_name="lbu_MachineGunner" operation="GTE" value="50"/>
+					<requirement name="ProgressionLevel" progression_name="lbu_MachineGunner" operation="GTE" value="100"/>
 					<requirement name="IsAlive" target="other"/>
 				</triggered_effect>
 
@@ -1440,7 +1440,7 @@
 					<requirement name="ProgressionLevel" progression_name="lbu_DeepCuts" operation="LT" value="100"/>
 				</triggered_effect>
 				<triggered_effect trigger="onSelfKilledOther" action="ModifyStats" stat="Stamina" operation="add" value="30" delay="1.0">
-					<requirement name="ProgressionLevel" progression_name="lbu_DeepCuts" operation="GTE" value="50"/>
+					<requirement name="ProgressionLevel" progression_name="lbu_DeepCuts" operation="GTE" value="100"/>
 				</triggered_effect>
 			</effect_group>
 
@@ -1514,12 +1514,12 @@
 				</triggered_effect>
 
 				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="set" value="7">
-					<requirement name="ProgressionLevel" progression_name="lbu_DeepCuts" operation="GTE" value="50"/>
+					<requirement name="ProgressionLevel" progression_name="lbu_DeepCuts" operation="GTE" value="100"/>
 					<requirement name="CVarCompare" cvar="bleedCounter" operation="GTE" value="2" target="other"/>
 					<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="7" target="other"/>
 				</triggered_effect>
 				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="5">
-					<requirement name="ProgressionLevel" progression_name="lbu_DeepCuts" operation="GTE" value="50"/>
+					<requirement name="ProgressionLevel" progression_name="lbu_DeepCuts" operation="GTE" value="100"/>
 					<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="2" target="other"/>
 				</triggered_effect>
 			</effect_group>
@@ -1544,7 +1544,7 @@
 
 			<effect_group>
 				<requirement name="ItemHasTags" tags="perkDeepCuts"/>
-				<requirement name="ProgressionLevel" progression_name="lbu_DeepCuts" operation="GTE" value="50"/>
+				<requirement name="ProgressionLevel" progression_name="lbu_DeepCuts" operation="GTE" value="100"/>
 				<requirement name="CVarCompare" cvar="$bleedSlowdown" operation="GT" value="-.2" target="other"/>
 				<triggered_effect trigger="onSelfPrimaryActionRayHit" action="ModifyCVar" target="other" cvar="$bleedSlowdown" operation="set" value="-.2"/>
 				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="$bleedSlowdown" operation="set" value="-.2"/>
@@ -1565,7 +1565,7 @@
 			<effect_group name="grazing hits T4">
 				<requirement name="ItemHasTags" tags="perkDeepCuts"/>
 				<requirement name="ProgressionLevel" progression_name="lbu_DeepCuts" operation="GTE" value="40"/>
-				<requirement name="ProgressionLevel" progression_name="lbu_DeepCuts" operation="GTE" value="50"/>
+				<requirement name="ProgressionLevel" progression_name="lbu_DeepCuts" operation="GTE" value="100"/>
 				<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="6" target="other"/>
 				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="70"/>
 				<triggered_effect trigger="onSelfPrimaryActionGrazeHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="1"/>
@@ -1576,7 +1576,7 @@
 
 			<effect_group name="grazing hits T5">
 				<requirement name="ItemHasTags" tags="perkDeepCuts"/>
-				<requirement name="ProgressionLevel" progression_name="lbu_DeepCuts" operation="GTE" value="50"/>
+				<requirement name="ProgressionLevel" progression_name="lbu_DeepCuts" operation="GTE" value="100"/>
 				<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="7" target="other"/>
 				<triggered_effect trigger="onSelfPrimaryActionGrazeHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="1"/>
 				<triggered_effect trigger="onSelfSecondaryActionGrazeHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="1"/>
@@ -1723,7 +1723,7 @@
 					<requirement name="ProgressionLevel" progression_name="lbu_Electrocutioner" operation="LT" value="100"/>
 				</triggered_effect>
 				<triggered_effect trigger="onSelfKilledOther" action="ModifyStats" stat="Stamina" operation="add" value="30" delay="1.0">
-					<requirement name="ProgressionLevel" progression_name="lbu_Electrocutioner" operation="GTE" value="50"/>
+					<requirement name="ProgressionLevel" progression_name="lbu_Electrocutioner" operation="GTE" value="100"/>
 				</triggered_effect>
 			</effect_group>
 		

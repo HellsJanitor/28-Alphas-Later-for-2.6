@@ -41,7 +41,12 @@
 						<property name="Create_item_count" value="14,14,14,7"/>
 					</property>
 				</item>
-			</append>
+			</append>			
+			
+			<set xpath="/items/item[@name='ammoBundle45ACPBulletBall']/property[@name='UnlockedBy']/@value">perkEnforcerComplete</set>
+			<set xpath="/items/item[@name='ammoBundle45ACPHighpower']/property[@name='UnlockedBy']/@value">perkEnforcerComplete</set>
+			<set xpath="/items/item[@name='ammoBundle45ACPArmorpiecing']/property[@name='UnlockedBy']/@value">perkEnforcerComplete</set>
+			<set xpath="/items/item[@name='ammoBundle45ACPEnhanced']/property[@name='UnlockedBy']/@value">perkEnforcerComplete</set>
 			
 			<set xpath="/items/item[@name='IZYgunT2DualPistols45M1911A1']/property[@name='RepairTools']/@value">HandgunRepairKit</set>
 			<set xpath="/items/item[@name='IZYgunT3DualPistols45USP45']/property[@name='RepairTools']/@value">HandgunRepairKit</set>
@@ -112,6 +117,18 @@
 			<set xpath="/items/item[@name='IZYgunT4MarksManRifle556SSMAR15']/property[@name='RepairTools']/@value">RifleRepairKit</set>
 			<set xpath="/items/item[@name='IZYgunT2LMGLMG36']/property[@name='RepairTools']/@value">MachinegunRepairKit</set>
 			<set xpath="/items/item[@name='IZYgunT3LMGM249FNminimi']/property[@name='RepairTools']/@value">MachinegunRepairKit</set>
+			
+			<insertbefore xpath="/items/item[@name='ammo556mmBulletBallBundle']/property[@class='Action0']">
+				<property name="UnlockedBy" value="perkSniperComplete" />
+			</insertbefore>
+			
+			<insertbefore xpath="/items/item[@name='ammo556mmHIpowerBundle']/property[@class='Action0']">
+				<property name="UnlockedBy" value="perkSniperComplete" />
+			</insertbefore>
+			
+			<insertbefore xpath="/items/item[@name='ammo556mmArmorPiercingBundle']/property[@class='Action0']">
+				<property name="UnlockedBy" value="perkSniperComplete" />
+			</insertbefore>
 		</if>
 	</conditional>
 	

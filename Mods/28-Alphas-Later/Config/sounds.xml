@@ -1,0 +1,122 @@
+<config>
+	<append xpath="/Sounds">
+		<SoundDataNode name="tablesaw_start_click">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_Interact.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/Tablesaw.unity3d?Tablesaw_Start.wav"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="0.01"/>
+		</SoundDataNode>
+			
+		<SoundDataNode name="tablesaw_lp">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_Interact.prefab"/>
+			<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+			<AudioClip ClipName="#@modfolder:Resources/Tablesaw.unity3d?Tablesaw_Run.wav" Loop="true"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="0.01"/>
+		</SoundDataNode>
+
+		<SoundDataNode name="tablesaw_complete">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_Interact.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/Tablesaw.unity3d?Tablesaw_Stop.wav"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="0.01"/>
+		</SoundDataNode>
+		
+		<SoundDataNode name="playerSawmillstart">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_Interact.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/sawmillAnimated.unity3d?saw_quieter.wav" Loop="true"/>
+			<AudioClip ClipName="#@modfolder:Resources/sawmillAnimated.unity3d?saund_console_quieter.wav" Loop="true"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="0.01"/>
+		</SoundDataNode>
+		
+		<SoundDataNode name="blastFurnacecraft">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_UI.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/uraniumWorkbenches.unity3d?furnacecraft.mp3" Loop="true"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="0.01"/>
+		</SoundDataNode>
+		
+		<SoundDataNode name="blastFurnacecomplete">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_UI.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/uraniumWorkbenches.unity3d?furnaceend.mp3"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="0.01"/>
+		</SoundDataNode>
+		
+		<SoundDataNode name="buggy_horn"><AudioSource name="@:Sounds/Prefabs/AudioSource_SmallHorn.prefab"/>
+			<Noise ID="4" noise="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+			<AudioClip ClipName="#@modfolder:Resources/4x4hornnew.unity3d?la-cucaracha"/>
+			<AudioClip ClipName="@:Sounds/Twitch/Silly/Silly Vehicle Sounds/truck_silly_horn.wav" AltSound="true"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="1"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="3"/>
+			<MaxEntities name="6"/>
+			<MaxRepeatRate value="0.01"/>
+		</SoundDataNode>		
+		
+		<SoundDataNode name="playerPiano">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_Interact.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/playerPiano.unity3d?audio.mp3"/>
+			<maxVoicesPerEntity value="1"/>
+			<MaxVoices value="30"/>
+			<MaxRepeatRate value="30.1"/>
+		</SoundDataNode>
+		
+		<SoundDataNode name="playerRadio">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_Interact.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/playerRadio.unity3d?EmergencyBroadcast.mp3"/>
+			<maxVoicesPerEntity value="1"/>
+			<MaxVoices value="30"/>
+			<MaxRepeatRate value="60.1"/>
+		</SoundDataNode>
+		
+		<SoundDataNode name="Supply_Crate_Plane_Custom">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_Airdrop.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/propPlane.unity3d?overheadPlane.mp3"/>
+			<IgnoreDistanceCheck/>
+			<LocalCrouchVolumeScale value="0.5"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="3"/>
+			<MaxRepeatRate value="0.01"/>
+		</SoundDataNode>
+		
+		<SoundDataNode name="chicken_coop_complete_item"> <AudioSource name="@:Sounds/Prefabs/AudioSource_UI.prefab"/>
+			<AudioClip ClipName="@:Sounds/Animals/Chicken/chickenpain1.wav"/>
+			<AudioClip ClipName="@:Sounds/Animals/Chicken/chickenpain2.wav"/>
+			<AudioClip ClipName="@:Sounds/Animals/Chicken/chickenpain3.wav"/>
+			<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+		<SoundDataNode name="chicken_coop_cook_click"> <AudioSource name="@:Sounds/Prefabs/AudioSource_UI.prefab"/>
+			<AudioClip ClipName="@:Sounds/Animals/Chicken/chickenpain1.wav"/>
+			<AudioClip ClipName="@:Sounds/Animals/Chicken/chickenpain2.wav"/>
+			<AudioClip ClipName="@:Sounds/Animals/Chicken/chickenpain3.wav"/>
+			<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+		</append>
+	
+	<set xpath="/Sounds/SoundDataNode[@name='suv_horn']/AudioClip[@ClipName='@:Sounds/Vehicles/Suv/truck_horn.wav']/@ClipName">#@modfolder:Resources/4x4horn.unity3d?truckHorn</set>
+	<set xpath="/Sounds/SoundDataNode[@name='quest_master_complete']/AudioClip/@ClipName">none</set>
+	<set xpath="/Sounds/SoundDataNode[@name='quest_started']/AudioClip/@ClipName">none</set>
+	<set xpath="/Sounds/SoundDataNode[@name='quest_objective_complete']/AudioClip/@ClipName">none</set>
+	<set xpath="/Sounds/SoundDataNode[@name='quest_subtask_complete']/AudioClip/@ClipName">none</set>
+</config>

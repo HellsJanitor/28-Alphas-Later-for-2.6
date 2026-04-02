@@ -26,14 +26,18 @@
 		<!-- *** Backpacks -->
 		<item name="backpackUpgradeTier1">
 			<property name="Extends" value="medicalBandage"/>
+			<property name="Tags" value="backpackUpgradeTier1"/>
 			<property name="CustomIcon" value="cntBackpack01"/>
 			<property name="DescriptionKey" value="backpackUpgradeTier1Desc"/>
-			<property name="DisplayType" value="crafted"/>
+			<property name="DisplayType" value="modCarryCapacity"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 			<property name="SoundPickup" value="outfit_cloth_grab"/>
 			<property name="SoundPlace" value="outfit_cloth_place"/>
+			<property name="EconomicValue" value="500"/>
+			<property name="TraderStageTemplate" value="modsTier1"/>
+			<property name="Group" value="Clothing,Armor,TCArmor"/>
 			
 			<property class="Action0">
 				<property name="Class" value="Eat"/>
@@ -47,18 +51,23 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="perkBackpackTier" level="1">
 					<requirement name="ProgressionLevel" progression_name="perkBackpackTier" operation="EQ" value="0"/>
 				</triggered_effect>
+				<display_value name="dCarryCapacity" value="10"/>
 			</effect_group>
 		</item>
 		<item name="backpackUpgradeTier2">
 			<property name="Extends" value="medicalBandage"/>
+			<property name="Tags" value="backpackUpgradeTier2"/>
 			<property name="CustomIcon" value="cntBackpack03"/>
 			<property name="DescriptionKey" value="backpackUpgradeTier2Desc"/>
-			<property name="DisplayType" value="crafted"/>
+			<property name="DisplayType" value="modCarryCapacity"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 			<property name="SoundPickup" value="outfit_cloth_grab"/>
 			<property name="SoundPlace" value="outfit_cloth_place"/>
+			<property name="EconomicValue" value="1000"/>
+			<property name="TraderStageTemplate" value="modsTier2"/>
+			<property name="Group" value="Clothing,Armor,TCArmor"/>
 			
 			<property class="Action0">
 				<property name="Class" value="Eat"/>
@@ -71,18 +80,23 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="perkBackpackTier" level="1">
 					<requirement name="ProgressionLevel" progression_name="perkBackpackTier" operation="EQ" value="1"/>
 				</triggered_effect>
+				<display_value name="dCarryCapacity" value="20"/>
 			</effect_group>
 		</item>
 		<item name="backpackUpgradeTier3">
 			<property name="Extends" value="medicalBandage"/>
+			<property name="Tags" value="backpackUpgradeTier3"/>
 			<property name="CustomIcon" value="cntDuffle01"/>
 			<property name="DescriptionKey" value="backpackUpgradeTier3Desc"/>
-			<property name="DisplayType" value="crafted"/>
+			<property name="DisplayType" value="modCarryCapacity"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 			<property name="SoundPickup" value="outfit_cloth_grab"/>
 			<property name="SoundPlace" value="outfit_cloth_place"/>
+			<property name="EconomicValue" value="1500"/>
+			<property name="TraderStageTemplate" value="modsTier3"/>
+			<property name="Group" value="Clothing,Armor,TCArmor"/>
 			
 			<property class="Action0">
 				<property name="Class" value="Eat"/>
@@ -95,6 +109,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="perkBackpackTier" level="1">
 					<requirement name="ProgressionLevel" progression_name="perkBackpackTier" operation="EQ" value="2"/>
 				</triggered_effect>
+				<display_value name="dCarryCapacity" value="30"/>
 			</effect_group>
 		</item>
 	</append>

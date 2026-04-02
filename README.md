@@ -4,6 +4,24 @@
 
 The idea behind this mod is to slow progression, make traders less powerful, and generally extend the time for a playthrough, while keeping the vanilla look and feel.
 > [!IMPORTANT]
+>02/04/26 mod version 2.6.0.7
+
+ - Fixed the Quad Bike's steering
+
+ - Fixed a bug with mod slots on low quality items and vehicles
+
+ - Lowered quantity of brass in loot
+
+ - Changed economic value of backpack upgrades
+
+ - Added various recipes for creative menu items - trader walls and gate, barbed wire, gym equipment and more
+
+ - Fixed a bug with Izy's weapons and ammo (compatibility patch)
+ 
+> [!CAUTION]
+> This *might* require a new save, or at least some new vehicles, tools and/or weapons - so back-up any existing saves, just in case.
+
+> [!IMPORTANT]
 >25/03/26 mod version 2.6.0.6
 
  - Lowered the armour rating for primitive Armour.

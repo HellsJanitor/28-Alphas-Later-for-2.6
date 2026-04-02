@@ -1,0 +1,805 @@
+<HellsJanitor>
+	<!-- *** drastically lowers the number of "special biome" zombies -->
+	<set xpath="//entitygroup[@name='ZombiesDesert']">
+	zombiePlagueSpitter
+	zombieMoe, .25
+	zombieFatHawaiian, .2
+	zombieSteveCrawler, .05
+	</set>
+	
+	<set xpath="//entitygroup[@name='ZombiesDesertNight']">
+	zombiePlagueSpitter, .05
+	zombiePlagueSpitterFeral, .1
+	zombieBiker, .4
+	zombieBikerFeral, .1
+	</set>
+	
+	<set xpath="//entitygroup[@name='ZombiesSnow']">
+	zombieFrostclaw
+	zombieMoe, .25
+	zombieLumberjack, .25
+	</set>
+	
+	<set xpath="//entitygroup[@name='ZombiesSnowNight']">
+	zombieFrostclaw, .05
+	zombieFrostclawFeral, .1
+	zombieLumberjack, .45
+	zombieLumberjackFeral, .05
+	none, 75
+	</set>
+	
+	<!-- *** replace chickens with wild variants -->
+	<set xpath="/entitygroups/entitygroup[@name='WildGameForest']">
+	animalWildRabbit, 5
+	animalWildChicken, 5
+	none, 90
+	</set>
+	
+	<!-- *** remove Lumberjacks from 'ZombiesAll' -->
+	<set xpath="/entitygroups/entitygroup[@name='ZombiesAll']">
+		zombieBoe
+		zombieJoe
+		zombieSteve
+		zombieTomClark
+		zombieMoe
+		zombieYo
+		zombieBusinessMan
+		zombieArlene
+		zombieDarlene
+		zombieMarlene
+		zombieSkateboarder
+		zombieBiker, .3
+		zombiePartyGirl, .3
+		zombieUtilityWorker, .3
+		zombieJanitor, .2
+		zombieNurse, .3
+		zombieSteveCrawler
+		zombieFatHawaiian, .3
+		zombieBowler, .3
+	</set>
+	
+	<set xpath="/entitygroups/entitygroup[@name='ZombiesNight']">
+		zombieSpider
+		zombieSpiderFeral, .25
+		zombieBoe
+		zombieBoeFeral, .25
+		zombieJoe
+		zombieJoeFeral, .25
+		zombieSteve
+		zombieTomClark
+		zombieSteveFeral, .25
+		zombieTomClarkFeral, .25
+		zombieMoe
+		zombieMoeFeral, .25
+		zombieYo
+		zombieYoFeral, .25
+		zombieBusinessMan
+		zombieBusinessManFeral, .25
+		zombieArlene
+		zombieArleneFeral, .25
+		zombieDarlene
+		zombieDarleneFeral, .25
+		zombieMarlene
+		zombieMarleneFeral, .25
+		zombieNurse
+		zombieNurseFeral, .25
+		animalZombieDog, .05
+		animalDireWolf, .01
+		zombieSteveCrawler
+		zombieFatHawaiian
+		zombieFatHawaiianFeral, .25
+		zombieBowler, .1
+		zombieBowlerFeral, .1
+	</set>
+	
+	<!-- *** adds bears, wolves and direwolves to the forest biome -->
+	<remove xpath="//entitygroup[@name='EnemyAnimalsForest']"/>
+	<remove xpath="//entitygroup[@name='WildGameForestNight']"/>
+	<insertafter xpath="//entitygroup[@name='WildGameForest']">
+		<entitygroup name="WildGameForestNight">
+		animalDoe, 15
+		animalWolf, 5
+		none, 80
+		</entitygroup>
+		<entitygroup name="EnemyAnimalsForest">
+		animalSnake, 20		
+		animalWolf, 5
+		animalBear, 2
+		none, 73
+		</entitygroup>
+	</insertafter>
+	
+	<!-- *** new zombie variants -->
+	<insertafter xpath="//entitygroup[@name='ZombiesAll']">
+		<entitygroup name="ZombiesRottenNoTough">
+		zombieArleneRotten
+		zombieMarleneRotten
+		zombiePartyGirlRotten
+		zombieNurseRotten
+		zombieJoeRotten
+		zombieSteveRotten 
+		zombieTomClarkRotten  
+		zombieBusinessManRotten		 
+		zombieBoeRotten
+		zombieJanitorRotten 
+		zombieInmateRotten
+		zombieMoeRotten 
+		zombieLabRotten 
+		zombieDarleneRotten 
+		zombieYoRotten
+		zombieSkateboarderRotten
+		zombieSteveCrawlerRotten		
+		</entitygroup>
+		<entitygroup name="ZombiesRottenAll">
+		zombieArleneRotten
+		zombieMarleneRotten
+		zombiePartyGirlRotten
+		zombieNurseRotten
+		zombieJoeRotten
+		zombieSteveRotten 
+		zombieTomClarkRotten  
+		zombieBusinessManRotten 		 
+		zombieSpiderRotten 
+		zombieBoeRotten 
+		zombieMaleHazmatRotten 
+		zombieJanitorRotten
+		zombieInmateRotten		
+		zombieMoeRotten 
+		zombieLabRotten 
+		zombieDarleneRotten 
+		zombieYoRotten 
+		zombieUtilityWorkerRotten  
+		zombieBikerRotten 
+		zombieLumberjackRotten 
+		zombieFemaleFatRotten  
+		zombieFatHawaiianRotten
+		zombieFatCopRotten
+		zombieBowlerRotten
+		zombieSkateboarderRotten 
+		zombieSoldierRotten 
+		zombieSteveCrawlerRotten		
+		</entitygroup>
+		
+		<entitygroup name="ZombiesRottenBurnt">
+		zombieBurntRotten, .2
+		zombieSteveCrawlerRotten, .05
+		</entitygroup>
+		
+		<entitygroup name="ZombiesWeakNoTough">
+		zombieArleneWeak
+		zombieMarleneWeak
+		zombiePartyGirlWeak
+		zombieNurseWeak
+		zombieJoeWeak
+		zombieSteveWeak
+		zombieTomClarkWeak
+		zombieBusinessManWeak
+		zombieBoeWeak
+		zombieMaleHazmatWeak
+		zombieJanitorWeak
+		zombieInmateWeak
+		zombieMoeWeak
+		zombieLabWeak
+		zombieDarleneWeak
+		zombieYoWeak
+		zombieUtilityWorkerWeak
+		zombieSkateboarderWeak
+		</entitygroup>
+		
+		<entitygroup name="ZombiesWeakAll">
+		zombieArleneWeak
+		zombieMarleneWeak
+		zombiePartyGirlWeak
+		zombieNurseWeak
+		zombieJoeWeak
+		zombieSteveWeak
+		zombieTomClarkWeak
+		zombieBusinessManWeak
+		zombieBoeWeak
+		zombieMaleHazmatWeak
+		zombieJanitorWeak
+		zombieInmateWeak
+		zombieMoeWeak
+		zombieLabWeak
+		zombieDarleneWeak
+		zombieYoWeak
+		zombieUtilityWorkerWeak
+		zombieSpiderWeak
+		zombieBikerWeak
+		zombieLumberjackWeak
+		zombieFemaleFatWeak
+		zombieFatHawaiianWeak
+		zombieBowlerWeak
+		zombieFatCopWeak
+		zombieSkateboarderWeak
+		zombieSoldierWeak
+		zombieSteveCrawlerWeak
+		</entitygroup>
+		
+		<entitygroup name="ZombiesWeakBurnt">
+		zombieBurntWeak, .2
+		zombieSteveCrawlerWeak, .05
+		</entitygroup>
+		
+		<entitygroup name="ZombiesSnowNoSpecial">
+		zombieArleneFrozen
+		zombieMarleneFrozen
+		zombiePartyGirlFrozen
+		zombieNurseFrozen
+		zombieJoeFrozen
+		zombieSteveFrozen
+		zombieTomClarkFrozen
+		zombieBusinessManFrozen
+		zombieSpiderFrozen
+		zombieBoeFrozen
+		zombieMaleHazmatFrozen
+		zombieJanitorFrozen
+		zombieMoeFrozen
+		zombieLabFrozen
+		zombieDarleneFrozen
+		zombieYoFrozen
+		zombieUtilityWorkerFrozen
+		zombieBikerFrozen
+		zombieFemaleFatFrozen
+		zombieFatHawaiianFrozen
+		zombieSkateboarderFrozen
+		zombieSoldierFrozen
+		zombieSteveCrawlerFrozen
+		</entitygroup>
+		
+		<entitygroup name="ZombiesDesertNoSpecial">
+		zombieArleneCowboy
+		zombieMarleneCowboy
+		zombiePartyGirlCowboy
+		zombieJoeCowboy
+		zombieSteveCowboy
+		zombieTomClarkCowboy
+		zombieBusinessManCowboy
+		zombieBoeCowboy
+		zombieMoeCowboy
+		zombieDarleneCowboy
+		zombieYoCowboy
+		zombieFemaleFatCowboy
+		zombieWightFeralCowboy, .01
+		</entitygroup>
+	</insertafter>
+	
+	<!-- *** adds a small chance of feral/radiated zombies -->
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesNight']/text()" delim="\n" op="add">
+		zombieBoeRadiated, .02
+		zombieMoeRadiated, .02
+		zombieMoeRadiated, .02
+		zombieSteveRadiated, .02
+		zombieSteveRadiated, .02
+		zombieYoRadiated, .02
+		zombieArleneRadiated, .02
+		zombieDarleneRadiated, .02
+		zombieMarleneRadiated, .02
+		zombieWightFeral, .05
+		zombieSoldier, .05
+		zombieSkateboarder, .05
+		zombieSkateboarderFeral, .05
+		zombieSkateboarderRadiated, .02
+		zombieJanitor, .05
+		zombieJanitorFeral, .05
+		zombieJanitorRadiated, .02
+		zombieFatCop, .05
+		zombieBusinessManRadiated, .02
+		zombiePartyGirlRadiated, .02
+	</csv>
+	
+	<!-- *** adds new "weak" zombies -->
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesForestDowntown']/text()" delim="\n" op="add">
+		zombieArleneWeak
+		zombieMarleneWeak
+		zombiePartyGirlWeak
+		zombieNurseWeak
+		zombieJoeWeak
+		zombieSteveWeak
+		zombieTomClarkWeak
+		zombieBusinessManWeak
+		zombieBoeWeak
+		zombieMaleHazmatWeak
+		zombieJanitorWeak
+		zombieInmateWeak
+		zombieMoeWeak
+		zombieLabWeak
+		zombieDarleneWeak
+		zombieYoWeak
+		zombieUtilityWorkerWeak
+		zombieSpiderWeak
+		zombieBikerWeak
+		zombieLumberjackWeak
+		zombieFemaleFatWeak
+		zombieFatHawaiianWeak
+		zombieBowlerWeak
+		zombieFatCopWeak
+		zombieSkateboarderWeak
+		zombieSoldierWeak
+		zombieSteveCrawlerWeak
+	</csv>
+	
+	<!-- *** adds frozen variants to the snow biome -->
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesSnow']/text()" delim="\n" op="add">
+		zombieArleneFrozen
+		zombieMarleneFrozen
+		zombiePartyGirlFrozen
+		zombieNurseFrozen
+		zombieJoeFrozen
+		zombieSteveFrozen
+		zombieTomClarkFrozen
+		zombieBusinessManFrozen
+		zombieSpiderFrozen
+		zombieBoeFrozen
+		zombieMaleHazmatFrozen
+		zombieJanitorFrozen
+		zombieMoeFrozen
+		zombieLabFrozen
+		zombieDarleneFrozen
+		zombieYoFrozen
+		zombieUtilityWorkerFrozen
+		zombieBikerFrozen
+		zombieFemaleFatFrozen
+		zombieFatHawaiianFrozen
+		zombieSkateboarderFrozen
+		zombieSoldierFrozen
+		zombieSteveCrawlerFrozen
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesSnowNight']/text()" delim="\n" op="add">
+		zombieArleneFrozen
+		zombieMarleneFrozen
+		zombiePartyGirlFrozen
+		zombieNurseFrozen
+		zombieJoeFrozen
+		zombieSteveFrozen
+		zombieTomClarkFrozen
+		zombieBusinessManFrozen
+		zombieSpiderFrozen
+		zombieBoeFrozen
+		zombieMaleHazmatFrozen
+		zombieJanitorFrozen
+		zombieMoeFrozen
+		zombieLabFrozen
+		zombieDarleneFrozen
+		zombieYoFrozen
+		zombieUtilityWorkerFrozen
+		zombieBikerFrozen
+		zombieFemaleFatFrozen
+		zombieFatHawaiianFrozen
+		zombieSkateboarderFrozen
+		zombieSoldierFrozen
+		zombieSteveCrawlerFrozen
+	</csv>
+	
+	<!-- *** desert zombies *** -->
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesDesert']/text()" delim="\n" op="add">
+		zombieArleneCowboy
+		zombieMarleneCowboy
+		zombiePartyGirlCowboy
+		zombieJoeCowboy
+		zombieSteveCowboy
+		zombieTomClarkCowboy
+		zombieBusinessManCowboy
+		zombieBoeCowboy
+		zombieMoeCowboy
+		zombieDarleneCowboy
+		zombieYoCowboy
+		zombieFemaleFatCowboy
+		zombieWightFeralCowboy, .01
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesDesertNight']/text()" delim="\n" op="add">
+		zombieArleneCowboy
+		zombieMarleneCowboy
+		zombiePartyGirlCowboy
+		zombieJoeCowboy
+		zombieSteveCowboy
+		zombieTomClarkCowboy
+		zombieBusinessManCowboy
+		zombieBoeCowboy
+		zombieMoeCowboy
+		zombieDarleneCowboy
+		zombieYoCowboy
+		zombieFemaleFatCowboy
+		zombieWightFeralCowboy, .5
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']/text()" delim="\n" op="remove">
+		zombieMutatedRadiated, .05
+		zombieMutatedInfernal, .05
+		zombieMutatedCharged, .05
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandDowntown']/text()" delim="\n" op="remove">
+		zombieMutatedRadiated
+		zombieMutatedInfernal
+		zombieMutatedCharged
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']/text()" delim="\n" op="add">
+		zombieHellsHumanExperiment, .05
+		zombieHellsParasite, .05
+		zombieHellsGiantMutant, .05
+		zombieHellsMutant4, .05
+		zombieHellsMutant1, .05
+		zombieHellsMutantBoomer, .05
+		zombieHellsWendigo1, .01
+		zombieHellsWendigo2, .01
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight']/text()" delim="\n" op="add">
+		zombieHellsHumanExperiment
+		zombieHellsParasite
+		zombieHellsGiantMutant
+		zombieHellsMutant4
+		zombieHellsMutant1
+		zombieHellsMutantBoomer
+		zombieHellsWendigo1
+		zombieHellsWendigo2
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandDowntown']/text()" delim="\n" op="add">
+		zombieHellsHumanExperiment, .05
+		zombieHellsParasite, .05
+		zombieHellsGiantMutant, .05
+		zombieHellsMutant4, .05
+		zombieHellsMutant1, .05
+		zombieHellsMutantBoomer, .05
+		zombieHellsWendigo1, .01
+		zombieHellsWendigo2, .01
+	</csv>	
+	
+	<csv xpath="/entitygroups/entitygroup[@name='ZombieBadassGroup']/text()" delim="\n" op="add">
+		zombieHellsHumanExperiment
+		zombieHellsParasite
+		zombieHellsGiantMutant
+		zombieHellsMutant4
+		zombieHellsMutant1
+		zombieHellsMutantBoomer
+		zombieHellsWendigo1
+		zombieHellsWendigo2
+	</csv>
+	
+	<!-- *** lumberjacks GS1 *** -->
+	<csv xpath="/entitygroups/entitygroup[@name='zombieLumberjackGroupGS1']/text()" delim="\n" op="remove">
+	zombieLumberjack
+	zombieLumberjackFeral, 0
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='zombieLumberjackGroupGS1']/text()" delim="\n" op="add">
+	zombieLumberjackRotten, .85	
+	zombieLumberjackWeak, .1
+	</csv>
+	<!-- *** Businessmen GS1 *** -->
+	<csv xpath="/entitygroups/entitygroup[@name='zombieBusinessManGroupGS1']/text()" delim="\n" op="remove">
+	zombieBusinessMan
+	zombieBusinessManFeral, 0
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='zombieBusinessManGroupGS1']/text()" delim="\n" op="add">
+	zombieBusinessManRotten, .85	
+	zombieBusinessManWeak, .1
+	</csv>
+	<!-- *** Fatcop GS1 *** -->
+	<csv xpath="/entitygroups/entitygroup[@name='zombieFatCopGroupGS1']/text()" delim="\n" op="remove">
+	zombieFatCop
+	zombieFatCopFeral, 0
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='zombieFatCopGroupGS1']/text()" delim="\n" op="add">
+	zombieFatCopRotten, .85
+	zombieFatCopWeak, .1
+	</csv>
+	<!-- *** Burnt GS1 *** -->
+	<csv xpath="/entitygroups/entitygroup[@name='zombieBurntGroupGS1']/text()" delim="\n" op="remove">
+	zombieBurnt
+	zombieBurntFeral, 0
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='zombieBurntGroupGS1']/text()" delim="\n" op="add">
+	zombieBurntRotten, .85	
+	zombieBurntWeak, .1
+	</csv>
+	<!-- *** Soldier GS1 *** -->
+	<csv xpath="/entitygroups/entitygroup[@name='zombieSoldierGroupGS1']/text()" delim="\n" op="remove">
+	zombieSoldier
+	zombieSoldierFeral, 0
+	zombieSoldierRadiated, 0
+	zombieMaleHazmat, .4
+	zombieMaleHazmatFeral, 0
+	zombieMaleHazmatRadiated, 0
+	zombieSpider, .01
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='zombieSoldierGroupGS1']/text()" delim="\n" op="add">
+	zombieSoldierRotten
+	zombieMaleHazmatRotten, .4
+	zombieSpiderRotten, .01
+	</csv>
+	<!-- *** Hazmat GS1 *** -->
+	<csv xpath="/entitygroups/entitygroup[@name='ZombieMaleHazmatGroupGS1']/text()" delim="\n" op="remove">
+	zombieMaleHazmat
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='ZombieMaleHazmatGroupGS1']/text()" delim="\n" op="add">
+	zombieMaleHazmatRotten, .85	
+	zombieMaleHazmatWeak, .1
+	</csv>
+	<!-- *** UtiltyWorker/Janitor GS1 *** -->
+	<csv xpath="/entitygroups/entitygroup[@name='zombieUtilityWorkerGroupGS1']/text()" delim="\n" op="remove">
+	zombieUtilityWorker
+	zombieJanitor
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='zombieUtilityWorkerGroupGS1']/text()" delim="\n" op="add">
+	zombieUtilityWorkerRotten, .85
+	zombieUtilityWorkerWeak, .1
+	zombieJanitorRotten, .85
+	zombieJanitorWeak, .1
+	</csv>
+	<!-- *** Janitor GS1 *** -->
+	<csv xpath="/entitygroups/entitygroup[@name='zombieJanitorGroupGS1']/text()" delim="\n" op="remove">
+	zombieJanitor
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='zombieJanitorGroupGS1']/text()" delim="\n" op="add">
+	zombieJanitorRotten, .85
+	zombieJanitorWeak, .1
+	</csv>
+	
+	<!-- *** GhostTown GS1 *** -->
+	<set xpath="/entitygroups/entitygroup [@name='ZombieGhostTownGroupGS1']">
+	zombieMarleneRotten
+	zombieArleneRotten
+	zombieJoeRotten
+	zombieBoeRotten
+	zombieMoeRotten
+	zombieSteveRotten
+	zombieTomClarkRotten
+	zombieSkateboarderRotten
+	zombieSteveCrawlerRotten
+	zombieYoRotten	
+	</set>
+	
+	<!-- *** Hospital GS1 *** -->
+	<set xpath="/entitygroups/entitygroup [@name='zombieHospitalGroupGS1']">
+	zombieLabRotten, 1.7
+	zombieMaleHazmatRotten, 1.7
+	zombieNurseRotten, 2.5
+	zombieBoeRotten
+	zombieArleneRotten
+	zombieYoRotten
+	zombieMarleneRotten
+	zombieSkateboarderRotten
+	zombieJoeRotten
+	</set>
+	
+	<!-- *** Labworker GS1 *** -->
+	<set xpath="/entitygroups/entitygroup [@name='zombieLabWorkerGroupGS1']">
+	zombieLabRotten
+	zombieBusinessManRotten, .1
+	zombieMaleHazmatRotten, 1.7
+	</set>
+	
+	<!-- *** Spiders GS1 *** -->
+	<set xpath="/entitygroups/entitygroup [@name='zombieSpiderGroupGS1']">
+	zombieSteveCrawlerRotten
+	zombieSteveCrawler, 0
+	zombieSteveCrawlerFeral, 0
+	</set>
+	
+	<!-- *** Bikers GS1 *** -->
+	<set xpath="/entitygroups/entitygroup [@name='ZombieBikerBarGroupGS1']">
+	zombieBikerRotten
+	zombiePartyGirlRotten
+	zombieJanitorRotten
+	zombieSkateboarderRotten
+	zombieBoeRotten
+	zombieMoeRotten
+	</set>
+	
+	<!-- *** Nightclub GS1 *** -->
+	<set xpath="/entitygroups/entitygroup [@name='ZombieNightClubGroupGS1']">
+	zombiePartyGirlRotten, .95	
+	zombieBusinessManRotten, .45	
+	</set>	
+	
+	<csv xpath="/entitygroups/entitygroup[starts-with(@name,'feralHordeStage')]/text()" delim="\n" op="add">
+	zombieBunkerBuster, .5
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[@name='ZombieSpecialInfectedGroupGS100']/text()" delim="\n" op="add">
+	zombieHellsHumanExperiment, .2
+	zombieHellsParasite, .2
+	zombieHellsGiantMutant, .2
+	zombieHellsMutant4, .2
+	zombieHellsMutant1, .2
+	zombieHellsMutantBoomer, .2
+	zombieHellsWendigo1, .2
+	zombieHellsWendigo2, .2
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='ZombieSpecialInfectedGroupGS200']/text()" delim="\n" op="add">
+	zombieHellsHumanExperiment, .3
+	zombieHellsParasite, .3
+	zombieHellsGiantMutant, .3
+	zombieHellsMutant4, .3
+	zombieHellsMutant1, .3
+	zombieHellsMutantBoomer, .3
+	zombieHellsWendigo1, .3
+	zombieHellsWendigo2, .3
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='ZombieSpecialInfectedGroupGS400']/text()" delim="\n" op="add">
+	zombieHellsHumanExperiment, .4
+	zombieHellsParasite, .4
+	zombieHellsGiantMutant, .4
+	zombieHellsMutant4, .4
+	zombieHellsMutant1, .4
+	zombieHellsMutantBoomer, .4
+	zombieHellsWendigo1, .4
+	zombieHellsWendigo2, .4
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='ZombieSpecialInfectedGroupGS800']/text()" delim="\n" op="add">
+	zombieHellsHumanExperiment, .5
+	zombieHellsParasite, .5
+	zombieHellsGiantMutant, .5
+	zombieHellsMutant4, .5
+	zombieHellsMutant1, .5
+	zombieHellsMutantBoomer, .5
+	zombieHellsWendigo1, .5
+	zombieHellsWendigo2, .5
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[substring-after(@name,'sleeperHordeStageGS') &lt; 23]/text()" delim="\n" op="remove">zombie*</csv>
+	<csv xpath="/entitygroups/entitygroup[substring-after(@name,'sleeperHordeStageGS') &lt; 23]/text()" delim="\n" op="add">
+	zombieArleneRotten
+	zombieMarleneRotten
+	zombiePartyGirlRotten
+	zombieNurseRotten
+	zombieJoeRotten
+	zombieSteveRotten 
+	zombieTomClarkRotten  
+	zombieBusinessManRotten 		 
+	zombieSpiderRotten 
+	zombieBoeRotten 
+	zombieMaleHazmatRotten 
+	zombieJanitorRotten
+	zombieInmateRotten		
+	zombieMoeRotten 
+	zombieLabRotten 
+	zombieDarleneRotten 
+	zombieYoRotten 
+	zombieUtilityWorkerRotten  
+	zombieBikerRotten 
+	zombieLumberjackRotten 
+	zombieFemaleFatRotten  
+	zombieFatHawaiianRotten
+	zombieFatCopRotten
+	zombieBowlerRotten
+	zombieSkateboarderRotten 
+	zombieSoldierRotten 
+	zombieSteveCrawlerRotten	
+	</csv>
+
+	<csv xpath="/entitygroups/entitygroup[substring-after(@name,'defenseHordeStageGS') &lt; 23]/text()" delim="\n" op="remove">zombie*</csv>
+	<csv xpath="/entitygroups/entitygroup[substring-after(@name,'defenseHordeStageGS') &lt; 23]/text()" delim="\n" op="add">
+	zombieArleneRotten
+	zombieMarleneRotten
+	zombiePartyGirlRotten
+	zombieNurseRotten
+	zombieJoeRotten
+	zombieSteveRotten 
+	zombieTomClarkRotten  
+	zombieBusinessManRotten 		 
+	zombieSpiderRotten 
+	zombieBoeRotten 
+	zombieMaleHazmatRotten 
+	zombieJanitorRotten
+	zombieInmateRotten		
+	zombieMoeRotten 
+	zombieLabRotten 
+	zombieDarleneRotten 
+	zombieYoRotten 
+	zombieUtilityWorkerRotten  
+	zombieBikerRotten 
+	zombieLumberjackRotten 
+	zombieFemaleFatRotten  
+	zombieFatHawaiianRotten
+	zombieFatCopRotten
+	zombieBowlerRotten
+	zombieSkateboarderRotten 
+	zombieSoldierRotten 
+	zombieSteveCrawlerRotten	
+	</csv>
+
+	<csv xpath="/entitygroups/entitygroup[substring-after(@name,'sleeperHordeStageGS') &lt; 47 and (substring-after(@name,'sleeperHordeStageGS')) &gt;26]/text()" delim="\n" op="remove">zombie*</csv>
+	<csv xpath="/entitygroups/entitygroup[substring-after(@name,'sleeperHordeStageGS') &lt; 47 and (substring-after(@name,'sleeperHordeStageGS')) &gt;26]/text()" delim="\n" op="add">
+	zombieArleneWeak
+	zombieMarleneWeak
+	zombiePartyGirlWeak
+	zombieNurseWeak
+	zombieJoeWeak
+	zombieSteveWeak
+	zombieTomClarkWeak
+	zombieBusinessManWeak
+	zombieBoeWeak
+	zombieMaleHazmatWeak
+	zombieJanitorWeak
+	zombieInmateWeak
+	zombieMoeWeak
+	zombieLabWeak
+	zombieDarleneWeak
+	zombieYoWeak
+	zombieUtilityWorkerWeak
+	zombieSpiderWeak
+	zombieBikerWeak
+	zombieLumberjackWeak
+	zombieFemaleFatWeak
+	zombieFatHawaiianWeak
+	zombieBowlerWeak
+	zombieFatCopWeak
+	zombieSkateboarderWeak
+	zombieSoldierWeak
+	zombieSteveCrawlerWeak
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[substring-after(@name,'defenseHordeStageGS') &lt; 47 and (substring-after(@name,'defenseHordeStageGS')) &gt;26]/text()" delim="\n" op="remove">zombie*</csv>
+	<csv xpath="/entitygroups/entitygroup[substring-after(@name,'defenseHordeStageGS') &lt; 47 and (substring-after(@name,'defenseHordeStageGS')) &gt;26]/text()" delim="\n" op="add">
+	zombieArleneWeak
+	zombieMarleneWeak
+	zombiePartyGirlWeak
+	zombieNurseWeak
+	zombieJoeWeak
+	zombieSteveWeak
+	zombieTomClarkWeak
+	zombieBusinessManWeak
+	zombieBoeWeak
+	zombieMaleHazmatWeak
+	zombieJanitorWeak
+	zombieInmateWeak
+	zombieMoeWeak
+	zombieLabWeak
+	zombieDarleneWeak
+	zombieYoWeak
+	zombieUtilityWorkerWeak
+	zombieSpiderWeak
+	zombieBikerWeak
+	zombieLumberjackWeak
+	zombieFemaleFatWeak
+	zombieFatHawaiianWeak
+	zombieBowlerWeak
+	zombieFatCopWeak
+	zombieSkateboarderWeak
+	zombieSoldierWeak
+	zombieSteveCrawlerWeak
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[substring-after(@name,'feralHordeStageGS') &lt; 133 and (substring-after(@name,'feralHordeStageGS')) &gt;97]/text()" delim="\n" op="add">
+	zombieDemolition, .15
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[substring-after(@name,'feralHordeStageGS') &gt; 132]/text()" delim="\n" op="add">
+	zombieHellsHumanExperiment
+	zombieHellsParasite
+	zombieHellsGiantMutant
+	zombieHellsMutant4
+	zombieHellsMutant1
+	zombieHellsMutantBoomer
+	zombieHellsWendigo1
+	zombieHellsWendigo2
+	</csv>
+	
+	<!-- REMOVING CHARGED, INFERNAL, FROSTCLAWS, AND PLAGUE SPITTERS -->
+	<!-- <remove xpath="/entitygroups/entitygroup[contains(@name,'Charged')]"/> -->
+	<!-- <csv xpath="/entitygroups/entitygroup/text()[contains(.,'Charged')]" delim="\n" op="remove">*Charged*</csv> -->
+
+	<!-- <remove xpath="/entitygroups/entitygroup[contains(@name,'Infernal')]"/> -->
+	<!-- <csv xpath="/entitygroups/entitygroup/text()[contains(.,'Infernal')]" delim="\n" op="remove">*Infernal*</csv> -->
+	
+	<!-- <csv xpath="//entitygroup[contains(@name,'Horde')]/text()" op="remove" delim="\n">*Infernal*</csv> -->
+    <!-- <csv xpath="//entitygroup[contains(@name,'Horde')]/text()" op="remove" delim="\n">*Charged*</csv> -->
+	<!-- <csv xpath="//entitygroup[contains(@name,'Horde')]/text()" op="remove" delim="\n">*Infernal,*</csv> -->
+    <!-- <csv xpath="//entitygroup[contains(@name,'Horde')]/text()" op="remove" delim="\n">*Charged,*</csv> -->
+
+	<!-- <remove xpath="/entitygroups/entitygroup[contains(@name,'zombieFrostclaw')]"/> -->
+	<!-- <csv xpath="//entitygroup/text()" op="remove" delim="\n">zombieFrostclaw*</csv> -->
+	<!-- <csv xpath="//entitygroup/text()" op="remove" delim="\n">zombieFrostclawFeral*</csv> -->
+	<!-- <csv xpath="//entitygroup/text()" op="remove" delim="\n">zombieFrostclawRadiated*</csv> -->
+
+	<!-- <remove xpath="/entitygroups/entitygroup[contains(@name,'zombiePlagueSpitter')]"/> -->
+	<!-- <csv xpath="//entitygroup/text()" op="remove" delim="\n">zombiePlagueSpitter*</csv> -->
+	<!-- <csv xpath="//entitygroup/text()" op="remove" delim="\n">zombiePlagueSpitterFeral*</csv> -->
+	<!-- <csv xpath="//entitygroup/text()" op="remove" delim="\n">zombiePlagueSpitterRadiated*</csv> -->
+</HellsJanitor>

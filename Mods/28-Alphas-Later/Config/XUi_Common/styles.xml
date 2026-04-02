@@ -1,0 +1,5 @@
+<configs>
+	<!-- <append xpath="/styles/style[@name='itemStack']"> -->
+		<!-- <style_entry name="qualitycolor" value="durabilitycolor"/> -->
+	<!-- </append> -->
+</configs>

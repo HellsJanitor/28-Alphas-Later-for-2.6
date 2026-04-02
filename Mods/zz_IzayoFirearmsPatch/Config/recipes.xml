@@ -66,6 +66,14 @@
 			</append>
 			
 			<remove xpath="/recipes/recipe[@name='IZYgunT1LRLongRifleM16a1']"/>
+			
+			<set xpath="/recipes/recipe[@name='ammo556mmBulletBallBundle']/@tags">learnable,workbenchCrafting</set>
+			<set xpath="/recipes/recipe[@name='ammo556mmHIpowerBundle']/@tags">learnable,workbenchCrafting</set>
+			<set xpath="/recipes/recipe[@name='ammo556mmArmorPiercingBundle']/@tags">learnable,workbenchCrafting</set>
+			
+			<setattribute xpath="/recipes/recipe[@name='ammo556mmBulletBall']" name="craft_tool">toolAmmoPress</setattribute>
+			<setattribute xpath="/recipes/recipe[@name='ammo556mmHIpower']" name="craft_tool">toolAmmoPress</setattribute>
+			<setattribute xpath="/recipes/recipe[@name='ammo556mmArmorPiercing']" name="craft_tool">toolAmmoPress</setattribute>
 		</if>
 	</conditional>
 	

@@ -1,6 +1,4 @@
 ﻿<config>
-	<remove xpath="/progression/perks/book[@name='perkPistolPeteComplete']/effect_group/passive_effect[@tags='ammoBundle45ACPBulletBall,ammoBundle45ACPHighpower,ammoBundle45ACPArmorpiecing,ammoBundle45ACPEnhanced']"/>
-	
 	<conditional>
 		<if cond="mod_loaded('IZY_RMP_9mmVAL')">
 		</if>
@@ -13,6 +11,7 @@
 	
 	<conditional>
 		<if cond="mod_loaded('IZY_RMP_45ACP')">
+			<remove xpath="/progression/perks/book[@name='perkPistolPeteComplete']/effect_group/passive_effect[@tags='ammoBundle45ACPBulletBall,ammoBundle45ACPHighpower,ammoBundle45ACPArmorpiecing,ammoBundle45ACPEnhanced']"/>
 			<append xpath="/progression/perks/book[@name='perkEnforcerComplete']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">,ammoBundle45ACPBulletBall,ammoBundle45ACPHighpower,ammoBundle45ACPArmorpiecing,ammo45ACPEnhanced</append>
 		</if>
 	</conditional>
