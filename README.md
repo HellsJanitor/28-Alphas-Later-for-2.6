@@ -3,8 +3,14 @@
 **Will you survive?**
 
 The idea behind this mod is to slow progression, make traders less powerful, and generally extend the time for a playthrough, while keeping the vanilla look and feel.
+
+
+> [!NOTE]
+> 03/04/26 mod version 2.6.0.7
+Small hotfix to correct an unlock progression quality bug with Izy's weapons.
+
 > [!IMPORTANT]
->02/04/26 mod version 2.6.0.7
+> 02/04/26 mod version 2.6.0.7
 
  - Fixed the Quad Bike's steering
 
@@ -22,7 +28,7 @@ The idea behind this mod is to slow progression, make traders less powerful, and
 > This *might* require a new save, or at least some new vehicles, tools and/or weapons - so back-up any existing saves, just in case.
 
 > [!IMPORTANT]
->25/03/26 mod version 2.6.0.6
+> 25/03/26 mod version 2.6.0.6
 
  - Lowered the armour rating for primitive Armour.
 
@@ -36,12 +42,12 @@ The idea behind this mod is to slow progression, make traders less powerful, and
 > This *might* break your progression - so back-up any existing saves, just in case.
  
 > [!IMPORTANT]
->22/03/26 mod version 2.6.0.5
+> 22/03/26 mod version 2.6.0.5
 
 > [!CAUTION]
->With the new backpack system, it's ***EXTREMELY*** important that **before** you update to this mod version, you load your old save and empty your inventory.
->If you don't, and you are carrying more than 30 items in your backpack, you risk losing some of your inventory. After emptying your inventory on your current save,
->you should *then* update to the latest version of the mod, and re-add items to your backpack as you see fit.
+> With the new backpack system, it's ***EXTREMELY*** important that **before** you update to this mod version, you load your old save and empty your inventory.
+> If you don't, and you are carrying more than 30 items in your backpack, you risk losing some of your inventory. After emptying your inventory on your current save,
+> you should *then* update to the latest version of the mod, and re-add items to your backpack as you see fit.
 
  - More compatibility with Izayo's weapon pack.
  
@@ -72,14 +78,14 @@ Pack Mule, steroids, and pocket mods will continue to work as they did before.
  **Make sure to remove OCB's MicroSplat mod if it remains in your mod folder after you update**
 
 > [!IMPORTANT]
->16/03/26 mod version 2.6.0.4
+> 16/03/26 mod version 2.6.0.4
 
  - Fixed a game-breaking bug with some armour outfits.
 
  - Fixed HUD/UI scaling for 100% sizes.
 
 > [!IMPORTANT]
->15/03/26 mod version 2.6.0.3
+> 15/03/26 mod version 2.6.0.3
 
  - Fixed a bug where negative wellness from bad food didn't reduce wellness correctly.
 
@@ -96,7 +102,7 @@ Pack Mule, steroids, and pocket mods will continue to work as they did before.
  - Fixed a bug with ingredient counts for recipes not updating correctly.
 
 > [!IMPORTANT]
->12/03/26 mod version 2.6.0.2
+> 12/03/26 mod version 2.6.0.2
 
  - Increased droprate for research papers from zombie loot.
 
@@ -121,14 +127,14 @@ Pack Mule, steroids, and pocket mods will continue to work as they did before.
  - Added back the POI name window (no difficulty indicator still)
   
 > [!IMPORTANT]
->10/03/26 mod version 2.6.0.1 changelog:
+> 10/03/26 mod version 2.6.0.1 changelog:
 
  - Fixed a bug where stone axes and armour would start at Q100 instead of Q1
  
   - Removed invisible walls from trader compounds - **NOTE: This will require a new save to take effect**
   
 > [!IMPORTANT]
->09/03/26 mod version 2.6.0.0 changelog:
+> 09/03/26 mod version 2.6.0.0 changelog:
 
 > [!CAUTION]
 > Will require a new save
