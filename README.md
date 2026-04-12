@@ -6,6 +6,7 @@ The idea behind this mod is to slow progression, make traders less powerful, and
 
 > [!IMPORTANT]
 > 12/04/26 mod version 2.6.0.8
+
 > [!NOTE]
 > Should be save-game safe, but as always, make a back-up of your save, just in case.
 
