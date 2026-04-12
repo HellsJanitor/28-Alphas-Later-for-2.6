@@ -24,10 +24,10 @@
 		</effect_group>
 		
 		<effect_group>
-			<!-- <triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="despair_trigger" allow_client_call="true"/> -->
-			<!-- <triggered_effect trigger="onSelfEnteredGame" action="CallGameEvent" event="despair_trigger" allow_client_call="true"/> -->
-			<!-- <triggered_effect trigger="onSelfRespawn" action="CallGameEvent" event="despair_trigger" allow_client_call="true"/> -->
-			<!-- <triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="despair_trigger" allow_client_call="true"/> -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="despair_trigger" allow_client_call="true"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="CallGameEvent" event="despair_trigger" allow_client_call="true"/>
+			<triggered_effect trigger="onSelfRespawn" action="CallGameEvent" event="despair_trigger" allow_client_call="true"/>
+			<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="despair_trigger" allow_client_call="true"/>
 			
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffDespairMain"/>
 			<triggered_effect trigger="onSelfEnteredGame" action="AddBuff" buff="buffDespairMain"/>
@@ -152,7 +152,7 @@
 	
 	<append xpath="//buff[@name='buffLegBroken']">
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="DespairCounter" operation="add" value="1.5"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="DespairCounter" operation="add" value="2"/>
 			<requirement name="!HasBuff" buff="buffDespairCureDisplay"/>
 			<requirement name="HasBuff" buff="buffLegBroken"/>
 		</effect_group>
@@ -160,7 +160,7 @@
 	
 	<append xpath="//buff[@name='buffArmBroken']">
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="DespairCounter" operation="add" value="1.5"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="DespairCounter" operation="add" value="2"/>
 			<requirement name="!HasBuff" buff="buffDespairCureDisplay"/>
 			<requirement name="HasBuff" buff="buffArmBroken"/>
 		</effect_group>
@@ -1163,6 +1163,9 @@
 		</effect_group>
 	</append>
 	
+	<!-- *** infection immunity -->
+	<set xpath="/buffs/buff[@name='buffInfectionImmunity']/duration/@value">3604</set>
+	
 	<append xpath="/buffs">
 		<!-- *** signalling buff when standing on a bed/bedroll -->
 		<buff name="buffOnBed" name_key="buffOnBedName" description_key="buffOnBedDesc" icon="ui_game_symbol_map_bed" icon_color="0,255,0" showonhud="false">
@@ -2077,7 +2080,7 @@
 			</effect_group>
 			<!-- killing enemies -->
 			<effect_group>
-				<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="DespairCounter" operation="add" value="-10"/>
+				<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="DespairCounter" operation="add" value="-5"/>
 			</effect_group>
 			<!-- reduces tick rate if player has drone morale booster buff -->
 			<effect_group>
@@ -2086,34 +2089,34 @@
 			</effect_group>
 			<!-- perk From the Shadows negates effects of despair from darkness -->
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="DespairCounter" operation="add" value="-.25">
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="DespairCounter" operation="add" value="-.1">
 					<requirement name="ProgressionLevel" progression_name="perkFromTheShadows" operation="GTE" value="5"/>
 					<requirement name="IsNight"/>
 				</triggered_effect>
 			</effect_group>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="DespairCounter" operation="add" value="-.2">
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="DespairCounter" operation="add" value="-.08">
 					<requirement name="ProgressionLevel" progression_name="perkFromTheShadows" operation="GTE" value="4"/>
 					<requirement name="ProgressionLevel" progression_name="perkFromTheShadows" operation="LT" value="5"/>
 					<requirement name="IsNight"/>
 				</triggered_effect>
 			</effect_group>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="DespairCounter" operation="add" value="-.15">
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="DespairCounter" operation="add" value="-.06">
 					<requirement name="ProgressionLevel" progression_name="perkFromTheShadows" operation="GTE" value="3"/>
 					<requirement name="ProgressionLevel" progression_name="perkFromTheShadows" operation="LT" value="4"/>
 					<requirement name="IsNight"/>
 				</triggered_effect>
 			</effect_group>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="DespairCounter" operation="add" value="-.1">
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="DespairCounter" operation="add" value="-.04">
 					<requirement name="ProgressionLevel" progression_name="perkFromTheShadows" operation="GTE" value="2"/>
 					<requirement name="ProgressionLevel" progression_name="perkFromTheShadows" operation="LT" value="3"/>
 					<requirement name="IsNight"/>
 				</triggered_effect>
 			</effect_group>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="DespairCounter" operation="add" value="-.05">
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="DespairCounter" operation="add" value="-.02">
 					<requirement name="ProgressionLevel" progression_name="perkFromTheShadows" operation="GTE" value="1"/>
 					<requirement name="ProgressionLevel" progression_name="perkFromTheShadows" operation="LT" value="2"/>
 					<requirement name="IsNight"/>
@@ -4331,8 +4334,6 @@
 		<!-- <triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar="smell" operation="set" value="15"/> -->
 		<!-- <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="smell" operation="set" value="15"/> -->
 		<!-- </effect_group> -->
-		<!-- </buff> -->
-		
-		
-	</append>
+		<!-- </buff> -->		
+	</append>	
 </HellsJanitor>

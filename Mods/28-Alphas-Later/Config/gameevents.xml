@@ -10,9 +10,9 @@
 		
 		<action class="SetItemSlots">
 			<property name="items_location" value="Toolbelt"/>
-			<property name="items" value="drinkJarPureMineralWater,foodSteakAndPotato,medicalFirstAidKit,meleeToolFlashlight02,resourceNiCdBattery"/>
-			<property name="item_counts" value="2,2,2,1,1"/>
-			<property name="slot_numbers" value="1,2,3,4,5"/>
+			<property name="items" value="drinkJarPureMineralWater,foodSteakAndPotato,medicalFirstAidKit,meleeToolFlashlight02,resourceNiCdBattery,vehicleBicyclePlaceable"/>
+			<property name="item_counts" value="2,2,2,1,1,1"/>
+			<property name="slot_numbers" value="1,2,3,4,5,6"/>
 		</action>
 		
 		<action class="AddQuest">
@@ -108,35 +108,68 @@
 		<!-- *** checks if TI is active before adding Despair -->
 		<action_sequence name="despair_trigger">
 			<property name="allow_user_trigger" value="false"/>
-		
+			
+			<requirement class="IsTwitchActive"/>
+			
 			<action class="RemoveBuff">
-				<property name="buff_name" value="buffDespairMain"/>
+				<property name="buff_name" value="buffDespairMain"/>			
+			</action>			
 			
-				<requirement class="IsTwitchActive"/>
-/			</action>
+			<action class="RemoveBuff">
+				<property name="buff_name" value="buffDespairCureDisplayPositive01"/>			
+			</action>
 
-			<action class="AddBuff">
-				<property name="buff_name" value="buffDespairMain"/>
+			<action class="RemoveBuff">
+				<property name="buff_name" value="buffDespairCureDisplayPositive02"/>			
+			</action>	
+
+			<action class="RemoveBuff">
+				<property name="buff_name" value="buffDespairCureDisplayPositive03"/>			
+			</action>	
 			
-				<requirement class="IsTwitchActive">
-					<property name="invert" value="true"/>
-				</requirement>
+			<action class="RemoveBuff">
+				<property name="buff_name" value="buffDespair01Untreated"/>			
+			</action>	
+			
+			<action class="RemoveBuff">
+				<property name="buff_name" value="buffDespair01GetBetter"/>			
+			</action>	
+			
+			<action class="RemoveBuff">
+				<property name="buff_name" value="buffDespair02Untreated"/>			
+			</action>	
+			
+			<action class="RemoveBuff">
+				<property name="buff_name" value="buffDespair02GetBetter"/>			
+			</action>
+
+			<action class="RemoveBuff">
+				<property name="buff_name" value="buffDespair03Untreated"/>			
+			</action>	
+			
+			<action class="RemoveBuff">
+				<property name="buff_name" value="buffDespair03GetBetter"/>			
 			</action>
 			
 			<action class="RemoveBuff">
-				<property name="buff_name" value="buffDespairCounter"/>
-			
-				<requirement class="IsTwitchActive"/>
-/			</action>
-
-			<action class="AddBuff">
-				<property name="buff_name" value="buffDespairCounter"/>
-			
-				<requirement class="IsTwitchActive">
-					<property name="invert" value="true"/>
-				</requirement>
+				<property name="buff_name" value="buffDespair04"/>			
 			</action>
-		
+
+			<action class="RemoveBuff">
+				<property name="buff_name" value="buffDespairCounter"/>			
+			</action>
+			
+			<action class="ModifyCVar">
+				<property name="cvar" value="DespairCounter" />
+				<property name="operation" value="set" />
+				<property name="value" value="0" />
+			</action>
+			
+			<action class="ModifyCVar">
+				<property name="cvar" value=".DespairDisplayHUD" />
+				<property name="operation" value="set" />
+				<property name="value" value="0" />
+			</action>
 		</action_sequence>
 	
 		<!-- *** random wandering horde spawner -->

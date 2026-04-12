@@ -18,7 +18,7 @@
 			<label depth="3" size="64,26" pos="70,-18" color="[labelColor]" pivot="center" justify="center" font_size="26" text_key="lblContextCraftCount"/>
 		</rect>
 	
-		<grid pos="0,-35" rows="6" width="447" height="264" cell_height="44" cell_width="447" controller="IngredientList" arrangement="vertical">
+		<grid pos="0,-33" rows="6" width="447" height="264" cell_height="44" cell_width="447" controller="IngredientList" arrangement="vertical">
 			<ingredient_row_narrow name="1"/>
 			<ingredient_row_narrow name="2"/>
 			<ingredient_row_narrow name="3"/>
@@ -279,16 +279,16 @@
 				</grid>
 			</rect>
 		</rect>
-	</set>	
+	</set>
 	
 	<append xpath="/windows/window[@name='windowForgeInput']/@materials_accepted">,chromium,copper,limestone,zinc</append>
 	<set xpath="/windows/window[@name='windowForgeInput']">
 		<panel style="header.panel">
 			<sprite style="header.icon" sprite="ui_game_symbol_forge"/>
-			<label style="header.name.shrink" text="INPUT" text_key="xuiSmelting" />
+			<label style="header.name.shrink" text="INPUT" text_key="xuiSmelting"/>
 		</panel>
 
-		<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="0,-46" height="228" color="[black]" type="sliced" fillcenter="false" />
+		<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="0,-46" height="228" color="[black]" type="sliced" fillcenter="false"/>
 		<rect name="content" depth="1" pos="0,-46" height="153">
 
 			<grid depth="7" rows="3" cols="1" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationMaterialInputGrid" repeat_content="true">
@@ -299,31 +299,31 @@
 
 		<rect name="content2" depth="0" pos="78, -49" width="147" height="223">
 			<sprite depth="1" color="[mediumGrey]" type="sliced"/>
-			<grid rows="10" cols="1" pos="3,-3" cell_width="147" cell_height="22"  repeat_content="true">
+			<grid rows="10" cols="1" pos="3,-3" cell_width="147" cell_height="22" repeat_content="true">
 				<forge_material name="0"/>
 			</grid>
 		</rect>
 	</set>
 	
 	<insertafter xpath="/windows/window[@name='windowOutput']">
-		<window name="windowForgeOutput" width="228" height="198" anchor="CenterTop" panel="Right" cursor_area="true" controller="WorkstationOutputWindow" >
-		<panel style="header.panel" pos="0,-93">
-			<sprite style="header.icon" sprite="ui_game_symbol_loot_sack"/>
-			<label style="header.name.iconright" text="OUTPUT" text_key="xuiOutput" />
+		<window name="windowForgeOutput" width="228" height="198" anchor="CenterTop" panel="Right" cursor_area="true" controller="WorkstationOutputWindow">
+			<panel style="header.panel" pos="0,-93">
+				<sprite style="header.icon" sprite="ui_game_symbol_loot_sack"/>
+				<label style="header.name.iconright" text="OUTPUT" text_key="xuiOutput"/>
 			
-			<rect pivot="topleft" controller="ContainerStandardControls" createuiwidget="true" visible="{buttons_visible}">
-				<button   depth="3" name="btnMoveAll"          sprite="ui_game_symbol_store_all_up"     tooltip="{take_all_tooltip}"          pos="203, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
-			</rect>
-		</panel>
+				<rect pivot="topleft" controller="ContainerStandardControls" createuiwidget="true" visible="{buttons_visible}">
+					<button depth="3" name="btnMoveAll" sprite="ui_game_symbol_store_all_up" tooltip="{take_all_tooltip}" pos="203, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]"/>
+				</rect>
+			</panel>
 
 
-		<rect name="content" depth="0" pos="0,-136" height="150" disablefallthrough="true">
-			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" height="150" color="[black]" type="sliced" fillcenter="false" />
+			<rect name="content" depth="0" pos="0,-136" height="150" disablefallthrough="true">
+				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" height="150" color="[black]" type="sliced" fillcenter="false"/>
 				<grid depth="10" name="inventory" rows="2" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationOutputGrid" repeat_content="true">
 					<item_stack name="0"/>
 				</grid>
-		</rect>
-	</window>
+			</rect>
+		</window>
 	</insertafter>
 		
 	<!-- <set xpath="/windows/window[@name='windowQuestList']/rect[@name='content']/rect[@depth='3']//button[3]/@pos">-3120,-21</set>	 -->
@@ -1066,9 +1066,9 @@
 					<sprite depth="3" name="Icon" sprite="resourceWaterFilter" atlas="ItemIconAtlas" color="[iconColor]" size="32,32" pos="24,-24" pivot="center" foregroundlayer="true"/>
 					<label depth="4" name="TextContent" pos="26,-24" font_size="32" color="255,255,255,255" justify="center" pivot="left" text="{cvar(helmetPurifierDurability)} uses" width="125" height="35" effect="Outline8" effect_color="0,0,0,255" effect_distance="1,1"/>
 					<sprite depth="5" name="border" sprite="menu_empty3px" fillcenter="false" color="0,0,0,255" type="sliced"/>
-				</rect>				
+				</rect>
 			</grid>
-		</window>		
+		</window>
 	</append>
 	
 	<set xpath="/windows/window[@name='toolTipPopups']/@pos">0,160</set>
@@ -1157,7 +1157,7 @@
 	<!-- <set xpath="/windows/window[@name='CharacterFrameWindow']/grid[@visible='{showstats}']/player_stats_entry[@textcontent='{playerwatertitle|once}']/@backgroundcolor">[darkestGrey]</set> -->
 	
 	<!-- <insertafter xpath="/windows/window[@name='CharacterFrameWindow']/grid[@visible='{showstats}']/player_stats_entry[@textcontent='{playerwatertitle|once}']"> -->
-		<!-- <player_stats_entry backgroundcolor="[darkGrey]" textcontent="{playercoretemptitle|once}" valuecontent="{playercoretemp}"/> -->
+	<!-- <player_stats_entry backgroundcolor="[darkGrey]" textcontent="{playercoretemptitle|once}" valuecontent="{playercoretemp}"/> -->
 	<!-- </insertafter> -->
 	
 	<!-- *** removes POI names and tier 'skulls' -->
@@ -1169,7 +1169,26 @@
 	<set xpath="/windows/window[@name='windowLocation']/sprite/@height">34</set>
 	<set xpath="/windows/window[@name='windowLocation']/label/@pos">6,0</set>
 	
+	<append xpath="/windows/window[@name='craftingInfoPanel']/rect[@name='contentCraftingInfo']/rect[@name='searchControls']">
+		<button depth="4" name="outputsButton" style="icon30px, press" pos="108,-22" sprite="ui_game_symbol_backpack" pivot="center" tooltip_key="HJXuiOutputsLabel" sound="[paging_click]"/>
+	</append>
+
+	<append xpath="/windows/window[@name='craftingInfoPanel']/rect[@name='contentCraftingInfo']">
+		<rect depth="1" pos="151,-50" name="outputs" width="451" height="278" visible="{showoutputs}">
+			<sprite depth="1" name="outputsBgOuter" sprite="menu_empty3px" pos="0,6" width="451" height="300" color="[black]" type="sliced" fillcenter="false"/>
+			<sprite depth="2" name="outputsBgInner" sprite="menu_empty" pos="2,8" width="447" height="302" color="[mediumGrey]" type="sliced" fillcenter="true"/>
+
+			<grid rows="6" pos="2,8" width="447" height="270" cell_height="42" cell_width="447" controller="HJ.MultiOutputRecipes.XUiC_RecipeOutputList,28AL-Harmony" arrangement="vertical">
+				<recipe_output_header name="0"/>
+				<recipe_output_row name="1"/>
+				<recipe_output_row name="2"/>
+				<recipe_output_row name="3"/>
+				<recipe_output_row name="4"/>
+				<recipe_output_row name="5"/>
+			</grid>
+		</rect>
+	</append>
+
+	<set xpath="/windows/window[@name='craftingInfoPanel']/rect[@name='contentCraftingInfo']/rect[@name='searchControls']/button[@name='showunlocksButton']/@pos">151,-22</set>
 	
-	<!-- <remove xpath="/windows/window[@name='windowLocation']/sprite"/> -->
-	<!-- <remove xpath="/windows/window[@name='windowLocation']/label"/> -->
 </HellsJanitor>

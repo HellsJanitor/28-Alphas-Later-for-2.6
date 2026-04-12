@@ -1,29 +1,4 @@
 <HellsJanitor>
-	<!-- <set xpath="/controls/skill_crafting_entry"> -->
-	<!-- <panel disableautobackground="true" controller="_28AlphasLater.UI.XUiC_SkillCraftingInfoEntry_Research, 28AL-Harmony" width="${width}" height="${height}" style="press, hover, scroll" color_bg_bought="140,130,100,255" color_bg_available="[lightGrey]" color_bg_locked="[darkGrey]" color_lbl_available="[white]" color_lbl_locked="[lightGrey]" color_lbl_nerfed="204,17,17" color_lbl_buffed="17,204,17" visible="{nothiddenbypager}" > -->
-	<!-- <sprite depth="2" name="backgroundMain" sprite="menu_empty2px" pos="0,${-height}" height="2" color="[black]" type="sliced" fillcenter="false" /> -->
-	<!-- <sprite depth="2" name="background" sprite="menu_empty3px" pos="2,1" width="${width-4}" height="${height}" color="[selectedColor]" type="sliced" globalopacity="true" fillcenter="false" visible="{show_selected}" /> -->
-	<!-- <sprite depth="1" name="backgroundMainColor" sprite="menu_empty" pos="2,0" width="${width-4}" type="sliced" fillcenter="true" color="{color_bg}" visible="{hasentry}" /> -->
-	<!-- <sprite depth="6" name="itemIcon" width="64" height="64" atlas="{iconatlas}" sprite="{itemicon}" pos="35,-35" pivot="center" foregroundlayer="true" color="{itemcolor}" /> -->
-			
-	<!-- <label depth="3" pos="77,-${Round(height/2,0)}" text="{text}" pivot="left" justify="center" width="423" font_size="28" color="{color_fg}" visible="{hasentry}" /> -->
-	<!-- <sprite depth="3" name="durabilityBackground" width="60" height="10" sprite="menu_empty3px" color="[darkGrey]" type="sliced" pos="6, -60" foregroundlayer="true" visible="{showquality}" /> -->
-	<!-- <filledsprite depth="4" name="durability" width="60" height="10" sprite="menu_empty2px" color="{currentqualitycolor}" fill="1" type="filled" pos="6, -60" foregroundlayer="true" visible="{showquality}" /> -->
-			
-	<!-- <label depth="3" pos="560,-${Round(height/2,0)}" text="{nextpoints}" pivot="right" justify="center" width="65" font_size="28" color="{color_fg}" visible="{notcomplete}" /> -->
-	<!-- <sprite depth="12" pos="610,-45" style="icon30px" sprite="ui_game_symbol_check" pivot="center" visible="{showcomplete}" /> -->
-			
-	<!-- <label depth="7" name="stackValue" pos="-2,-45" width="70" height="28" text="{currentqualitytext}" font_size="26" effect="outline" justify="Center" visible="{showquality}" /> -->
-	<!-- <sprite depth="12" pos="55,-55" style="icon30px" sprite="ui_game_symbol_lock" pivot="center" visible="{showlock}" /> -->
-			
-	<!-- <sprite depth="3" name="durabilityBackground" width="50" height="10" sprite="menu_empty3px" color="[darkGrey]" type="sliced" pos="636,-65" pivot="right" foregroundlayer="true" visible="{notcompletequality}" /> -->
-	<!-- <filledsprite depth="4" name="durability" width="50" height="10" sprite="menu_empty2px" color="{nextqualitycolor}" fill="1" type="filled" pos="636, -65" pivot="right" foregroundlayer="true" visible="{notcompletequality}" /> -->
-	<!-- <label depth="7" name="stackValue" pos="645,-40" width="70" height="40" text="{nextqualitytext}" pivot="right" font_size="28" effect="outline" justify="Center" visible="{notcompletequality}" /> -->
-			
-	<!-- <sprite depth="12" pos="610,-40" style="icon30px" sprite="ui_game_symbol_shopping_cart" pivot="center" visible="{notcompletenoquality}" /> -->
-	<!-- <button depth="15" name="btnBuy" pos="${width-40},-${Round(height/2,0)}" width="32" height="32" style="icon32px, press, hover" atlas="ui_game_symbol" sprite="ui_game_symbol_add" pivot="center" tooltip=""/> -->
-	<!-- </panel> -->
-	<!-- </set> -->
 	
 	<set xpath="/controls/skill_crafting_entry">
 		<panel disableautobackground="true" controller="_28AlphasLater.UI.XUiC_SkillCraftingInfoEntry_Research, 28AL-Harmony" width="${width}" height="${height}" style="press, hover, scroll" color_bg_bought="140,130,100,255" color_bg_available="[lightGrey]" color_bg_locked="[darkGrey]" color_lbl_available="[white]" color_lbl_locked="[lightGrey]" color_lbl_nerfed="204,17,17" color_lbl_buffed="17,204,17" visible="{nothiddenbypager}">
@@ -69,7 +44,7 @@
 			</rect>
 
 			<!-- Buy button (unchanged) -->
-			<button depth="15" name="btnBuy" pos="${width-32},-${Round(height/2,0)}" width="16" height="16" style="icon32px, press, hover" sprite="ui_game_symbol_party" pivot="center"/> <!--  tooltip="Purchase next tier for {nextpoints} RP" -->
+			<button depth="15" name="btnBuy" pos="${width-32},-${Round(height/2,0)}" width="16" height="16" style="icon32px, press, hover" sprite="ui_game_symbol_party" pivot="center"/><!--  tooltip="Purchase next tier for {nextpoints} RP" -->
 		</panel>
 	</set>
 	
@@ -108,5 +83,49 @@
 				<sprite depth="3" name="cancel" sprite="ui_game_symbol_x" width="57" height="57" color="255,0,0,0" type="sliced" visible="false" foregroundlayer="true"/>
 			</rect>
 		</oven_recipe_stack>
+		
+		<recipe_output_header>
+			<rect name="header" width="447" height="40">
+				<rect depth="2" width="65" height="40">
+					<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,0" width="71" height="40" color="[black]" type="sliced" fillcenter="false"/>
+					<sprite color="[darkGrey]" type="sliced"/>
+					<label depth="3" text="Item" pos="32,-21" height="26" font_size="26" color="[white]" justify="center" pivot="center"/>
+				</rect>
+
+				<rect depth="2" width="236" height="40" pos="68,0">
+					<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,0" width="242" height="40" color="[black]" type="sliced" fillcenter="false"/>
+					<sprite color="[darkGrey]" type="sliced"/>
+					<label depth="3" text="Name" pos="117,-21" width="230" height="26" font_size="26" color="[white]" justify="center" pivot="center"/>
+				</rect>
+
+				<rect depth="2" width="140" height="40" pos="307,0">
+					<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,0" width="146" height="40" color="[black]" type="sliced" fillcenter="false"/>
+					<sprite color="[darkGrey]" type="sliced"/>
+					<label depth="3" text="Count" pos="70,-21" width="120" height="26" font_size="26" color="[white]" justify="center" pivot="center"/>
+				</rect>
+			</rect>
+		</recipe_output_header>
+		
+		<recipe_output_row>
+			<rect name="row" width="447" height="42" controller="HJ.MultiOutputRecipes.XUiC_RecipeOutputEntry,28AL-Harmony">
+				<rect depth="2" width="65" height="42">
+					<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,6" width="71" height="44" color="[black]" type="sliced" fillcenter="false"/>
+					<sprite color="[mediumGrey]" type="sliced"/>
+					<sprite depth="2" name="icon" width="34" height="34" atlas="ItemIconAtlas" sprite="{itemicon}" color="{itemicontint}" pos="30,-18" pivot="center" foregroundlayer="true"/>
+				</rect>
+
+				<rect depth="2" width="236" height="42" pos="68,0">
+					<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,6" width="242" height="44" color="[black]" type="sliced" fillcenter="false"/>
+					<sprite color="[mediumGrey]" type="sliced"/>
+					<label depth="3" name="name" pos="117,-18" width="230" height="26" font_size="26" color="[labelColor]" justify="center" pivot="center" text="{name}"/>
+				</rect>
+
+				<rect depth="2" width="140" height="42" pos="307,0">
+					<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,6" width="146" height="44" color="[black]" type="sliced" fillcenter="false"/>
+					<sprite color="[mediumGrey]" type="sliced"/>
+					<label depth="3" name="count" pos="70,-18" width="120" height="26" font_size="26" color="[labelColor]" justify="center" pivot="center" text="{count}"/>
+				</rect>
+			</rect>
+		</recipe_output_row>
 	</append>
 </HellsJanitor>

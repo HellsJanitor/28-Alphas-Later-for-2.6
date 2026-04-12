@@ -155,6 +155,17 @@
 		</if>
 	</conditional>
 	
+	<conditional>
+		<if cond="mod_loaded('IZY_RMP_762pack')">
+			<set xpath="/items/item[@name='ammoBundle762mmBulletHP']/property[@name='CustomIcon']/@value">ammo762mmBulletHP</set>
+		</if>
+	</conditional>
+	
+	<conditional>
+		<if cond="mod_loaded('IZY_melee')">
+			<set xpath="/items/item[@name='IZYMeleeT4SledghammerSpikeMace']/effect_group/passive_effect[@name='StaminaLoss']/@value">41</set>
+		</if>
+	</conditional>
 	
 	<set xpath="/items/item[@name='IZYgunTminus1MusketshotgunBlunderbuss']/property[@name='RepairTools']/@value">ShotgunRepairKit</set>
 	<set xpath="/items/item[@name='IZYgunTminus1MusketM1777Rifle']/property[@name='RepairTools']/@value">RifleRepairKit</set>

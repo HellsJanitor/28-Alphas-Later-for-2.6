@@ -10,6 +10,9 @@
 		</effect_group>
 	</append>
 	
+	<!-- *** test loot bag -->
+	<set xpath="/entity_classes/entity_class[starts-with(@name,'EntityLootContainer')]/property[@name='Mesh']/@value">#@modfolder:Resources/humanGoreLoot.unity3d?humanSkeletonGorePrefab</set>
+	
 	<!-- *** loot from dead zombies -->
 	<append xpath="/entity_classes/entity_class
 	[starts-with(@name,'zombieArlene') or
@@ -17,67 +20,73 @@
 	(starts-with(@name,'zombieDarlene')) or
 	(starts-with(@name,'zombieScreamer'))
 	]">
-		<property name="LootDropProb" value="0"/>
-		<property name="LootListOnDeath" value="zPackNormalCorpse"/>
-		<property name="TimeStayAfterDeath" value="3600"/>
-		<property name="CorpseBlock" value="goreHumanSkull"/>
-		<property name="CorpseBlockChance" value=".1"/>
+		<!--<property name="LootDropProb" value="0"/>-->
+		<!-- <property name="LootListOnDeath" value="zPackNormalCorpse"/> -->
+		<!--<property name="CorpseBlock" value="goreHumanSkull"/>-->
+		<!--<property name="CorpseBlockChance" value=".1"/>-->		
+		<!-- <property name="TimeStayAfterDeath" value="3600"/> -->
+
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+		<property name="HJCorpseLootDropEntityClass" value="cntZPackExternalCorpseBag"/>
+		<property name="HJCorpseLootDropProb" value="1"/>
+		<property name="HJCorpseLootDropScale" value="1.0"/>
+		<property name="HJCorpseLootDropSound" value="zpack_spawn"/>
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[starts-with(@name,'zombiePartyGirl')]">
-		<property name="LootDropProb" value="0"/>
-		<property name="LootListOnDeath" value="zPackPartyGirlCorpse"/>
-		<property name="TimeStayAfterDeath" value="3600"/>
-		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".1"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+		<property name="HJCorpseLootDropEntityClass" value="cntZPackExternalCorpseBagPartyGirl"/>
+		<property name="HJCorpseLootDropProb" value="1"/>
+		<property name="HJCorpseLootDropScale" value="1.0"/>
+		<property name="HJCorpseLootDropSound" value="zpack_spawn"/>
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[starts-with(@name,'zombieNurse')]">
-		<property name="LootDropProb" value="0"/>
-		<property name="LootListOnDeath" value="zPackNurseCorpse"/>
-		<property name="TimeStayAfterDeath" value="3600"/>
-		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".1"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerNurse"/>
+		<property name="HJCorpseLootDropEntityClass" value="cntZPackExternalCorpseBagNurse"/>
+		<property name="HJCorpseLootDropProb" value="1"/>
+		<property name="HJCorpseLootDropScale" value="1.0"/>
+		<property name="HJCorpseLootDropSound" value="zpack_spawn"/>
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[starts-with(@name,'zombieLab')]">
-		<property name="LootDropProb" value="0"/>
-		<property name="LootListOnDeath" value="zPackLabCorpse"/>
-		<property name="TimeStayAfterDeath" value="3600"/>
-		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".1"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerLab"/>
+		<property name="HJCorpseLootDropEntityClass" value="cntZPackExternalCorpseBagLab"/>
+		<property name="HJCorpseLootDropProb" value="1"/>
+		<property name="HJCorpseLootDropScale" value="1.0"/>
+		<property name="HJCorpseLootDropSound" value="zpack_spawn"/>
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[starts-with(@name,'zombieUtilityWorker')]">
-		<property name="LootDropProb" value="0"/>
-		<property name="LootListOnDeath" value="zPackUtilityCorpse"/>
-		<property name="TimeStayAfterDeath" value="3600"/>
-		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".1"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+		<property name="HJCorpseLootDropEntityClass" value="cntZPackExternalCorpseBagUtility"/>
+		<property name="HJCorpseLootDropProb" value="1"/>
+		<property name="HJCorpseLootDropScale" value="1.0"/>
+		<property name="HJCorpseLootDropSound" value="zpack_spawn"/>
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[starts-with(@name,'zombieJanitor')]">
-		<property name="LootDropProb" value="0"/>
-		<property name="LootListOnDeath" value="zPackJanitorCorpse"/>
-		<property name="TimeStayAfterDeath" value="3600"/>
-		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".1"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+		<property name="HJCorpseLootDropEntityClass" value="cntZPackExternalCorpseBagUtility"/>
+		<property name="HJCorpseLootDropProb" value="1"/>
+		<property name="HJCorpseLootDropScale" value="1.0"/>
+		<property name="HJCorpseLootDropSound" value="zpack_spawn"/>
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[starts-with(@name,'zombieMaleHazmat')]">
-		<property name="LootDropProb" value="0"/>
-		<property name="LootListOnDeath" value="zPackHazmatCorpse"/>
-		<property name="TimeStayAfterDeath" value="3600"/>
-		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".1"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+		<property name="HJCorpseLootDropEntityClass" value="cntZPackExternalCorpseBagHazmat"/>
+		<property name="HJCorpseLootDropProb" value="1"/>
+		<property name="HJCorpseLootDropScale" value="1.0"/>
+		<property name="HJCorpseLootDropSound" value="zpack_spawn"/>
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[starts-with(@name,'zombieBusinessMan')]">
-		<property name="LootDropProb" value="0"/>
-		<property name="LootListOnDeath" value="zPackBusinessmanCorpse"/>
-		<property name="TimeStayAfterDeath" value="3600"/>
-		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".1"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+		<property name="HJCorpseLootDropEntityClass" value="cntZPackExternalCorpseBagBusinessman"/>
+		<property name="HJCorpseLootDropProb" value="1"/>
+		<property name="HJCorpseLootDropScale" value="1.0"/>
+		<property name="HJCorpseLootDropSound" value="zpack_spawn"/>
 	</append>
 	
 	<append xpath="/entity_classes/entity_class
@@ -92,102 +101,102 @@
 	(starts-with(@name,'zombieYo')) or
 	(starts-with(@name,'zombieSteveCrawler'))
 	]">
-		<property name="LootDropProb" value="0"/>
-		<property name="LootListOnDeath" value="zPackNormalCorpse"/>
-		<property name="TimeStayAfterDeath" value="3600"/>
-		<property name="CorpseBlock" value="goreHumanSkull"/>
-		<property name="CorpseBlockChance" value=".1"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+		<property name="HJCorpseLootDropEntityClass" value="cntZPackExternalCorpseBag"/>
+		<property name="HJCorpseLootDropProb" value="1"/>
+		<property name="HJCorpseLootDropScale" value="1.0"/>
+		<property name="HJCorpseLootDropSound" value="zpack_spawn"/>
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[starts-with(@name,'zombieRancher')]">
-		<property name="LootDropProb" value="0"/>
-		<property name="LootListOnDeath" value="zPackStrongCorpse"/>
-		<property name="TimeStayAfterDeath" value="3600"/>
-		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".1"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular,1,EntityLootContainerPlague,1"/>
+		<property name="HJCorpseLootDropEntityClass" value="cntZPackExternalCorpseBagStrong"/>
+		<property name="HJCorpseLootDropProb" value="1"/>
+		<property name="HJCorpseLootDropScale" value="1.0"/>
+		<property name="HJCorpseLootDropSound" value="zpack_spawn"/>
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[starts-with(@name,'zombieChuck')]">
-		<property name="LootDropProb" value="0"/>
-		<property name="LootListOnDeath" value="zPackStrongCorpse"/>
-		<property name="TimeStayAfterDeath" value="3600"/>
-		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".1"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+		<property name="HJCorpseLootDropEntityClass" value="cntZPackExternalCorpseBagStrong"/>
+		<property name="HJCorpseLootDropProb" value="1"/>
+		<property name="HJCorpseLootDropScale" value="1.0"/>
+		<property name="HJCorpseLootDropSound" value="zpack_spawn"/>
 	</append>
 	
 	<append xpath="/entity_classes/entity_class
 	[starts-with(@name,'zombieFemaleFat') or
 	(starts-with(@name,'zombieMutated'))
 	]">
-		<property name="LootDropProb" value="0"/>
-		<property name="LootListOnDeath" value="zPackStrongCorpse"/>
-		<property name="TimeStayAfterDeath" value="3600"/>
-		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".1"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+		<property name="HJCorpseLootDropEntityClass" value="cntZPackExternalCorpseBagStrong"/>
+		<property name="HJCorpseLootDropProb" value="1"/>
+		<property name="HJCorpseLootDropScale" value="1.0"/>
+		<property name="HJCorpseLootDropSound" value="zpack_spawn"/>
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[starts-with(@name,'zombieFatHawaiian') or (starts-with(@name,'zombieBowler'))]">
-		<property name="LootDropProb" value="0"/>
-		<property name="LootListOnDeath" value="zPackTouristCorpse"/>
-		<property name="TimeStayAfterDeath" value="3600"/>
-		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".1"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+		<property name="HJCorpseLootDropEntityClass" value="cntZPackExternalCorpseBagTourist"/>
+		<property name="HJCorpseLootDropProb" value="1"/>
+		<property name="HJCorpseLootDropScale" value="1.0"/>
+		<property name="HJCorpseLootDropSound" value="zpack_spawn"/>
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[starts-with(@name,'zombieFatCop')]">
-		<property name="LootDropProb" value="0"/>
-		<property name="LootListOnDeath" value="zPackFatCopCorpse"/>
-		<property name="TimeStayAfterDeath" value="3600"/>
-		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".1"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+		<property name="HJCorpseLootDropEntityClass" value="cntZPackExternalCorpseBagFatCop"/>
+		<property name="HJCorpseLootDropProb" value="1"/>
+		<property name="HJCorpseLootDropScale" value="1.0"/>
+		<property name="HJCorpseLootDropSound" value="zpack_spawn"/>
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[starts-with(@name,'zombieLumberjack')]">
-		<property name="LootDropProb" value="0"/>
-		<property name="LootListOnDeath" value="zPackLumberjackCorpse"/>
-		<property name="TimeStayAfterDeath" value="3600"/>
-		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".1"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+		<property name="HJCorpseLootDropEntityClass" value="cntZPackExternalCorpseBagLumberjack"/>
+		<property name="HJCorpseLootDropProb" value="1"/>
+		<property name="HJCorpseLootDropScale" value="1.0"/>
+		<property name="HJCorpseLootDropSound" value="zpack_spawn"/>
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[starts-with(@name,'zombieBiker')]">
-		<property name="LootDropProb" value="0"/>
-		<property name="LootListOnDeath" value="zPackBikerCorpse"/>
-		<property name="TimeStayAfterDeath" value="3600"/>
-		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".1"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+		<property name="HJCorpseLootDropEntityClass" value="cntZPackExternalCorpseBagBiker"/>
+		<property name="HJCorpseLootDropProb" value="1"/>
+		<property name="HJCorpseLootDropScale" value="1.0"/>
+		<property name="HJCorpseLootDropSound" value="zpack_spawn"/>
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[starts-with(@name,'zombieSkateboarder')]">
-		<property name="LootDropProb" value="0"/>
-		<property name="LootListOnDeath" value="zPackThugCorpse"/>
-		<property name="TimeStayAfterDeath" value="3600"/>
-		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".1"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+		<property name="HJCorpseLootDropEntityClass" value="cntZPackExternalCorpseBagThug"/>
+		<property name="HJCorpseLootDropProb" value="1"/>
+		<property name="HJCorpseLootDropScale" value="1.0"/>
+		<property name="HJCorpseLootDropSound" value="zpack_spawn"/>
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[starts-with(@name,'zombieSoldier')]">
-		<property name="LootDropProb" value="0"/>
-		<property name="LootListOnDeath" value="zPackSoldierCorpse"/>
-		<property name="TimeStayAfterDeath" value="3600"/>
-		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".1"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+		<property name="HJCorpseLootDropEntityClass" value="cntZPackExternalCorpseBagSoldier"/>
+		<property name="HJCorpseLootDropProb" value="1"/>
+		<property name="HJCorpseLootDropScale" value="1.0"/>
+		<property name="HJCorpseLootDropSound" value="zpack_spawn"/>
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[starts-with(@name,'zombieWight')]">
-		<property name="LootDropProb" value="0"/>
-		<property name="LootListOnDeath" value="zPackBossCorpse"/>
-		<property name="TimeStayAfterDeath" value="3600"/>
-		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".1"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+		<property name="HJCorpseLootDropEntityClass" value="cntZPackExternalCorpseBagBoss"/>
+		<property name="HJCorpseLootDropProb" value="1"/>
+		<property name="HJCorpseLootDropScale" value="1.0"/>
+		<property name="HJCorpseLootDropSound" value="zpack_spawn"/>
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[starts-with(@name,'zombieDemolition')]">
-		<property name="LootDropProb" value="0"/>
-		<property name="LootListOnDeath" value="zPackBossCorpse"/>
-		<property name="TimeStayAfterDeath" value="3600"/>
-		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".1"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+		<property name="HJCorpseLootDropEntityClass" value="cntZPackExternalCorpseBagBoss"/>
+		<property name="HJCorpseLootDropProb" value="1"/>
+		<property name="HJCorpseLootDropScale" value="1.0"/>
+		<property name="HJCorpseLootDropSound" value="zpack_spawn"/>
 	</append>
 	
 	<!-- *** increase corpse hit points -->
@@ -2126,11 +2135,11 @@
 			<property name="JumpMaxDistance" value="4.6, 5"/>
 			<property name="HandItem" value="meleeHandZombieFeral"/>
 			<property name="ExperienceGain" value="1200"/><!-- XP grunt feral -->
-			<property name="LootDropProb" value="0"/>
-			<property name="LootListOnDeath" value="zPackBossCorpse"/>
-			<property name="TimeStayAfterDeath" value="3600"/>
-			<property name="CorpseBlock" value="goreBlockHumanBones"/>
-			<property name="CorpseBlockChance" value=".1"/><!-- Feral -->
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="HJCorpseLootDropEntityClass" value="cntZPackExternalCorpseBagStrong"/>
+			<property name="HJCorpseLootDropProb" value="1"/>
+			<property name="HJCorpseLootDropScale" value="1.0"/>
+			<property name="HJCorpseLootDropSound" value="zpack_spawn"/>
 
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="^healthFitRadiated"/>
@@ -2160,11 +2169,11 @@
 			<property name="JumpMaxDistance" value=".8, 1.1"/>
 			<property name="HandItem" value="meleeHandZombieStrong"/>
 			<property name="ExperienceGain" value="1200"/><!-- XP strong -->
-			<property name="LootDropProb" value="0"/>
-			<property name="LootListOnDeath" value="zPackBossCorpse"/>
-			<property name="TimeStayAfterDeath" value="3600"/>
-			<property name="CorpseBlock" value="goreBlockHumanBones"/>
-			<property name="CorpseBlockChance" value=".1"/><!-- Feral -->
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="HJCorpseLootDropEntityClass" value="cntZPackExternalCorpseBagStrong"/>
+			<property name="HJCorpseLootDropProb" value="1"/>
+			<property name="HJCorpseLootDropScale" value="1.0"/>
+			<property name="HJCorpseLootDropSound" value="zpack_spawn"/>
 			
 			<property name="AITask" value="
 			Leap|
@@ -2214,11 +2223,11 @@
 			<property name="JumpMaxDistance" value="4.6, 5"/>
 			<property name="HandItem" value="meleeHandZombieFeral"/>
 			<property name="ExperienceGain" value="1200"/><!-- XP grunt feral -->
-			<property name="LootDropProb" value="0"/>
-			<property name="LootListOnDeath" value="zPackBossCorpse"/>
-			<property name="TimeStayAfterDeath" value="3600"/>
-			<property name="CorpseBlock" value="goreBlockHumanBones"/>
-			<property name="CorpseBlockChance" value=".1"/><!-- Feral -->
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="HJCorpseLootDropEntityClass" value="cntZPackExternalCorpseBagStrong"/>
+			<property name="HJCorpseLootDropProb" value="1"/>
+			<property name="HJCorpseLootDropScale" value="1.0"/>
+			<property name="HJCorpseLootDropSound" value="zpack_spawn"/>
 
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="^healthSturdyRadiated"/>
@@ -2255,11 +2264,11 @@
 			<property name="JumpMaxDistance" value="4.6, 5"/>
 			<property name="HandItem" value="meleeHandZombieFeral"/>
 			<property name="ExperienceGain" value="1750"/><!-- XP grunt feral -->
-			<property name="LootDropProb" value="0"/>
-			<property name="LootListOnDeath" value="zPackBossCorpse"/>
-			<property name="TimeStayAfterDeath" value="3600"/>
-			<property name="CorpseBlock" value="goreBlockHumanBones"/>
-			<property name="CorpseBlockChance" value=".1"/><!-- Feral -->
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="HJCorpseLootDropEntityClass" value="cntZPackExternalCorpseBagStrong"/>
+			<property name="HJCorpseLootDropProb" value="1"/>
+			<property name="HJCorpseLootDropScale" value="1.0"/>
+			<property name="HJCorpseLootDropSound" value="zpack_spawn"/>
 
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="^healthSturdyRadiated"/>
@@ -2296,11 +2305,11 @@
 			<property name="JumpMaxDistance" value="4.6, 5"/>
 			<property name="HandItem" value="meleeHandZombieFeral"/>
 			<property name="ExperienceGain" value="1200"/><!-- XP grunt feral -->
-			<property name="LootDropProb" value="0"/>
-			<property name="LootListOnDeath" value="zPackBossCorpse"/>
-			<property name="TimeStayAfterDeath" value="3600"/>
-			<property name="CorpseBlock" value="goreBlockHumanBones"/>
-			<property name="CorpseBlockChance" value=".1"/><!-- Feral -->
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="HJCorpseLootDropEntityClass" value="cntZPackExternalCorpseBagStrong"/>
+			<property name="HJCorpseLootDropProb" value="1"/>
+			<property name="HJCorpseLootDropScale" value="1.0"/>
+			<property name="HJCorpseLootDropSound" value="zpack_spawn"/>
 
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="^healthSturdyRadiated"/>
@@ -2366,11 +2375,11 @@
 			<property name="MoveSpeedAggro" value="0.6, 1.45"/>
 			<property name="JumpMaxDistance" value="4.6, 5"/>
 			<property name="ExperienceGain" value="1200"/>
-			<property name="LootDropProb" value="0"/>
-			<property name="LootListOnDeath" value="zPackBossCorpse"/>
-			<property name="TimeStayAfterDeath" value="3600"/>
-			<property name="CorpseBlock" value="goreBlockHumanBones"/>
-			<property name="CorpseBlockChance" value=".1"/><!-- Feral -->
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="HJCorpseLootDropEntityClass" value="cntZPackExternalCorpseBagStrong"/>
+			<property name="HJCorpseLootDropProb" value="1"/>
+			<property name="HJCorpseLootDropScale" value="1.0"/>
+			<property name="HJCorpseLootDropSound" value="zpack_spawn"/>
 			
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="^healthStrongRadiated"/>
@@ -2419,11 +2428,11 @@
 			<property name="JumpMaxDistance" value="4.6, 5"/>
 			<property name="HandItem" value="meleeHandZombieFeral"/>
 			<property name="ExperienceGain" value="1200"/><!-- XP grunt feral -->
-			<property name="LootDropProb" value="0"/>
-			<property name="LootListOnDeath" value="zPackBossCorpse"/>
-			<property name="TimeStayAfterDeath" value="3600"/>
-			<property name="CorpseBlock" value="goreBlockHumanBones"/>
-			<property name="CorpseBlockChance" value=".1"/><!-- Feral -->
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="HJCorpseLootDropEntityClass" value="cntZPackExternalCorpseBagStrong"/>
+			<property name="HJCorpseLootDropProb" value="1"/>
+			<property name="HJCorpseLootDropScale" value="1.0"/>
+			<property name="HJCorpseLootDropSound" value="zpack_spawn"/>
 
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="^healthSturdyRadiated"/>
@@ -2461,11 +2470,11 @@
 			<property name="JumpMaxDistance" value="4.6, 5"/>
 			<property name="HandItem" value="meleeHandZombieFeral"/>
 			<property name="ExperienceGain" value="1200"/><!-- XP grunt feral -->
-			<property name="LootDropProb" value="0"/>
-			<property name="LootListOnDeath" value="zPackBossCorpse"/>
-			<property name="TimeStayAfterDeath" value="3600"/>
-			<property name="CorpseBlock" value="goreBlockHumanBones"/>
-			<property name="CorpseBlockChance" value=".1"/><!-- Feral -->
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="HJCorpseLootDropEntityClass" value="cntZPackExternalCorpseBagStrong"/>
+			<property name="HJCorpseLootDropProb" value="1"/>
+			<property name="HJCorpseLootDropScale" value="1.0"/>
+			<property name="HJCorpseLootDropSound" value="zpack_spawn"/>
 
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="^healthSturdyRadiated"/>
@@ -2556,9 +2565,9 @@
 			<property name="ModelType" value="Standard"/>
 			<property name="SurfaceCategory" value="metal"/>
 			<property name="IgnoreTrigger" value="true"/>
-			<property name="LootListAlive" value="vehicleGyrocopter"/>
+			<property name="LootListAlive" value="vehicleDuneBuggy"/>
 			<property name="IsEnemyEntity" value="false"/>
-			<property name="Explosion.ParticleIndex" value="29"/>
+			<property name="Explosion.ParticleIndex" value="32"/>
 			<property name="Explosion.RadiusBlocks" value="5"/>
 			<property name="Explosion.RadiusEntities" value="5"/>
 			<property name="Explosion.BlockDamage" value="100"/>
@@ -2578,9 +2587,9 @@
 			<property name="ModelType" value="Standard"/>
 			<property name="SurfaceCategory" value="metal"/>
 			<property name="IgnoreTrigger" value="true"/>
-			<property name="LootListAlive" value="vehicleMinibike"/>
+			<property name="LootListAlive" value="vehicleDirtBike"/>
 			<property name="IsEnemyEntity" value="false"/>
-			<property name="Explosion.ParticleIndex" value="27"/>
+			<property name="Explosion.ParticleIndex" value="32"/>
 			<property name="Explosion.RadiusBlocks" value="4"/>
 			<property name="Explosion.RadiusEntities" value="4"/>
 			<property name="Explosion.BlockDamage" value="50"/>
@@ -2600,9 +2609,9 @@
 			<property name="ModelType" value="Standard"/>
 			<property name="SurfaceCategory" value="metal"/>
 			<property name="IgnoreTrigger" value="true"/>
-			<property name="LootListAlive" value="vehicleMotorcycle"/>
+			<property name="LootListAlive" value="vehicleQuadBike"/>
 			<property name="IsEnemyEntity" value="false"/>
-			<property name="Explosion.ParticleIndex" value="27"/>
+			<property name="Explosion.ParticleIndex" value="32"/>
 			<property name="Explosion.RadiusBlocks" value="4"/>
 			<property name="Explosion.RadiusEntities" value="4"/>
 			<property name="Explosion.BlockDamage" value="50"/>
@@ -2611,6 +2620,50 @@
 			<property name="Faction" value="none"/>
 			<property name="MapIcon" value="ui_game_symbol_quadbike"/>
 			<property name="NavObject" value="quadbike"/>
+		</entity_class>
+		
+		<!-- *** Scooter -->
+		<entity_class name="vehicleScooter">
+			<property name="Class" value="EntityMotorcycle"/>
+			<property name="Tags" value="vehicle,usesGas,bikerSetBonus"/>
+			<!-- <property name="Parent" value="Cars"/> -->
+			<property name="Prefab" value="#@modfolder:Resources/VespaScooter.unity3d?Vespa_Scooter"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="SurfaceCategory" value="metal"/>
+			<property name="IgnoreTrigger" value="true"/>
+			<property name="LootListAlive" value="vehicleScooter"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="Explosion.ParticleIndex" value="32"/>
+			<property name="Explosion.RadiusBlocks" value="4"/>
+			<property name="Explosion.RadiusEntities" value="4"/>
+			<property name="Explosion.BlockDamage" value="50"/>
+			<property name="Explosion.EntityDamage" value="50"/>
+			<property name="RotateToGround" value="true"/>
+			<property name="Faction" value="none"/>
+			<property name="MapIcon" value="ui_game_symbol_scooter"/>
+			<property name="NavObject" value="scooter"/>
+		</entity_class>
+		
+		<!-- *** Semi Truck -->
+		<entity_class name="vehicleSemiTruck">
+			<property name="Class" value="EntityVJeep"/>
+			<property name="Tags" value="vehicle,usesGas"/>
+			<property name="Parent" value="Cars"/>
+			<property name="Prefab" value="#@modfolder:Resources/SemiTruck.unity3d?Semi_Truck"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="SurfaceCategory" value="metal"/>
+			<property name="IgnoreTrigger" value="true"/>
+			<property name="LootListAlive" value="vehicleSemiTruck"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="Explosion.ParticleIndex" value="32"/>
+			<property name="Explosion.RadiusBlocks" value="5"/>
+			<property name="Explosion.RadiusEntities" value="5"/>
+			<property name="Explosion.BlockDamage" value="100"/>
+			<property name="Explosion.EntityDamage" value="100"/>
+			<property name="RotateToGround" value="true"/>
+			<property name="Faction" value="none"/>
+			<property name="MapIcon" value="ui_game_symbol_semitruck"/>
+			<property name="NavObject" value="semitruck"/>
 		</entity_class>
 		
 		<!-- *** wild chicken (non-POI variant) -->
@@ -2704,6 +2757,215 @@
 			</effect_group>
 
 			<property name="NavObject" value="animaltracking_rabbit"/>
+		</entity_class>
+		
+		<!-- *** new loot bag(s) -->
+		<entity_class name="cntZPackExternalCorpseBag">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Console"/>
+			<property name="Mesh" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="3600"/>
+			<property name="LootListOnDeath" value="zPackExternalCorpseBag"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+		
+		<entity_class name="cntZPackExternalCorpseBagNurse">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Console"/>
+			<property name="Mesh" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="3600"/>
+			<property name="LootListOnDeath" value="zPackNurseCorpse"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+		
+		<entity_class name="cntZPackExternalCorpseBagLab">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Console"/>
+			<property name="Mesh" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="3600"/>
+			<property name="LootListOnDeath" value="zPackLabCorpse"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+		
+		<entity_class name="cntZPackExternalCorpseBagUtility">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Console"/>
+			<property name="Mesh" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="3600"/>
+			<property name="LootListOnDeath" value="zPackUtilityCorpse"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+		
+		<entity_class name="cntZPackExternalCorpseBagJanitor">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Console"/>
+			<property name="Mesh" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="3600"/>
+			<property name="LootListOnDeath" value="zPackJanitorCorpse"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+		
+		<entity_class name="cntZPackExternalCorpseBagSoldier">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Console"/>
+			<property name="Mesh" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="3600"/>
+			<property name="LootListOnDeath" value="zPackSoldierCorpse"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+		
+		<entity_class name="cntZPackExternalCorpseBagThug">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Console"/>
+			<property name="Mesh" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="3600"/>
+			<property name="LootListOnDeath" value="zPackThugCorpse"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+		
+		<entity_class name="cntZPackExternalCorpseBagFatCop">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Console"/>
+			<property name="Mesh" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="3600"/>
+			<property name="LootListOnDeath" value="zPackFatCopCorpse"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+		
+		<entity_class name="cntZPackExternalCorpseBagTourist">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Console"/>
+			<property name="Mesh" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="3600"/>
+			<property name="LootListOnDeath" value="zPackTouristCorpse"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+		
+		<entity_class name="cntZPackExternalCorpseBagHazmat">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Console"/>
+			<property name="Mesh" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="3600"/>
+			<property name="LootListOnDeath" value="zPackHazmatCorpse"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+		
+		<entity_class name="cntZPackExternalCorpseBagLumberjack">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Console"/>
+			<property name="Mesh" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="3600"/>
+			<property name="LootListOnDeath" value="zPackLumberjackCorpse"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+		
+		<entity_class name="cntZPackExternalCorpseBagBiker">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Console"/>
+			<property name="Mesh" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="3600"/>
+			<property name="LootListOnDeath" value="zPackBikerCorpse"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+		
+		<entity_class name="cntZPackExternalCorpseBagPartyGirl">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Console"/>
+			<property name="Mesh" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="3600"/>
+			<property name="LootListOnDeath" value="zPackPartyGirlCorpse"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+		
+		<entity_class name="cntZPackExternalCorpseBagBusinessman">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Console"/>
+			<property name="Mesh" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="3600"/>
+			<property name="LootListOnDeath" value="zPackBusinessmanCorpse"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+		
+		<entity_class name="cntZPackExternalCorpseBagStrong">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Console"/>
+			<property name="Mesh" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="3600"/>
+			<property name="LootListOnDeath" value="zPackStrongCorpse"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+		
+		<entity_class name="cntZPackExternalCorpseBagBoss">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Console"/>
+			<property name="Mesh" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="3600"/>
+			<property name="LootListOnDeath" value="zPackBossCorpse"/>
+			<property name="Faction" value="none"/>
 		</entity_class>
 	</append>
 </HellsJanitor>

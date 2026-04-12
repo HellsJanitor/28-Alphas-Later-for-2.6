@@ -57,11 +57,11 @@
 				 this effects the calculation of the Kill bonus (lbu_Kill_Bonus_Percent) defined below as well (applies to Harvest and Destroy for salvage and miner69r Perks). -->
 			
 			<!--Change this var (lbu_XP_Multiplier) if you are not leveling all the lbu perks fast or slow enough for your play style. -->
-			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_XP_Multiplier" operation="set" value="1.0"/><!--default: 1.0. Higher number==Quicker Progress-->
+			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_XP_Multiplier" operation="set" value="1.25"/><!--default: 1.0. Higher number==Quicker Progress-->
 			<!--Change these to increase or decrease individual lbu_perk progression speed to suit your play style-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_DeadEye_XP_Multiplier" operation="set" value="1.0"/><!--default: 1.0. Higher number==Quicker Progress-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Demolition_XP_Multiplier" operation="set" value="1.0"/><!--default: 1.0-->
-			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Miner69er_XP_Multiplier" operation="set" value="0.8"/><!--default: 1.0-->
+			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Miner69er_XP_Multiplier" operation="set" value="1.0"/><!--default: 1.0-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Salvage_XP_Multiplier" operation="set" value="1.0"/><!--default: 1.0-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_LuckyLooter_XP_Multiplier" operation="set" value="0.5"/><!--default: 1.0-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_SpearMaster_XP_Multiplier" operation="set" value="1.0"/><!--default: 1.0-->
@@ -77,7 +77,7 @@
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Robotics_XP_Multiplier" operation="set" value="1.0"/><!--default: 1.0-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Bartering_XP_Multiplier" operation="set" value="1.0"/><!--default: 1.0-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_DaringAdv_XP_Multiplier" operation="set" value="1.0"/><!--default: 1.0-->
-			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Physician_XP_Multiplier" operation="set" value="0.5"/><!--default: 1.0-->
+			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Physician_XP_Multiplier" operation="set" value="1.0"/><!--default: 1.0-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_HiddenStrike_XP_Multiplier" operation="set" value="1.0"/><!--default: 1.0-->
 			<!-- END Set XP Multipliers -->
 		
@@ -1964,7 +1964,7 @@
 			<effect_group>
 				<!--Increase ProgressLevel if xp greater than value for next level-->
 				<requirement name="CVarCompare" cvar="lbu_HiddenStrike_XP" operation="GTE" value="@lbu_HiddenStrike_XPIncrement"/>
-				<requirement name="ProgressionLevel" progression_name="lbu_HiddenStrike" operation="LT" value="50"/>
+				<requirement name="ProgressionLevel" progression_name="lbu_HiddenStrike" operation="LT" value="100"/>
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="lbu_HiddenStrike_XPIncrement" operation="multiply" value="@lbu_DefaultIncrementIncrease">
 					<!--taper off level xp increase at level 47 (xxx_XPIncrement about 4000). xxx_XPIncrement will grow to 4700  without the cap-->
 					<requirement name="ProgressionLevel" progression_name="lbu_HiddenStrike" operation="LTE" value="@lbu_DefaultLevelCap"/>
@@ -1976,7 +1976,7 @@
 				<triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message="Hidden Strike Skill Increased!"/>
 				<!--if max level then give free Skill Point-->
 				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="lbu_action_give_points">
-					<requirement name="ProgressionLevel" progression_name="lbu_HiddenStrike" operation="EQ" value="50"/>
+					<requirement name="ProgressionLevel" progression_name="lbu_HiddenStrike" operation="EQ" value="100"/>
 				</triggered_effect>
 			</effect_group>
 			<effect_group>
@@ -2023,7 +2023,7 @@
 				<!--Increase ProgressLevel if xp greater than value for next level-->
 				<requirement name="CVarCompare" cvar="$barterloopCounter" operation="Equals" value="60"/>
 				<requirement name="CVarCompare" cvar="lbu_Bartering_XP" operation="GTE" value="@lbu_Bartering_XPIncrement"/>
-				<requirement name="ProgressionLevel" progression_name="lbu_Bartering" operation="LT" value="50"/>
+				<requirement name="ProgressionLevel" progression_name="lbu_Bartering" operation="LT" value="100"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="lbu_Bartering_XPIncrement" operation="multiply" value="@lbu_DefaultIncrementIncrease">
 					<!--taper off level xp increase at level 47 (xxx_XPIncrement about 4000). xxx_XPIncrement will grow to 4700  without the cap-->
 					<requirement name="ProgressionLevel" progression_name="lbu_Bartering" operation="LTE" value="@lbu_DefaultLevelCap"/>
@@ -2035,7 +2035,7 @@
 				<triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="Bartering Skill Increased!"/>
 				<!--if max level then give free Skill Point-->
 				<triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="lbu_action_give_points">
-					<requirement name="ProgressionLevel" progression_name="lbu_Bartering" operation="EQ" value="50"/>
+					<requirement name="ProgressionLevel" progression_name="lbu_Bartering" operation="EQ" value="100"/>
 				</triggered_effect>
 				<!--when the perk levels up, trigger a recalculation of the buying and selling rates-->
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="perkBarteringLevelTrack" operation="set" value="1"/>
@@ -2081,7 +2081,7 @@
 			</effect_group>
 			<effect_group>
 				<requirement name="CVarCompare" cvar="$daringAdvloopCounter" operation="Equals" value="60"/>
-				<requirement name="ProgressionLevel" progression_name="lbu_DaringAdv" operation="LT" value="50"/>
+				<requirement name="ProgressionLevel" progression_name="lbu_DaringAdv" operation="LT" value="100"/>
 				<requirement name="CVarCompare" cvar="$previousQuestAmount" operation="LT" value="@$game_XPQuest"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$game_XPQuest" operation="subtract" value="@$previousQuestAmount"/>
 					
@@ -2109,7 +2109,7 @@
 				<!--Increase ProgressLevel if xp greater than value for next level-->
 				<requirement name="CVarCompare" cvar="$daringAdvloopCounter" operation="Equals" value="60"/>
 				<requirement name="CVarCompare" cvar="lbu_DaringAdv_XP" operation="GTE" value="@lbu_DaringAdv_XPIncrement"/>
-				<requirement name="ProgressionLevel" progression_name="lbu_DaringAdv" operation="LT" value="50"/>
+				<requirement name="ProgressionLevel" progression_name="lbu_DaringAdv" operation="LT" value="100"/>
 				<!--Daring Adv rolls the xp over when leveling because the amount per use is high vs other perks.-->
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="lbu_DaringAdv_XP" operation="subtract" value="@lbu_DaringAdv_XPIncrement"/>
 					
@@ -2123,7 +2123,7 @@
 				<triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="Daring Adventure Skill Increased!"/>
 				<!--if max level then give free Skill Point-->
 				<triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="lbu_action_give_points">
-					<requirement name="ProgressionLevel" progression_name="lbu_DaringAdv" operation="EQ" value="50"/>
+					<requirement name="ProgressionLevel" progression_name="lbu_DaringAdv" operation="EQ" value="100"/>
 				</triggered_effect>
 			</effect_group>
 			<effect_group>
@@ -2155,7 +2155,7 @@
 			<!--medical items -->
 			<effect_group>
 				<requirement name="CVarCompare" cvar="$physicianloopCounter" operation="GTE" value="60"/>
-				<requirement name="ProgressionLevel" progression_name="lbu_Physician" operation="LT" value="50"/>
+				<requirement name="ProgressionLevel" progression_name="lbu_Physician" operation="LT" value="100"/>
 				<requirement name="CVarCompare" cvar="lbu_PhysicianUseCounter" operation="GT" value="0"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="lbu_Physician_XP" operation="add" value="@lbu_Physician_Use_XP"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="lbu_PhysicianUseCounter" operation="subtract" value="1"/>
@@ -2165,7 +2165,7 @@
 			<effect_group>
 				<requirement name="CVarCompare" cvar="$physicianloopCounter" operation="GTE" value="60"/>
 				<requirement name="CVarCompare" cvar="lbu_Physician_XP" operation="GTE" value="@lbu_Physician_XPIncrement"/>
-				<requirement name="ProgressionLevel" progression_name="lbu_Physician" operation="LT" value="50"/>
+				<requirement name="ProgressionLevel" progression_name="lbu_Physician" operation="LT" value="100"/>
 				<!--Physician rolls the xp over when leveling because the amount per use is high vs other perks.
 						e.g. 220 per medical item use vs 16 per bullet hit-->
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="lbu_Physician_XP" operation="subtract" value="@lbu_Physician_XPIncrement"/>
@@ -2181,14 +2181,14 @@
 				<triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="Physician Skill Increased!"/>
 				<!--if max level then give free Skill Point-->
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffLBU_GiveProgressSkillPoint">
-					<requirement name="ProgressionLevel" progression_name="lbu_Physician" operation="GTE" value="50"/>
+					<requirement name="ProgressionLevel" progression_name="lbu_Physician" operation="GTE" value="100"/>
 				</triggered_effect>
 				<!--also notify user that splints and casts can now heal sprains.
 						Only notify if the bonus is set in the config 
 						AND perkPhysician ==0 (because perkPhysician alredy does this for sprains at level 1)-->
 				<triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="lbu_action_display_physicianBonus">
 					<requirement name="ProgressionLevel" progression_name="lbu_Physician" operation="GTE" value="50"/>
-					<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="LT" value="1"/>
+					<!-- <requirement name="ProgressionLevel" progression_name="perkPhysician" operation="LT" value="1"/> -->
 					<requirement name="CVarCompare" cvar="lbu_PhysicianBonus" operation="GTE" value="1"/>
 				</triggered_effect>
 					
@@ -2333,7 +2333,7 @@
 				<requirement name="ItemHasTags" tags="perkDemolitionsExpert"/>
 				<!--molotovs are handles separately in buffs:[lbu demolition perk support code]-->
 				<requirement name="!ItemHasTags" tags="lbu_DemoMolotov"/>
-				<requirement name="ProgressionLevel" progression_name="lbu_Demolition" operation="LT" value="50"/>
+				<requirement name="ProgressionLevel" progression_name="lbu_Demolition" operation="LT" value="100"/>
 				<!--cater for timed charge use (or any explosion use that doesnt hit a zombie really)-->
 				<triggered_effect trigger="onSelfExplosionMissEntity" action="ModifyCVar" cvar="lbu_Demolition_XP" operation="add" value="18"/>
 					
@@ -2347,7 +2347,7 @@
 			<!--apply any level xp gain kill triggers-->
 			<effect_group>
 				<requirement name="ItemHasTags" tags="perkDemolitionsExpert"/>
-				<requirement name="ProgressionLevel" progression_name="lbu_Demolition" operation="LT" value="50"/>
+				<requirement name="ProgressionLevel" progression_name="lbu_Demolition" operation="LT" value="100"/>
 				<!--point for killing-->
 				<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="lbu_Demolition_XP" operation="add" value="@lbu_Demolition_Kill_GXP"/>
 			</effect_group>
@@ -2363,7 +2363,7 @@
 			<!--Increase ProgressLevel if xp greater than value for next level-->
 			<effect_group>
 				<requirement name="CVarCompare" cvar="lbu_Demolition_XP" operation="GTE" value="@lbu_Demolition_XPIncrement"/>
-				<requirement name="ProgressionLevel" progression_name="lbu_Demolition" operation="LT" value="50"/>
+				<requirement name="ProgressionLevel" progression_name="lbu_Demolition" operation="LT" value="100"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="lbu_Demolition_XPIncrement" operation="multiply" value="@lbu_DefaultIncrementIncrease">
 					<!--taper off level xp increase at level 47 (xxx_XPIncrement about 4000). xxx_XPIncrement will grow to 4700  without the cap-->
 					<requirement name="ProgressionLevel" progression_name="lbu_Demolition" operation="LTE" value="@lbu_DefaultLevelCap"/>
@@ -2375,7 +2375,7 @@
 				<triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="Demolitions Skill Increased!"/>
 				<!--if max level then give free Skill Point-->
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffLBU_GiveProgressSkillPoint">
-					<requirement name="ProgressionLevel" progression_name="lbu_Demolition" operation="EQ" value="50"/>
+					<requirement name="ProgressionLevel" progression_name="lbu_Demolition" operation="EQ" value="100"/>
 				</triggered_effect>
 			</effect_group>
 		</buff>
@@ -2606,7 +2606,7 @@
 			<!--Increase ProgressLevel if xp greater than value for next level-->
 			<effect_group>
 				<requirement name="CVarCompare" cvar="lbu_LuckyLooter_XP" operation="GTE" value="@lbu_LuckyLooter_XPIncrement"/>
-				<requirement name="ProgressionLevel" progression_name="lbu_LuckyLooter" operation="LT" value="50"/>
+				<requirement name="ProgressionLevel" progression_name="lbu_LuckyLooter" operation="LT" value="100"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="lbu_LuckyLooter_XPIncrement" operation="multiply" value="@lbu_DefaultIncrementIncrease">
 					<!--taper off level xp increase at level 47 (xxx_XPIncrement about 4000). xxx_XPIncrement will grow to 4700  without the cap-->
 					<requirement name="onSelfBuffUpdate" progression_name="lbu_LuckyLooter" operation="LTE" value="@lbu_DefaultLevelCap"/>
@@ -2619,7 +2619,7 @@
 				<triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="Lucky Looter Skill increased!"/>
 				<!--if max level then give free Skill Point-->
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffLBU_GiveProgressSkillPoint">
-					<requirement name="ProgressionLevel" progression_name="lbu_LuckyLooter" operation="EQ" value="50"/>
+					<requirement name="ProgressionLevel" progression_name="lbu_LuckyLooter" operation="EQ" value="100"/>
 				</triggered_effect>
 			</effect_group>
 		</buff>

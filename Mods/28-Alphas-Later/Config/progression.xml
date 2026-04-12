@@ -19,8 +19,8 @@
 		</effect_group>
 	</insertafter>
 	
+	<!-- *** add back Well Insulated -->
 	<insertafter xpath="/progression/perks/perk[@name='perkTheHuntsman']">
-		<!-- *** WELL_INSULATED -->
 		<perk name="perkWellInsulated" max_level="5" parent="skillFortitudeSurvival" name_key="perkWellInsulatedName" desc_key="perkWellInsulatedDesc" icon="ui_game_symbol_temperature">
 			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="1" desc_key="reqFortitudeLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="3" desc_key="reqFortitudeLevel03"/></level_requirements>
@@ -56,23 +56,25 @@
 	
 	<!-- *** crafting unlocks for new vehicles -->
 	<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingVehicles']">
-		<display_entry icon="vehicleBicyclePlaceable,vehicleMinibikePlaceable" name_key="vehiclesT1" has_quality="false" unlock_level="5,10">
+		<display_entry icon="vehicleBicyclePlaceable,vehicleScooterPlaceable,vehicleMinibikePlaceable" name_key="vehiclesT1" has_quality="false" unlock_level="5,10,20">
 			<unlock_entry item="vehicleBicycleChassis,vehicleBicycleHandlebars" unlock_tier="1"/>
-			<unlock_entry item="vehicleMinibikeChassis,vehicleMinibikeHandlebars,vehicleWheels" unlock_tier="2"/>
+			<unlock_entry item="vehicleScooterChassis,vehicleScooterHandlebars" unlock_tier="2"/>
+			<unlock_entry item="vehicleMinibikeChassis,vehicleMinibikeHandlebars,vehicleWheels" unlock_tier="3"/>
 		</display_entry>
 		
-		<display_entry icon="vehicleRuinRipperPlaceable,vehicleQuadBikePlaceable" name_key="vehiclesT2" has_quality="false" unlock_level="20,30">
+		<display_entry icon="vehicleRuinRipperPlaceable,vehicleQuadBikePlaceable" name_key="vehiclesT2" has_quality="false" unlock_level="30,40">
 			<unlock_entry item="vehicleDirtBikeChassis,vehicleDirtBikeHandlebars" unlock_tier="1"/>
 			<unlock_entry item="vehicleQuadBikeChassis,vehicleQuadBikeHandlebars,resourceOil,ammoGasCan" unlock_tier="2"/>
 		</display_entry>
 		
-		<display_entry icon="vehicleMotorcyclePlaceable,vehicleTheHornetPlaceable" name_key="vehiclesT3" has_quality="false" unlock_level="45,55">
+		<display_entry icon="vehicleMotorcyclePlaceable,vehicleTheHornetPlaceable" name_key="vehiclesT3" has_quality="false" unlock_level="50,60">
 			<unlock_entry item="vehicleMotorcycleChassis,vehicleMotorcycleHandlebars" unlock_tier="1"/>
 			<unlock_entry item="vehicleDuneBuggyChassis,vehicleDuneBuggyAccessories,ammoGasCanBundle" unlock_tier="2"/>
 		</display_entry>
 		
-		<display_entry icon="vehicleTruck4x4Placeable" name_key="vehiclesT4" has_quality="false" unlock_level="70">
+		<display_entry icon="vehicleTruck4x4Placeable" name_key="vehiclesT4" has_quality="false" unlock_level="70,80">
 			<unlock_entry item="vehicleTruck4x4Chassis,vehicleTruck4x4Accessories" unlock_tier="1"/>
+			<unlock_entry item="vehicleSemiTruckChassis,vehicleSemiTruckAccessories" unlock_tier="2"/>
 		</display_entry>
 		
 		<display_entry icon="vehicleGyrocopterPlaceable" name_key="vehiclesT5" has_quality="false" unlock_level="100">
@@ -81,12 +83,14 @@
 
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="vehicleBicycleChassis,vehicleBicycleHandlebars"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,100" value="1" tags="vehicleMinibikeChassis,vehicleMinibikeHandlebars,vehicleWheels"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="vehicleDirtBikeChassis,vehicleDirtBikeHandlebars"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,100" value="1" tags="vehicleQuadBikeChassis,vehicleQuadBikeHandlebars,resourceOil,ammoGasCan"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="45,100" value="1" tags="vehicleMotorcycleChassis,vehicleMotorcycleHandlebars"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="55,100" value="1" tags="vehicleDuneBuggyChassis,vehicleDuneBuggyAccessories,ammoGasCanBundle"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,100" value="1" tags="vehicleScooterChassis,vehicleScooterHandlebars"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="vehicleMinibikeChassis,vehicleMinibikeHandlebars,vehicleWheels"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,100" value="1" tags="vehicleDirtBikeChassis,vehicleDirtBikeHandlebars"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,100" value="1" tags="vehicleQuadBikeChassis,vehicleQuadBikeHandlebars,resourceOil,ammoGasCan"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="vehicleMotorcycleChassis,vehicleMotorcycleHandlebars"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="60,100" value="1" tags="vehicleDuneBuggyChassis,vehicleDuneBuggyAccessories,ammoGasCanBundle"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="70,100" value="1" tags="vehicleTruck4x4Chassis,vehicleTruck4x4Accessories"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="80,100" value="1" tags="vehicleSemiTruckChassis,vehicleSemiTruckAccessories"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="100,100" value="1" tags="vehicleGyroCopterChassis,vehicleGyroCopterAccessories"/>
 		</effect_group>
 	</set>
@@ -102,38 +106,27 @@
 			<unlock_entry item="workbench" unlock_tier="5"/>
 			<unlock_entry item="playerSawmill" unlock_tier="6"/>
 			<unlock_entry item="resourceLockPick" unlock_tier="7"/>
-			<unlock_entry item="toolHeatLamp" unlock_tier="8"/> -->
+			<unlock_entry item="toolHeatLamp" unlock_tier="8"/>
 		</display_entry>
-		<display_entry icon="cntDewCollector,cntBirdnest,cntApiary,toolAnvil,toolDewGatherer" name_key="workstationsT2-1,workstationsT2-2,workstationsT2-3,workstationsT2-4,workstationsT2-5" has_quality="false" unlock_level="16,18,20,22,26">
-			<unlock_entry item="cntDewCollector" unlock_tier="1"/>
-			<unlock_entry item="toolNest" unlock_tier="2"/>
-			<unlock_entry item="beehive" unlock_tier="3"/>
-			<unlock_entry item="toolAnvil" unlock_tier="4"/>
-			<!-- <unlock_entry item="toolToolbox" unlock_tier="4"/> --><!-- Planning for level 22 and workstationsT2-4-->
-			<!-- <unlock_entry item="toolChickenRun" unlock_tier="5"/> --><!-- Planning for level 24 and workstationsT2-5 -->
-			<unlock_entry item="toolDewGatherer" unlock_tier="5"/>
+		<display_entry icon="mortarAndPestle,cntDewCollector,cntBirdnest,cntApiary,toolAnvil,toolDewGatherer" name_key="workstationsT2-1,workstationsT2-2,workstationsT2-3,workstationsT2-4,workstationsT2-5,workstationsT2-6" has_quality="false" unlock_level="16,18,20,22,24,26">
+			<unlock_entry item="mortarAndPestle" unlock_tier="1"/>
+			<unlock_entry item="cntDewCollector" unlock_tier="2"/>
+			<unlock_entry item="toolNest" unlock_tier="3"/>
+			<unlock_entry item="beehive" unlock_tier="4"/>
+			<unlock_entry item="toolAnvil" unlock_tier="5"/>
+			<unlock_entry item="toolDewGatherer" unlock_tier="6"/>
 		</display_entry>
 		<display_entry icon="toolDewTarp,cementMixer" name_key="workstationsT3-2,workstationsT3-3" has_quality="false" unlock_level="32,34">
-			<!-- <unlock_entry item="toolVise" unlock_tier="1"/> --><!-- Planning for level 28 and workstationsT3-1 -->
-			<!-- <unlock_entry item="cntApiary" unlock_tier="1"/> -->
 			<unlock_entry item="toolDewTarp" unlock_tier="1"/>
 			<unlock_entry item="cementMixer" unlock_tier="2"/>
-			<!-- <unlock_entry item="toolReloadPress" unlock_tier="5"/> --><!-- Planning for level 36 and workstationsT3-5 -->
-			<!-- <unlock_entry item="toolEngineUpgrade" unlock_tier="6"/> --><!-- Planning for level 38 and workstationsT3-6 -->
 		</display_entry>
 		<display_entry icon="toolBeeFrame,resourceWaterFilter,chemistryStation" name_key="workstationsT4-3,workstationsT4-5,workstationsT4-6" has_quality="false" unlock_level="44,48,50">
-			<!-- <unlock_entry item="toolApiaryExtractor" unlock_tier="1"/> -->
-			<!-- <unlock_entry item="toolRockCrusher" unlock_tier="2"/> --><!-- Planning for level 42 and workstationsT4-2 -->
 			<unlock_entry item="toolBeeFrame" unlock_tier="1"/>
-			<!-- <unlock_entry item="toolMixerBlade" unlock_tier="4"/> --><!-- Planning for level 46 and workstationsT4-4 -->
 			<unlock_entry item="toolDewFilter" unlock_tier="2"/>
 			<unlock_entry item="chemistryStation" unlock_tier="3"/>
 		</display_entry>
 		<display_entry icon="toolbeeSmoker,toolForgeCrucible" name_key="workstationsT5-2,workstationsT5-5" has_quality="false" unlock_level="56,75">
-			<!-- <unlock_entry item="toolGlassware" unlock_tier="1"/> --><!-- Planning for level 54 and workstationsT5-1 -->
 			<unlock_entry item="toolbeeSmoker" unlock_tier="1"/>
-			<!-- <unlock_entry item="toolAdvancedBurner" unlock_tier="3"/> --><!-- Planning for level 60 and workstationsT5-3 -->
-			<!-- <unlock_entry item="toolBunsenBurner" unlock_tier="4"/> --><!-- Planning for level 66 and workstationsT5-4 -->
 			<unlock_entry item="toolForgeCrucible" unlock_tier="2"/>
 		</display_entry>
 
@@ -146,10 +139,11 @@
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,100" value="1" tags="playerSawmill"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="12,100" value="1" tags="resourceLockPick"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="14,100" value="1" tags="toolHeatLamp"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="16,100" value="1" tags="cntDewCollector"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="18,100" value="1" tags="toolNest"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="beehive"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="22,100" value="1" tags="toolAnvil"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="16,100" value="1" tags="mortarAndPestle"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="18,100" value="1" tags="cntDewCollector"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="toolNest"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="22,100" value="1" tags="beehive"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="24,100" value="1" tags="toolAnvil"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="26,100" value="1" tags="toolDewGatherer"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,100" value="1" tags="cntApiary"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="32,100" value="1" tags="toolDewTarp"/>
@@ -173,9 +167,51 @@
 	<!-- <set xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry/unlock_entry[@item='cntDewCollector']/@item">chickenCoop,beehive,butchersTable</set> -->
 	<!-- <set xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/effect_group/passive_effect[@level='2,100']/@tags">chickenCoop,beehive,butchersTable</set> -->
 	
+	<!-- *** lights and other electrical unlocks -->
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/display_entry[@name_key='electricianT1']/unlock_entry[contains (@item,'generatorbank')]/@item">,lightVariantHelper,lightPanelVariantHelper,porchLightVariantHelper,hangingLightVariantHelper,deskLamp02VariantHelper,tableLampVariantHelper</append>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='25,100']/@tags">,lightVariantHelper,lightPanelVariantHelper,porchLightVariantHelper,hangingLightVariantHelper,deskLamp02VariantHelper,tableLampVariantHelper</append>
+	
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/display_entry[@name_key='electricianT2']/unlock_entry[contains (@item,'motionsensor')]/@item">,chandelierVariantHelper,projectorVariantHelper</append>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='45,100']/@tags">,chandelierVariantHelper,projectorVariantHelper</append>
+	
 	<!-- *** solar bank unlocks -->
 	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/display_entry[@icon='batterybank']/unlock_entry/@item">,solarbank</append>
 	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/effect_group/passive_effect[@level='55,100']/@tags">,solarbank</append>
+	
+	<!-- *** new medical items -->
+	<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingMedical']">
+		<display_entry icon="medicalFirstAidBandage,drugFortBites,medicalFirstAidAntiInfectionBandage" name_key="medicalT1-1,medicalT1-2,medicalT1-3" has_quality="false" unlock_level="5,10,15" >
+			<unlock_entry item="medicalFirstAidBandage" unlock_tier="1"/>
+			<unlock_entry item="drugFortBites" unlock_tier="2"/>
+			<unlock_entry item="medicalFirstAidAntiInfectionBandage" unlock_tier="3"/>
+		</display_entry>
+		<display_entry icon="medicalPlasterCast,drugHerbalAntibiotics,drugRecog" name_key="medicalT2-1,medicalT2-2,medicalT2-3" has_quality="false" unlock_level="20,30,40" >
+			<unlock_entry item="medicalPlasterCast" unlock_tier="1"/>
+			<unlock_entry item="drugHerbalAntibiotics" unlock_tier="2"/>
+			<unlock_entry item="drugRecog" unlock_tier="3"/>
+		</display_entry>
+		<display_entry icon="medicalFirstAidKit,medicalFirstAidAntiInfectionKit,drugAntibiotics,drugSteroids" name_key="medicalT3-1,medicalT3-2,medicalT3-3,medicalT3-4" has_quality="false" unlock_level="45,50,60,75" >
+			<unlock_entry item="medicalFirstAidKit" unlock_tier="1"/>
+			<unlock_entry item="medicalFirstAidAntiInfectionKit" unlock_tier="2"/>
+			<unlock_entry item="drugAntibiotics" unlock_tier="3"/>
+			<unlock_entry item="drugSteroids" unlock_tier="4"/>
+		</display_entry>
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="medicalFirstAidBandage"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,100" value="1" tags="drugFortBites"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="15,100" value="1" tags="medicalFirstAidAntiInfectionBandage"/>
+
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="medicalPlasterCast"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,100" value="1" tags="drugHerbalAntibiotics"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,100" value="1" tags="drugRecog"/>
+
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="45,100" value="1" tags="medicalFirstAidKit"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="medicalFirstAidAntiInfectionKit"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="60,100" value="1" tags="drugAntibiotics"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="75,100" value="1" tags="drugSteroids"/>
+		</effect_group>
+	</set>
 	
 	<!-- *** new resource bundles -->
 	<append xpath="/progression/perks/book[@name='perkArtOfMiningPallets']/effect_group/passive_effect/@tags">,resourceChromiumBundle,resourceCopperBundle,resourceLimestoneBundle,resourceZincBundle</append>

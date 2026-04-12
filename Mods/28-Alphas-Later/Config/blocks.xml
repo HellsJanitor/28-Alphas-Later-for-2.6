@@ -1275,7 +1275,7 @@
 			<!-- Value -->
 			<property name="Weight" value="0"/>
 			<property name="EconomicValue" value="2000"/>
-			<property name="TraderStageTemplate" value="midTier1"/><!-- workbench -->
+			<property name="TraderStageTemplate" value="midTier1"/>
 			<!-- Interaction -->
 			<property name="MaxDamage" value="800"/>
 			<property name="HeatMapStrength" value="5"/>
@@ -1283,20 +1283,72 @@
 			<property name="HeatMapFrequency" value="1000"/>
 			<property name="OpenSound" value="open_workbench"/>
 			<property name="CloseSound" value="close_workbench"/>
-			<property name="TakeDelay" value="15"/>
+			<property name="TakeDelay" value="5"/>
 			<property class="RepairItems">
 				<property name="resourceWood" value="5"/>
-				<!-- <property name="resourceMechanicalParts" value="20"/> -->
-				<!-- <property name="resourceWood" value="50"/> -->
 			</property>
 			<drop event="Harvest" name="resourceWood" count="5" tag="allHarvest,perkJunkMiner"/>
-			<!-- <drop event="Harvest" name="resourceWood" count="20" tag="allHarvest,lumberjackHarvest,perkJunkMiner"/> -->
 			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-			<!-- <drop event="Harvest" name="resourceForgedIron" count="10" tag="salvageHarvest"/> -->
-			<!-- <drop event="Harvest" name="resourceMechanicalParts" count="8" tag="salvageHarvest"/> -->
-			<!-- <drop event="Harvest" name="resourceWood" count="20" tag="salvageHarvest"/> -->
 			<drop event="Destroy" count="0"/>
-			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.1" stick_chance="1"/>
+			<!-- Sorting -->
+			<property name="SortOrder1" value="B281"/>
+			<property name="SortOrder2" value="0300"/>
+			<property name="Group" value="Building,TCScience,advBuilding"/>
+			<property name="Tags" value="workstationSkill,twitch_workstation"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+			<property name="SoundPickup" value="workbench_grab"/>
+			<property name="SoundPlace" value="workbench_place"/>
+		</block>
+		
+		<!-- *** Mortar and Pestle -->
+		<block name="mortarAndPestle">
+			<!-- Class -->
+			<property name="Class" value="Workstation"/>
+			<property class="Workstation">
+				<property name="Modules" value="output"/>
+				<property name="CraftingAreaRecipes" value="mortarAndPestle"/>
+			</property>
+			<property name="UnlockedBy" value="craftingWorkstations"/>
+			<!-- UI_Info -->
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="mortarAndPestle"/>
+			<property name="DescriptionKey" value="mortarAndPestleDesc"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="WorkstationIcon" value="ui_game_symbol_workbench"/>
+			<property name="Stacknumber" value="1"/>
+			<!-- Visual -->
+			<property name="Material" value="MstoneFurniture"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/mortarAndPestle.unity3d?MortarPestlePrefab.prefab"/>
+			<property name="ModelOffset" value="0,0.25,0"/>
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<!-- Placement -->
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="StabilitySupport" value="false"/>
+			<!-- Value -->
+			<property name="Weight" value="0"/>
+			<property name="EconomicValue" value="2000"/>
+			<property name="TraderStageTemplate" value="midTier1"/>
+			<!-- Interaction -->
+			<property name="MaxDamage" value="800"/>
+			<property name="HeatMapStrength" value="5"/>
+			<property name="HeatMapTime" value="5000"/>
+			<property name="HeatMapFrequency" value="1000"/>
+			<property name="OpenSound" value="open_workbench"/>
+			<property name="CloseSound" value="close_workbench"/>
+			<property name="TakeDelay" value="5"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="5"/>
+			</property>
+			<drop event="Harvest" name="resourceRockSmall" count="5" tag="allHarvest,perkJunkMiner"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="resourceRockSmall" count="1" prob="0.1" stick_chance="1"/>
 			<!-- Sorting -->
 			<property name="SortOrder1" value="B281"/>
 			<property name="SortOrder2" value="0300"/>
@@ -1371,6 +1423,20 @@
 			<property name="DescriptionKey" value="logWallVariantHelperDesc"/>
 			<property name="SelectAlternates" value="true"/>
 			<property name="PlaceAltBlockValue" value="logWallLeft,logWallLeft2,logWallRight,logWallRight2,logWallLeftSpikes,logWallLeftSpikes2,logWallRightSpikes,logWallRightSpikesTrader,logWallRightSpikes2,logWallPillar,logWallPillarCap,logWallPillarCap2"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+		</block>
+		
+		<!-- *** trader platforms variant helper -->
+		<block name="platformVariantHelper">
+			<property name="Extends" value="logWallLeft" param1="Place,EconomicValue"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="banditPlatform2x2A"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="platformVariantHelperDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="banditPlatform2x2A,banditPlatform3x2A,banditPlatform3x3A,banditPlatform3x3B,banditPlatform3x3BrokenA,banditPlatform3x3BrokenB,banditPlatform3x3BrokenC,banditPlatformSheet3x2A,banditPlatformSheet3x3A,banditPlatformSheet3x3B,banditRamp2x2A,banditRamp3x2A,banditRamp3x3A,banditRampSheet2x2A,banditRampSheet3x2A,banditRampSheet3x3A,banditSupport1m,banditSupport2m,banditSupport3m,banditSupportBroken1m,banditSupportBroken2m,banditSupportBroken3m,banditSupport3x1A,banditSupport3x1B,banditSupport2x2A,banditSupport3x2A,banditSupport3x3A"/>
 			<property name="SortOrder1" value="U200"/>
 			<property name="SortOrder2" value="0000"/>
 			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
@@ -1602,7 +1668,7 @@
 		</block>
 	
 		<!-- *** hoist variant helper -->
-		<block name="HoistVariantHelper">
+		<block name="hoistVariantHelper">
 			<property name="Extends" value="decoHoistHook"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="decoHoistHook"/>
@@ -1610,6 +1676,1266 @@
 			<property name="DescriptionKey" value="decoHoistVariantHelper"/>
 			<property name="SelectAlternates" value="true"/>
 			<property name="PlaceAltBlockValue" value="decoHoistHook,decoHoistChain,decoHoistSpreader,decoHoistMagnet,decoHoistTopMount"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+		</block>
+		
+		<!-- *** player lights -->
+		<block name="lightPorchWhitePlayer">
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="10"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="Light" value="0.5"/>
+			<property name="IndexName" value="POILight"/>
+			<property name="CustomIcon" value="lightPorchWhite"/>
+			<property name="CustomIconTint" value="ABABA4"/>
+			<property name="TintColor" value="ABABA4"/>
+			<property name="DescriptionKey" value="lightPOIGroupDesc"/>
+			<property name="UnlockedBy" value="craftingElectrician"/>
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Lighting/lightPorchPrefab.prefab"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="LODCullScale" value="0.5"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacer90"/>
+			<property name="HandleFace" value="South"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="76"/>
+			
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="1"/>
+				<property name="resourceElectricParts" value="3"/>
+			</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1,4" tag="salvageHarvest"/>
+			<drop event="Destroy" name="resourceScrapIron" count="5"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="Group" value="Science,TCScience"/>
+			<property name="Tags" value="challenge_elec_parts"/>
+			<property name="FilterTags" value="MC_building,SC_lighting"/>
+		</block>
+		
+		<!-- brown -->
+		<block name="lightPorchBrownPlayer">
+			<property name="Extends" value="lightPorchWhitePlayer"/>
+			<property name="CustomIcon" value="lightPorchWhite"/>
+			<property name="CustomIconTint" value="7E6356"/>
+			<property name="TintColor" value="7E6356"/>
+			<property name="SortOrder2" value="0001"/>
+		</block>
+
+		<!-- Yellow -->
+		<block name="lightPorchYellowPlayer">
+			<property name="Extends" value="lightPorchWhitePlayer"/>
+			<property name="CustomIcon" value="lightPorchWhite"/>
+			<property name="CustomIconTint" value="8F8672"/>
+			<property name="TintColor" value="8F8672"/>
+			<property name="SortOrder2" value="0004"/>
+		</block>
+
+		<!-- Green -->
+		<block name="lightPorchGreenPlayer">
+			<property name="Extends" value="lightPorchWhitePlayer"/>
+			<property name="CustomIcon" value="lightPorchWhite"/>
+			<property name="CustomIconTint" value="6C8A83"/>
+			<property name="TintColor" value="6C8A83"/>
+			<property name="SortOrder2" value="0005"/>
+		</block>
+
+		<!-- Grey -->
+		<block name="lightPorchGreyPlayer">
+			<property name="Extends" value="lightPorchWhitePlayer"/>
+			<property name="CustomIcon" value="lightPorchWhite"/>
+			<property name="CustomIconTint" value="939999"/>
+			<property name="TintColor" value="939999"/>
+			<property name="SortOrder2" value="0008"/>
+		</block>
+
+		<!-- Black -->
+		<block name="lightPorchBlackPlayer">
+			<property name="Extends" value="lightPorchWhitePlayer"/>
+			<property name="CustomIcon" value="lightPorchWhite"/>
+			<property name="CustomIconTint" value="5E5E5E"/>
+			<property name="TintColor" value="5E5E5E"/>
+			<property name="SortOrder2" value="0009"/>
+		</block>
+		
+		<block name="lightWallGooseneckWhitePlayer">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="10"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="Light" value="0.5"/>
+			<property name="IndexName" value="POILight"/>
+			<property name="CustomIcon" value="lightWallGooseneckWhite"/>
+			<property name="CustomIconTint" value="807E73"/>
+			<property name="TintColor" value="807E73"/>
+			<property name="DescriptionKey" value="lightPOIGroupDesc"/>
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Electrical/lightWallGooseneckPrefab.prefab"/>
+			<property name="ModelOffset" value="0,.55,0"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="LODCullScale" value="0.5"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="HandleFace" value="South"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="76"/>
+			
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="1"/>
+				<property name="resourceElectricParts" value="3"/>
+			</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1,4" tag="salvageHarvest"/>
+			<drop event="Destroy" name="resourceScrapIron" count="5"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B201"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="Group" value="Science,TCScience"/>
+			<property name="Tags" value="challenge_elec_parts"/>
+			<property name="FilterTags" value="MC_building,SC_lighting"/>
+		</block>
+
+		<!-- Brown -->
+		<block name="lightWallGooseneckBrownPlayer">
+			<property name="Extends" value="lightWallGooseneckWhitePlayer"/>
+			<property name="CustomIcon" value="lightWallGooseneckWhite"/>
+			<property name="CustomIconTint" value="5B544B"/>
+			<property name="TintColor" value="5B544B"/>
+			<property name="SortOrder2" value="0001"/>
+		</block>
+
+		<!-- Red -->
+		<block name="lightWallGooseneckRedPlayer">
+			<property name="Extends" value="lightWallGooseneckWhitePlayer"/>
+			<property name="CustomIcon" value="lightWallGooseneckWhite"/>
+			<property name="CustomIconTint" value="705454"/>
+			<property name="TintColor" value="705454"/>
+			<property name="SortOrder2" value="0002"/>
+		</block>
+
+		<!-- Orange -->
+		<block name="lightWallGooseneckOrangePlayer">
+			<property name="Extends" value="lightWallGooseneckWhitePlayer"/>
+			<property name="CustomIcon" value="lightWallGooseneckWhite"/>
+			<property name="CustomIconTint" value="806D4F"/>
+			<property name="TintColor" value="806D4F"/>
+			<property name="SortOrder2" value="0003"/>
+		</block>
+
+		<!-- Yellow -->
+		<block name="lightWallGooseneckYellowPlayer">
+			<property name="Extends" value="lightWallGooseneckWhitePlayer"/>
+			<property name="CustomIcon" value="lightWallGooseneckWhite"/>
+			<property name="CustomIconTint" value="7B795E"/>
+			<property name="TintColor" value="7B795E"/>
+			<property name="SortOrder2" value="0004"/>
+		</block>
+
+		<!-- Green -->
+		<block name="lightWallGooseneckGreenPlayer">
+			<property name="Extends" value="lightWallGooseneckWhitePlayer"/>
+			<property name="CustomIcon" value="lightWallGooseneckWhite"/>
+			<property name="CustomIconTint" value="516354"/>
+			<property name="TintColor" value="516354"/>
+			<property name="SortOrder2" value="0005"/>
+		</block>
+
+		<!-- Blue -->
+		<block name="lightWallGooseneckBluePlayer">
+			<property name="Extends" value="lightWallGooseneckWhitePlayer"/>
+			<property name="CustomIcon" value="lightWallGooseneckWhite"/>
+			<property name="CustomIconTint" value="515E63"/>
+			<property name="TintColor" value="515E63"/>
+			<property name="SortOrder2" value="0006"/>
+		</block>
+
+		<!-- Purple -->
+		<block name="lightWallGooseneckPurplePlayer">
+			<property name="Extends" value="lightWallGooseneckWhitePlayer"/>
+			<property name="CustomIcon" value="lightWallGooseneckWhite"/>
+			<property name="CustomIconTint" value="605963"/>
+			<property name="TintColor" value="605963"/>
+			<property name="SortOrder2" value="0007"/>
+		</block>
+
+		<!-- Grey -->
+		<block name="lightWallGooseneckGreyPlayer">
+			<property name="Extends" value="lightWallGooseneckWhitePlayer"/>
+			<property name="CustomIcon" value="lightWallGooseneckWhite"/>
+			<property name="CustomIconTint" value="606060"/>
+			<property name="TintColor" value="606060"/>
+			<property name="SortOrder2" value="0008"/>
+		</block>
+
+		<!-- Black -->
+		<block name="lightWallGooseneckBlackPlayer">
+			<property name="Extends" value="lightWallGooseneckWhitePlayer"/>
+			<property name="CustomIcon" value="lightWallGooseneckWhite"/>
+			<property name="CustomIconTint" value="353535"/>
+			<property name="TintColor" value="353535"/>
+			<property name="SortOrder2" value="0009"/>
+		</block>
+
+		<!-- Pink -->
+		<block name="lightWallGooseneckPinkPlayer">
+			<property name="Extends" value="lightWallGooseneckWhitePlayer"/>
+			<property name="CustomIcon" value="lightWallGooseneckWhite"/>
+			<property name="CustomIconTint" value="806C7E"/>
+			<property name="TintColor" value="806C7E"/>
+			<property name="SortOrder2" value="0010"/>
+		</block>
+
+		<!-- Army Green -->
+		<block name="lightWallGooseneckArmyGreenPlayer">
+			<property name="Extends" value="lightWallGooseneckWhitePlayer"/>
+			<property name="CustomIcon" value="lightWallGooseneckWhite"/>
+			<property name="CustomIconTint" value="424E43"/>
+			<property name="TintColor" value="424E43"/>
+			<property name="SortOrder2" value="0011"/>
+		</block>
+
+		<!-- Ceiling Dome Light -->
+		<block name="ceilingLight02Player">
+			<property name="Extends" value="lightPorchWhitePlayer" param1="Place"/>
+			<property name="CustomIcon" value="ceilingLight02"/>
+			<property name="Model" value="@:Entities/Lighting/lightCeilingPrefab.prefab"/>
+			
+			<property name="TintColor" value="999999"/>
+			<property name="HandleFace" value="Top"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0100"/>
+		</block>
+
+		<block name="ceilingLight02BrassPlayer">
+			<property name="Extends" value="lightPorchWhitePlayer" param1="Place"/>
+			<property name="CustomIcon" value="ceilingLight02Brass"/>
+			<property name="Model" value="@:Entities/Lighting/lightCeilingPrefab.prefab"/>
+			
+			<property name="TintColor" value="968C61"/>
+			<property name="HandleFace" value="Top"/>
+			<drop event="Destroy" name="resourceScrapBrass" count="10,30"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0102"/>
+		</block>
+
+		<!-- OLD Warehouse Light -->
+		<block name="ceilingLight04Player">
+			<property name="Extends" value="lightPorchWhitePlayer" param1="TintColor,Place"/>
+			<property name="CustomIcon" value="ceilingLight04"/>
+			
+			<property name="TintColor" value="808080"/>
+			<property name="Model" value="@:Entities/Lighting/ceilingLight04_PendantShadePrefab.prefab"/>
+			<property name="HandleFace" value="Top"/>
+			<property name="SortOrder2" value="0200"/>
+		</block>
+
+		<!-- Ceiling Glass Bell Light -->
+		<block name="ceilingLight05Player">
+			<property name="Extends" value="lightPorchWhitePlayer" param1="TintColor,Place"/>
+			<property name="CustomIcon" value="ceilingLight05"/>
+			
+			<property name="TintColor" value="808080"/>
+			<property name="Model" value="@:Entities/Lighting/ceilingLight05_PendantShadePrefab.prefab"/>
+			<property name="HandleFace" value="Top"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0204"/>
+		</block>
+
+		<block name="ceilingLight05BrassPlayer">
+			<property name="Extends" value="lightPorchWhitePlayer" param1="TintColor,Place"/>
+			<property name="CustomIcon" value="ceilingLight05Brass"/>
+			
+			<property name="TintColor" value="968C61"/>
+			<property name="Model" value="@:Entities/Lighting/ceilingLight05_PendantShadePrefab.prefab"/>
+			<property name="HandleFace" value="Top"/>
+			<drop event="Destroy" name="resourceScrapBrass" count="10,30"/>
+			<property name="SortOrder2" value="0205"/>
+		</block>
+
+		<!-- recessed light -->
+		<block name="recessedLightPlayer">
+			<property name="Extends" value="lightPorchWhitePlayer" param1="TintColor,Place"/>
+			<property name="CustomIcon" value="recessedLight"/>
+			
+			<property name="Model" value="@:Entities/Lighting/lightCanFlushPrefab.prefab"/>
+			<property name="HandleFace" value="Top"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0300"/>
+		</block>
+
+		<block name="recessedLightOffsetPlayer">
+			<property name="Extends" value="lightPorchWhitePlayer" param1="TintColor,Place"/>
+			<property name="CustomIcon" value="recessedLight"/>
+			
+			<property name="ItemTypeIcon" value="block_repair"/>
+			<property name="Model" value="@:Entities/Lighting/lightCanFlushPrefab.prefab"/>
+			<property name="ModelOffset" value="0,1,0"/>
+			<property name="HandleFace" value="Top"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0302"/>
+		</block>
+
+		<!-- Long Hanging Fluorescent Light -->
+		<block name="fluorescentLightPlayer">
+			<property name="CustomIcon" value="fluorescentLight"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="10"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="Light" value="0.5"/>
+			<property name="IndexName" value="POILight"/>
+			<property name="DescriptionKey" value="lightPOIGroupDesc"/>
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Lighting/fluorescentLightPrefab.prefab"/>
+			<property name="MultiBlockDim" value="1,1,2"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="76"/>
+			
+			
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="1"/>
+				<property name="resourceElectricParts" value="3"/>
+			</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1,4" tag="salvageHarvest"/>
+			<drop event="Destroy" name="resourceScrapIron" count="5"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Group" value="Science,TCScience"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0402"/>
+			<property name="Tags" value="challenge_elec_parts"/>
+			<property name="FilterTags" value="MC_building,SC_lighting"/>
+		</block>		
+
+		<block name="lightPanelLEDWhitePlayer">
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="10"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="Light" value="0.5"/>
+			<property name="IndexName" value="POILight"/>
+			<property name="CustomIcon" value="lightPanelLEDWhite"/>
+			<property name="CustomIconTint" value="CCCCCC"/>
+			<property name="TintColor" value="CCCCCC"/>
+			<property name="DescriptionKey" value="lightPOIGroupDesc"/>
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Electrical/lightPanelLEDPrefab.prefab"/>
+			<property name="ModelOffset" value="0,.545,0"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="HandleFace" value="Top"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="76"/>
+			
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="1"/>
+				<property name="resourceElectricParts" value="3"/>
+			</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1,4" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapPolymers" count="1,2" tag="allHarvest,perkJunkMiner"/>
+			<drop event="Destroy" name="resourceScrapIron" count="5"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0600"/>
+			<property name="Group" value="Science,TCScience"/>
+			<property name="Tags" value="challenge_elec_parts"/>
+			<property name="FilterTags" value="MC_building,SC_lighting"/>
+		</block>
+
+		<!-- Silver -->
+		<block name="lightPanelLEDSilverPlayer">
+			<property name="Extends" value="lightPanelLEDWhitePlayer"/>
+			<property name="CustomIcon" value="lightPanelLEDWhite"/>
+			<property name="CustomIconTint" value="938D87"/>
+			<property name="TintColor" value="938D87"/>
+			<property name="SortOrder2" value="0601"/>
+		</block>
+
+		<!-- Grey -->
+		<block name="lightPanelLEDGreyPlayer">
+			<property name="Extends" value="lightPanelLEDWhitePlayer"/>
+			<property name="CustomIcon" value="lightPanelLEDWhite"/>
+			<property name="CustomIconTint" value="555351"/>
+			<property name="TintColor" value="555351"/>
+			<property name="SortOrder2" value="0602"/>
+		</block>
+
+		<!-- Black -->
+		<block name="lightPanelLEDBlackPlayer">
+			<property name="Extends" value="lightPanelLEDWhitePlayer"/>
+			<property name="CustomIcon" value="lightPanelLEDWhite"/>
+			<property name="CustomIconTint" value="1F1C1B"/>
+			<property name="TintColor" value="1F1C1B"/>
+			<property name="SortOrder2" value="0603"/>
+		</block>
+
+		<!-- Drop Ceiling LED Panel Offset -->
+		<!-- White -->
+		<block name="lightPanelLEDOffsetWhitePlayer">
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="10"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="Light" value="0.5"/>
+			<property name="IndexName" value="POILight"/>
+			<property name="CustomIcon" value="lightPanelLEDWhite"/>
+			<property name="CustomIconTint" value="CCCCCC"/>
+			<property name="ItemTypeIcon" value="block_repair"/>
+			<property name="TintColor" value="CCCCCC"/>
+			<property name="DescriptionKey" value="lightPOIGroupDesc"/>
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Electrical/lightPanelLEDPrefab.prefab"/>
+			<property name="ModelOffset" value="0,1.045,0"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="HandleFace" value="Top"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="76"/>
+			
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="1"/>
+				<property name="resourceElectricParts" value="3"/>
+			</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1,4" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapPolymers" count="1,2" tag="allHarvest,perkJunkMiner"/>
+			<drop event="Destroy" name="resourceScrapIron" count="5"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0610"/>
+			<property name="Group" value="Science,TCScience"/>
+			<property name="Tags" value="challenge_elec_parts"/>
+			<property name="FilterTags" value="MC_building,SC_lighting"/>
+		</block>
+
+		<!-- Silver -->
+		<block name="lightPanelLEDOffsetSilverPlayer">
+			<property name="Extends" value="lightPanelLEDOffsetWhitePlayer"/>
+			<property name="CustomIconTint" value="938D87"/>
+			<property name="TintColor" value="938D87"/>
+			<property name="SortOrder2" value="0611"/>
+		</block>
+
+		<!-- Grey -->
+		<block name="lightPanelLEDOffsetGreyPlayer">
+			<property name="Extends" value="lightPanelLEDOffsetWhitePlayer"/>
+			<property name="CustomIconTint" value="555351"/>
+			<property name="TintColor" value="555351"/>
+			<property name="SortOrder2" value="0612"/>
+		</block>
+
+		<!-- Black -->
+		<block name="lightPanelLEDOffsetBlackPlayer">
+			<property name="Extends" value="lightPanelLEDOffsetWhitePlayer"/>
+			<property name="CustomIconTint" value="1F1C1B"/>
+			<property name="TintColor" value="1F1C1B"/>
+			<property name="SortOrder2" value="0613"/>
+		</block>
+
+		<!-- Drop Ceiling LED Panel Offset 02 -->
+		<!-- White -->
+		<block name="lightPanelLEDOffset02WhitePlayer">
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="10"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="Light" value="0.5"/>
+			<property name="IndexName" value="POILight"/>
+			<property name="CustomIcon" value="lightPanelLEDWhite"/>
+			<property name="CustomIconTint" value="CCCCCC"/>
+			<property name="ItemTypeIcon" value="block_damage"/>
+			<property name="TintColor" value="CCCCCC"/>
+			<property name="DescriptionKey" value="lightPOIGroupDesc"/>
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Electrical/lightPanelLEDPrefab.prefab"/>
+			<property name="ModelOffset" value="0,-.455,0"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="HandleFace" value="Top"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="76"/>
+			
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="1"/>
+				<property name="resourceElectricParts" value="3"/>
+			</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1,4" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapPolymers" count="1,2" tag="allHarvest,perkJunkMiner"/>
+			<drop event="Destroy" name="resourceScrapIron" count="5"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0610"/>
+			<property name="Group" value="Science,TCScience"/>
+			<property name="Tags" value="challenge_elec_parts"/>
+			<property name="FilterTags" value="MC_building,SC_lighting"/>
+		</block>
+
+		<!-- Silver -->
+		<block name="lightPanelLEDOffset02SilverPlayer">
+			<property name="Extends" value="lightPanelLEDOffset02WhitePlayer"/>
+			<property name="CustomIconTint" value="938D87"/>
+			<property name="TintColor" value="938D87"/>
+			<property name="SortOrder2" value="0611"/>
+		</block>
+
+		<!-- Grey -->
+		<block name="lightPanelLEDOffset02GreyPlayer">
+			<property name="Extends" value="lightPanelLEDOffset02WhitePlayer"/>
+			<property name="CustomIconTint" value="555351"/>
+			<property name="TintColor" value="555351"/>
+			<property name="SortOrder2" value="0612"/>
+		</block>
+
+		<!-- Black -->
+		<block name="lightPanelLEDOffset02BlackPlayer">
+			<property name="Extends" value="lightPanelLEDOffset02WhitePlayer"/>
+			<property name="CustomIconTint" value="1F1C1B"/>
+			<property name="TintColor" value="1F1C1B"/>
+			<property name="SortOrder2" value="0613"/>
+		</block>
+
+		<!-- *** track lights -->
+		<block name="trackLightPlayer">
+			<property name="Extends" value="fluorescentLightPlayer"/>
+			<property name="CustomIcon" value="trackLight"/>
+			<property name="Model" value="@:Entities/Lighting/trackLightPrefab.prefab"/>
+			
+			<property name="MultiBlockDim" value="1,1,3"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="AllowedRotations" value="No45"/>
+			<property name="SortOrder2" value="0700"/>
+		</block>
+
+		<!-- Industrial/Commercial Hanging Warehouse Light -->
+		<!-- White -->
+		<block name="lightIndustrialHangingWhitePlayer">
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="10"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="Light" value="0.5"/>
+			<property name="IndexName" value="POILight"/>
+			<property name="CustomIcon" value="lightIndustrialHangingWhite"/>
+			<property name="CustomIconTint" value="A3A399"/>
+			<property name="TintColor" value="A3A399"/>
+			<property name="DescriptionKey" value="lightPOIGroupDesc"/>
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Electrical/lightIndustrialHangingPrefab.prefab"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="LODCullScale" value="0.5"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="175"/>
+			
+			
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="1"/>
+				<property name="resourceElectricParts" value="5"/>
+			</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceElectricParts" count="2,6" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="3,5" tag="allHarvest,perkJunkMiner"/>
+			<drop event="Destroy" name="resourceScrapIron" count="5"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="1000"/>
+			<property name="Group" value="Science,TCScience"/>
+			<property name="Tags" value="challenge_elec_parts"/>
+			<property name="FilterTags" value="MC_building,SC_lighting"/>
+		</block>
+
+		<!-- Brown -->
+		<block name="lightIndustrialHangingBrownPlayer">
+			<property name="Extends" value="lightIndustrialHangingWhitePlayer"/>
+			<property name="CustomIcon" value="lightIndustrialHangingWhite"/>
+			<property name="CustomIconTint" value="76685B"/>
+			<property name="TintColor" value="76685B"/>
+			<property name="SortOrder2" value="1001"/>
+		</block>
+
+		<!-- Grey -->
+		<block name="lightIndustrialHangingGreyPlayer">
+			<property name="Extends" value="lightIndustrialHangingWhitePlayer"/>
+			<property name="CustomIcon" value="lightIndustrialHangingWhite"/>
+			<property name="CustomIconTint" value="848989"/>
+			<property name="TintColor" value="848989"/>
+			<property name="SortOrder2" value="1008"/>
+		</block>
+
+		<!-- Black -->
+		<block name="lightIndustrialHangingBlackPlayer">
+			<property name="Extends" value="lightIndustrialHangingWhitePlayer"/>
+			<property name="CustomIcon" value="lightIndustrialHangingWhite"/>
+			<property name="CustomIconTint" value="555555"/>
+			<property name="TintColor" value="555555"/>
+			<property name="SortOrder2" value="1009"/>
+		</block>
+
+		<!-- *** sconce lights -->
+		<block name="lightSconcePlayer">
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="10"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="Light" value="0.5"/>
+			<property name="IndexName" value="POILight"/>
+			<property name="CustomIcon" value="lightSconce"/>
+			<property name="DescriptionKey" value="lightPOIGroupDesc"/>
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Electrical/lightSconcePrefab.prefab"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="LODCullScale" value="0.5"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacer90"/>
+			<property name="HandleFace" value="South"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="76"/>
+			
+			
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="1"/>
+				<property name="resourceElectricParts" value="3"/>
+			</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1,4" tag="salvageHarvest"/>
+			<drop event="Destroy" name="resourceScrapIron" count="5"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="1100"/>
+			<property name="Group" value="Science,TCScience"/>
+			<property name="Tags" value="challenge_elec_parts"/>
+			<property name="FilterTags" value="MC_building,SC_lighting"/>
+		</block>
+
+		<!-- *** ceiling fan -->
+		<block name="ceilingFanLightPlayer">
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="10"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="Light" value="0.5"/>
+			<property name="IndexName" value="POILight"/>
+			<property name="CustomIcon" value="ceilingFanLight"/>
+			<property name="DescriptionKey" value="lightPOIGroupDesc"/>
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Electrical/fanCeilingPrefab.prefab"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="HandleFace" value="Top"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="175"/>
+			
+			
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="1"/>
+				<property name="resourceElectricParts" value="5"/>
+			</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceElectricParts" count="2,6" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="3,5" tag="allHarvest,perkJunkMiner"/>
+			<drop event="Destroy" name="resourceScrapIron" count="5"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="1400"/>
+			<property name="Group" value="Science,TCScience"/>
+			<property name="Tags" value="challenge_elec_parts"/>
+			<property name="FilterTags" value="MC_building,SC_lighting"/>
+		</block>
+
+		<!-- *** chandeliers -->
+		<block name="chandelierLightPlayer">
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="10"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="IndexName" value="POILight"/>
+			<property name="CustomIcon" value="chandelierLight"/>
+			<property name="DescriptionKey" value="lightPOIGroupDesc"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Lighting/chandelierPrefab.prefab"/>
+			<property name="MultiBlockDim" value="3,2,3"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="Path" value="solid"/>
+			<property name="ActivationDistance" value="6"/>
+			
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceElectricParts" count="4,8" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceForgedSteel" count="1,2" tag="salvageHarvest"/>
+			<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="1500"/>
+			<property name="Group" value="Science,Decor/Miscellaneous"/>
+			<property name="Tags" value="challenge_elec_parts,challenge_steel"/>
+			<property name="FilterTags" value="MC_building,SC_lighting"/>
+		</block>
+
+		<block name="chandelierLight2x2Player">
+			<property name="Extends" value="chandelierLightPlayer"/>
+			<property name="ModelOffset" value="0,0.325,0"/>
+			<property name="MultiBlockDim" value="2,2,2"/>
+			<property name="SortOrder2" value="1501"/>
+		</block>
+
+		<!-- *** desk lamp -->
+		<block name="deskLampLightPlayer">
+			<property name="Extends" value="lightPorchWhitePlayer" param1="HandleFace"/>
+			<property name="CustomIcon" value="deskLampLight"/>
+			<property name="Model" value="@:Entities/Lighting/desk_lampPrefab.prefab"/>
+			
+			<drop event="Destroy" name="resourceScrapBrass" count="8,18"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="2000"/>
+		</block>
+
+		<!-- *** desk lamp 02 -->
+		<!-- White -->
+		<block name="deskLampLight02WhitePlayer">
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="10"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="Light" value="0.5"/>
+			<property name="IndexName" value="POILight"/>
+			<property name="DescriptionKey" value="lightPOIGroupDesc"/>
+			<property name="CustomIcon" value="deskLampLight02White"/>
+			<property name="CustomIconTint" value="A0A0A0"/>
+			<property name="TintColor" value="A0A0A0"/>
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Lighting/lampDeskPrefab.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="GndAlign" value="1"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="76"/>
+			
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="1"/>
+				<property name="resourceElectricParts" value="3"/>
+			</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1,4" tag="salvageHarvest"/>
+			<drop event="Destroy" name="resourceScrapIron" count="5"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="2100"/>
+			<property name="Group" value="Science,TCScience"/>
+			<property name="Tags" value="challenge_elec_parts"/>
+			<property name="FilterTags" value="MC_building,SC_lighting"/>
+		</block>
+
+		<!-- Brown -->
+		<block name="deskLampLight02BrownPlayer">
+			<property name="Extends" value="deskLampLight02WhitePlayer"/>
+			<property name="CustomIcon" value="deskLampLight02White"/>
+			<property name="CustomIconTint" value="71675D"/>
+			<property name="TintColor" value="71675D"/>
+			<property name="SortOrder2" value="2101"/>
+		</block>
+
+		<!-- Red -->
+		<block name="deskLampLight02RedPlayer">
+			<property name="Extends" value="deskLampLight02WhitePlayer"/>
+			<property name="CustomIcon" value="deskLampLight02White"/>
+			<property name="CustomIconTint" value="8C7470"/>
+			<property name="TintColor" value="8C7470"/>
+			<property name="SortOrder2" value="2102"/>
+		</block>
+
+		<!-- Orange -->
+		<block name="deskLampLight02OrangePlayer">
+			<property name="Extends" value="deskLampLight02WhitePlayer"/>
+			<property name="CustomIcon" value="deskLampLight02White"/>
+			<property name="CustomIconTint" value="95836F"/>
+			<property name="TintColor" value="95836F"/>
+			<property name="SortOrder2" value="2103"/>
+		</block>
+
+		<!-- Yellow -->
+		<block name="deskLampLight02YellowPlayer">
+			<property name="Extends" value="deskLampLight02WhitePlayer"/>
+			<property name="CustomIcon" value="deskLampLight02White"/>
+			<property name="CustomIconTint" value="9B9875"/>
+			<property name="TintColor" value="9B9875"/>
+			<property name="SortOrder2" value="2104"/>
+		</block>
+
+		<!-- Green -->
+		<block name="deskLampLight02GreenPlayer">
+			<property name="Extends" value="deskLampLight02WhitePlayer"/>
+			<property name="CustomIcon" value="deskLampLight02White"/>
+			<property name="CustomIconTint" value="6F7D66"/>
+			<property name="TintColor" value="6F7D66"/>
+			<property name="SortOrder2" value="2105"/>
+		</block>
+
+		<!-- Blue -->
+		<block name="deskLampLight02BluePlayer">
+			<property name="Extends" value="deskLampLight02WhitePlayer"/>
+			<property name="CustomIcon" value="deskLampLight02White"/>
+			<property name="CustomIconTint" value="6A7C7D"/>
+			<property name="TintColor" value="6A7C7D"/>
+			<property name="SortOrder2" value="2106"/>
+		</block>
+
+		<!-- Purple -->
+		<block name="deskLampLight02PurplePlayer">
+			<property name="Extends" value="deskLampLight02WhitePlayer"/>
+			<property name="CustomIcon" value="deskLampLight02White"/>
+			<property name="CustomIconTint" value="6E6C78"/>
+			<property name="TintColor" value="6E6C78"/>
+			<property name="SortOrder2" value="2107"/>
+		</block>
+
+		<!-- Grey -->
+		<block name="deskLampLight02GreyPlayer">
+			<property name="Extends" value="deskLampLight02WhitePlayer"/>
+			<property name="CustomIcon" value="deskLampLight02White"/>
+			<property name="CustomIconTint" value="727272"/>
+			<property name="TintColor" value="727272"/>
+			<property name="SortOrder2" value="2108"/>
+		</block>
+
+		<!-- Black -->
+		<block name="deskLampLight02BlackPlayer">
+			<property name="Extends" value="deskLampLight02WhitePlayer"/>
+			<property name="CustomIcon" value="deskLampLight02White"/>
+			<property name="CustomIconTint" value="474747"/>
+			<property name="TintColor" value="474747"/>
+			<property name="SortOrder2" value="2109"/>
+		</block>
+
+		<!-- Pink -->
+		<block name="deskLampLight02PinkPlayer">
+			<property name="Extends" value="deskLampLight02WhitePlayer"/>
+			<property name="CustomIcon" value="deskLampLight02White"/>
+			<property name="CustomIconTint" value="857480"/>
+			<property name="TintColor" value="857480"/>
+			<property name="SortOrder2" value="2110"/>
+		</block>
+
+		<!-- *** table lamp -->
+		<!-- White -->
+		<block name="tableLampLight01WhitePlayer">
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="10"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="Light" value="0.5"/>
+			<property name="IndexName" value="POILight"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="CCCCCC"/>
+			<property name="TintColor" value="CCCCCC"/>
+			<property name="DescriptionKey" value="lightPOIGroupDesc"/>
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Lighting/lampTablePrefab.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="GndAlign" value="1"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="76"/>
+			<property name="TakeDelay" value="5" />			
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="1"/>
+				<property name="resourceElectricParts" value="3"/>
+			</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1,4" tag="salvageHarvest"/>
+			<drop event="Destroy" name="resourceScrapIron" count="5"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="2200"/>
+			<property name="Group" value="Science,TCScience"/>
+			<property name="Tags" value="challenge_elec_parts"/>
+			<property name="FilterTags" value="MC_building,SC_lighting"/>
+		</block>
+
+		<!-- Brown -->
+		<block name="tableLampLight01BrownPlayer">
+			<property name="Extends" value="tableLampLight01WhitePlayer"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="978879"/>
+			<property name="TintColor" value="978879"/>
+			<property name="SortOrder2" value="2201"/>
+		</block>
+
+		<!-- Red -->
+		<block name="tableLampLight01RedPlayer">
+			<property name="Extends" value="tableLampLight01WhitePlayer"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="B79495"/>
+			<property name="TintColor" value="B79495"/>
+			<property name="SortOrder2" value="2202"/>
+		</block>
+
+		<!-- Orange -->
+		<block name="tableLampLight01OrangePlayer">
+			<property name="Extends" value="tableLampLight01WhitePlayer"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="F4CA8B"/>
+			<property name="TintColor" value="F4CA8B"/>
+			<property name="SortOrder2" value="2203"/>
+		</block>
+
+		<!-- Yellow -->
+		<block name="tableLampLight01YellowPlayer">
+			<property name="Extends" value="tableLampLight01WhitePlayer"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="FFF79D"/>
+			<property name="TintColor" value="FFF79D"/>
+			<property name="SortOrder2" value="2204"/>
+		</block>
+
+		<!-- Green -->
+		<block name="tableLampLight01GreenPlayer">
+			<property name="Extends" value="tableLampLight01WhitePlayer"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="92B091"/>
+			<property name="TintColor" value="92B091"/>
+			<property name="SortOrder2" value="2205"/>
+		</block>
+
+		<!-- Blue -->
+		<block name="tableLampLight01BluePlayer">
+			<property name="Extends" value="tableLampLight01WhitePlayer"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="A8B8B8"/>
+			<property name="TintColor" value="A8B8B8"/>
+			<property name="SortOrder2" value="2206"/>
+		</block>
+
+		<!-- Purple -->
+		<block name="tableLampLight01PurplePlayer">
+			<property name="Extends" value="tableLampLight01WhitePlayer"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="B7AEBE"/>
+			<property name="TintColor" value="B7AEBE"/>
+			<property name="SortOrder2" value="2207"/>
+		</block>
+
+		<!-- Grey -->
+		<block name="tableLampLight01GreyPlayer">
+			<property name="Extends" value="tableLampLight01WhitePlayer"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="BBBBBB"/>
+			<property name="TintColor" value="BBBBBB"/>
+			<property name="SortOrder2" value="2208"/>
+		</block>
+
+		<!-- Black -->
+		<block name="tableLampLight01BlackPlayer">
+			<property name="Extends" value="tableLampLight01WhitePlayer"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="767676"/>
+			<property name="TintColor" value="767676"/>
+			<property name="SortOrder2" value="2209"/>
+		</block>
+
+		<!-- Pink -->
+		<block name="tableLampLight01PinkPlayer">
+			<property name="Extends" value="tableLampLight01WhitePlayer"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="F4D7F8"/>
+			<property name="TintColor" value="F4D7F8"/>
+			<property name="SortOrder2" value="2210"/>
+		</block>
+
+		<!-- *** table lamp centred -->
+		<!-- White -->
+		<block name="tableLampLight01CenteredWhitePlayer">
+			<property name="Extends" value="tableLampLight01WhitePlayer"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="Model" value="@:Entities/Lighting/lampTableCenteredPrefab.prefab"/>
+			<property name="SortOrder2" value="2300"/>
+		</block>
+
+		<!-- Brown -->
+		<block name="tableLampLight01CenteredBrownPlayer">
+			<property name="Extends" value="tableLampLight01CenteredWhitePlayer"/>
+			<property name="CustomIconTint" value="978879"/>
+			<property name="TintColor" value="978879"/>
+			<property name="SortOrder2" value="2301"/>
+		</block>
+
+		<!-- Red -->
+		<block name="tableLampLight01CenteredRedPlayer">
+			<property name="Extends" value="tableLampLight01CenteredWhitePlayer"/>
+			<property name="CustomIconTint" value="B79495"/>
+			<property name="TintColor" value="B79495"/>
+			<property name="SortOrder2" value="2302"/>
+		</block>
+
+		<!-- Orange -->
+		<block name="tableLampLight01CenteredOrangePlayer">
+			<property name="Extends" value="tableLampLight01CenteredWhitePlayer"/>
+			<property name="CustomIconTint" value="F4CA8B"/>
+			<property name="TintColor" value="F4CA8B"/>
+			<property name="SortOrder2" value="2303"/>
+		</block>
+
+		<!-- Yellow -->
+		<block name="tableLampLight01CenteredYellowPlayer">
+			<property name="Extends" value="tableLampLight01CenteredWhitePlayer"/>
+			<property name="CustomIconTint" value="FFF79D"/>
+			<property name="TintColor" value="FFF79D"/>
+			<property name="SortOrder2" value="2304"/>
+		</block>
+
+		<!-- Green -->
+		<block name="tableLampLight01CenteredGreenPlayer">
+			<property name="Extends" value="tableLampLight01CenteredWhitePlayer"/>
+			<property name="CustomIconTint" value="92B091"/>
+			<property name="TintColor" value="92B091"/>
+			<property name="SortOrder2" value="2305"/>
+		</block>
+
+		<!-- Blue -->
+		<block name="tableLampLight01CenteredBluePlayer">
+			<property name="Extends" value="tableLampLight01CenteredWhitePlayer"/>
+			<property name="CustomIconTint" value="A8B8B8"/>
+			<property name="TintColor" value="A8B8B8"/>
+			<property name="SortOrder2" value="2306"/>
+		</block>
+
+		<!-- Purple -->
+		<block name="tableLampLight01CenteredPurplePlayer">
+			<property name="Extends" value="tableLampLight01CenteredWhitePlayer"/>
+			<property name="CustomIconTint" value="B7AEBE"/>
+			<property name="TintColor" value="B7AEBE"/>
+			<property name="SortOrder2" value="2307"/>
+		</block>
+
+		<!-- Grey -->
+		<block name="tableLampLight01CenteredGreyPlayer">
+			<property name="Extends" value="tableLampLight01CenteredWhitePlayer"/>
+			<property name="CustomIconTint" value="BBBBBB"/>
+			<property name="TintColor" value="BBBBBB"/>
+			<property name="SortOrder2" value="2308"/>
+		</block>
+
+		<!-- Black -->
+		<block name="tableLampLight01CenteredBlackPlayer">
+			<property name="Extends" value="tableLampLight01CenteredWhitePlayer"/>
+			<property name="CustomIconTint" value="767676"/>
+			<property name="TintColor" value="767676"/>
+			<property name="SortOrder2" value="2309"/>
+		</block>
+
+		<!-- Pink -->
+		<block name="tableLampLight01CenteredPinkPlayer">
+			<property name="Extends" value="tableLampLight01CenteredWhitePlayer"/>
+			<property name="CustomIconTint" value="F4D7F8"/>
+			<property name="TintColor" value="F4D7F8"/>
+			<property name="SortOrder2" value="2310"/>
+		</block>
+
+		<!-- *** work lights -->
+		<!-- Yellow -->
+		<block name="workLightPlayer">
+			<property name="Extends" value="lightPorchWhitePlayer" param1="HandleFace"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="CustomIcon" value="workLightPOIWhite"/>
+			<property name="CustomIconTint" value="BD9E31"/>
+			<property name="TintColor" value="BD9E31"/>
+			<property name="Model" value="@:Entities/Lighting/work_lightPrefab.prefab"/>
+			
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket,movement"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="2500"/>
+		</block>
+
+		<!-- Black -->
+		<block name="workLightPlayerBlack">
+			<property name="Extends" value="lightPorchWhitePlayer" param1="HandleFace"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="CustomIcon" value="workLightPOIWhite"/>
+			<property name="CustomIconTint" value="45433D"/>
+			<property name="TintColor" value="45433D"/>
+			<property name="Model" value="@:Entities/Lighting/work_lightPrefab.prefab"/>
+			
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket,movement"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="2501"/>
+		</block>
+
+		<!-- *** projectors -->
+		<block name="projectorCeilingPlayer">
+			<property name="Extends" value="lightPorchWhitePlayer" param1="ModelOffset"/>
+			<property name="CustomIcon" value="projectorCeiling"/>
+			<property name="Model" value="@:Entities/Electrical/projectorCeilingPrefab.prefab"/>
+			<property name="SortOrder2" value="2800"/>
+		</block>
+
+		<block name="projectorTableTopPlayer">
+			<property name="Extends" value="lightPorchWhitePlayer" param1="ModelOffset"/>
+			<property name="CustomIcon" value="projectorTableTop"/>
+			<property name="Model" value="@:Entities/Electrical/projectorTableTopPrefab.prefab"/>
+			<property name="SortOrder2" value="2801"/>
+		</block>
+
+		<!-- *** lights variant helper -->
+		<block name="lightVariantHelper">
+			<property name="Extends" value="lightPorchWhitePlayer"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="lightCeilingBulbMountWhite"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="lightVariantHelperDesc"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="10"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="SelectAlternates" value="true"/>
+			
+			<property name="PlaceAltBlockValue" value="ceilingLight02Player,ceilingLight02BrassPlayer,ceilingLight04Player,ceilingLight05Player,ceilingLight05BrassPlayer,recessedLightPlayer,recessedLightOffsetPlayer,fluorescentLightPlayer,trackLightPlayer,lightIndustrialHangingWhitePlayer,lightSconcePlayer,ceilingFanLightPlayer,deskLampLightPlayer,workLightPlayer,workLightPlayerBlack"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+		</block>
+		
+		<!-- *** light panels variant helper -->
+		<block name="lightPanelVariantHelper">
+			<property name="Extends" value="lightPorchWhitePlayer"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="lightPanelLEDWhite"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="lightPanelVariantHelperDesc"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="10"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="lightPanelLEDWhitePlayer,lightPanelLEDSilverPlayer,lightPanelLEDGreyPlayer,lightPanelLEDBlackPlayer,lightPanelLEDOffsetWhitePlayer,lightPanelLEDOffsetSilverPlayer,lightPanelLEDOffsetGreyPlayer,lightPanelLEDOffsetBlackPlayer,lightPanelLEDOffset02WhitePlayer,lightPanelLEDOffset02SilverPlayer,lightPanelLEDOffset02Grey,lightPanelLEDOffset02BlackPlayer"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+		</block>
+		
+		<!-- *** porch light variant helper -->
+		<block name="porchLightVariantHelper">
+			<property name="Extends" value="lightPorchWhitePlayer"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="lightPorchWhite"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="porchLightVariantHelperDesc"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="10"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="lightPorchWhitePlayer,lightPorchBlackPlayer,lightPorchBrownPlayer,lightPorchGreenPlayer,lightPorchGreyPlayer,lightPorchYellowPlayer,lightWallGooseneckWhitePlayer,lightWallGooseneckArmyGreenPlayer,lightWallGooseneckBlackPlayer,lightWallGooseneckBluePlayer,lightWallGooseneckBrownPlayer,lightWallGooseneckGreenPlayer,lightWallGooseneckGreyPlayer,lightWallGooseneckOrangePlayer,lightWallGooseneckPinkPlayer"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+		</block>
+		
+		<!-- *** hanging light variant helper -->
+		<block name="hangingLightVariantHelper">
+			<property name="Extends" value="lightPorchWhitePlayer"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="lightIndustrialHangingWhite"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="hangingLightVariantHelperDesc"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="10"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="lightIndustrialHangingWhitePlayer,lightIndustrialHangingBrownPlayer,lightIndustrialHangingGreyPlayer,lightIndustrialHangingBlackPlayer"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+		</block>
+		
+		<!-- *** chandelier variant helper -->
+		<block name="chandelierVariantHelper">
+			<property name="Extends" value="lightPorchWhitePlayer"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="chandelierLight"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="chandelierVariantHelperDesc"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="10"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="chandelierLightPlayer,chandelierLight2x2Player"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+		</block>
+		
+		<!-- *** desk lamp 02 variant helper -->
+		<block name="deskLamp02VariantHelper">
+			<property name="Extends" value="lightPorchWhitePlayer"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="deskLampLight02White"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="deskLamp02VariantHelperDesc"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="10"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="deskLampLight02WhitePlayer,deskLampLight02BlackPlayer,deskLampLight02BluePlayer,deskLampLight02BrownPlayer,deskLampLight02GreenPlayer,deskLampLight02GreyPlayer,deskLampLight02OrangePlayer,deskLampLight02PinkPlayer,deskLampLight02PurplePlayer,deskLampLight02RedPlayer,deskLampLight02YellowPlayer"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+		</block>
+		
+		<!-- *** table lamp variant helper -->
+		<block name="tableLampVariantHelper">
+			<property name="Extends" value="lightPorchWhitePlayer"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="tableLampVariantHelperDesc"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="10"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="tableLampLight01WhitePlayer,tableLampLight01BlackPlayer,tableLampLight01BluePlayer,tableLampLight01BrownPlayer,tableLampLight01GreenPlayer,tableLampLight01GreyPlayer,tableLampLight01OrangePlayer,tableLampLight01PinkPlayer,tableLampLight01PurplePlayer,tableLampLight01RedPlayer,tableLampLight01YellowPlayer,tableLampLight01CenteredBlackPlayer,tableLampLight01CenteredBluePlayer,tableLampLight01CenteredBrownPlayer,tableLampLight01CenteredGreenPlayer,tableLampLight01CenteredGreyPlayer,tableLampLight01CenteredOrangePlayer,tableLampLight01CenteredPinkPlayer,tableLampLight01CenteredPurplePlayer,tableLampLight01CenteredRedPlayer,tableLampLight01CenteredWhitePlayer,tableLampLight01CenteredYellowPlayer"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+		</block>
+		
+		<!-- *** projector variant helper -->
+		<block name="projectorVariantHelper">
+			<property name="Extends" value="lightPorchWhitePlayer"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="projectorTableTop"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="projectorVariantHelperDesc"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="10"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="projectorCeilingPlayer,projectorTableTopPlayer"/>
 			<property name="SortOrder1" value="U200"/>
 			<property name="SortOrder2" value="0000"/>
 			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>

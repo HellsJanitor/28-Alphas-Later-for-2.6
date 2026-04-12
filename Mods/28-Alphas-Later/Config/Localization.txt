@@ -289,33 +289,51 @@ playerInteriorHouseDoorDoubleVariantHelper,Double Interior Door
 playerClosetDoorVariantHelper,Single Closet Door
 playerClosetDoorDoubleVariantHelper,Double Closet Door
 playerPantryDoorVariantHelper,Pantry Door
-playerDoorSingleVariantHelperBlock,"Craft various single exterior doors with this helper block.\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
-playerDoorDoubleVariantHelperBlock,"Craft various double exterior doors with this helper block.\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
-playerDoorSideLightSingleVariantHelperBlock,"Craft various single sidelight doors with this helper block.\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
-playerDoorSideLightVariantHelperBlock,"Craft various double sidelight doors with this helper block.\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
-playerOldDoorSingleVariantHelperBlock,"Craft various single old doors with this helper block.\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
-playerOldDoorDoubleVariantHelperBlock,"Craft various double old doors with this helper block.\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
-playerScreenDoorVariantHelperBlock,"Craft various screen doors with this helper block.\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
-playerSlidingDoorVariantHelperBlock,"Craft various sliding doors with this helper block.\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
-playerFrenchDoorVariantHelperBlock,"Craft various single French doors with this helper block.\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
-playerFrenchDoorDoubleVariantHelperBlock,"Craft various double French doors with this helper block.\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
-playerInteriorHouseDoorVariantHelperBlock,"Craft various single interior doors with this helper block.\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
-playerInteriorHouseDoorDoubleVariantHelperBlock,"Craft various double interior doors with this helper block.\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
-playerClosetDoorVariantHelperBlock,"Craft various single closet doors with this helper block.\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
-playerClosetDoorDoubleVariantHelperBlock,"Craft various double closet doors with this helper block.\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
-playerPantryDoorVariantHelperBlock,"Craft various pantry doors with this helper block.\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
+playerDoorSingleVariantHelperBlock,"Craft various single exterior doors with this helper block.\n\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
+playerDoorDoubleVariantHelperBlock,"Craft various double exterior doors with this helper block.\n\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
+playerDoorSideLightSingleVariantHelperBlock,"Craft various single sidelight doors with this helper block.\n\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
+playerDoorSideLightVariantHelperBlock,"Craft various double sidelight doors with this helper block.\n\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
+playerOldDoorSingleVariantHelperBlock,"Craft various single old doors with this helper block.\n\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
+playerOldDoorDoubleVariantHelperBlock,"Craft various double old doors with this helper block.\n\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
+playerScreenDoorVariantHelperBlock,"Craft various screen doors with this helper block.\n\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
+playerSlidingDoorVariantHelperBlock,"Craft various sliding doors with this helper block.\n\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
+playerFrenchDoorVariantHelperBlock,"Craft various single French doors with this helper block.\n\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
+playerFrenchDoorDoubleVariantHelperBlock,"Craft various double French doors with this helper block.\n\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
+playerInteriorHouseDoorVariantHelperBlock,"Craft various single interior doors with this helper block.\n\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
+playerInteriorHouseDoorDoubleVariantHelperBlock,"Craft various double interior doors with this helper block.\n\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
+playerClosetDoorVariantHelperBlock,"Craft various single closet doors with this helper block.\n\n\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
+playerClosetDoorDoubleVariantHelperBlock,"Craft various double closet doors with this helper block.\n\n\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
+playerPantryDoorVariantHelperBlock,"Craft various pantry doors with this helper block.\n\n\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
 HoistVariantHelper,Hoist Parts
 barbedWireSpindleVariantHelper,Barbed Wire
-barbedWireSpindleVariantHelperBlock,"Craft various barbed wire shapes with this helper block.\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
-flagVariantHelper,"Craft various flags with this helper block.\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
+barbedWireSpindleVariantHelperBlock,"Craft various barbed wire shapes with this helper block.\n\n\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
+flagVariantHelper,"Craft various flags with this helper block.\n\n\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
 gymEquipmentVariantHelper,"Gym Equipment"
-gymEquipmentVariantHelperDesc,"Craft various gym equipment with this helper block.\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
-jailBlockVariantHelper,"Craft various jail doors & bars with this helper block.\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
-decoHoistVariantHelper,"Craft various hoists & hoist parts with this helper block.\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
+gymEquipmentVariantHelperDesc,"Craft various gym equipment with this helper block.\n\n\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
+jailBlockVariantHelper,"Craft various jail doors & bars with this helper block.\n\n\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
+decoHoistVariantHelper,"Craft various hoists & hoist parts with this helper block.\n\n\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
 logWallVariantHelper,Log Walls
-logWallVariantHelperDesc,"Craft various log walls & pillars with this helper block.\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
+logWallVariantHelperDesc,"Craft various log walls & pillars with this helper block.\n\n\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
+platformVariantHelper,Wooden Platforms
+platformVariantHelperDesc,"Craft various wooden platforms with this helper block.\n\n\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
 ropeVariantHelper,Rope
-ropeVariantHelperDesc,"Craft various decorative & climbable rope blocks with this helper.\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
+ropeVariantHelperDesc,"Craft various decorative & climbable rope blocks with this helper.\n\n\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
+lightVariantHelper,Lights
+lightVariantHelperDesc,"Craft various powered lights with this helper.\n\n\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build.\n\nRequires connection to a power source."
+lightPanelVariantHelper,Light Panels
+lightPanelVariantHelperDesc,"Craft various powered light panels with this helper.\n\n\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build.\n\nRequires connection to a power source."
+porchLightVariantHelper,Porch Lights
+porchLightVariantHelperDesc,"Craft various powered porch lights with this helper.\n\n\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build.\n\nRequires connection to a power source."
+hangingLightVariantHelper,Hanging Warehouse Lights
+hangingLightVariantHelperDesc,"Craft various powered industrial/commercial lights with this helper.\n\n\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build.\n\nRequires connection to a power source."
+chandelierVariantHelper,Chandeliers
+chandelierVariantHelperDesc,"Craft powered chandeliers with this helper.\n\n\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build.\n\nRequires connection to a power source."
+deskLamp02VariantHelper,Desk Lamps
+deskLamp02VariantHelperDesc,"Craft various powered desk lamps with this helper.\n\n\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build.\n\nRequires connection to a power source."
+tableLampVariantHelper,Table Lamps
+tableLampVariantHelperDesc,"Craft various powered table lamps with this helper.\n\n\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build.\n\nRequires connection to a power source."
+projectorVariantHelper,Projectors
+projectorVariantHelperDesc,"Craft powered desktop and ceiling-mounted projectors with this helper.\n\n\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build.\n\nRequires connection to a power source."
 craftingArmorDesc,"Increase [DECEA3]Armour Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills."
 craftingBladesDesc,"Increase [DECEA3]Blades Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills."
 craftingBowsDesc,"Increase [DECEA3]Bows Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills."
@@ -438,21 +456,21 @@ meleeToolFarmT2IronHoeDesc,"Required for fertilizing terrain, and farmplots foun
 meleeToolFarmT2IronHoeSchematic,Garden Hoe Schematic
 meleeToolTorchDesc,This torch can be used as a portable light source or weapon with a chance to catch enemies on fire.\n\nCan also be used to craft a placeable wall torch. Requires gas to ignite.
 meleeWpnBladeLegendaryBrushKnife,"Subquake's Indignation"
-meleeWpnBladeLegendaryBrushKnifeDesc,"Half paintbrush, half knife—Subquake’s masterpiece of spite. A handle crusted with old pigment, a blade honed on broken palettes; it slashes and smears in the same motion, leaving furious streaks that never quite wash out. For artists who sign their work in blood and don’t wait for the paint to dry.\n\nStops all radiated regen. 30% damage bonus to elite zombies."
+meleeWpnBladeLegendaryBrushKnifeDesc,"Blade, Deep Cuts.\n\nHalf paintbrush, half knife—Subquake’s masterpiece of spite. A handle crusted with old pigment, a blade honed on broken palettes; it slashes and smears in the same motion, leaving furious streaks that never quite wash out. For artists who sign their work in blood and don’t wait for the paint to dry.\n\nStops all radiated regen. 30% damage bonus to elite zombies."
 meleeWpnLegendaryGardenRake,"Fury's Harvest"
-meleeWpnLegendaryGardenRakeDesc,"Forged in the fires of a long-lost kingdom, this legendary battle rake known as Fury's Harvest is a fearsome weapon that combines beauty and brutality. Its handle, made from the heartwood of an ancient tree, is imbued with the strength of a thousand warriors. The tines, sharp as daggers and are said to have cleaved through armor and stone alike.\n\nStops all radiated regen. 30% damage bonus to elite zombies."
+meleeWpnLegendaryGardenRakeDesc,"Axe, Miner 69'er.\n\nForged in the fires of a long-lost kingdom, this legendary battle rake known as Fury's Harvest is a fearsome weapon that combines beauty and brutality. Its handle, made from the heartwood of an ancient tree, is imbued with the strength of a thousand warriors. The tines, sharp as daggers and are said to have cleaved through armor and stone alike.\n\nStops all radiated regen. 30% damage bonus to elite zombies."
 meleeWpnBladeLegendaryPaintBrush,"Red's Legendary Paintbrush"
-meleeWpnBladeLegendaryPaintBrushDesc,"This ancient & mysterious brush has built up thousands of layers of paint & varnish, which have hardened to be more durable than steel. In RambunctiousRed's hands, it has been honed into a deadly weapon.\n\nGo out, and paint the apocalypse red!!\n\nStops all radiated regen. 30% damage bonus to elite zombies."
+meleeWpnBladeLegendaryPaintBrushDesc,"Blade, Deep Cuts.\n\nThis ancient & mysterious brush has built up thousands of layers of paint & varnish, which have hardened to be more durable than steel. In RambunctiousRed's hands, it has been honed into a deadly weapon.\n\nGo out, and paint the apocalypse red!!\n\nStops all radiated regen. 30% damage bonus to elite zombies."
 meleeWpnLegendaryPitchfork,"Hells' Wrath"
-meleeWpnLegendaryPitchforkDesc,"Legends tell of its origin: crafted by a vengeful farmer who sought to protect his land from marauding invaders. This pitchfork is not merely a tool; it embodies the relentless spirit of those who defend their home, turning the very essence of agriculture into a weapon of epic proportions.\n\nStops all radiated regen. 30% damage bonus to elite zombies."
+meleeWpnLegendaryPitchforkDesc,"Spear, Javelin Master.\n\nLegends tell of its origin: crafted by a vengeful farmer who sought to protect his land from marauding invaders. This pitchfork is not merely a tool; it embodies the relentless spirit of those who defend their home, turning the very essence of agriculture into a weapon of epic proportions.\n\nStops all radiated regen. 30% damage bonus to elite zombies."
 meleeWpnLegendaryScythe,"Death's Whisper"
-meleeWpnLegendaryScytheDesc,"A devastating slashing weapon, and when swung, Death's Whisper emits a haunting hum, resonating with the whispers of lost souls. Legends say it can slice through the fabric of reality itself, allowing its wielder to reap not just lives, but destinies. It is not merely a weapon; it is a harbinger of change, a symbol of inevitability. In the hands of a true master, it can unleash the fury of a tempest, or restore balance to a world in chaos.\n\nStops all radiated regen. 30% damage bonus to elite zombies."
+meleeWpnLegendaryScytheDesc,"Blade, Deep Cuts.\n\nA devastating slashing weapon, and when swung, Death's Whisper emits a haunting hum, resonating with the whispers of lost souls. Legends say it can slice through the fabric of reality itself, allowing its wielder to reap not just lives, but destinies. It is not merely a weapon; it is a harbinger of change, a symbol of inevitability. In the hands of a true master, it can unleash the fury of a tempest, or restore balance to a world in chaos.\n\nStops all radiated regen. 30% damage bonus to elite zombies."
 meleeWpnLegendarySledgehammer,"Piston-Head Sledge"
-meleeWpnLegendarySledgehammerDesc,"A salvaged engine piston welded to a length of rebar, heavy, balanced, and mean. Each swing compresses more than air — it dents skulls and stalls hearts. Tuned for knockdowns and broken bones.\n\nStops all radiated regen. 30% damage bonus to elite zombies."
+meleeWpnLegendarySledgehammerDesc,"Sledge, Skullcrusher.\n\nA salvaged engine piston welded to a length of rebar, heavy, balanced, and mean. Each swing compresses more than air — it dents skulls and stalls hearts. Tuned for knockdowns and broken bones.\n\nStops all radiated regen. 30% damage bonus to elite zombies."
 meleeWpnClubHydraulicHammer,"Purgatory's Rebuke"
-meleeWpnClubHydraulicHammerDesc,"An oversized spanner with its jaw locked tight, the handle wrapped in oilcloth for grip. Hook, pry, and crack in one motion—lefty-loosey for them, righty-tighty for you.\n\nStops all radiated regen. 30% damage bonus to elite zombies."
+meleeWpnClubHydraulicHammerDesc,"Club, Pummel Pete.\n\nAn oversized spanner with its jaw locked tight, the handle wrapped in oilcloth for grip. Hook, pry, and crack in one motion—lefty-loosey for them, righty-tighty for you.\n\nStops all radiated regen. 30% damage bonus to elite zombies."
 meleeWpnKnucklesLegendaryKnuckles,Geargrinders
-meleeWpnKnucklesLegendaryKnucklesDesc,"Twin rings forged from heavy machine cogs, teeth filed to a cruel bite. Every punch chews through armor and grinds morale to filings. Fast, brutal, unapologetically loud.\n\nStops all radiated regen. 30% damage bonus to elite zombies."
+meleeWpnKnucklesLegendaryKnucklesDesc,"Knuckles, Brawler.\n\nTwin rings forged from heavy machine cogs, teeth filed to a cruel bite. Every punch chews through armor and grinds morale to filings. Fast, brutal, unapologetically loud.\n\nStops all radiated regen. 30% damage bonus to elite zombies."
 modArmorCigarDesc,Look intimidating and get a better deal from traders.
 modArmorWaterPurifier,Water Filtration Unit
 modArmorWaterPurifierDesc,Requires a limited-use filter to allow safe consumption of standing and murky water.
@@ -462,6 +480,8 @@ modGunSoundSuppressorSilencer,Suppressor Mod
 modGunSoundSuppressorSilencerSchematic,Suppressor Mod Schematic
 modBicycleStaminaSaver,Bike Gearing
 modBicycleStaminaSaverDesc,Improves the speed of bicycles by 50% and your stamina efficiency by 25%
+mortarAndPestle,"Mortar & Pestle"
+mortarAndPestleDesc,"A workstation for grinding things into fine powder."
 mushroom01,Small Mushroom
 mushroom02,Large Mushroom
 npcTraderBooks,Trader Nancy
@@ -592,6 +612,10 @@ resourceLimestone,Limestone
 resourceLimestoneDesc,"A core resource for crafting and forging. Required ingredient for concrete."
 resourceZinc,Zinc
 resourceZincDesc,"A core resource for crafting and forging. Required ingredient for brass."
+resourceZincPowder,Zinc Powder
+resourceZincPowderDesc,"Zinc ore that's been ground into a fine powder."
+resourceSilverDust,Silver Dust
+resourceSilverDustDesc,"Silver nuggets that have been ground into a powdery dust."
 resourceChromiumBundle,Stack of Chromium (6000)
 resourceChromiumBundleDesc,This is a compact stack of chromium. Use this item to open and unpack it.
 resourceCopperBundle,Stack of Copper (6000)
@@ -660,9 +684,27 @@ vehicleQuadBikeChassis,The Grasshopper Chassis
 vehicleQuadBikeHandlebars,The Grasshopper Handlebars
 vehicleQuadBikePlaceable,The Grasshopper
 vehicleQuadBike,The Grasshopper
-vehiclesT1,"Tier 1: Bicycle, Minibike, & Wheels"
+vehicleSemiTruckChassis,The Iron Tyrant Chassis
+vehicleSemiTruckAccessories,The Iron Tyrant Accessories
+vehicleSemiTruckPlaceable,The Iron Tyrant
+vehicleSemiTruck,The Iron Tyrant
+vehicleScooterChassis,The Wasp Chassis
+vehicleScooterHandlebars,The Wasp Handlebars
+vehicleScooterPlaceable,The Wasp
+vehicleScooter,The Wasp
+buffInfectionImmunityDesc,"The first aid you've used has granted you protection from further infections."
+medicalFirstAidAntiInfectionBandage,"Anti-Infection First Aid Bandage"
+medicalFirstAidAntiInfectionBandageDesc,"Bandages coated in aloe and infused with silver stop bleeding, treat infections, heal wounds, increase abrasion healing speed, and grant protection from further infections for a time.\nUse the secondary action to treat another player." 
+medicalFirstAidAntiInfectionKit,"Anti-Infection First Aid Kit"
+medicalFirstAidAntiInfectionKitDesc,"First aid kits made with anti-infection bandages stop bleeding, treat infections, heal wounds, increase abrasion healing speed, suture lacerations, and grant protection from further infections for a time.\nUse the secondary action to treat another player."
+medicalT1-3,"Tier 1: Anti-Infection First Aid Bandage"
+medicalT3-2,"Tier 3: Anti-Infection First Aid Kit"
+medicalT3-3,"Tier 3: Antibiotics"
+medicalT3-4,"Tier 3: Steroids"
+vehiclesT1,"Tier 1: Bicycle, Scooter, Minibike, & Wheels"
 vehiclesT2,"Tier 2: Dirt Bike, Quad Bike, Oil, & Gas"
 vehiclesT3,"Tier 3: Motorcycle, Dune Buggy & Stacks of Gas Cans"
+vehiclesT4,"Tier 4: 4x4, Semi Truck"
 venomDesc,"Key ingredient for antivenom."
 woodLogPillar100Desc,Wood logs are good for crude walls or palisades or as fuel for campfires.\n\nPlace them as a block and chop them with an axe for wood planks.
 workstationsT1-1,Chicken Coop
@@ -673,11 +715,12 @@ workstationsT1-5,Workbench
 workstationsT1-6,Saw Table
 workstationsT1-7,Lock Picks
 workstationsT1-8,Heat Lamp
-workstationsT2-1,Dew Collector
-workstationsT2-2,Nesting Box
-workstationsT2-3,Beehive
-workstationsT2-4,Anvil
-workstationsT2-5,Gatherer
+workstationsT2-1,Mortar & Pestle
+workstationsT2-2,Dew Collector
+workstationsT2-3,Nesting Box
+workstationsT2-4,Beehive
+workstationsT2-5,Anvil
+workstationsT2-6,Gatherer
 workstationsT3-2,Tarp
 workstationsT3-3,Cement Mixer
 workstationsT4-3,Bee Frame
@@ -687,6 +730,25 @@ workstationsT5-2,Bee Smoker
 workstationsT5-5,Crucible
 xuiFeed,Cornmeal Feed
 xuiRemoveModsFirst,Remove installed mods before combining.
+HJXuiOutputsLabel,Outputs
+
+cntZPackExternalCorpseBag,Research Loot
+cntZPackExternalCorpseBagNurse,Nurse Research Loot
+cntZPackExternalCorpseBagLab,Lab Worker Research Loot
+cntZPackExternalCorpseBagUtility,Utility Worker Research Loot
+cntZPackExternalCorpseBagJanitor,Janitor Research Loot
+cntZPackExternalCorpseBagSoldier,Soldier Research Loot
+cntZPackExternalCorpseBagThug,Thug Research Loot
+cntZPackExternalCorpseBagFatCop,Fat Cop Research Loot
+cntZPackExternalCorpseBagTourist,Tourist Research Loot
+cntZPackExternalCorpseBagHazmat,Hazmat Research Loot
+cntZPackExternalCorpseBagLumberjack,Lumberjack Research Loot
+cntZPackExternalCorpseBagBiker,Biker Research Loot
+cntZPackExternalCorpseBagPartyGirl,Party Girl Research Loot
+cntZPackExternalCorpseBagBusinessman,Businessman Research Loot
+cntZPackExternalCorpseBagStrong,Tough Zombie Research Loot
+cntZPackExternalCorpseBagBoss,Boss Research Loot
+
 zombieArlene,Putrid Girl
 zombieArleneCowboy,Putrid Cowgirl
 zombieArleneFeral,Feral Putrid Girl

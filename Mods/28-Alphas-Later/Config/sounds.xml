@@ -119,4 +119,7 @@
 	<set xpath="/Sounds/SoundDataNode[@name='quest_started']/AudioClip/@ClipName">none</set>
 	<set xpath="/Sounds/SoundDataNode[@name='quest_objective_complete']/AudioClip/@ClipName">none</set>
 	<set xpath="/Sounds/SoundDataNode[@name='quest_subtask_complete']/AudioClip/@ClipName">none</set>
+	
+	<set xpath="/Sounds/SoundDataNode[@name='zpack_spawn']/AudioClip/@ClipName">@:Sounds/UseActions/open_corpse.wav</set>
+	<set xpath="/Sounds/SoundDataNode[@name='zpack_impact']/AudioClip/@ClipName">@:Sounds/UseActions/close_corpse.wav</set>
 </config>

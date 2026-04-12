@@ -4,7 +4,49 @@
 
 The idea behind this mod is to slow progression, make traders less powerful, and generally extend the time for a playthrough, while keeping the vanilla look and feel.
 
+> [!IMPORTANT]
+> 12/04/26 mod version 2.6.0.8
+> [!NOTE]
+> Should be save-game safe, but as always, make a back-up of your save, just in case.
 
+ - Fixed a bug with Izayo's weapons unlocking at the incorrect quality
+
+ - Added two new vehicles - a scooter, and a semi-truck. Edited progression values to suit.
+
+ - Added a bicycle to the player's starting items
+
+ - Fixed a bug with crafting backpack upgrades not being locked behind schematics.
+
+ - Fixed a small bug with the incorrect icon being used for 7.52mm HP bundles.
+
+ - Edited stamina cost for Izayo's T4 mace
+ 
+ - Fixed a bug with the dew collector filter. It now breaks after being depleted.
+ 
+ - Fixed a bug with free skill points being awarded at the incorrect action skill level.
+ 
+ - Changed the workbench combine system to allow items above Q500 to be combined/improved/repaired.
+  
+ - Some recipes can now have multiple outputs. Bullets, arrows etc. can be crafted into their component parts.
+  
+ - Concrete requires a bucket of water to craft, and is crafted in batches of 250. Empty bucket returned after crafting.
+  
+ - Added anti-infection bandages and first aid kits.
+  
+ - Added a mortar and pestle, and recipes for silver dust and zinc powder. Moved cornmeal and gunpowder crafting to the mortar and pestle.
+  
+ - Added craftable powered lights.
+  
+ - Fixed a bug with drone storage not using some slots.
+  
+ - Despair is now removed if you are using Twitch Integration.
+  
+ - Added class and perk descriptions to legendary melee weapons.
+ 
+ - Changed lootable zombies. They now drop a brown sack with their loot (necessary game performance change)
+ 
+ - Lootbag mesh changed - it now looks like a corpse pile.
+ 
 > [!NOTE]
 > 03/04/26 mod version 2.6.0.7
 Small hotfix to correct an unlock progression quality bug with Izy's weapons.

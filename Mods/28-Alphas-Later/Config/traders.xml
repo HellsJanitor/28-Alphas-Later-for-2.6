@@ -106,6 +106,54 @@
 		<item name="modArmorNightVision"/>
 	</set>
 	
+	<!-- *** vehicles and parts -->
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='groupVehicles']">
+		<trader_item_group name="groupVehicles" count="1">
+			<item name="vehicleWheels"/>
+			<item name="smallEngine"/>
+		<!-- *** BICYCLE -->
+			<item name="vehicleBicycleChassis"/>
+			<item name="vehicleBicycleHandlebars"/>
+			<item name="vehicleBicyclePlaceable"/>
+		<!-- *** SCOOTER -->
+			<item name="vehicleScooterChassis"/>
+			<item name="vehicleScooterHandlebars"/>
+			<item name="vehicleScooterPlaceable"/>
+		<!-- *** MINIBIKE -->
+			<item name="vehicleMinibikeChassis"/>
+			<item name="vehicleMinibikeHandlebars"/>
+			<item name="vehicleMinibikePlaceable"/>
+		<!-- *** DIRT BIKE -->
+			<item name="vehicleDirtBikeChassis"/>
+			<item name="vehicleDirtBikeHandlebars"/>
+			<item name="vehicleDirtBikePlaceable"/>
+		<!-- *** MOTORCYCLE -->
+			<item name="vehicleMotorcycleChassis"/>
+			<item name="vehicleMotorcycleHandlebars"/>
+			<item name="vehicleMotorcyclePlaceable"/>
+		<!-- *** QUAD BIKE -->
+			<item name="vehicleQuadBikeChassis"/>
+			<item name="vehicleQuadBikeHandlebars"/>
+			<item name="vehicleQuadBikePlaceable"/>	
+		<!-- *** DUNE BUGGY -->
+			<item name="vehicleDuneBuggyChassis"/>
+			<item name="vehicleDuneBuggyAccessories"/>
+			<item name="vehicleDuneBuggyPlaceable"/>
+		<!-- *** 4x4 -->
+			<item name="vehicleTruck4x4Chassis"/>
+			<item name="vehicleTruck4x4Accessories"/>
+			<item name="vehicleTruck4x4Placeable"/>	
+		<!-- *** SEMI TRUCK -->
+			<item name="vehicleSemiTruckChassis"/>
+			<item name="vehicleSemiTruckAccessories"/>
+			<item name="vehicleSemiTruckPlaceable"/>	
+		<!-- *** GYRO -->
+			<item name="vehicleGyroCopterChassis"/>
+			<item name="vehicleGyroCopterAccessories"/>
+			<item name="vehicleGyrocopterPlaceable"/>
+		</trader_item_group>		
+	</set>
+	
 	<!-- *** remove crafting magazines -->
 	<set xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazines']">
 		<item name="researchPaperBlank" count="8,20"/>

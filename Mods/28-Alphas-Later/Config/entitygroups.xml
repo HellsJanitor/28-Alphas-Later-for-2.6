@@ -102,10 +102,10 @@
 		none, 80
 		</entitygroup>
 		<entitygroup name="EnemyAnimalsForest">
-		animalSnake, 20		
+		animalSnake, 5		
 		animalWolf, 5
 		animalBear, 2
-		none, 73
+		none, 88
 		</entitygroup>
 	</insertafter>
 	
@@ -418,14 +418,14 @@
 	</csv>
 	
 	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']/text()" delim="\n" op="add">
-		zombieHellsHumanExperiment, .05
-		zombieHellsParasite, .05
-		zombieHellsGiantMutant, .05
-		zombieHellsMutant4, .05
-		zombieHellsMutant1, .05
-		zombieHellsMutantBoomer, .05
-		zombieHellsWendigo1, .01
-		zombieHellsWendigo2, .01
+		zombieHellsHumanExperiment, .25
+		zombieHellsParasite, .25
+		zombieHellsGiantMutant, .25
+		zombieHellsMutant4, .25
+		zombieHellsMutant1, .25
+		zombieHellsMutantBoomer, .25
+		zombieHellsWendigo1, .25
+		zombieHellsWendigo2, .25
 	</csv>
 	
 	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight']/text()" delim="\n" op="add">
@@ -440,14 +440,14 @@
 	</csv>
 	
 	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandDowntown']/text()" delim="\n" op="add">
-		zombieHellsHumanExperiment, .05
-		zombieHellsParasite, .05
-		zombieHellsGiantMutant, .05
-		zombieHellsMutant4, .05
-		zombieHellsMutant1, .05
-		zombieHellsMutantBoomer, .05
-		zombieHellsWendigo1, .01
-		zombieHellsWendigo2, .01
+		zombieHellsHumanExperiment
+		zombieHellsParasite
+		zombieHellsGiantMutant
+		zombieHellsMutant4
+		zombieHellsMutant1
+		zombieHellsMutantBoomer
+		zombieHellsWendigo1
+		zombieHellsWendigo2
 	</csv>	
 	
 	<csv xpath="/entitygroups/entitygroup[@name='ZombieBadassGroup']/text()" delim="\n" op="add">

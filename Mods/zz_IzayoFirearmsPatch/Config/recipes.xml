@@ -20,17 +20,26 @@
 					<ingredient name="ammo45ACPEnhanced" count="100"/>
 				</recipe>
 				
-				<!-- dismantling -->
-				<recipe name="ammoDismantle45ACPBulletBall" count="1" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
+				<!-- dismantling -->				
+				<recipe name="resourceBulletTip" count="7" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
 					<ingredient name="ammo45ACPBulletBall" count="10"/>
+					<secondary_output name="resourceGunPowder" count="7"/>
+					<secondary_output name="resourceBulletCasing" count="7"/>
+					<secondary_output name="resourceScrapIron" count="7"/>						
 				</recipe>
-			
-				<recipe name="ammoDismantle45ACPHighpower" count="1" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
+				
+				<recipe name="resourceBulletTip" count="14" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
 					<ingredient name="ammo45ACPHighpower" count="10"/>
+					<secondary_output name="resourceGunPowder" count="7"/>
+					<secondary_output name="resourceBulletCasing" count="14"/>
+					<secondary_output name="resourceScrapIron" count="7"/>
 				</recipe>
-			
-				<recipe name="ammoDismantle45ACPArmorpiecing" count="1" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
+				
+				<recipe name="resourceBulletTip" count="14" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
 					<ingredient name="ammo45ACPArmorpiecing" count="10"/>
+					<secondary_output name="resourceGunPowder" count="14"/>
+					<secondary_output name="resourceBulletCasing" count="14"/>
+					<secondary_output name="resourceScrapIron" count="7"/>
 				</recipe>
 			</append>
 		</if>
@@ -52,16 +61,26 @@
 					<ingredient name="ammo556mmArmorPiercing" count="100"/>
 				</recipe>
 				<!-- Dismantling -->
-				<recipe name="ammoDismantle556mmBulletBall" count="1" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
+				
+				<recipe name="resourceBulletTip" count="7" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
 					<ingredient name="ammo556mmBulletBall" count="10"/>
+					<secondary_output name="resourceGunPowder" count="14"/>
+					<secondary_output name="resourceBulletCasing" count="7"/>
+					<secondary_output name="resourceScrapIron" count="7"/>						
 				</recipe>
-			
-				<recipe name="ammoDismantle556mmHIpower" count="1" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
+				
+				<recipe name="resourceBulletTip" count="14" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
 					<ingredient name="ammo556mmHIpower" count="10"/>
+					<secondary_output name="resourceGunPowder" count="28"/>
+					<secondary_output name="resourceBulletCasing" count="14"/>
+					<secondary_output name="resourceScrapIron" count="7"/>						
 				</recipe>
-			
-				<recipe name="ammoDismantle556mmArmorPiercing" count="1" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
+				
+				<recipe name="resourceBulletTip" count="14" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
 					<ingredient name="ammo556mmArmorPiercing" count="10"/>
+					<secondary_output name="resourceGunPowder" count="21"/>
+					<secondary_output name="resourceBulletCasing" count="14"/>
+					<secondary_output name="resourceScrapIron" count="7"/>						
 				</recipe>
 			</append>
 			

@@ -213,6 +213,12 @@
 			<ingredient name="resourceNail" count="10"/>
 		</recipe>
 		
+		<!-- *** trader platforms -->	
+		<recipe name="platformVariantHelper" count="1">
+			<ingredient name="resourceWood" count="50"/>
+			<ingredient name="resourceNail" count="10"/>
+		</recipe>
+		
 		<!-- *** trader gate -->	
 		<recipe name="doorWoodLargeGate" count="1">
 			<ingredient name="woodLogPillar100" count="20"/>
@@ -251,6 +257,87 @@
 		<recipe name="decoReptileTerrarium" count="1">
 			<ingredient name="glassBusinessSheet" count="6"/>
 			<ingredient name="resourceScrapIron" count="30"/>			
+		</recipe>
+		
+		<!-- *** various lights -->		
+		<recipe name="lightVariantHelper" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="resourceForgedIron" count="2"/>
+			<ingredient name="resourceElectricParts" count="4"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".56,.56,.56,.34,.15" tags="resourceForgedIron,resourceElectricParts"/>
+			</effect_group>
+		</recipe>
+		
+		<!-- *** light panels -->		
+		<recipe name="lightPanelVariantHelper" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="resourceForgedIron" count="2"/>
+			<ingredient name="resourceElectricParts" count="4"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".56,.56,.56,.34,.15" tags="resourceForgedIron,resourceElectricParts"/>
+			</effect_group>
+		</recipe>
+		
+		<!-- *** porch lights -->		
+		<recipe name="porchLightVariantHelper" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="resourceForgedIron" count="2"/>
+			<ingredient name="resourceElectricParts" count="4"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".56,.56,.56,.34,.15" tags="resourceForgedIron,resourceElectricParts"/>
+			</effect_group>
+		</recipe>
+		
+		<!-- *** hanging lights -->		
+		<recipe name="hangingLightVariantHelper" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="resourceForgedIron" count="2"/>
+			<ingredient name="resourceElectricParts" count="4"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".56,.56,.56,.34,.15" tags="resourceForgedIron,resourceElectricParts"/>
+			</effect_group>
+		</recipe>
+		
+		<!-- *** chandeliers -->		
+		<recipe name="chandelierVariantHelper" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceScrapBrass" count="50"/>
+			<ingredient name="resourceElectricParts" count="4"/>
+			<ingredient name="resourceHeadlight" count="9"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".56,.56,.56,.34,.15" tags="resourceForgedIron,resourceElectricParts"/>
+			</effect_group>
+		</recipe>
+		
+		<!-- *** desk lamps -->		
+		<recipe name="deskLamp02VariantHelper" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="resourceForgedIron" count="2"/>
+			<ingredient name="resourceElectricParts" count="4"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".56,.56,.56,.34,.15" tags="resourceForgedIron,resourceElectricParts"/>
+			</effect_group>
+		</recipe>
+		
+		<!-- *** table lamps -->		
+		<recipe name="tableLampVariantHelper" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="resourceRockSmall" count="10"/>
+			<ingredient name="resourceElectricParts" count="4"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".56,.56,.56,.34,.15" tags="resourceRockSmall,resourceElectricParts"/>
+			</effect_group>
+		</recipe>
+		
+		<!-- *** projectors -->		
+		<recipe name="projectorVariantHelper" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceElectricParts" count="4"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".56,.56,.56,.34,.15" tags="resourceForgedIron,resourceElectricParts"/>
+			</effect_group>
 		</recipe>
 		
 		<!-- *** bundles for new resources -->
@@ -431,6 +518,7 @@
 		<!-- *** portable device battery -->
 		<recipe name="resourceNiCdBattery" count="10" craft_area="chemistryStation" tags="chemStationCrafting">
 			<ingredient name="resourceScrapLead" count="180"/>
+			<ingredient name="resourceZincPowder" count="100"/>
 			<ingredient name="resourceAcid" count="1"/>
 			<ingredient name="resourceScrapPolymers" count="10"/>
 		</recipe>
@@ -565,6 +653,68 @@
 			<ingredient name="vehicleQuadBikeHandlebars" count="1"/>
 			<ingredient name="smallEngine" count="1"/>
 			<ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<!-- *** The Wasp -->
+		<recipe name="vehicleScooterHandlebars" count="1" craft_time="150" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceMechanicalParts" count="4"/>
+			<ingredient name="resourceSpring" count="2"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<ingredient name="resourceElectricParts" count="2"/>
+			<ingredient name="resourceMetalPipe" count="6"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1" value=".5,.5" tags="resourceMechanicalParts,resourceSpring,resourceElectricParts,resourceMetalPipe"/>
+			</effect_group>
+		</recipe>
+
+		<recipe name="vehicleScooterChassis" count="1" craft_time="150" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="4"/>
+			<ingredient name="resourceDuctTape" count="4"/>
+			<ingredient name="resourceLeather" count="4"/>
+			<ingredient name="resourceElectricParts" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1" value=".5,.5" tags="resourceForgedIron,resourceMechanicalParts,resourceDuctTape,resourceLeather"/>
+			</effect_group>
+		</recipe>
+
+		<recipe name="vehicleScooterPlaceable" count="1" craft_time="500" craft_area="workbench" craft_tool="meleeToolSalvageT1Wrench" tags="workbenchCrafting,perkGreaseMonkey">
+			<ingredient name="vehicleWheels" count="2"/>
+			<ingredient name="vehicleScooterChassis" count="1"/>
+			<ingredient name="vehicleScooterHandlebars" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<!-- *** The Iron Tyrant -->
+		<recipe name="vehicleSemiTruckAccessories" count="1" craft_time="150" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceElectricParts" count="50"/>
+			<ingredient name="resourceHeadlight" count="10"/>
+			<ingredient name="resourceMetalPipe" count="50"/>
+			<ingredient name="resourceSpring" count="20"/>
+			<ingredient name="resourceMechanicalParts" count="24"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceMechanicalParts,resourceMetalPipe,resourceElectricParts,resourceSpring"/>
+			</effect_group>
+		</recipe>
+
+		<recipe name="vehicleSemiTruckChassis" count="1" craft_time="150" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="300"/>
+			<ingredient name="resourceMechanicalParts" count="60"/>
+			<ingredient name="resourceDuctTape" count="30"/>
+			<ingredient name="resourceLeather" count="60"/>
+			<ingredient name="resourceElectricParts" count="24"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceForgedSteel,resourceMechanicalParts,resourceDuctTape,resourceLeather,resourceElectricParts"/>
+			</effect_group>
+		</recipe>
+
+		<recipe name="vehicleSemiTruckPlaceable" count="1" craft_time="500" craft_area="workbench" craft_tool="meleeToolSalvageT1Wrench" tags="workbenchCrafting,perkGreaseMonkey">
+			<ingredient name="vehicleWheels" count="10"/>
+			<ingredient name="vehicleSemiTruckChassis" count="1"/>
+			<ingredient name="vehicleSemiTruckAccessories" count="1"/>
+			<ingredient name="smallEngine" count="2"/>
+			<ingredient name="carBattery" count="2"/>
 		</recipe>
 		
 		<!-- *** cooked canned food -->
@@ -750,6 +900,14 @@
 			<ingredient name="resourceGlue" count="2"/>
 		</recipe>
 		
+		<!-- *** mortar & pestle -->
+		<recipe name="mortarAndPestle" count="1" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceRockSmall" count="20"/>
+			<ingredient name="resourceClayLump" count="10"/>
+			<ingredient name="resourceWood" count="5"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		
 		<!-- *** beehive -->
 		<recipe name="beehive" count="1" craft_time="120" craft_exp_gain="500" tags="learnable,workbenchCrafting">
 			<ingredient name="resourceBeeswax" count="5"/>
@@ -863,111 +1021,6 @@
 			<ingredient name="resourceArmorCraftingKit" count="1"/>
 			<ingredient name="resourceRepairKit" count="1"/>
 		</recipe>
-		
-		<!-- *** arrows/bolts dismantle to component parts -->
-		<!-- arrows -->
-		<recipe name="ammoDismantleArrowStone" count="1">
-			<ingredient name="ammoArrowStone" count="1"/>
-		</recipe>
-	
-		<recipe name="ammoDismantleArrowIron" count="1">
-			<ingredient name="ammoArrowIron" count="1"/>
-		</recipe>
-	
-		<recipe name="ammoDismantleArrowSteelAP" count="1" craft_area="workbench" tags="workbenchCrafting">
-			<ingredient name="ammoArrowSteelAP" count="1"/>
-		</recipe>
-	
-		<recipe name="ammoDismantleArrowFlaming" count="1" craft_area="workbench" tags="workbenchCrafting">
-			<ingredient name="ammoArrowFlaming" count="1"/>
-		</recipe>
-	
-		<recipe name="ammoDismantleArrowExploding" count="1" craft_area="workbench" tags="workbenchCrafting">
-			<ingredient name="ammoArrowExploding" count="1"/>
-		</recipe>
-	
-		<!-- crossbow bolts -->
-		<recipe name="ammoDismantleCrossbowBoltStone" count="1">
-			<ingredient name="ammoCrossbowBoltStone" count="1"/>
-		</recipe>
-	
-		<recipe name="ammoDismantleCrossbowBoltIron" count="1">
-			<ingredient name="ammoCrossbowBoltIron" count="1"/>
-		</recipe>
-	
-		<recipe name="ammoDismantleCrossbowBoltSteelAP" count="1" craft_area="workbench" tags="workbenchCrafting">
-			<ingredient name="ammoCrossbowBoltSteelAP" count="1"/>
-		</recipe>
-	
-		<recipe name="ammoDismantleCrossbowBoltFlaming" count="1" craft_area="workbench" tags="workbenchCrafting">
-			<ingredient name="ammoCrossbowBoltFlaming" count="1"/>
-		</recipe>
-	
-		<recipe name="ammoDismantleCrossbowBoltExploding" count="1" craft_area="workbench" tags="workbenchCrafting">
-			<ingredient name="ammoCrossbowBoltExploding" count="1"/>
-		</recipe>
-	
-		<!-- *** bullets/shells dismantle to component parts (70% return)  -->
-		<!-- 9mm -->
-		<recipe name="ammoDismantle9mmBulletBall" count="1" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
-			<ingredient name="ammo9mmBulletBall" count="10"/>
-		</recipe>
-	
-		<recipe name="ammoDismantle9mmBulletHP" count="1" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
-			<ingredient name="ammo9mmBulletHP" count="10"/>
-		</recipe>
-	
-		<recipe name="ammoDismantle9mmBulletAP" count="1" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
-			<ingredient name="ammo9mmBulletAP" count="10"/>
-		</recipe>
-	
-		<!-- .44 -->
-		<recipe name="ammoDismantle44MagnumBulletBall" count="1" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
-			<ingredient name="ammo44MagnumBulletBall" count="10"/>
-		</recipe>
-	
-		<recipe name="ammoDismantle44MagnumBulletHP" count="1" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
-			<ingredient name="ammo44MagnumBulletHP" count="10"/>
-		</recipe>
-	
-		<recipe name="ammoDismantle44MagnumBulletAP" count="1" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
-			<ingredient name="ammo44MagnumBulletAP" count="10"/>
-		</recipe>
-	
-		<!-- 7.62mm -->
-		<recipe name="ammoDismantle762mmBulletBall" count="1" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
-			<ingredient name="ammo762mmBulletBall" count="10"/>
-		</recipe>
-	
-		<recipe name="ammoDismantle762mmBulletHP" count="1" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
-			<ingredient name="ammo762mmBulletHP" count="10"/>
-		</recipe>
-	
-		<recipe name="ammoDismantle762mmBulletAP" count="1" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
-			<ingredient name="ammo762mmBulletAP" count="10"/>
-		</recipe>
-	
-		<!-- shotgun shells -->
-		<recipe name="ammoDismantleShotgunShell" count="1" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
-			<ingredient name="ammoShotgunShell" count="10"/>
-		</recipe>
-	
-		<recipe name="ammoDismantleShotgunSlug" count="1" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
-			<ingredient name="ammoShotgunSlug" count="10"/>
-		</recipe>
-	
-		<recipe name="ammoDismantleShotgunBreachingSlug" count="1" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
-			<ingredient name="ammoShotgunBreachingSlug" count="10"/>
-		</recipe>
-
-		<!-- *** rockets can be dismantled into component parts (50% gasoline return)  -->
-		<recipe name="ammoDismantleRocketFrag" count="1" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
-			<ingredient name="ammoRocketFrag" count="1"/>
-		</recipe>
-	
-		<recipe name="ammoDismantleRocketHE" count="1" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
-			<ingredient name="ammoRocketHE" count="1"/>
-		</recipe>
 
 		<!-- *** bullet casings from zinc & copper -->
 		<recipe name="resourceBulletCasing" count="1" material_based="true" craft_area="forge" is_trackable="false" tags="perkAdvancedEngineering">
@@ -978,7 +1031,196 @@
 				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_copper,unit_zinc"/>
 			</effect_group>
 		</recipe>
+		
+		<!-- *** anti-infection bandage -->
+		<recipe name="medicalFirstAidAntiInfectionBandage" count="1" tags="learnable,packMuleCrafting">
+			<ingredient name="medicalAloeCream" count="2"/>
+			<ingredient name="medicalBandage" count="2"/>
+			<ingredient name="resourceSilverDust" count="20"/>
+		</recipe>
+		
+		<!-- *** anti-infection first aid kit -->
+		<recipe name="medicalFirstAidAntiInfectionKit" count="1" craft_area="chemistryStation" tags="learnable,chemStationCrafting" >
+			<ingredient name="medicalBloodBag" count="1"/>
+			<ingredient name="drinkJarBeer" count="1"/>
+			<ingredient name="medicalFirstAidAntiInfectionBandage" count="2"/>
+			<ingredient name="resourceSewingKit" count="1"/>
+		</recipe>
+		
+		<!-- *** silver dust, zinc powder etc -->
+		<recipe name="resourceSilverDust" count="10" craft_area="mortarAndPestle" tags="workbenchCrafting" >
+			<ingredient name="resourceSilverNugget" count="1"/>			
+		</recipe>
+		
+		<recipe name="resourceZincPowder" count="10" craft_area="mortarAndPestle" tags="workbenchCrafting" >
+			<ingredient name="resourceZinc" count="1"/>			
+		</recipe>
+		
+		<!-- *** arrows/bolts dismantle to component parts -->
+		<!-- arrows -->
+		<recipe name="resourceRockSmall" count="1">
+			<secondary_output name="resourceBranch" count="1"/>
+			<secondary_output name="resourceFeather" count="1"/>
+			<ingredient name="ammoArrowStone" count="1"/>
+		</recipe>
+	
+		<recipe name="resourceArrowHeadIron" count="1">
+			<secondary_output name="resourceBranch" count="1"/>
+			<secondary_output name="resourceFeather" count="1"/>
+			<ingredient name="ammoArrowIron" count="1"/>
+		</recipe>
+	
+		<recipe name="resourceArrowHeadSteelAP" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoArrowSteelAP" count="1"/>
+			<secondary_output name="resourceScrapPolymers" count="2"/>
+		</recipe>
+	
+		<recipe name="resourceArrowHeadSteelAP" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoArrowFlaming" count="1"/>
+			<secondary_output name="resourceScrapPolymers" count="1"/>
+			<secondary_output name="resourceGunPowder" count="1"/>
+			<secondary_output name="resourceCloth" count="3"/>
+		</recipe>
+	
+		<recipe name="resourceArrowHeadSteelAP" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoArrowExploding" count="1"/>
+			<secondary_output name="resourceScrapPolymers" count="1"/>
+			<secondary_output name="resourceGunPowder" count="4"/>
+		</recipe>
+	
+		<!-- crossbow bolts -->
+		<recipe name="resourceRockSmall" count="1">
+			<secondary_output name="resourceBranch" count="1"/>
+			<secondary_output name="resourceFeather" count="1"/>
+			<ingredient name="ammoCrossbowBoltStone" count="1"/>
+		</recipe>
+	
+		<recipe name="resourceArrowHeadIron" count="1">
+			<secondary_output name="resourceBranch" count="1"/>
+			<secondary_output name="resourceFeather" count="1"/>
+			<ingredient name="ammoCrossbowBoltIron" count="1"/>
+		</recipe>
+	
+		<recipe name="resourceArrowHeadSteelAP" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoCrossbowBoltSteelAP" count="1"/>
+			<secondary_output name="resourceScrapPolymers" count="1"/>
+		</recipe>
+	
+		<recipe name="resourceArrowHeadSteelAP" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoCrossbowBoltFlaming" count="1"/>
+			<secondary_output name="resourceScrapPolymers" count="1"/>
+			<secondary_output name="resourceGunPowder" count="1"/>
+			<secondary_output name="resourceCloth" count="3"/>
+		</recipe>
+	
+		<recipe name="resourceArrowHeadSteelAP" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoCrossbowBoltExploding" count="1"/>
+			<secondary_output name="resourceScrapPolymers" count="1"/>
+			<secondary_output name="resourceGunPowder" count="5"/>
+		</recipe>
+	
+	<!-- *** bullets/shells dismantle to component parts (70% return) -->
+		<!-- 9mm -->
+		<recipe name="resourceBulletTip" count="7" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
+			<ingredient name="ammo9mmBulletBall" count="10"/>
+			<secondary_output name="resourceGunPowder" count="7"/>
+			<secondary_output name="resourceBulletCasing" count="7"/>
+		</recipe>
+	
+		<recipe name="resourceBulletTip" count="14" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
+			<secondary_output name="resourceGunPowder" count="7"/>
+			<secondary_output name="resourceBulletCasing" count="7"/>
+			<ingredient name="ammo9mmBulletHP" count="10"/>
+		</recipe>
+	
+		<recipe name="resourceBulletTip" count="14" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
+			<secondary_output name="resourceGunPowder" count="14"/>
+			<secondary_output name="resourceBulletCasing" count="7"/>
+			<ingredient name="ammo9mmBulletAP" count="10"/>
+		</recipe>
+	
+		<!-- .44 -->
+		<recipe name="resourceBulletTip" count="7" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
+			<secondary_output name="resourceGunPowder" count="14"/>
+			<secondary_output name="resourceBulletCasing" count="7"/>
+			<ingredient name="ammo44MagnumBulletBall" count="10"/>
+		</recipe>
+	
+		<recipe name="resourceBulletTip" count="14" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
+			<secondary_output name="resourceGunPowder" count="14"/>
+			<secondary_output name="resourceBulletCasing" count="7"/>
+			<ingredient name="ammo44MagnumBulletHP" count="10"/>
+		</recipe>
+	
+		<recipe name="resourceBulletTip" count="14" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
+			<secondary_output name="resourceGunPowder" count="21"/>
+			<secondary_output name="resourceBulletCasing" count="7"/>
+			<ingredient name="ammo44MagnumBulletAP" count="10"/>
+		</recipe>
+	
+		<!-- 7.62mm -->
+		<recipe name="resourceBulletTip" count="7" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
+			<secondary_output name="resourceGunPowder" count="21"/>
+			<secondary_output name="resourceBulletCasing" count="7"/>
+			<ingredient name="ammo762mmBulletBall" count="10"/>
+		</recipe>
+	
+		<recipe name="resourceBulletTip" count="14" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
+			<secondary_output name="resourceGunPowder" count="21"/>
+			<secondary_output name="resourceBulletCasing" count="7"/>
+			<ingredient name="ammo762mmBulletHP" count="10"/>
+		</recipe>
+	
+		<recipe name="resourceBulletTip" count="14" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
+			<secondary_output name="resourceGunPowder" count="35"/>
+			<secondary_output name="resourceBulletCasing" count="7"/>
+			<ingredient name="ammo762mmBulletAP" count="10"/>
+		</recipe>
+	
+		<!-- shotgun shells -->
+		<recipe name="resourceBuckshot" count="7" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
+			<secondary_output name="resourceGunPowder" count="28"/>
+			<secondary_output name="resourcePaper" count="7"/>
+			<ingredient name="ammoShotgunShell" count="10"/>
+		</recipe>
+	
+		<recipe name="resourceBulletTip" count="14" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
+			<secondary_output name="resourceGunPowder" count="35"/>
+			<secondary_output name="resourceScrapPolymers" count="7"/>
+			<ingredient name="ammoShotgunSlug" count="10"/>
+		</recipe>
+	
+		<recipe name="resourceForgedSteel" count="35" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
+			<secondary_output name="resourceClayLump" count="14"/>
+			<secondary_output name="resourceGunPowder" count="28"/>
+			<secondary_output name="resourceScrapPolymers" count="7"/>
+			<ingredient name="ammoShotgunBreachingSlug" count="10"/>
+		</recipe>
+
+	<!-- *** rockets can be dismantled into component parts (50% gasoline return) -->
+		<recipe name="resourceRocketCasing" count="1" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
+			<secondary_output name="resourceGunPowder" count="11"/>
+			<secondary_output name="ammoGasCan" count="250"/>
+			<secondary_output name="resourceBuckshot" count="18"/>
+			<ingredient name="ammoRocketFrag" count="1"/>
+		</recipe>
+	
+		<recipe name="resourceRocketCasing" count="1" craft_area="workbench" tags="workbenchCrafting" craft_tool="toolAmmoPress">
+			<secondary_output name="resourceGunPowder" count="11"/>
+			<secondary_output name="ammoGasCan" count="250"/>
+			<secondary_output name="resourceRocketTip" count="1"/>
+			<ingredient name="ammoRocketHE" count="1"/>
+		</recipe>		
 	</append>
+	
+	<set xpath="//recipe[@name='resourceConcreteMix']/@count">250</set>
+	<set xpath="/recipes/recipe[@name='resourceConcreteMix']">
+		<secondary_output name="bucketEmpty" count="1"/>
+		<ingredient name="resourceCrushedSand" count="250"/>
+		<ingredient name="resourceRockSmall" count="250"/>
+		<ingredient name="resourceCement" count="250"/>
+		<ingredient name="bucketRiverWater" count="1"/>
+	</set>
 	
 	<!-- *** repair kits require oil & mech parts -->
 	<set xpath="/recipes/recipe[@name='resourceRepairKit']">
@@ -1060,6 +1302,14 @@
 	<setattribute xpath="//recipe[contains (@name,'ShotgunSlug')]" name="craft_tool">toolAmmoPress</setattribute>
 	<setattribute xpath="//recipe[contains (@name,'ShotgunBreaching')]" name="craft_tool">toolAmmoPress</setattribute>
 	
+	<!-- *** cornmeal crafted in mortar & pestle -->
+	<setattribute xpath="/recipes/recipe[@name='foodCornMeal']" name="craft_area">mortarAndPestle</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='resourceGunPowder' and @tags='packMuleCrafting']" name="craft_area">mortarAndPestle</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='resourceGunPowder' and @tags='packMuleCrafting']" name="tags">workbenchCrafting</setattribute>
+	
+	<!-- *** double cornmeal from corn -->
+	<set xpath="/recipes/recipe[@name='foodCornMeal']/@count">2</set>
+	
 	<!-- *** farmplot uses fertilizer and nails -->
 	<!-- <setattribute xpath="//recipe[@name='farmPlotBlockVariantHelper']" name="craft_area">workbench</setattribute> -->
 	<!-- <setattribute xpath="//recipe[@name='farmPlotBlockVariantHelper']" name="craft_tool">meleeToolRepairT1ClawHammer</setattribute> -->
@@ -1085,7 +1335,7 @@
 	<insertbefore xpath="//recipe[@name='workbench']">
 		<recipe name="resourceWood" count="10" craft_time="15" craft_area="playerSawmill" craft_exp_gain="0" tags="resourceWood">
 			<ingredient name="woodLogPillar100" count="1"/>
-			<!-- <secondary_output name="resourceWoodScraps" count="20"/> -->
+			<secondary_output name="resourceWoodScraps" count="20"/>
 		</recipe>
 	</insertbefore>
 	
