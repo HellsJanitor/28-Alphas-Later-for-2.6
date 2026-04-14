@@ -723,24 +723,24 @@
 			<property class="handlebars">
 				<property name="class" value="Steering"/>
 				<property name="transform" value="M/SteeringWheel"/>
-				<property name="steerAngle" value="0, 0, -60"/>
-				<property name="IKHandLPosition" value="-.226, -.034, -.122"/>
-				<property name="IKHandLRotation" value="-65.88229, 166.2278, -67.5802"/>
-				<property name="IKHandRPosition" value=".227, -.029, -.108"/>
-				<property name="IKHandRRotation" value="54.6357, 14.0615, 102.1651"/>
+				<property name="steerAngle" value="0, 0, -30"/>
+				<property name="IKHandLPosition" value="0.069, 0.221, 0.724"/>
+				<property name="IKHandLRotation" value="-344.5, 308.2, 3.000"/>
+				<property name="IKHandRPosition" value="0.079, -0.256, 0.723"/>
+				<property name="IKHandRRotation" value="346.0, 117.4, 24.8"/>
 			</property>
 			<property class="seat0">
 				<property name="class" value="Seat"/>
 				<property name="pose" value="40"/>
-				<property name="position" value="-.510, -.050, -0.247"/>
-				<property name="rotation" value="0, 0, 0"/>
+				<property name="position" value="-0.379, 1.000, 0.589"/>
+				<property name="rotation" value="7.1, 0, 0"/>
 				<property name="exit" value="-1.9,0,0 ~ 1.9,0,-1 ~ -.25,0,-3.6 ~ -.25,0,3 ~ -.4,2.1,0"/>
 			</property>
 			<property class="seat1">
 				<property name="class" value="Seat"/>
 				<property name="pose" value="41"/>
-				<property name="position" value=".38, .46, 0"/>
-				<property name="rotation" value="0, 0, 0"/>
+				<property name="position" value="0.414, 1.000, 0.589"/>
+				<property name="rotation" value="7.1, 0, 0"/>
 				<property name="exit" value="1.9,0,0 ~ -1.9,0,-1 ~ .25,0,-3.6 ~ .25,0,3 ~ .4,2.1,0"/>
 			</property>
 			<property class="wheel0">
