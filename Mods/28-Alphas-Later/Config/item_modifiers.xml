@@ -64,7 +64,18 @@
 				<display_value name="dStaminaChangeOT" value=".25"/>
 			</effect_group>
 		</item_modifier>
+		
+		<!-- *** semi trailer -->
+		<item_modifier name="modVehicleSemiTrailer" installable_tags="vstorageSemiTruck" modifier_tags="semiTrailer" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modVehicleSemiTrailer"/>
+			<property name="DescriptionKey" value="modVehicleSemiTrailerDesc"/>
+			<property name="MaxModsAllowed" value="1"/>
+		</item_modifier>
 	</append>
+	
+	<!-- *** block semi-trailer install if vehicle storage mods are present -->
+	<set xpath="/items/item_modifier[@name='modVehicleStorage']/@blocked_tags">noMods,vstorageSemiTruck</set>
 	
 	<!-- *** weighted head -->
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeWeightedHead']/@blocked_tags">noMods,knife</set>

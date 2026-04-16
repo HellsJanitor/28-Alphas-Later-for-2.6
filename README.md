@@ -5,6 +5,11 @@
 The idea behind this mod is to slow progression, make traders less powerful, and generally extend the time for a playthrough, while keeping the vanilla look and feel.
 
 > [!IMPORTANT]
+> 16/04/26 mod version 2.6.0.8.1
+
+ - Small bugfix for items disappearing from unlocked inventory slots
+
+> [!IMPORTANT]
 > 12/04/26 mod version 2.6.0.8
 
 > [!NOTE]

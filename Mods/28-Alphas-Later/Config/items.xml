@@ -2426,10 +2426,10 @@
 		</item>
 		
 		<item name="vehicleSemiTruckPlaceable">
-			<property name="HJModSlotsByTier" value="4"/>
+			<property name="HJModSlotsByTier" value="6"/>
 			<property name="Extends" value="vehicleMinibikePlaceable"/>
 			<property name="CustomIcon" value="vehicleSemiTruckPlaceable"/>
-			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vplow,vseat,vstorage,canHaveCosmetic"/>
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vplow,vseat,vstorage,vstorageSemiTruck,canHaveCosmetic"/>
 			<property name="Meshfile" value="#@modfolder:Resources/SemiTruck.unity3d?Semi_Truck"/>
 			<property name="EconomicValue" value="60000"/>
 			<property name="TraderStageTemplate" value="vehicleTier4"/>
@@ -2439,7 +2439,7 @@
 				<property name="VehicleSize" value="4.5, 3.1, 7"/>
 			</property>
 			<effect_group name="main" tiered="false">
-				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModSlots" operation="base_set" value="6"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="10000"/>
 			</effect_group>

@@ -650,7 +650,7 @@
 		</vehicle>
 		
 		<vehicle name="vehicleSemiTruck">
-			<property name="cameraDistance" value="5.5, 7"/>
+			<property name="cameraDistance" value="11, 12.5"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -798,6 +798,11 @@
 				<property name="mod" value="storage"/>
 				<property name="modT" value="M/Storage"/>
 			</property>
+			<!-- <property class="semiTrailer"> -->
+				<!-- <property name="class" value="VehiclePart"/> -->
+				<!-- <property name="mod" value="semiTrailer"/> -->
+				<!-- <property name="modT" value="M/SemiTrailer"/> -->
+			<!-- </property> -->
 		</vehicle>
 	</append>
 </HellsJanitor>

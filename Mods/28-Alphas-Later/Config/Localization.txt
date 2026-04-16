@@ -480,6 +480,8 @@ modGunSoundSuppressorSilencer,Suppressor Mod
 modGunSoundSuppressorSilencerSchematic,Suppressor Mod Schematic
 modBicycleStaminaSaver,Bike Gearing
 modBicycleStaminaSaverDesc,Improves the speed of bicycles by 50% and your stamina efficiency by 25%
+modVehicleSemiTrailer,Truck Trailer
+modVehicleSemiTrailerDesc,Increases vehicle storage by 100%.\n\nPerfect for moving bases.
 mortarAndPestle,"Mortar & Pestle"
 mortarAndPestleDesc,"A workstation for grinding things into fine powder."
 mushroom01,Small Mushroom
@@ -672,6 +674,8 @@ ttItemNeedsRepair,"This item is knackered and needs fixing"
 ttRepairBeforePickup,"It's knackered and needs repairing before picking it up."
 ttRepairQualityLoss,"Repair reduced quality: {0} -> {1} (-{2})"
 ttRepairRemovedMods,"Quality drop removed {0} mod(s)."
+ttSemiTrailerStorageNotEmpty,Empty the trailer storage before removing the trailer mod.
+ttSemiTrailerIncompatibleStorage,The semi-trailer cannot be used with standard vehicle storage mods.
 vehicleDirtBike,The Ruin Runner
 vehicleDirtBikeChassis,The Ruin Runner Chassis
 vehicleDirtBikeHandlebars,The Ruin Runner Handlebars
