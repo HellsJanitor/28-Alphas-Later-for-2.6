@@ -708,7 +708,7 @@ medicalT3-4,"Tier 3: Steroids"
 vehiclesT1,"Tier 1: Bicycle, Scooter, Minibike, & Wheels"
 vehiclesT2,"Tier 2: Dirt Bike, Quad Bike, Oil, & Gas"
 vehiclesT3,"Tier 3: Motorcycle, Dune Buggy & Stacks of Gas Cans"
-vehiclesT4,"Tier 4: 4x4, Semi Truck"
+vehiclesT4,"Tier 4: 4x4, Semi Truck & Semi Trailer"
 venomDesc,"Key ingredient for antivenom."
 woodLogPillar100Desc,Wood logs are good for crude walls or palisades or as fuel for campfires.\n\nPlace them as a block and chop them with an axe for wood planks.
 workstationsT1-1,Chicken Coop

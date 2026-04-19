@@ -717,6 +717,19 @@
 			<ingredient name="carBattery" count="2"/>
 		</recipe>
 		
+		<!-- *** trailer for Iron Tyrant -->
+		<recipe name="modVehicleSemiTrailer" count="1" craft_time="150" craft_area="workbench" craft_tool="meleeToolSalvageT1Wrench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="300"/>
+			<ingredient name="resourceMechanicalParts" count="60"/>
+			<ingredient name="resourceDuctTape" count="30"/>
+			<ingredient name="resourceMetalPipe" count="60"/>
+			<ingredient name="resourceElectricParts" count="24"/>
+			<ingredient name="vehicleWheels" count="8"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceForgedSteel,resourceMechanicalParts,resourceDuctTape,resourceMetalPipe,resourceElectricParts"/>
+			</effect_group>
+		</recipe>
+		
 		<!-- *** cooked canned food -->
 		<recipe name="foodCanBeefcooked" count="1" craft_area="campfire" craft_time="12" tags="perkMasterChef">
 			<ingredient name="foodCanBeef" count="1"/>

@@ -72,9 +72,10 @@
 			<unlock_entry item="vehicleDuneBuggyChassis,vehicleDuneBuggyAccessories,ammoGasCanBundle" unlock_tier="2"/>
 		</display_entry>
 		
-		<display_entry icon="vehicleTruck4x4Placeable" name_key="vehiclesT4" has_quality="false" unlock_level="70,80">
+		<display_entry icon="vehicleTruck4x4Placeable,vehicleSemiTruckPlaceable" name_key="vehiclesT4" has_quality="false" unlock_level="70,80,85">
 			<unlock_entry item="vehicleTruck4x4Chassis,vehicleTruck4x4Accessories" unlock_tier="1"/>
 			<unlock_entry item="vehicleSemiTruckChassis,vehicleSemiTruckAccessories" unlock_tier="2"/>
+			<unlock_entry item="modVehicleSemiTrailer" unlock_tier="3"/>
 		</display_entry>
 		
 		<display_entry icon="vehicleGyrocopterPlaceable" name_key="vehiclesT5" has_quality="false" unlock_level="100">
@@ -91,6 +92,7 @@
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="60,100" value="1" tags="vehicleDuneBuggyChassis,vehicleDuneBuggyAccessories,ammoGasCanBundle"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="70,100" value="1" tags="vehicleTruck4x4Chassis,vehicleTruck4x4Accessories"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="80,100" value="1" tags="vehicleSemiTruckChassis,vehicleSemiTruckAccessories"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="85,100" value="1" tags="modVehicleSemiTrailer"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="100,100" value="1" tags="vehicleGyroCopterChassis,vehicleGyroCopterAccessories"/>
 		</effect_group>
 	</set>

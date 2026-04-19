@@ -650,7 +650,7 @@
 		</vehicle>
 		
 		<vehicle name="vehicleSemiTruck">
-			<property name="cameraDistance" value="11, 12.5"/>
+			<property name="cameraDistance" value="15, 17.5"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -662,7 +662,7 @@
 			<property name="tiltDampening" value=".22"/>
 			<property name="tiltDampenThreshold" value="8"/>
 			<property name="tiltUpForce" value="0"/>
-			<property name="motorTorque_turbo" value="3500, 1500, 4500, 2000"/>
+			<property name="motorTorque_turbo" value="3000, 1500, 4000, 2000"/>
 			<property name="velocityMax_turbo" value="10, 8, 14, 10"/>
 			<property name="brakeTorque" value="6000"/>
 			<property name="unstickForce" value="1"/>
