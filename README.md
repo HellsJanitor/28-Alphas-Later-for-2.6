@@ -5,6 +5,13 @@
 The idea behind this mod is to slow progression, make traders less powerful, and generally extend the time for a playthrough, while keeping the vanilla look and feel.
 
 > [!IMPORTANT]
+> 21/04/26 mod version 2.6.1.1
+
+ - Fixed some physics and interaction bugs with the trailer truck mod.
+ - Changed the texture on the truck trailer.
+ - Edited some of the music track names.
+
+> [!IMPORTANT]
 > 19/04/26 mod version 2.6.1.0
 
  - Added the truck trailer to progression so it's unlockable and craftable.

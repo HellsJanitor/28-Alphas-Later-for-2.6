@@ -21,10 +21,7 @@
 		</action>
 	</set>
 	
-	<!-- *** add a chance for a bee from a stump -->
-	<!-- <append xpath="/gameevents/action_sequence[@name='block_tree_stump_bees']/action[@class='AddItems']/property[@name='added_items']/@value">,honeyBee</append> -->
-	<!-- <append xpath="/gameevents/action_sequence[@name='block_tree_stump_bees']/action[@class='AddItems']/property[@name='added_item_counts']/@value">,1</append> -->
-	
+	<!-- *** add a chance for a bee from a stump -->	
 	<append xpath="/gameevents/action_sequence[@name='block_tree_stump_bees']">
 		<action class="AddItems">
 			<property name="added_items" value="honeyBee"/>
@@ -37,6 +34,9 @@
 			</requirement>
 		</action>
 	</append>
+	
+	<!-- *** prevent bees when smoker is installed -->
+	<set xpath="/gameevents/action_sequence[@name='block_apiary_bees']/requirement[@class='VarString']/property[@name='var_name']/@value">_Mod2Name</set>
 	
 	
 	<append xpath="/gameevents">
