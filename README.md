@@ -4,6 +4,14 @@
 
 The idea behind this mod is to slow progression, make traders less powerful, and generally extend the time for a playthrough, while keeping the vanilla look and feel.
 
+> [!NOTE]
+>25/04/26 mod version 2.6.1.2
+
+ - Removed the hard cap of 30 zombies for horde night. Now, whatever you select from the menu settings is what you'll get.
+ 
+> [!CAUTION]
+>Untested in multiplayer. Please report bugs in the Discord.
+
 > [!IMPORTANT]
 > 21/04/26 mod version 2.6.1.1
 
