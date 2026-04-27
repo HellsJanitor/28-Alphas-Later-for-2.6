@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<research_drops>
+	<settings>
+		<drop_lifetime_seconds value="3600"/>
+		<scatter_radius value="0.35"/>
+		<y_offset value="0.35"/>
+		<debug_logging value="false"/>
+		<merge_with_existing_stacks value="true"/>
+		<merge_radius value="12"/>
+		<max_stack_size value="6000"/>
+		<refresh_lifetime_on_merge value="true"/>
+	</settings>
+	<entity_rules>
+		<!-- Exact entity-class example. Highest priority. -->
+		<entity_rule entity_class="zombieDemolition">
+			<item name="researchPaperBlank" count="30,45"/>
+		</entity_rule>
+		<!-- More specific tag rules. -->
+		<entity_rule tags="zombie,walker">
+			<item name="researchPaperBlank" count="1,5"/>
+		</entity_rule>
+		
+		<entity_rule tags="zombie,feral">
+			<item name="researchPaperBlank" count="5,15"/>
+		</entity_rule>
+		
+		<entity_rule tags="zombie,radiated">
+			<item name="researchPaperBlank" count="10,25"/>
+		</entity_rule>
+		
+		<entity_rule tags="zombie,charged">
+			<item name="researchPaperBlank" count="15,30"/>
+		</entity_rule>
+		
+		<entity_rule tags="zombie,infernal">
+			<item name="researchPaperBlank" count="20,35"/>
+		</entity_rule>
+		
+		<entity_rule tags="zombie,mutant">
+			<item name="researchPaperBlank" count="25,40"/>
+		</entity_rule>		
+	</entity_rules>
+	
+	<bonus_rules>
+		<!-- Additive biome bonus. -->		
+		<bonus_rule name="burntBiomeBonus">
+			<requirement class="Biome" biomes="burnt_forest"/>
+			<item name="researchPaperBlank" count="2,7"/>
+		</bonus_rule>
+		<bonus_rule name="desertBonus">
+			<requirement class="Biome" biomes="desert"/>
+			<item name="researchPaperBlank" count="3,8"/>
+		</bonus_rule>
+		<bonus_rule name="snowBonus">
+			<requirement class="Biome" biomes="snow"/>
+			<item name="researchPaperBlank" count="4,10"/>
+		</bonus_rule>
+		<bonus_rule name="wastelandBonus">
+			<requirement class="Biome" biomes="wasteland"/>
+			<item name="researchPaperBlank" count="5,15"/>
+		</bonus_rule>
+	</bonus_rules>
+</research_drops>

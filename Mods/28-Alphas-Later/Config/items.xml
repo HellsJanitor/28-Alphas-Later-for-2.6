@@ -2236,7 +2236,7 @@
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="vehicleRuinRipperChassis"/>
 			<property name="Tags" value="vehiclesSkill"/>
-			<property name="EconomicValue" value="3000"/>
+			<property name="EconomicValue" value="30"/>
 			<property name="TraderStageTemplate" value="vehicleTier1"/>
 			<property name="UnlockedBy" value="craftingVehicles"/><!-- perkGreaseMonkey,vehicleMotorcycleChassisSchematic, -->
 			<property name="SoundPickup" value="chassis_grab"/>
@@ -2247,7 +2247,7 @@
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="vehicleRuinRipperHandlebars"/>
 			<property name="Tags" value="vehiclesSkill"/>
-			<property name="EconomicValue" value="3000"/>
+			<property name="EconomicValue" value="30"/>
 			<property name="TraderStageTemplate" value="vehicleTier1"/>
 			<property name="UnlockedBy" value="craftingVehicles"/><!-- perkGreaseMonkey,vehicleMotorcycleHandlebarsSchematic, -->
 			<property name="SoundPickup" value="handlebars_grab"/>
@@ -2280,7 +2280,7 @@
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="vehicleQuadBikeChassis"/>
 			<property name="Tags" value="vehiclesSkill"/>
-			<property name="EconomicValue" value="3500"/>
+			<property name="EconomicValue" value="35"/>
 			<property name="TraderStageTemplate" value="vehicleTier2"/>
 			<property name="UnlockedBy" value="craftingVehicles"/><!-- perkGreaseMonkey,vehicleMotorcycleChassisSchematic, -->
 			<property name="SoundPickup" value="chassis_grab"/>
@@ -2291,7 +2291,7 @@
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="vehicleQuadBikeHandleBars"/>
 			<property name="Tags" value="vehiclesSkill"/>
-			<property name="EconomicValue" value="3500"/>
+			<property name="EconomicValue" value="35"/>
 			<property name="TraderStageTemplate" value="vehicleTier2"/>
 			<property name="UnlockedBy" value="craftingVehicles"/><!-- perkGreaseMonkey,vehicleMotorcycleHandlebarsSchematic, -->
 			<property name="SoundPickup" value="handlebars_grab"/>
@@ -2324,7 +2324,7 @@
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="vehicleScooterChassis"/>
 			<property name="Tags" value="vehiclesSkill"/>
-			<property name="EconomicValue" value="3500"/>
+			<property name="EconomicValue" value="15"/>
 			<property name="TraderStageTemplate" value="vehicleTier1"/>
 			<property name="UnlockedBy" value="craftingVehicles"/><!-- perkGreaseMonkey,vehicleMotorcycleChassisSchematic, -->
 			<property name="SoundPickup" value="chassis_grab"/>
@@ -2335,7 +2335,7 @@
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="vehicleScooterhandleBars"/>
 			<property name="Tags" value="vehiclesSkill"/>
-			<property name="EconomicValue" value="3500"/>
+			<property name="EconomicValue" value="15"/>
 			<property name="TraderStageTemplate" value="vehicleTier1"/>
 			<property name="UnlockedBy" value="craftingVehicles"/><!-- perkGreaseMonkey,vehicleMotorcycleHandlebarsSchematic, -->
 			<property name="SoundPickup" value="handlebars_grab"/>
@@ -2348,7 +2348,7 @@
 			<property name="CustomIcon" value="vehicleScooterPlaceable"/>
 			<property name="Tags" value="vehicle,vengine,vstorage,canHaveCosmetic"/>
 			<property name="Meshfile" value="#@modfolder:Resources/VespaScooter.unity3d?Vespa_Scooter"/>
-			<property name="EconomicValue" value="11000"/>
+			<property name="EconomicValue" value="5000"/>
 			<property name="TraderStageTemplate" value="vehicleTier2"/>
 			<property name="SoundPickup" value="motorcycle_grab"/>
 			<property name="SoundPlace" value="motorcycle_place"/>
@@ -2368,7 +2368,7 @@
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="vehicleTheHornetChassis"/>
 			<property name="Tags" value="vehiclesSkill"/>
-			<property name="EconomicValue" value="9000"/>
+			<property name="EconomicValue" value="90"/>
 			<property name="TraderStageTemplate" value="vehicleTier2"/>
 			<property name="UnlockedBy" value="craftingVehicles"/><!-- perkGreaseMonkey -->
 			<property name="SoundPickup" value="chassis_grab"/>
@@ -2379,7 +2379,7 @@
 			<property name="Extends" value="vehicleBicycleHandlebars"/>
 			<property name="CustomIcon" value="vehicleTheHornetAccessories"/>
 			<property name="Tags" value="vehiclesSkill"/>
-			<property name="EconomicValue" value="9000"/>
+			<property name="EconomicValue" value="90"/>
 			<property name="TraderStageTemplate" value="vehicleTier2"/>
 			<property name="UnlockedBy" value="craftingVehicles"/><!-- perkGreaseMonkey -->
 		</item>
@@ -2409,7 +2409,7 @@
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="vehicleSemiTruckChassis"/>
 			<property name="Tags" value="vehiclesSkill"/>
-			<property name="EconomicValue" value="9000"/>
+			<property name="EconomicValue" value="100"/>
 			<property name="TraderStageTemplate" value="vehicleTier3"/>
 			<property name="UnlockedBy" value="craftingVehicles"/><!-- perkGreaseMonkey -->
 			<property name="SoundPickup" value="chassis_grab"/>
@@ -2420,7 +2420,7 @@
 			<property name="Extends" value="vehicleBicycleHandlebars"/>
 			<property name="CustomIcon" value="vehicleSemiTruckAccessories"/>
 			<property name="Tags" value="vehiclesSkill"/>
-			<property name="EconomicValue" value="9000"/>
+			<property name="EconomicValue" value="100"/>
 			<property name="TraderStageTemplate" value="vehicleTier3"/>
 			<property name="UnlockedBy" value="craftingVehicles"/><!-- perkGreaseMonkey -->
 		</item>
@@ -3883,6 +3883,22 @@
 			<property name="CreativeMode" value="None"/>
 		</item>
 	</insertAfter>
+	
+	<!-- *** lower economic value for vehicle parts -->
+	<set xpath="/items/item[@name='vehicleMinibikeChassis']/property[@name='EconomicValue']/@value">18</set>
+	<set xpath="/items/item[@name='vehicleMinibikeHandlebars']/property[@name='EconomicValue']/@value">18</set>
+	
+	<set xpath="/items/item[@name='vehicleBicycleChassis']/property[@name='EconomicValue']/@value">8</set>
+	<set xpath="/items/item[@name='vehicleBicycleHandlebars']/property[@name='EconomicValue']/@value">8</set>
+	
+	<set xpath="/items/item[@name='vehicleMotorcycleChassis']/property[@name='EconomicValue']/@value">30</set>
+	<set xpath="/items/item[@name='vehicleMotorcycleHandlebars']/property[@name='EconomicValue']/@value">30</set>
+	
+	<set xpath="/items/item[@name='vehicleTruck4x4Chassis']/property[@name='EconomicValue']/@value">90</set>
+	<set xpath="/items/item[@name='vehicleTruck4x4Accessories']/property[@name='EconomicValue']/@value">90</set>
+	
+	<set xpath="/items/item[@name='vehicleGyroCopterChassis']/property[@name='EconomicValue']/@value">150</set>
+	<set xpath="/items/item[@name='vehicleGyroCopterAccessories']/property[@name='EconomicValue']/@value">150</set>
 	
 	<!-- *** installable tags for bicycle mod(s) -->
 	<append xpath="/items/item[@name='vehicleBicyclePlaceable']/property[@name='Tags']/@value">,vbicycle</append>

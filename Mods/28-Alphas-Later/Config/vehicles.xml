@@ -668,7 +668,7 @@
 			<property name="unstickForce" value="1"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
-			<property name="hornSound" value="buggy_horn"/>
+			<property name="hornSound" value="suv_horn"/>
 			<property name="recipeName" value="vehicleSemiTruckPlaceable"/>
 			<property class="chassis">
 				<property name="class" value="Chassis"/>

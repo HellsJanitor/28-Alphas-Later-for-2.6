@@ -4,6 +4,28 @@
 
 The idea behind this mod is to slow progression, make traders less powerful, and generally extend the time for a playthrough, while keeping the vanilla look and feel.
 
+> [!IMPORTANT]
+>27/04/26 mod version 2.6.1.3
+
+ - Changed economic value of all vehicle parts and the semi-trailer mod.
+ 
+ - Changed research loot from zombies. Zombies now drop the item directly, instead of a lootable bag, and all zombies should drop a minimum number of research. Regular loot bag drops remain as vanilla.
+ 
+ - Fixed a bug with solar cells from traders - they now display the correct quality values.
+ 
+ - Removed the "+1 Fortutude" display from Sham Chowder.
+ 
+ - Nerfed the Lucky Looter action skill looting speed.
+ 
+ - Added a block for backpack upgrades. Now you can't inadvertently use a backpack upgrade if you don't have the previous upgrade.
+ 
+ - Re-added OCB MicroSplat for custom ore textures, and added a fix for correct terrain display textures.
+ 
+ - Localization tweaks and fixes.
+
+> [!NOTE]
+>Should be save-game safe, but as always, back-up your save, just in case.
+
 > [!NOTE]
 >25/04/26 mod version 2.6.1.2
 
@@ -16,7 +38,9 @@ The idea behind this mod is to slow progression, make traders less powerful, and
 > 21/04/26 mod version 2.6.1.1
 
  - Fixed some physics and interaction bugs with the trailer truck mod.
+ 
  - Changed the texture on the truck trailer.
+ 
  - Edited some of the music track names.
 
 > [!IMPORTANT]

@@ -346,7 +346,7 @@
 			<effect_group>
 				<!--the Learn By Use Lucky Looter increases loot quantity rather than quality.-->
 				<passive_effect name="LootStage" operation="perc_add" value=".05,.25" level="1,100"/>
-				<passive_effect name="ScavengingTime" operation="perc_subtract" value="0.01,1.5" level="1,100"/>
+				<passive_effect name="ScavengingTime" operation="perc_subtract" value="0.01,0.8" level="1,100"/>
 			</effect_group>
 			
 			<effect_group>

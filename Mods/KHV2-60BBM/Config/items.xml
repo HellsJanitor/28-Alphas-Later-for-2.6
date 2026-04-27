@@ -42,6 +42,7 @@
 			<property class="Action0">
 				<property name="Class" value="Eat"/>
 				<property name="Delay" value="1.0"/>
+				<requirement name="ProgressionLevel" progression_name="perkBackpackTier" operation="EQ" value="0"/>
 				<property name="UseAnimation" value="false"/>
 				<property name="Sound_start" value="outfit_cloth_place"/>
 				<property name="Sound_in_head" value="true"/>
@@ -72,6 +73,7 @@
 			<property class="Action0">
 				<property name="Class" value="Eat"/>
 				<property name="Delay" value="1.0"/>
+				<requirement name="ProgressionLevel" progression_name="perkBackpackTier" operation="EQ" value="1"/>
 				<property name="UseAnimation" value="false"/>
 				<property name="Sound_start" value="outfit_cloth_place"/>
 				<property name="Sound_in_head" value="true"/>
@@ -101,6 +103,7 @@
 			<property class="Action0">
 				<property name="Class" value="Eat"/>
 				<property name="Delay" value="1.0"/>
+				<requirement name="ProgressionLevel" progression_name="perkBackpackTier" operation="EQ" value="2"/>
 				<property name="UseAnimation" value="false"/>
 				<property name="Sound_start" value="outfit_cloth_place"/>
 				<property name="Sound_in_head" value="true"/>

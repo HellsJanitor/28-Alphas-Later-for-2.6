@@ -558,23 +558,34 @@
 		</block>
 	
 		<!-- *** new fertilized terrain -->
-		<block name="terrFertilizedFarmland3">
+		<block name="terrFertilizedFarmland3">			
+			<property name="DescriptionKey" value="terrainBlockGroupDesc"/>			
+			<property name="TerrainIndex" value="9"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+			<property name="DisplayType" value="blockTerrainFertile"/>
+			<property name="Map.Color" value="20,50,21"/>
 			<property name="Material" value="Mfarmland"/>
 			<property name="Shape" value="Terrain"/>
 			<property name="Mesh" value="terrain"/>
 			<property name="Texture" value="2"/>
 			<property name="ImposterExclude" value="true"/>
-			<property name="CanMobsSpawnOn" value="false"/>
-			<property class="RepairItems"><property name="resourceClayLump" value="14"/></property>
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="LPHardnessScale" value="2"/>
+			<property name="SoundPickup" value="groundblock_grab"/>
+			<property name="SoundPlace" value="groundblock_place"/>
+			<property class="RepairItems">
+				<property name="resourceClayLump" value="14"/>
+			</property>
 			<drop event="Harvest" name="resourceClayLump" count="22" tag="oreWoodHarvest"/>
 			<drop event="Destroy" count="0"/>
-			<drop event="Fall" name="terrFertileDirt" count="1" prob="0.25" stick_chance="1"/>
+			<drop event="Fall" name="terrDirt" count="1" prob="0.25" stick_chance="1"/>
 			<drop event="Fall" name="resourceClayLump" count="44" prob="0.187" stick_chance="0"/>
-			<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
-			<property name="FilterTags" value="fterrain"/>
-			<property name="SortOrder1" value="d0m0"/>
-			<property name="SortOrder2" value="0050"/>
-			<property name="DisplayType" value="blockTerrainFertile"/>
+			<property name="SortOrder1" value="0000"/>
+			<property name="SortOrder2" value="0300"/>
+			<property name="Tags" value="treasureHunter"/>
+			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>						
 		</block>
 		
 		<!-- *** player planted lavender -->
@@ -3031,8 +3042,8 @@
 	<!-- *** biome terrain upgrades to plantable terrain with hoe -->
 	<append xpath="/blocks/block[@name='terrDirt']">
 		<property class="UpgradeBlock">
-			<property name="ToBlock" value="terrFertileFarmland"/>
-			<property name="Item" value="meleeToolFarmT2IronHoe"/>
+			<!-- <property name="ToBlock" value="terrFertileFarmland"/> -->
+			<!-- <property name="Item" value="meleeToolFarmT2IronHoe"/> -->
 			<property name="ToBlock" value="terrFertilizedFarmland3"/>
 			<property name="Item" value="resourceFertilizer"/>
 			<property name="ItemCount" value="10"/>
@@ -3042,8 +3053,8 @@
 	
 	<append xpath="/blocks/block[@name='terrForestGround']">
 		<property class="UpgradeBlock">
-			<property name="ToBlock" value="terrFertileFarmland"/>
-			<property name="Item" value="meleeToolFarmT2IronHoe"/>
+			<!-- <property name="ToBlock" value="terrFertileFarmland"/> -->
+			<!-- <property name="Item" value="meleeToolFarmT2IronHoe"/> -->
 			<property name="ToBlock" value="terrFertilizedFarmland3"/>
 			<property name="Item" value="resourceFertilizer"/>
 			<property name="ItemCount" value="10"/>
@@ -3053,8 +3064,8 @@
 	
 	<append xpath="/blocks/block[@name='terrBurntForestGround']">
 		<property class="UpgradeBlock">
-			<property name="ToBlock" value="terrFertileFarmland"/>
-			<property name="Item" value="meleeToolFarmT2IronHoe"/>
+			<!-- <property name="ToBlock" value="terrFertileFarmland"/> -->
+			<!-- <property name="Item" value="meleeToolFarmT2IronHoe"/> -->
 			<property name="ToBlock" value="terrFertilizedFarmland3"/>
 			<property name="Item" value="resourceFertilizer"/>
 			<property name="ItemCount" value="10"/>
@@ -3064,8 +3075,8 @@
 	
 	<append xpath="/blocks/block[@name='terrDesertGround']">
 		<property class="UpgradeBlock">
-			<property name="ToBlock" value="terrFertileFarmland"/>
-			<property name="Item" value="meleeToolFarmT2IronHoe"/>
+			<!-- <property name="ToBlock" value="terrFertileFarmland"/> -->
+			<!-- <property name="Item" value="meleeToolFarmT2IronHoe"/> -->
 			<property name="ToBlock" value="terrFertilizedFarmland3"/>
 			<property name="Item" value="resourceFertilizer"/>
 			<property name="ItemCount" value="10"/>

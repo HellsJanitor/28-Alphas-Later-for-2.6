@@ -56,6 +56,9 @@
 	<!-- *** remove food health display -->
 	<remove xpath="/ui_display_info/item_display/item_display_info[contains(@display_type,'food') and not (contains(@display_type,'ShamChowder'))]/display_entry[@name='foodHealthAmount']"/>
 	
+	<!-- *** remove +1 fortitude display from sham chowder -->
+	<remove xpath="/ui_display_info/item_display/item_display_info[@display_type='foodShamChowder']/display_entry[@name='dFortitude']"/>
+	
 	<!-- *** hyper and hypo thermal resistances -->
 	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='drinkYuccaSmoothie']">
 		<display_entry name="dHyperthermalResist" title_key="statHyperthermalResist" display_leading_plus="true"/>

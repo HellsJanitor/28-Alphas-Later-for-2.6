@@ -70,6 +70,7 @@
 			<property name="Extends" value="modGeneralMaster"/>
 			<property name="CustomIcon" value="modVehicleSemiTrailer"/>
 			<property name="DescriptionKey" value="modVehicleSemiTrailerDesc"/>
+			<property name="EconomicValue" value="60000"/>
 			<property name="UnlockedBy" value="craftingVehicles"/>
 			<property name="MaxModsAllowed" value="1"/>
 		</item_modifier>

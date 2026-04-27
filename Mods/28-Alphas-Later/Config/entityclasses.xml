@@ -2153,14 +2153,14 @@
 			</effect_group>
 		</entity_class>
 		
-		<entity_class name="zombieHellsParasite" extends="zombieTemplateMale">
+		<entity_class name="zombieHellsParasite" extends="zombieSpider">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="SizeScale" value=".85"/>
 			<property name="Tags" value="entity,zombie,walker,feral,mutant,allbiome"/>
 			<property name="Mesh" value="#@modfolder:Resources/mutants.unity3d?ZombieParasitev2"/>
 			<property name="PhysicsBody" value="mixamoConvertedStandardZombie"/>
 			<property name="LookAtAngle" value="0"/>
-			<property name="Mass" value="230"/>
+			<property name="Mass" value="150"/>
 			<property name="WalkType" value="22"/>
 			<property name="PainResistPerHit" value=".75"/>
 
