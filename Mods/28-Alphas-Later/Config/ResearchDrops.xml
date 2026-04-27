@@ -16,27 +16,27 @@
 			<item name="researchPaperBlank" count="30,45"/>
 		</entity_rule>
 		<!-- More specific tag rules. -->
-		<entity_rule tags="zombie,walker">
+		<entity_rule tags="entity,zombie,walker">
 			<item name="researchPaperBlank" count="1,5"/>
 		</entity_rule>
 		
-		<entity_rule tags="zombie,feral">
+		<entity_rule tags="entity,zombie,walker,allbiome,feral">
 			<item name="researchPaperBlank" count="5,15"/>
 		</entity_rule>
 		
-		<entity_rule tags="zombie,radiated">
+		<entity_rule tags="entity,zombie,walker,allbiome,feral,radiated">
 			<item name="researchPaperBlank" count="10,25"/>
 		</entity_rule>
 		
-		<entity_rule tags="zombie,charged">
+		<entity_rule tags="entity,zombie,walker,allbiome,feral,charged">
 			<item name="researchPaperBlank" count="15,30"/>
 		</entity_rule>
 		
-		<entity_rule tags="zombie,infernal">
+		<entity_rule tags="entity,zombie,walker,allbiome,feral,infernal">
 			<item name="researchPaperBlank" count="20,35"/>
 		</entity_rule>
 		
-		<entity_rule tags="zombie,mutant">
+		<entity_rule tags="entity,zombie,walker,feral,mutant,allbiome">
 			<item name="researchPaperBlank" count="25,40"/>
 		</entity_rule>		
 	</entity_rules>
