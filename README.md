@@ -5,6 +5,14 @@
 The idea behind this mod is to slow progression, make traders less powerful, and generally extend the time for a playthrough, while keeping the vanilla look and feel.
 
 > [!IMPORTANT]
+>31/04/26 mod version 2.6.1.4
+
+ - Adjusted economic value of vehicles (again - lol)
+ 
+ - Added progression and recipe for solar cells 
+
+
+> [!IMPORTANT]
 >27/04/26 mod version 2.6.1.3
 
  - Changed economic value of all vehicle parts and the semi-trailer mod.

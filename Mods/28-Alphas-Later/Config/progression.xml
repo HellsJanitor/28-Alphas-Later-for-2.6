@@ -180,6 +180,17 @@
 	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/display_entry[@icon='batterybank']/unlock_entry/@item">,solarbank</append>
 	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/effect_group/passive_effect[@level='55,100']/@tags">,solarbank</append>
 	
+	<!-- *** solar cell unlocks -->
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/display_entry[@name_key='electricianT4']">
+		<unlock_entry item="solarCell" unlock_tier="2"/>
+	</append>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/display_entry[@icon='carBattery']/@icon">,solarCell</append>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="55,100" value="1" tags="solarCell"/>
+
+		<passive_effect name="CraftingTier" operation="base_add" level="60,70,80,90,100" value="1,2,3,4,5" tags="solarCell"/>
+	</append>
+	
 	<!-- *** new medical items -->
 	<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingMedical']">
 		<display_entry icon="medicalFirstAidBandage,drugFortBites,medicalFirstAidAntiInfectionBandage" name_key="medicalT1-1,medicalT1-2,medicalT1-3" has_quality="false" unlock_level="5,10,15" >

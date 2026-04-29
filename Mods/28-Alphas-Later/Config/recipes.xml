@@ -802,6 +802,20 @@
 				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".56,.56,.56,.34,.15" tags="resourceForgedIron,resourceMechanicalParts,resourceElectricParts"/>
 			</effect_group>
 		</recipe>
+		
+		<!-- *** solar cells -->
+		<recipe name="solarCell" count="1" craft_area="workbench" tags="learnable,perkAdvancedEngineering"><!-- perkGreaseMonkey -->
+			<ingredient name="resourceZinc" count="200"/>
+			<ingredient name="resourceCopper" count="200"/>
+			<ingredient name="resourceScrapPolymers" count="100"/>
+			<ingredient name="resourceElectricParts" count="12"/>
+			<ingredient name="glassBlockVariantHelper" count="1"/>
+			<ingredient name="resourceLegendaryParts" count="0"/>
+				<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="50,250" tags="resourceZinc,resourceCopper"/>
+				<passive_effect name="CraftingIngredientCount" level="6" operation="base_add" value="1" tags="resourceLegendaryParts"/>
+			</effect_group>
+		</recipe>
 
 		<!-- *** antivenom -->
 		<recipe name="antivenom" count="1" craft_area="chemistryStation" tags="chemStationCrafting">
@@ -1387,4 +1401,12 @@
 	<set xpath="/recipes/recipe[starts-with(@name,'melee')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='2,6']/@level">101,600</set>
 	<set xpath="/recipes/recipe[starts-with(@name,'melee')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='6' and @value='1']/@value">1,1</set>
 	<set xpath="/recipes/recipe[starts-with(@name,'melee')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='6']/@level">501,600</set>
+	
+	<set xpath="/recipes/recipe[@name='carBattery']/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='2,6']/@level">101,600</set>
+	<set xpath="/recipes/recipe[@name='carBattery']/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='6' and @value='1']/@value">1,1</set>
+	<set xpath="/recipes/recipe[@name='carBattery']/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='6']/@level">501,600</set>
+	
+	<set xpath="/recipes/recipe[@name='solarCell']/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='2,6']/@level">101,600</set>
+	<set xpath="/recipes/recipe[@name='solarCell']/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='6' and @value='1']/@value">1,1</set>
+	<set xpath="/recipes/recipe[@name='solarCell']/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='6']/@level">501,600</set>
 </HellsJanitor>

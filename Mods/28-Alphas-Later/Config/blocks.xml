@@ -560,14 +560,14 @@
 		<!-- *** new fertilized terrain -->
 		<block name="terrFertilizedFarmland3">			
 			<property name="DescriptionKey" value="terrainBlockGroupDesc"/>			
-			<property name="TerrainIndex" value="9"/>
+			<property name="TerrainIndex" value="5"/>
 			<property name="CanMobsSpawnOn" value="false"/>
 			<property name="DisplayType" value="blockTerrainFertile"/>
 			<property name="Map.Color" value="20,50,21"/>
 			<property name="Material" value="Mfarmland"/>
 			<property name="Shape" value="Terrain"/>
 			<property name="Mesh" value="terrain"/>
-			<property name="Texture" value="2"/>
+			<property name="Texture" value="11"/>
 			<property name="ImposterExclude" value="true"/>
 			<property name="EconomicValue" value="5"/>
 			<property name="EconomicBundleSize" value="1"/>
